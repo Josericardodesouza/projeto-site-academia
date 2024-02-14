@@ -1,2 +1,63 @@
 @charset "UTF-8";
-/* versão mobile first*/
+/* versão mobile first, de 680px para baixo*/
+
+
+
+:root {
+    --cor1: #101119;
+    --cor2: #8d99ae;
+    --cor3: #edf2f4;
+    --cor4: #d80032;
+
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+header {
+    background-image: url(../imagens/fundo-preto-negro-preto-596818.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 400px;
+    display: inline-flex;
+    position: absolute;
+    box-shadow: 80px 10px 10px solid green;
+    border-radius: 0px 10px 10px 0px;
+}
+ 
+
+
+
+
+
+
+header > div#texto-maior {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.627);
+    font-size: 30px;
+    max-width: 300px;
+    border-radius: 0% 50% 50% 0%;
+}
+
+header > div#texto-maior > p {
+    margin: 50px;
+}
+
+
+
+section#texto-imagem {
+    display: flex;
+}
