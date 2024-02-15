@@ -17,6 +17,10 @@
     padding: 0px;
 }
 
+body {
+    margin: 0px;
+}
+
 header  {
     color: white;
    
@@ -27,10 +31,10 @@ header  {
 nav {
     width: 100vw;
     height: 30px;
-    background-color: #8d99ae;
+    background-color: black;
 }
 
-nav a {
+nav > h1 {
     color: white;
     background-color: black;
     display: inline-block;
@@ -40,35 +44,40 @@ nav a {
 
 header {
     background-image: url(../imagens/pexels-victor-freitas-791763.jpg);
+    background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
     width: 100vw;
     height: 400px;
-    box-shadow: 80px 10px 10px solid green;
+    border-bottom: 30px solid black;
     
 }
 
 header > div#form-login {
 
     background-color: #101119;
-    width: 350px;
+    width: 90vw;
     height: 150px;
     top: 30%;
     padding: 5px;
-    margin: auto;
     position: relative;
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.614);
+    border: 3px solid orange;
+    box-shadow: 2px 2px 70px orange;
     /* box-shadow: 10px 10px 10px rgba(10, 218, 190, 0.57); */
     border-radius: 6px; 
     
 }
 
  
-div#form-login > h1 {
+div#form-login > h2 {
     position: relative;
-    left: 25%;
-    font-size: 10px;
+    top: 2%;
+    margin: 0px;
+    left: 15%;
+    right: 15%;
+    font-size: 12px;
 }
 
 div#form-login > div.campo-entrada {
@@ -105,6 +114,23 @@ div#form-login > div.campo-entrada > input#id-email {
 
 div.campo-entrada {
     display: flex;
+}
+
+
+section#secao1 {
+    display: flex;
+}
+
+
+
+div#imagem-lateral-1 {
+    background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+   
+    width: 200px;
+    height: 700px;
 }
 
 
