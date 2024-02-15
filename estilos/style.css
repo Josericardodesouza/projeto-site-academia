@@ -39,13 +39,13 @@ nav a {
 }
 
 header {
-    background-image: url(../imagens/pexels-lukas-669578.jpg);
-   
+    background-image: url(../imagens/pexels-victor-freitas-791763.jpg);
+    background-position: left top;
     background-size: cover;
     width: 100vw;
     height: 400px;
     box-shadow: 80px 10px 10px solid green;
-    border-radius: 0px 10px 10px 0px;
+    
 }
 
 header > div#form-login {
@@ -57,15 +57,18 @@ header > div#form-login {
     padding: 5px;
     margin: auto;
     position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.614);
     /* box-shadow: 10px 10px 10px rgba(10, 218, 190, 0.57); */
     border-radius: 6px; 
     
 }
 
- div.campo-entrada {
-    display: flex;
-
+ 
+div#form-login > h1 {
+    position: relative;
+    left: 25%;
+    font-size: 10px;
 }
 
 div#form-login > div.campo-entrada {
@@ -76,7 +79,7 @@ div#form-login > div.campo-entrada {
     /* background-color: green; */
     width: 50px;
     color: white;
-    font-weight: 400;
+  
     
     
 }
@@ -84,9 +87,24 @@ div#form-login > div.campo-entrada {
 div#form-login > div.campo-entrada > input {
     /* background-color:red; */
     background-color: rgb(183, 197, 180);
+    box-shadow: 2px 2px rgb(8, 67, 230);
+    margin-top: 10px;
     margin-left: 15px;
     height: 30px;
-    width: 200px;
+  
+}
+
+div#form-login > div.campo-entrada > input#id-email {
+    background-color: orange;
+    
+    margin-bottom: 0px;
+}
+
+
+
+
+div.campo-entrada {
+    display: flex;
 }
 
 
