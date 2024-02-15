@@ -19,8 +19,8 @@
 
 header  {
     color: white;
-    font-size: 50px;
-    text-align: center;
+   
+  
 
 }
 
@@ -50,22 +50,25 @@ header {
     box-shadow: 80px 10px 10px solid green;
     border-radius: 0px 10px 10px 0px;
 }
+
+header > div#form-id > div.campo-entrada {
  
+}
 
 
 
 
 
 
-header > div#texto-maior {
-    color: white;
+main > div#texto-maior {
+    color: black;
     background-color: rgba(0, 0, 0, 0.627);
     font-size: 30px;
     max-width: 300px;
     border-radius: 0% 50% 50% 0%;
 }
 
-header > div#texto-maior > p {
+main > div#texto-maior > p {
     margin: 50px;
 }
 
