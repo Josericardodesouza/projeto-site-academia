@@ -51,21 +51,30 @@ header {
 header > div#form-login {
 
     background-color: #101119;
+    width: 350px;
+    height: 150px;
+    top: 30%;
     padding: 5px;
+    margin: auto;
     position: relative;
-    top: 50%;
-    left: 50%; 
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.614);
+    /* box-shadow: 10px 10px 10px rgba(10, 218, 190, 0.57); */
     border-radius: 6px; 
     
 }
 
  div.campo-entrada {
+    display: flex;
 
-    
 }
 
 div#form-login > div.campo-entrada {
-    background-color: green;
+    align-items: center;
+    margin: 0px;
+    margin-left: 10px;
+    padding: 2px;
+    /* background-color: green; */
+    width: 50px;
     color: white;
     font-weight: 400;
     
@@ -73,7 +82,9 @@ div#form-login > div.campo-entrada {
 }
 
 div#form-login > div.campo-entrada > input {
-    background-color:red;
+    /* background-color:red; */
+    background-color: rgb(183, 197, 180);
+    margin-left: 15px;
     height: 30px;
     width: 200px;
 }
