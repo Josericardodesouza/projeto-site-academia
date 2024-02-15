@@ -17,6 +17,19 @@
     padding: 0px;
 }
 
+header  {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+nav {
+    width: 100vw;
+    height: 30px;
+    background-color: #8d99ae;
+}
+
 nav a {
     color: white;
     background-color: black;
@@ -26,7 +39,7 @@ nav a {
 }
 
 header {
-    background-image: url(../imagens/fundo-preto-negro-preto-596818.jpg);
+    background-image: url(../imagens/pexels-lukas-669578.jpg);
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
