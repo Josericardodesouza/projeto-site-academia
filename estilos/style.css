@@ -56,11 +56,12 @@ header {
 header > div#form-login {
 
     background-color: #101119;
-    width: 90vw;
+    max-width: 90vw;
     height: 150px;
     top: 30%;
     padding: 5px;
     position: relative;
+    
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 3px solid orange;
