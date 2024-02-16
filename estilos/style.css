@@ -3,13 +3,31 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
 :root {
-    --cor1: #101119;
+    --tangerina: #ea8c34;
+    --darkPurple: #190b28;
+    --greenBlue: #2364aa;
+    --sepia: #704214;
+    --carmine: #96031a;
+    
+
+
+    /* --cor1: #101119;
     --cor2: #8d99ae;
     --cor3: #edf2f4;
-    --cor4: #d80032;
+    --cor4: #d80032; */
 
 }
+
 
 
 
@@ -24,7 +42,6 @@ html {
 
 body {
     margin: 0px;
-   
 }
 
 
@@ -37,6 +54,7 @@ nav {
     margin: 0px;
     padding: 0px;
     background-color: black;
+  
 }
 
 nav > h1 {
@@ -73,9 +91,8 @@ header > div#form-login {
     position: relative;
     
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 3px solid orange;
-    box-shadow: 2px 2px 70px orange;
+    border: 3px solid var(--tangerina);
+    box-shadow: 2px 2px 70px rgb(230, 151, 5);
     /* box-shadow: 10px 10px 10px rgba(10, 218, 190, 0.57); */
     border-radius: 6px; 
     
@@ -112,7 +129,7 @@ div#form-login > div.campo-entrada > input {
     max-width: 45vw;
     height: 30px;
     background-color: rgb(183, 197, 180);
-    box-shadow: 2px 2px rgb(8, 67, 230);
+    box-shadow:  2px 2px 21px  #2364aa;
     margin-top: 10px;
     margin-left: 15px;
   
@@ -120,7 +137,7 @@ div#form-login > div.campo-entrada > input {
 }
 
 div#form-login > div.campo-entrada > input#id-email {
-    background-color: orange;
+    background-color: #ea8c34;
     
     margin-bottom: 0px;
 }
@@ -132,14 +149,27 @@ div.campo-entrada {
     display: flex;
 }
 
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 section#secao1 {
-    width: 80vw;
-    height: 200px;
-    margin: 0px;
+    width: 95vw;
+    height: 310px;
+    margin: 2px 2px;
+  
     position: relative;
     background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
-    background-attachment: scroll;
+    background-position: top center;
+    background-attachment: fixed;
     background-size: cover;
     display: inline-block;
 }
@@ -156,16 +186,69 @@ section#secao1 {
     height: 400px; */
 
 
+ div.assinar {
+    height: 47px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #190b28;
+    text-decoration: none;
+    position: relative;
+    top: 120px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+ }
+
+ div.assinar > a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    color: #ea8c34;
+    position: relative;
+    top: 25%;
+    text-decoration: none;
+ }
 
 section#secao1 > div#plano-basico {
-    color: white;
-    font-weight: 700;
-    background-color: orange;
-    margin: 0px;
+    text-align: center;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    max-width: 230px;
+    height: 30vh;
+    color: #96031a;
+    font-weight: 300;
+    background-color: whitesmoke;
+    position: absolute;
+    display: inline-block;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    margin: auto;
+    margin-top: 4px;
     margin-bottom: 8px;
+    padding: 0px;
+    border-radius: 30px 30px;
+}
+
+div#plano-basico > h4 {
+    font-weight: 600;
+}
+
+div#titulo-basico {
+    display: block;
+    height: 1px;
+
+    background-color: #2364aa;
+   
+    margin: 0px;
+    position: relative;
+    
+    bottom: 9%;
+
+    
 }
 
 section#secao1 > div#plano-basico > span {
+
     color: green;
     font-weight: bolder;
     transform: translateY(5px);
