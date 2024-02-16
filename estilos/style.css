@@ -12,9 +12,14 @@
 }
 
 
-* {
+
+/* css para no minimo 368px, por causa do header*/
+
+
+html {
     margin: 0px;
     padding: 0px;
+    border: 0px;
 }
 
 body {
@@ -49,6 +54,8 @@ header {
     background-size: cover;
     width: 100vw;
     height: 400px;
+    margin: 0px;
+    padding: 0px;
     border-bottom: 30px solid black;
     
 }
@@ -56,9 +63,10 @@ header {
 header > div#form-login {
 
     background-color: #101119;
-    max-width: 90vw;
+    max-width: 70vw;
     height: 150px;
     top: 30%;
+    left: 10%;
     padding: 5px;
     position: relative;
     
@@ -76,18 +84,21 @@ div#form-login > h2 {
     position: relative;
     top: 2%;
     margin: 0px;
+    padding: 0px;
     left: 15%;
     right: 15%;
     font-size: 12px;
 }
 
 div#form-login > div.campo-entrada {
+    
     align-items: center;
+    max-width: 20px;
     margin: 0px;
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 2px;
     /* background-color: green; */
-    width: 50px;
     color: white;
   
     
@@ -96,11 +107,13 @@ div#form-login > div.campo-entrada {
 
 div#form-login > div.campo-entrada > input {
     /* background-color:red; */
+    max-width: 45vw;
+    height: 30px;
     background-color: rgb(183, 197, 180);
     box-shadow: 2px 2px rgb(8, 67, 230);
     margin-top: 10px;
     margin-left: 15px;
-    height: 30px;
+  
   
 }
 
@@ -127,11 +140,12 @@ section#secao1 {
 div#imagem-lateral-1 {
     background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
     background-size: cover;
-    position: relative;
+    transform: translateX(43%);
     border-radius: 20px;
-   
+   margin: 0px;
+   padding: 0px;
     width: 200px;
-    height: 700px;
+    height: 400px;
 }
 
 
