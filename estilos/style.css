@@ -13,7 +13,7 @@
 
 
 
-/* css para no minimo 368px, por causa do header*/
+/* css para no minimo 300px, por causa do header*/
 
 
 html {
@@ -24,22 +24,23 @@ html {
 
 body {
     margin: 0px;
-}
-
-header  {
-    color: white;
    
-  
-
 }
+
+
+
+
 
 nav {
     width: 100vw;
     height: 30px;
+    margin: 0px;
+    padding: 0px;
     background-color: black;
 }
 
 nav > h1 {
+    margin: 0px;
     color: white;
     background-color: black;
     display: inline-block;
@@ -52,7 +53,7 @@ header {
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
-    width: 100vw;
+    max-width: 100vw;
     height: 400px;
     margin: 0px;
     padding: 0px;
@@ -132,20 +133,37 @@ div.campo-entrada {
 
 
 section#secao1 {
-    display: flex;
+    width: 97vw;
+    height: 200px;
+    left: 4px;
+    position: relative;
+    background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
+    background-size: cover;
+    display: inline-block;
 }
 
 
 
-div#imagem-lateral-1 {
+/* div#imagem-lateral-1 {
     background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
     background-size: cover;
-    transform: translateX(43%);
-    border-radius: 20px;
-   margin: 0px;
-   padding: 0px;
-    width: 200px;
-    height: 400px;
+    /* transform: translateX(53%); */
+    /* border-radius: 20px; */
+    /* padding: 0px;
+    width: 100vw;
+    height: 400px; */
+
+
+
+section#secao1 > div#plano-basico {
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+section#secao1 > div#plano-basico > span {
+
+
+
 }
 
 
