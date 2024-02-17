@@ -163,9 +163,8 @@ h3 {
 
 section#secao1 {
     width: 95vw;
-    height: 310px;
+    height: 610px;
     margin: 2px 2px;
-  
     position: relative;
     background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
     background-position: top center;
@@ -191,11 +190,11 @@ section#secao1 {
     border-radius: 0px 0px 30px 30px;
     background-color: #190b28;
     text-decoration: none;
-    position: relative;
-    top: 120px;
-    overflow: hidden;
+    display: block;
     margin: 0px;
+    margin-top: -8px;
     padding: 0px;
+
  }
 
  div.assinar > a {
@@ -211,8 +210,8 @@ section#secao1 > div#plano-basico {
     text-align: center;
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    max-width: 230px;
-    height: 30vh;
+    width: 54vw;
+    min-height: 32vh;
     color: #96031a;
     font-weight: 300;
     background-color: whitesmoke;
@@ -222,10 +221,12 @@ section#secao1 > div#plano-basico {
     bottom: 20%;
     left: 20%;
     right: 20%;
-    margin: auto;
-    margin-top: 4px;
-    margin-bottom: 8px;
-    padding: 0px;
+  
+    margin-top: 8px;
+    margin-bottom: 0px;
+    padding: 3px;
+ 
+    padding-bottom: 3px;
     border-radius: 30px 30px;
 }
 
@@ -233,25 +234,32 @@ div#plano-basico > h4 {
     font-weight: 600;
 }
 
-div#titulo-basico {
-    display: block;
-    height: 1px;
 
-    background-color: #2364aa;
-   
+div.titulo-cartao {
+    display: block;
+    top: 2%;
     margin: 0px;
     position: relative;
     
-    bottom: 9%;
+    bottom: 3%;
 
+}
+
+div#titulo-basico > h4 {
+    color: greenyellow;
     
 }
+
+
+
 
 section#secao1 > div#plano-basico > span {
 
     color: green;
     font-weight: bolder;
     transform: translateY(5px);
+    margin: 0px;
+    margin-bottom: 2px;
 }
 
 
