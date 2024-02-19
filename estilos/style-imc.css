@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+div#entrada-dados {
+    width: 90vw;
+    height: 50vh;
+    background-color: green;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#entrada-dados > input {
+    width: 25vw;
+}
