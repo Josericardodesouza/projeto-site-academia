@@ -16,10 +16,33 @@
     <p>Insira suas informações para, a partir do cálculo feito com a fórmula de Harris Benedict, saber quantas calorias voce deve ingerir diariamente: </p>
 
 
-    <label for=""></label>
-    <input type="checkbox" name="masc" id="masc" value="masc">
-    
+    <label for="masc">Masculino</label>
+    <input type="radio" name="sexo" id="sexo" value="masc" checked>
 
+    <label for="fem">Feminino</label>
+    <input type="radio" name="sexo" id="sexo" value="fem">
+
+    <br>
+
+    <label for="peso">Informe seu peso (Kg): </label>
+    <input type="number" name="ent-peso" id="ent-peso" required  min="3" max="6" size="4">
+
+    <br>
+
+    <label for="ent-altura">Informe sua altura: </label>
+    <input type="number" name="ent-altura" id="ent-altura" required min="2" max="3">
+
+    <br>
+
+    <label for="ent-idade">Informe sua idade: </label>
+    <input type="number" name="ent-idade" id="ent-idade" required placeholder="" min="2" max="2">
+
+    <br>
+
+    <button onclick="calcularGEB()">calcular</button>
+
+    <script src="js/geb.js"></script>
+    
 
     
 </body>
