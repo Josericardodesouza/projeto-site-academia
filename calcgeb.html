@@ -15,12 +15,12 @@
 
     <p>Insira suas informações para, a partir do cálculo feito com a fórmula de Harris Benedict, saber quantas calorias voce deve ingerir diariamente: </p>
 
-
-    <label for="masc">Masculino</label>
-    <input type="radio" name="sexo" id="sexo" value="masc" checked>
+<h1>Cálculo Masculino</h1>
+    <!-- <label for="masc">Masculino</label>
+    <input type="radio" name="masc" id="sexo" value="masc" checked>
 
     <label for="fem">Feminino</label>
-    <input type="radio" name="sexo" id="sexo" value="fem">
+    <input type="radio" name="masc" id="sexo" value="fem"> -->
 
     <br>
 
@@ -29,7 +29,7 @@
 
     <br>
 
-    <label for="ent-altura">Informe sua altura: </label>
+    <label for="ent-altura">Informe sua altura (em centímetros): </label>
     <input type="number" name="ent-altura" id="ent-altura" required min="2" max="3">
 
     <br>
@@ -41,8 +41,15 @@
 
     <button onclick="calcularGEB()">calcular</button>
 
+
+    
+
+    <p id="saidaGeb"></p>
+
     <script src="js/geb.js"></script>
     
+
+    <!--A div final, do resultado, vai ficar da cor do genero, com sobreamento-->
 
     
 </body>
