@@ -6,13 +6,40 @@
     <title>Calculadora de Calorias</title>
 </head>
 <body>
-    <h1>Calculadora de Calorias</h1>
+    <h1>Calculadora de Calorias - Macronutrientes</h1>
     <p>Descubra o valor calórico de seus alimentos e te recomendaremos um de nossos planos</p>
 
-    <label for=""></label>
-    <input type="number" name="" id="" required placeholder="" min="" max="">
+    <label for="ent-carboidratos">Carboidratos (g)</label>
+    <input type="number" name="carboidratos" id="ent-carboidratos" required placeholder="ex: 30g" min="1" max="4">
+
+    <label for="ent-proteinas">Proteínas (g)</label>
+    <input type="number" name="proteinas" id="ent-proteinas" required placeholder="ex: 12g" min="1" max="4">
+
+    <label for="ent-lipidios">Lipídios (gorduras totais)(g) </label>
+    <input type="number" name="lipidios" id="ent-lipi" required placeholder="ex: 10,5g" min="1" max="4">
+
+    <br>
+
+    <button onclick="calcularCal()">Calcular</button>
+
+    <br>
 
     <h2>resultados</h2>
+
+    <br>
+
+    <h3 id="saida-carb"></h3>
+    <p id="saida-carb2"></p>
+
+    <br>
+
+    <h3 id="saida-prot"></h3>
+    <p id="saida-prot2"></p>
+
+    <br>
+
+    <h3 id="saida-lipi"></h3>
+    <p id="saida-lipi2"></p>
 
     <table>
 
