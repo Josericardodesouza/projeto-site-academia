@@ -51,9 +51,7 @@ function calcularGebMasc() {
   var geb = (66.47 + totalPeso + totalAlt - totalIdade);
 
    if (geb > 66.47 ) {
-
-   document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL"
-
+    document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL"
    }
 
   }
@@ -72,15 +70,9 @@ function calcularGebMasc() {
      var geb = (655.1 + totalPeso + totalAlt - totalIdade);
 
      if (geb > 655.1) {
-
-        
-     document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL"
-
-
+      document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL"
      }
 
-
-    
   }
 
 
