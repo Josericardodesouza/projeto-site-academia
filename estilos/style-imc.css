@@ -1,16 +1,92 @@
 @charset "UTF-8";
 
-div#entrada-dados {
-    background-color: red;
-    width: 90vw;
-    height: 50vh;
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    
+    --tangerine: #EB7F04;
+    --blackbean: #3C1518;
+    --bloodred: #69140E;
+    --honolulu: #2176AE;
+    --rosequartz: #9A8C98;
+  
+
+}
+
+
+html {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    color: var(--bloodred);
+    background-color: var(--rosequartz);
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+
+h1 {
+    color: var(--bloodred);
+    color: var(--tangerina);
+    width: 100vw;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
     margin: auto;
-    margin-top: 25%;
-    margin-bottom: 25%;
+
+}
+
+p {
+    color: var(--bloodred);
+    text-align: center;
+    font-size: 0.8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 100vw;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../imagens/imgs-background/pexels-annushka-ahuja-7992184.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    
+}
+
+div#entrada-dados {
+    background-color: rgba(0, 0, 0, 0.579);
+    width: 69vw;
+    height: 500px;
+
+    position: absolute;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   padding: 0px;
+
+   
+}
+
+div#entrada-dados > label {
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+
+    display: inline-block;
+    
 }
 
 div#entrada-dados > input {
-    width: 25vw;
+    
 }
+

@@ -13,17 +13,13 @@
 
 
 :root {
-    --tangerina: #ea8c34;
-    --darkPurple: #190b28;
-    --greenBlue: #2364aa;
-    --sepia: #704214;
-    --carmine: #96031a;
 
-    --var1: #FA6D0F;
-    --var2: #FE940C;
-    --var3: #BA6D3A;
-    --var4: #7A5A45;
-    --var5: #3B3430;
+    --tangerine: #EB7F04;
+    --blackbean: #3C1518;
+    --bloodred: #69140E;
+    --honolulu: #2176AE;
+    --rosequartz: #9A8C98;
+ 
 
     /* é melhor pegar uma cor unica e ir pegando os tons mais escuros dela, igual  o site do tailwind*/
 

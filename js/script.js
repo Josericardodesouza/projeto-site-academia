@@ -28,5 +28,6 @@ function calcular() {
     
 
     document.getElementById("saida-frase").innerHTML = "O seu IMC é de " + imc
+    document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " / (" + altura + " x 2)";
 
     }
