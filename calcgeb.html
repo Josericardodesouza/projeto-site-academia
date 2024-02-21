@@ -16,11 +16,11 @@
     <p>Insira suas informações para, a partir do cálculo feito com a fórmula de Harris Benedict, saber quantas calorias voce deve ingerir diariamente: </p>
 
 <h1>Cálculo Masculino</h1>
-     <label for="masc">Masculino</label>
+    <!-- <label for="masc">Masculino</label>
     <input type="radio" name="gen" id="sexo" value="masc" >
 
     <label for="fem">Feminino</label>
-    <input type="radio" name="gen" id="sexo" value="fem" > 
+    <input type="radio" name="gen" id="sexo" value="fem"> -->
 
     <br>
 
@@ -39,12 +39,36 @@
 
     <br>
 
-    <button onclick="calcularGEB()">calcular</button>
+    <button onclick="calcularGebMasc()">cálculo masculino</button>
+    <button onclick="calcularGebFem()">calculo feminino</button>
+
+    <p id="saidaGeb"></p>
+
+    <!-- <p id="saidaGebMasc"></p> -->
 
 
     
 
-    <p id="saidaGeb"></p>
+
+
+    <!-- <label for="pesoFem">Informe seu peso (Kg): </label>
+    <input type="number" name="ent-pesoFem" id="ent-pesoFem" min="3" max="6" size="4" required>
+
+    <br>
+
+    <label for="ent-alturaFem">Informe sua altura (em centímetros): </label>
+    <input type="number" name="ent-alturaFem" id="ent-alturaFem" min="2" max="3" required>
+
+    <br>
+
+    <label for="ent-idadeFem">Informe sua idade: </label>
+    <input type="number" name="ent-idadeFem" id="ent-idadeFem" placeholder="" min="2" max="2" required>
+
+ <button onclick="calcularGebFem()">Calcular</button> -->
+
+    
+
+    <!-- <p id="saidaGebFem"></p> -->
 
     <script src="js/geb.js"></script>
     
