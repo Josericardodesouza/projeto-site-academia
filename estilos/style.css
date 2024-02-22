@@ -44,7 +44,9 @@ html {
 }
 
 body {
+  
     margin: 0px;
+    border: 0px;
 }
 
 
@@ -52,19 +54,39 @@ body {
 
 
 nav {
+    align-items: center;
+    color: black;
     width: 100vw;
-    height: 30px;
+    height: 60px;
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: orange;
+    text-align: center;
+   
+   
+   
+
+
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+
   
 }
 
-nav > h1 {
-    margin: 0px;
+
+nav >  p {
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1em;
     color: white;
-    background-color: black;
-    display: inline-block;
+    
+
+  
+
+    
+  
     text-decoration: none;
     
 }
