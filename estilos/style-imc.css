@@ -25,10 +25,13 @@ html {
 }
 
 body {
+    width: 100vw;
+    border: 0px;
     color: var(--bloodred);
     background-color: var(--rosequartz);
-    background-color: whitesmoke;
+
     margin: 0px;
+    padding: 0px;
 }
 
 
@@ -56,6 +59,7 @@ section {
     margin: 0px;
     padding: 0px;
     background-image: url(../imagens/imgs-background/pexels-annushka-ahuja-7992184.jpg);
+    background-size: 100vw;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
@@ -67,6 +71,10 @@ div#entrada-dados {
     background-color: rgba(0, 0, 0, 0.579);
     width: 69vw;
     height: 500px;
+
+    margin: 0px;
+
+ 
 
     position: absolute;
     font-size: 25px;
