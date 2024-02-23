@@ -39,6 +39,8 @@
     --bloodred: #69140E;
     --honolulu: #2176AE;
     --rosequartz: #9A8C98;
+    --cor1: #59876D;
+    --cor2: #CFB094;
  
 
     /* é melhor pegar uma cor unica e ir pegando os tons mais escuros dela, igual  o site do tailwind*/
@@ -146,13 +148,153 @@ ul {
 
 
 
-
-
-
 main {
     margin: 0px;
     padding: 0px;
 }
+
+
+main > a {
+    color: black;
+    text-decoration: none;
+}
+
+div#texto-inicial {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+section.secao-calculos {
+    width: 100vw;
+    height: 190px;
+    background-color: white;
+    margin: 0px;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+.container {
+    /* background-color: rgba(255, 0, 0, 0.379); */
+    background-color: var(--cor2);
+    width: 220px;
+    color: black;
+    display: block;
+    height: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 4px;
+    position: relative;
+  
+    
+  
+ 
+}
+
+
+.img-container {
+    /* background-color:forestgreen; */
+    height: 100px;
+    margin: 0px;
+    display: block;
+    
+    
+
+}
+
+.txt-container {
+    height: 87px;
+    /* background-color: rgba(255, 255, 0, 0.523); */
+    margin: 0px;
+    display: block;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+ div#div-imc {
+    margin-right: 4px;
+ }
+
+ div#div-geb {
+    margin-left: 4px;
+ }
+
+
+.txt-container > p {
+    margin: 0px;
+    margin-bottom: 8px;
+    display: block;
+   
+}
+
+.txt-container > h4 {
+    font-size: 1em;
+    display: block;
+    margin: 0px;
+    margin-bottom: 1px;
+}
+
+
+div.botao-ir > a {
+    color: orange;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    text-decoration: none;
+    top: 25%;
+
+}
+
+
+div.botao-ir {
+    align-items: center;
+    border-radius: 9px;
+    display: block;
+    background-color: cadetblue;
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    left: 25%;
+   
+ 
+}
+
+
+
+
+div#imagem-imc {
+    background-image: url(../imagens/imgs-background/pexels-annushka-ahuja-7992184.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+}
+
+div#imagem-calccal {
+    background-image: url(../imagens/imgs-background/pexels-dana-tentis-750073.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#imagem-geb {
+    background-image: url(../imagens/imgs-background/pexels-rosemary-ketchum-1564470.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
 
 
 h3 {
@@ -161,7 +303,7 @@ h3 {
 }
 
 
-section#secao1 {
+/* section#secao1 {
     width: 95vw;
     height: 610px;
     margin: 2px 2px;
@@ -171,7 +313,7 @@ section#secao1 {
     background-attachment: fixed;
     background-size: cover;
     display: inline-block;
-}
+} */
 
 
 
@@ -184,7 +326,7 @@ section#secao1 {
     width: 100vw;
     height: 400px; */
 
-
+/* 
  div.assinar {
     height: 47px;
     border-radius: 0px 0px 30px 30px;
@@ -260,7 +402,7 @@ section#secao1 > div#plano-basico > span {
     transform: translateY(5px);
     margin: 0px;
     margin-bottom: 2px;
-}
+} */
 
 
 
