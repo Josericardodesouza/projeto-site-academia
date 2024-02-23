@@ -2,6 +2,26 @@
 /* versão mobile first, de 680px para baixo*/
 
 
+@font-face {
+    font-family: 'JackportRegular', Verdana, Geneva, Tahoma, sans-serif ;
+    src: url(../fontes/JackportRegularNcv-BeY3.ttf);
+}
+
+@font-face {
+    font-family: 'SportageDemo';
+    src: url(../fontes/SportageDemo-DO0A1.otf);
+}
+
+@font-face {
+    font-family: 'SportageDemoItalic';
+    src: url(../fontes/SportageDemoitalic-p735r.otf);
+}
+
+@font-face {
+    font-family: 'Sui';
+    src: url(../fontes/sui-generis-free/sui\ generis\ rg.otf);
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -53,41 +73,74 @@ body {
 
 
 
-nav {
+header {
     color: black;
     width: 100vw;
     height: 60px;
     margin: 0px;
     padding: 0px;
     background-color: orange;
-    display: inline;
-    position: fixed;
+    display: flex;
     top: 0px;
-    z-index: 2;
+    
+    
+   
 
   
 }
 
 
-nav > h5 {
+header > h5 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 20px;
     margin: 0px;
     margin-right: 5px;
-    display: inline-block;
+
 }
 
-nav > a {
-    font-family: 'Work Sans', Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    display: inline-block;
-    position: relative;
-    left: 8%;
 
+header > span {
+    color: red;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+
+
+
+
+ul {
+    width: 30px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-style: normal;
+    font-size: small;
+    background-color: red;
     text-decoration: none;
-    
+    display: flex;
+
+}
+
+
+
+
+#menu {
+    display: none;
+    background-color: green;
+    margin: 0;
+    height: 20px;
+    flex-basis: 20px;
+    flex-wrap: wrap;
+  
+
+}
+
+#menu > a {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 
