@@ -9,15 +9,17 @@
     <title>IMC</title>
 </head>
 
-
-
-
-
 <nav>
-    <a href="../index.html">Home</a>
-    <a href="calccal.html">Calculadora de Calorias</a>
-    <a href="calcgeb.html">Calculadora de GEB</a>
+   <h5>FITNESS PLUS</h5>
+   <span onclick="cliqueMenu()" class="material-symbols-outlined">home</span> 
+  
 </nav>
+
+<a href="../index.html">Home</a>
+<a href="calccal.html">Calculadora de Calorias</a>
+<a href="calcgeb.html">Calculadora de GEB</a>
+
+
 
 <h1>Cálculo de Indice de Massa Corporal</h1>
 
@@ -29,34 +31,36 @@
         <p>O <abbr>IMC</abbr> é uma forma de calcular se o indivíduo está em forma ou não, por meio do cálculo simples de seu peso dividido pela altura multiplicada por 2</p>
     </div>
 </header>
+<br>
+<main>
+     <section>
+            <div id="entrada-dados">
+                <label for="entrada-peso"> Digite seu peso </label>
+                <input type="number" id="entrada-peso" required min="0" max="3" size="5"></input>
+                <br>
+                <label for="entrada-altura">Digite sua altura </label>
+                <input type="number" name="entrada-altura" id="entrada-altura" required min="0" max="3"></input>
+                <hr>
 
-<section>
-        <div id="entrada-dados">
-            <label for="entrada-peso"> Digite seu peso </label>
-            <input type="number" id="entrada-peso" required min="0" max="3" size="5"></input>
+                <div id="container-btn">
+                    <button onclick="calcular()">Enviar</button>
+                </div>
 
-            <br>
-
-            <label for="entrada-altura">Digite sua altura </label>
-            <input type="number" name="entrada-altura" id="entrada-altura" required min="0" max="3"></input>
-
-            <hr>
-
-            <div id="container-btn">
-                <button onclick="calcular()">Enviar</button>
             </div>
-        </div>
-        <br>
-
-<div id="saida-dados">
-
-     <p id="saida"></p>
-     <p id="saida-frase"></p>
-    <p id="saida-form"></p>
+            
     
-</div>
+    <div id="saida-dados">
+         <p id="saida"></p>
+         <p id="saida-frase"></p>
+        <p id="saida-form"></p>
+    </div>
 
-</section>
+    <hr>
+
+    <a onclick="resetar()"><span class="material-symbols-outlined">restart_alt</span></a>
+    
+    </section>
+</main>
 
     <script src="js/script.js"></script>
     

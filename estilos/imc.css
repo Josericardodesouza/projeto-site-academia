@@ -18,5 +18,99 @@ nav {
 
 }
 
+nav > h5 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+nav > span.material-symbols-outlined {
+    font-size: 39px;
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header {
+    width: 100vw;
+    height: 120px;
+    background-color: aqua;
+    position: relative;
+    margin-bottom: 210px;
+
+
+}
+
+div#texto-header {
+    color: orange;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.884), black);
+    width: 100vw;
+    height: 200px;
+    margin-bottom: 50px;
+    top: 90%;
+    position: absolute;
+    
+}
+
+main {
+    height: 100vh;
+    background-color: red;
+    margin: 0px;
+    padding: 0px;
+   position: relative;
+   justify-items: center;
+
+}
+
+section {
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    background-color: green;
+    left: 25%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+div#entrada-dados {
+    background-color: yellow;
+}
+
+div#saida-dados {
+    height: 20px;
+    width: 25vw;
+    background-color: blue;
+}
+
+hr {
+    color: white;
+}
+
+a > .material-symbols-outlined {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
