@@ -43,24 +43,31 @@ h1 {
 }
 
 header {
+    background-image: url(../imagens/imgs-background/pexels-beyzahzah-15319043.jpg);
+    background-position: center center;
+    background-size: cover;
     width: 100vw;
-    height: 120px;
-    background-color: aqua;
+    height: 230px;
     position: relative;
-    margin-bottom: 210px;
-
+    margin-bottom: 97px;
 
 }
 
 div#texto-header {
     color: orange;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.884), black);
+    background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
-    height: 200px;
-    margin-bottom: 50px;
-    top: 90%;
+    bottom: 0;
+    height: 50%;
     position: absolute;
-    
+    font-size: 0.9em;
+}
+
+div#texto-header > h2, p {
+    text-align: justify;
+    padding: 2px;
+    margin-left: 0.4px;
+    margin-right: 1px;
 }
 
 main {

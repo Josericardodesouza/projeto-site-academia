@@ -18,3 +18,7 @@ desktop: 768 até 1400 ...
 
 
    -->
+
+
+
+   em dispostivos menores que 199 de widht, colocar o botão de home em cima do titulo e colocar placeholder, tirando as letras que fazem a linha quebrar
