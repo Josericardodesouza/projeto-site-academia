@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav {
+    color: black;
+    width: 100vw;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: orange;
+    display: flex;
+    top: 0px;
+
+}
+
+
+

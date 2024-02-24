@@ -1,3 +1,20 @@
 celular: 299 até 644 aumentar espaçamento das divs e fazer as configurações de space-between
 tablet: 576 até 767
 desktop: 768 até 1400 ...
+
+
+
+
+  <!-- esquema login kroton
+    div-card (com padding)
+      form 
+       img
+       hr
+       h4
+       div text
+       input
+       input
+       bottom
+
+
+   -->
