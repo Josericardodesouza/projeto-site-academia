@@ -171,7 +171,7 @@ section.secao-calculos {
     height: 190px;
     background-color: white;
     margin: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 400px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -301,6 +301,74 @@ h3 {
     margin: 0px;
     padding: 0px;
 }
+
+
+section.imagem-texto {
+    /* display: flex; somente em tamanho de telas de tablet*/
+    margin-bottom: 12px;
+}
+
+
+section.imagem-texto1 {
+    /* as sections vão ter cor de fundo para quando serem para desktops, preto e laranja, ou laranja e o azul bonito, ai as letras vão ter as cores preto ou laranja, ou o azul, ve aí*/
+}
+
+div.imagem {
+    width: 80%;
+    height: 250px;
+    display: block;
+
+}
+
+div.imagem > img {
+    width: 100%;
+    height: 100%;
+}
+
+div.texto {
+
+    background-color: white;
+    width: 80%;
+    height: 210px;
+    /* display: block; */
+   
+}
+
+div#img-1 {
+    background-image: url(../imagens/pexels-ivan-samkov-4164772.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 2px;
+}
+
+div#img-2 {
+    background-image: url(../imagens/pexels-jonathan-borba-13896072.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 2px;
+}
+
+div#img-3 {
+    background-image: url(../imagens/pexels-anush-gorak-1431283.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* section#secao1 {
