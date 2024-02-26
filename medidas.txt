@@ -4,6 +4,14 @@ desktop: 768 até 1400 ...
 
 
 
+largura padrão min: 234 px max: 457 
+
+para tablets min: 458px max: 766 ( imagens recortadas, menu lateral some e as opções ficam no nav)
+
+para desktops: 768px max: 2000px
+
+
+
 
   <!-- esquema login kroton
     div-card (com padding)
@@ -22,3 +30,8 @@ desktop: 768 até 1400 ...
 
 
    em dispostivos menores que 199 de widht, colocar o botão de home em cima do titulo e colocar placeholder, tirando as letras que fazem a linha quebrar
+
+
+
+
+   fazer o footer no ultimo dia do projeto e  colocar o texto de lá aqui para guardar. 

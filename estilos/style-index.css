@@ -314,7 +314,7 @@ section.imagem-texto1 {
 }
 
 div.imagem {
-    width: 80%;
+    width: 100%;
     height: 250px;
     display: block;
 
@@ -357,6 +357,8 @@ div#img-3 {
     background-position: center top;
     margin-left: 2px;
 }
+
+
 
 
 
