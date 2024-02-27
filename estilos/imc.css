@@ -79,7 +79,7 @@ main {
 
 }
 
-section {
+section#container-entrada {
     background-color: pink;
     position: relative;
     /*margin: auto;  somente em telas maiores*/
@@ -88,39 +88,80 @@ section {
  
 }
 
-div#container {
-    width: 80%;
-    height: 50%;
-    position: absolute;
-    background-color: green;
-    left: 10%;
-    top: 5%;
-}
 
 
 div#entrada-dados {
+    width: 70%;
     background-color: yellow;
     position: absolute;
+    left: 11%;
+    right: 11%;
+  
     
 }
 
 div#saida-dados {
     
-    height: 20px;
-    width: 50%;
-    margin: auto;
+    height: 100px;
+    width: 70%;
     background-color: blue;
-
     position: absolute;
+    top: 56%;
+    left: 11%;
+    right: 11%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+  
+
 }
+
+div#saida-dados > p {
+    width: 70%;
+    background-color: orange;
+    margin-bottom: 0.5px;
+}
+
+/* div#container-btn {
+    display: block;
+    background-color: aquamarine;
+    width: 30px;
+    height: 20px;
+}
+
+div#container-btn > a {
+    width: 50%;
+    height: 10%;
+    bottom: 0%;
+    display: block;
+    background-color: white; */
+    
+
 
 hr {
     color: white;
 }
 
+
+
+a > span.material-symbols-outlined {
+    width: 24px;
+    position: absolute;
+    background-color: aquamarine;
+    display: block;
+   
+  
+
+ 
+
+
+}
+/* 
 a > .material-symbols-outlined {
    
-}
+} */
 
 
 

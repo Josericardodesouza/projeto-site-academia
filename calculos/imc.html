@@ -33,34 +33,35 @@
 </header>
 <br>
 <main>
-     <section>
-            <div id="container">
-                <div id="entrada-dados">
-                    <label for="entrada-peso"> Digite seu peso </label>
-                    <input type="number" id="entrada-peso" required min="0" max="3" size="5"></input>
-                    <br>
-                    <label for="entrada-altura">Digite sua altura </label>
-                    <input type="number" name="entrada-altura" id="entrada-altura" required min="0" max="3"></input>
-                    <hr>
-                    <div id="container-btn">
-                        <button onclick="calcular()">Enviar</button>
-                    </div>
-                </div>
-                
-                    
-                    <div id="saida-dados">
-                         <p id="saida"></p>
-                         <p id="saida-frase"></p>
-                        <p id="saida-form"></p>
-                    </div>
-                
-                    <hr>
-                
-                    <a onclick="resetar()"><span class="material-symbols-outlined">restart_alt</span></a>
+       <section id="container-entrada">
+            <div id="entrada-dados">
+                <label for="entrada-peso"> Digite seu peso </label>
+                 <input type="number" id="entrada-peso" required min="0" max="3" size="5"></input>
+                 <br>
+                <label for="entrada-altura">Digite sua altura </label>
+                <input type="number" name="entrada-altura" id="entrada-altura" required min="0" max="3"></input>
+
+                 <a onclick="calcular()"><span class="material-symbols-outlined">calculate</span></a>
+                            <!-- Enviar -->
             </div>
-    
-    </section>
-</main>
+       </section>
+           
+            
+       <section id="container-saida">
+            <div id="saida-dados">
+                <p>saida 1</p>
+                <p id="saida">saida</p>
+                     
+                <p>saida 2</p>
+                <p id="saida-frase">frase</p>
+
+                 <p>saida 3</p>
+                 <p id="saida-form">frase</p>
+             </div>
+             <hr>
+            <a onclick="resetar()"><span class="material-symbols-outlined">restart_alt</span></a>           
+       </section>
+ </main>
 
     <script src="../js/script.js"></script>
     
