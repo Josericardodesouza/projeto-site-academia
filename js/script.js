@@ -1,6 +1,22 @@
 
+function aparecer () {
+    var botao = document.getElementById("executar");
+    var container = document.getElementById("section-oculta")
 
-function calcular() {
+    botao.addEventListener('click', function(){
+        if(container.style.display == 'block') {
+            container.style.display = 'none';
+        } else {
+            container.style.display = 'block';
+        }
+    })
+
+}
+    
+
+
+ function calcular() {
+
     var peso = document.getElementById("entrada-peso").value;
 
     var altura = document.getElementById("entrada-altura").value;
@@ -24,10 +40,38 @@ function calcular() {
     } else if (imc >= 40.1) {
         document.getElementById("saida").innerHTML = "Obesidade 3(mórbida)"
     }
-
-    
-
     document.getElementById("saida-frase").innerHTML = "O seu IMC é de " + imc
     document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " / (" + altura + " x 2)";
+ }
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var btn = document.querySelector("botao");
+// var resultado = document.querySelector("container-saida");
+
+// btn.addEventListener('click', function(){
+//    if (resultado.style.display === 'block') {
+//       resultado.style.display = 'none';
+//    } else {
+//       resultado.style.display = 'block';
+
+// )}
+
+
+
+
+
+
+

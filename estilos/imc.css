@@ -130,7 +130,12 @@ div#entrada-dados > input {
 }
 
 
-section#container-saida {
+section#section-oculta {
+    display:  none ;
+}
+
+
+div#container-saida {
     background-color: aqua;
     display: flex;
     justify-content: center;

@@ -42,21 +42,23 @@
                 <input type="number" name="entrada-altura" id="entrada-altura" required min="0" max="3"></input>
                 <br>
 
-                 <a onclick="calcular()"><span class="material-symbols-outlined">calculate</span></a>
+                 <a id="executar" onclick="aparecer(); calcular()"><span class="material-symbols-outlined">calculate</span></a>
                             <!-- Enviar -->
             </div>
        </section>
            
             
-       <section id="container-saida">
-            <div id="saida-dados">
-                <p id="saida-frase"></p>
-                 
-                 <p id="saida-form"></p>
-             </div>
-           <!-- <hr> -->
-            <a onclick="resetar()"><span class="material-symbols-outlined">restart_alt</span></a>           
+       <section id="section-oculta">
+           <div id="container-saida">
+                <div id="saida-dados">
+                    <p id="saida-frase"></p>
+           
+                     <p id="saida-form"></p>
+                 </div>
        </section>
+           <!-- <hr> -->
+            <a class="botao" onclick="resetar()"><span class="material-symbols-outlined">restart_alt</span></a>           
+       </div>
  </main>
 
     <script src="../js/script.js"></script>
