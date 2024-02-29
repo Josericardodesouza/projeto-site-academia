@@ -59,7 +59,7 @@ div#texto-header {
     background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
     bottom: 0;
-    height: 50%;
+    height: 53%;
     position: absolute;
     font-size: 0.9em;
 }
@@ -70,3 +70,57 @@ div#texto-header > h2, p {
     margin-left: 0.4px;
     margin-right: 1px;
 }
+
+section#container-entrada {
+    width: 100vw;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+div#entrada-dados {
+    width: 90%;
+    
+    background-color: whitesmoke;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+   
+
+    /* display: flex;
+    width: 80%;
+    background-color: yellow;
+    position: absolute;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ section#container-entrada > div#entrada-dados > hr {
+  
+    width: 196px;
+    height: 1px;
+    margin-bottom: 2px;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+   
+}
+
+
+
+
+section#container-entrada > a {
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    bottom: 0;
+}
+
+
+
+
