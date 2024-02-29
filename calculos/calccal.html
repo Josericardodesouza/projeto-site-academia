@@ -3,34 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/cal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <title>Calculadora de Calorias</title>
 </head>
 <body>
+    <nav>
+        <h5>FITNESS PLUS</h5>
+        <span onclick="cliqueMenu()" class="material-symbols-outlined">home</span> 
+     </nav>
+     <a href="../index.html">Home</a>
+     <a href="calccal.html">Calculadora de Calorias</a>
+     <a href="calcgeb.html">Calculadora de GEB</a>
+    
+
+
     <h1>Calculadora de Calorias - Macronutrientes</h1>
-    <p>Descubra o valor calórico de seus alimentos e te recomendaremos um de nossos planos</p>
+    <!-- <p>Descubra o valor calórico de seus alimentos e te recomendaremos um de nossos planos</p> -->
 
-    <label for="ent-carboidratos">Carboidratos (g)</label>
-    <input type="number" name="carboidratos" id="ent-carboidratos" required placeholder="ex: 30g" min="1" max="4" size="4">
+    <header>
+        <div id="texto-header">
+            <h2>O que é o Calculo de Calorias?</h2>
+            <p>O <abbr>IMC</abbr> é uma forma de calcular se o indivíduo está em forma ou não, por meio do cálculo simples de seu peso dividido pela altura multiplicada por 2</p>
+        </div>
+    </header>
+    <br>
+    <main>
+     
+    <section id="container-entrada">
+        <label for="ent-carboidratos">Carboidratos (g)</label>
+        <input type="number" name="carboidratos" id="ent-carboidratos" required placeholder="ex: 30g" min="1" max="4" size="4">
+        <br>
+        <label for="ent-proteinas">Proteínas (g)</label>
+        <input type="number" name="proteinas" id="ent-proteinas" required placeholder="ex: 12g" min="1" max="4" size="4">
+        <br>
+        <label for="ent-lipidios">Lipídios (gorduras totais)(g) </label>
+        <input type="number" name="lipidios" id="ent-lipi" required placeholder="ex: 10,5g" min="1" max="4" size="4">
+        <br>
+        <button onclick="calcularCal()">Calcular</button>
+    </section>
 
     <br>
-
-    <label for="ent-proteinas">Proteínas (g)</label>
-    <input type="number" name="proteinas" id="ent-proteinas" required placeholder="ex: 12g" min="1" max="4" size="4">
-
-    <br>
-
-    <label for="ent-lipidios">Lipídios (gorduras totais)(g) </label>
-    <input type="number" name="lipidios" id="ent-lipi" required placeholder="ex: 10,5g" min="1" max="4" size="4">
-
-    <br>
-
-    <button onclick="calcularCal()">Calcular</button>
-
-    <br>
-
     <h2>resultados</h2>
-
     <br>
+
+   <section id="secao-cal" class="secao-saida">
+        <div id="saida-cal" class="container-saida">
+            <h1>Calorias totais</h1>
+            <p id="saida-totalCal"></p>
+
+            <div>
+                <p id="calculoCal"></p>
+            </div>
+
+            
+
+
+        </div>
+
+   </section>
 
     <h3 id="saida-carb"></h3>
     <p id="saida-carb2"></p>
@@ -46,9 +77,9 @@
     <p id="saida-lipi2"></p>
 
 
-    <h1>Calorias totais</h1>
-    <p id="saida-calc"></p>
-    <p id="saida-total"></p>
+    
+    
+   
 
     <table>
 
