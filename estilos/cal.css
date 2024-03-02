@@ -45,7 +45,7 @@ h1 {
 
 
 header {
-    background-image: url(../imagens/imgs-background/pexels-beyzahzah-15319043.jpg);
+    background-image: url(../imagens/imgs-background/imagem-rótulo.jpeg); /* deve ser a imagem de um rótulo*/
     background-position: center center;
     background-size: cover;
     width: 100vw;
@@ -112,6 +112,11 @@ div#entrada-dados {
 }
 
 
+h4 {
+    text-align: center;
+}
+
+
 
 
 section#container-entrada > a {
@@ -120,6 +125,67 @@ section#container-entrada > a {
     background-color: red;
     bottom: 0;
 }
+
+section#section-oculta {
+    background-color: rgb(101, 96, 96);
+    width: 100vw;
+    height: 900px;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+
+
+
+.secao-saida {
+    width: 100vw;
+    height: 70px;
+    background-color: orange;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+.container-saida {
+    width: 100%;
+    background-color: green;
+    display: block;
+    position: absolute;
+}
+
+
+.container-formula {
+    width: 50%;
+    background-color: aqua;
+    display: block;
+    position: absolute;
+    left: 25%;
+    bottom: 3px;
+    text-align: center;
+    border-radius: 11px;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

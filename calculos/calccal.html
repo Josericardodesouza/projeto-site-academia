@@ -42,7 +42,7 @@
             <label for="ent-lipidios">Lipídios (gorduras totais)(g) </label>
             <input type="number" name="lipidios" id="ent-lipi" required placeholder="ex: 10,5g" min="1" max="4" size="4">
             <hr />
-            <a id="calcular" onclick="aparecer(); calcularCal()"><span class="material-symbols-outlined">calculate</span></a>
+            <a id="calcular" onclick="calcularCal()"><span class="material-symbols-outlined">calculate</span></a>
         </div>
       
     </section>
@@ -55,38 +55,48 @@
    <section id="section-oculta">
     
        <section id="secao-cal" class="secao-saida">
-            <div id="saida-cal" class="container-saida">
-                <h4>Calorias totais</h4>
-                <p id="saida-totalCal"></p>
-                <div id="saida-formCal" class="saida-form">
-                    <p id="formCal"></p>
+           <h4>Calorias totais</h4>
+           <h4 id="saida-totalCal">168.8</h4>
+
+                <div id="saida-formCal" class="container-formula">
+                    <p id="formCal">fórmula:</p>
                 </div>
-            </div>
        </section>
+
+       <h2>Fórmulas</h2>
 
        
         <section id="secao-carb" class="secao-saida">
-            <h6 id="saida-totalCarb"></h6>
-            <div id="saida-formCarb">
-                <p id="formCarb"></p>
+            <h4>Carboidratos</h4>
+            <h4 id="saida-totalCarb" class="formula">56.89</h4>
+            
+
+            <div id="saida-formCarb" class="container-formula">
+                <p id="formCarb">fórmula</p>
             </div>
-            <br>
+
+            
         </section>
 
 
         <section id="secao-prot" class="secao-saida">
-            <h6 id="saida-prot"></h6>
-            <div id="saida-formProt">
-                <p id="formProt"></p>
+            <h4>Proteínas</h4>
+            <h4 id="saida-totalProt">56.98</h4>
+            
+            <div id="saida-formProt" class="container-formula">
+                <p id="formProt">fórmula</p>
             </div>
-            <br>
         </section>
         
         <section id="secao-lipid" class="secao-saida">
-            <h6 id="saida-lipi"></h6>
-            <div id="saida-formLipid">
-                <p id="formLipi"></p>
+            <h4>Lipidios</h4>
+            
+            <h4 id="saida-totallipi">56.78</h4>
+
+            <div id="saida-formLipid" class="container-formula">
+                <p id="formLipi">Fórmula</p>
             </div>
+
         </section>
 
    </section>
