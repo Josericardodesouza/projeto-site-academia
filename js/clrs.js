@@ -27,7 +27,7 @@ function calcularCal() {
 
     document.getElementById("saida-totalLipi").innerHTML = lipidios + "G lipídios"
 
-    document.getElementById("saida-formLipid").innerHTML = lipidios + "X 9 = " + totLipidios + "KCAL"
+    document.getElementById("formLipi").innerHTML = lipidios + "X 9 = " + totLipidios + "KCAL"
 
    
 

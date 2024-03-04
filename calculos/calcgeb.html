@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/geb.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Cálculo de GEB</title>
 </head>
 <body>
+        <nav>
+            <h5>FITNESS PLUS</h5>
+            <span onclick="cliqueMenu()" class="material-symbols-outlined">home</span> 
+         </nav>
+         <a href="../index.html">Home</a>
+         <a href="calccal.html">Calculadora de Calorias</a>
+         <a href="calcgeb.html">Calculadora de GEB</a>
+
+
     <h1>Calculadora de Gasto Energético Basal (GEB) ou Taxa Metabólica Basal</h1>
     <h2>O que é?</h2>
+    
+    <header>
+        <div id="texto-header">
+            <h2>O que é o Calculo de Gasto Energético Basal?</h2>
+            <p>Insira suas informações para, a partir do cálculo feito com a fórmula de Harris Benedict, saber quantas calorias voce deve ingerir diariamente: </p>
+        </div>
+    </header>
     <br>
 
     <p>eXPLICACÃO</p>
     <br>
 
-    <p>Insira suas informações para, a partir do cálculo feito com a fórmula de Harris Benedict, saber quantas calorias voce deve ingerir diariamente: </p>
+    
 
-<h1>Cálculo Masculino</h1>
+
     <!-- <label for="masc">Masculino</label>
     <input type="radio" name="gen" id="sexo" value="masc" >
 
@@ -24,51 +42,48 @@
 
     <br>
 
-    <label for="peso">Informe seu peso (Kg): </label>
-    <input type="number" name="ent-peso" id="ent-peso" min="3" max="6" size="4" required>
+    <main>
+        <section id="section-entrada">
 
-    <br>
+           <div id="container-entrada">
+               <label for="ent-peso">Informe seu peso (Kg): </label>
+               <input type="number" name="ent-peso" id="ent-peso" min="3" max="6" size="4" required>
+               
+               <label for="ent-altura">Informe sua altura (em centímetros): </label>
+               <input type="number" name="ent-altura" id="ent-altura" min="2" max="3" required>
+        
+               <label for="ent-idade">Informe sua idade: </label>
+               <input type="number" name="ent-idade" id="ent-idade" placeholder="" min="2" max="2" required>
+               
+               <div id="botoes">
+                   <a id="botao-masc" class="botao" onclick="calcularGebMasc()">cálculo masculino</a>
+                   <a id="botao-fem" class="botao" onclick="calcularGebFem()">calculo feminino</a>
+               </div>
+           </div>
 
-    <label for="ent-altura">Informe sua altura (em centímetros): </label>
-    <input type="number" name="ent-altura" id="ent-altura" min="2" max="3" required>
-
-    <br>
-
-    <label for="ent-idade">Informe sua idade: </label>
-    <input type="number" name="ent-idade" id="ent-idade" placeholder="" min="2" max="2" required>
-
-    <br>
-
-    <button onclick="calcularGebMasc()">cálculo masculino</button>
-    <button onclick="calcularGebFem()">calculo feminino</button>
-
-    <p id="saidaGeb"></p>
-
-    <!-- <p id="saidaGebMasc"></p> -->
-
-
-    
-
-
-
-    <!-- <label for="pesoFem">Informe seu peso (Kg): </label>
-    <input type="number" name="ent-pesoFem" id="ent-pesoFem" min="3" max="6" size="4" required>
-
-    <br>
-
-    <label for="ent-alturaFem">Informe sua altura (em centímetros): </label>
-    <input type="number" name="ent-alturaFem" id="ent-alturaFem" min="2" max="3" required>
-
-    <br>
-
-    <label for="ent-idadeFem">Informe sua idade: </label>
-    <input type="number" name="ent-idadeFem" id="ent-idadeFem" placeholder="" min="2" max="2" required>
-
- <button onclick="calcularGebFem()">Calcular</button> -->
-
-    
-
-    <!-- <p id="saidaGebFem"></p> -->
+        </section>
+        
+        <section id="oculta">
+            <div id="saida">
+                <p id="saidaGeb"></p>
+                <a><span class="material-symbols-outlined">restart_alt</span></a>
+            </div>
+        </section>
+        <!-- <p id="saidaGebMasc"></p> -->
+        
+        <!-- <label for="pesoFem">Informe seu peso (Kg): </label>
+        <input type="number" name="ent-pesoFem" id="ent-pesoFem" min="3" max="6" size="4" required>
+        <br>
+        <label for="ent-alturaFem">Informe sua altura (em centímetros): </label>
+        <input type="number" name="ent-alturaFem" id="ent-alturaFem" min="2" max="3" required>
+        <br>
+        <label for="ent-idadeFem">Informe sua idade: </label>
+        <input type="number" name="ent-idadeFem" id="ent-idadeFem" placeholder="" min="2" max="2" required>
+        
+         <button onclick="calcularGebFem()">Calcular</button> -->
+        
+        <!-- <p id="saidaGebFem"></p> -->
+    </main>
 
     <script src="../js/geb.js"></script>
     
