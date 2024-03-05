@@ -2,7 +2,7 @@
 /* versão mobile first, de 680px para baixo*/
 
 
-@font-face {
+ /* @font-face {
     font-family: 'JackportRegular', Verdana, Geneva, Tahoma, sans-serif ;
     src: url(../fontes/JackportRegularNcv-BeY3.ttf);
 }
@@ -14,13 +14,13 @@
 
 @font-face {
     font-family: 'SportageDemoItalic';
-    src: url(../fontes/SportageDemoitalic-p735r.otf);
+    src: url(../fontes/SportageDemoitalic-p735r.otf); 
 }
 
 @font-face {
     font-family: 'Sui';
     src: url(../fontes/sui-generis-free/sui\ generis\ rg.otf);
-}
+}  */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -34,6 +34,16 @@
 
 :root {
 
+    /* novas cores*/
+
+    --fulvous: #E98A15;
+    --atomicTangerine: #F98948;
+    --egyptianBlue: #29339B;
+    --coolGray: #A7A5C6;
+    --fernGreen: #3f784c;
+
+/* cores velhas*/
+
     --tangerine: #EB7F04;
     --blackbean: #3C1518;
     --bloodred: #69140E;
@@ -41,7 +51,7 @@
     --rosequartz: #9A8C98;
     --cor1: #59876D;
     --cor2: #CFB094;
- 
+  
 
     /* é melhor pegar uma cor unica e ir pegando os tons mais escuros dela, igual  o site do tailwind*/
 
@@ -94,7 +104,7 @@ header {
 
 header > h5 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Work-Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     font-size: 20px;
     margin: 0px;
@@ -163,6 +173,7 @@ div#texto-inicial {
     margin: 0px;
     padding: 0px;
     text-align: center;
+    font-family: 'Sui', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -306,6 +317,9 @@ h3 {
 section.imagem-texto {
     /* display: flex; somente em tamanho de telas de tablet*/
     margin-bottom: 12px;
+    font-family: 'Kanit';
+
+
 }
 
 
