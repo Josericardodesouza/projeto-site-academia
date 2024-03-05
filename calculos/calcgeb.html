@@ -56,19 +56,21 @@
                <input type="number" name="ent-idade" id="ent-idade" placeholder="" min="2" max="2" required>
                
                <div id="botoes">
-                   <a id="botao-masc" class="botao" onclick="calcularGebMasc()">cálculo masculino</a>
-                   <a id="botao-fem" class="botao" onclick="calcularGebFem()">calculo feminino</a>
+                   <button id="botao-masc"  onclick="calcularGebMasc(); aparecer()">cálculo masculino</button>
+                   <button id="botao-fem"  onclick="calcularGebFem(); aparecer()">calculo feminino</button>
                </div>
            </div>
 
         </section>
         
-        <section id="oculta">
-            <div id="saida">
-                <p id="saidaGeb"></p>
-                <a><span class="material-symbols-outlined">restart_alt</span></a>
-            </div>
-        </section>
+        
+            <section id="oculta">
+                <div id="saida">
+                    <p id="saidaGeb"></p>
+                    <a><span class="material-symbols-outlined">restart_alt</span></a>
+                </div>
+            </section>
+        
         <!-- <p id="saidaGebMasc"></p> -->
         
         <!-- <label for="pesoFem">Informe seu peso (Kg): </label>

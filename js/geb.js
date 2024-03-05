@@ -34,10 +34,27 @@
 // }
 
 
+function aparecer() {
+  var botaoUm = document.getElementById("botao-masc");
+  var botaoDois = document.getElementById("botao-fem");
+  var botao = botaoUm || botaoDois;
+  var container = document.getElementById("saida");
+
+  botao.addEventListener('click', function(){
+      if(container.style.display == 'block') {
+          container.style.display = 'none';
+      } else {
+          container.style.display = 'block';
+      }
+  })
+
+}
+
 
 
 
 function calcularGebMasc() {
+
 
   var pesoInfor = document.getElementById("ent-peso").value
   var totalPeso = (13.75 * pesoInfor);
@@ -57,6 +74,8 @@ function calcularGebMasc() {
   }
 
   function calcularGebFem() {
+
+ 
 
     var pesoInfor = document.getElementById("ent-peso").value
      var totalPeso = (9.56 * pesoInfor);

@@ -123,21 +123,27 @@ a#botao-fem {
     background-color: pink;
 }
 
+
+
 section#oculta {
     background-color: blueviolet;
     width: 100vw;
     height: 150px;
-    display: flex;
+    display: block;
     position: relative;
     justify-content: center;
 
 }
 
+
 div#saida {
     background-color: chartreuse;
     width: 90%;
     height: 30px;
-    display: block;
+    display: none;
     position: absolute;
 
 }
+
+
+
