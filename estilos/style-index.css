@@ -85,7 +85,7 @@ body {
 
 
 
-header {
+nav#nav-topo {
     color: black;
     width: 100vw;
     height: 60px;
@@ -102,7 +102,7 @@ header {
 }
 
 
-header > h5 {
+nav#nav-topo > h5 {
     color: black;
     font-family: 'Work-Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
@@ -113,7 +113,7 @@ header > h5 {
 }
 
 
-header > span {
+nav#nav-topo  > span {
     color: red;
     position: absolute;
     right: 0;
@@ -156,6 +156,25 @@ ul {
 }
 
 
+header {
+    display: flex;
+    position: relative;
+    color: white;
+    width: 100vw;
+    height: 300px;
+    background-image: url(../imagens/gigachad-recortado.jpg);
+    background-size: cover;
+    background-position: top center;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+header > p {
+    background-color: #eb7f0443;
+    font-size: 2em;
+}
+
+
 
 
 main {
@@ -170,7 +189,9 @@ main > a {
 }
 
 div#texto-inicial {
+    font-size: 0.7em;
     margin: 0px;
+    margin-bottom: 50px;
     padding: 0px;
     text-align: center;
     font-family: 'Sui', Verdana, Geneva, Tahoma, sans-serif;
