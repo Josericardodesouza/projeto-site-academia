@@ -1,3 +1,17 @@
+function aparecer() {
+    var botao = document.getElementById("calcular");
+    var container = document.getElementById("section-oculta");
+
+    botao.addEventListener('click', function(){
+        if (container.style.display == 'block') {
+            container.style.display = 'none';
+        } else {
+            container.style.display = 'block';
+        }
+    }
+    )
+}
+
 function calcularCal() {
     var carboidratos = document.getElementById("ent-carboidratos").value;
 

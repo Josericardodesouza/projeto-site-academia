@@ -34,27 +34,61 @@
 // }
 
 
-function aparecer() {
-  var botaoUm = document.getElementById("botao-masc");
-  var botaoDois = document.getElementById("botao-fem");
-  var botao = botaoUm || botaoDois;
-  var container = document.getElementById("saida");
+// function aparecer() {
+//   var botaoUm = document.getElementById("botao-masc");
+//   var botaoDois = document.getElementById("botao-fem");
+//   var botao = botaoUm || botaoDois;
+//   var container = document.getElementById("saida");
 
-  botao.addEventListener('click', function(){
-      if(container.style.display == 'block') {
-          container.style.display = 'none';
-      } else {
-          container.style.display = 'block';
-      }
-  })
+//   botao.addEventListener('click', function(){
+//       if(container.style.display == 'block') {
+//           container.style.display = 'none';
+//       } else {
+//           container.style.display = 'block';
+//       }
+//   })
 
-}
+// }
 
+
+  // const btn = document.get('botao')
+  // const container = document.getElementById('oculta')
+
+  // btn.addEventListener('click', function() {
+  //   if (container.style.display === "block") {
+  //     container.style.display = 'none';
+  //   }else{
+  //     container.style.display = 'block';
+  //   }
+  // }
+  // ) 
+
+
+//  function apareceMasc() {
+//   var btn = document.getElementById("botao-masc");
+//   var container = document.getElementById("oculta");
+
+//   botao.addEventListener('click', function(){
+//       if (container.style.display == 'block') {
+//           container.style.display = 'none';
+//       } else {
+//           container.style.display = 'block';
+//       }
+//   }
+//   )
+// }
+ 
+
+
+
+  
+  
 
 
 
 function calcularGebMasc() {
 
+  var container = document.getElementById("oculta");
 
   var pesoInfor = document.getElementById("ent-peso").value
   var totalPeso = (13.75 * pesoInfor);
@@ -68,15 +102,17 @@ function calcularGebMasc() {
   var geb = (66.47 + totalPeso + totalAlt - totalIdade);
 
    if (geb > 66.47 ) {
-    document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL"
+    container.style.display = 'block';
+    document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL";
+
    }
 
   }
 
   function calcularGebFem() {
 
- 
-
+    var container = document.getElementById("oculta");
+    
     var pesoInfor = document.getElementById("ent-peso").value
      var totalPeso = (9.56 * pesoInfor);
     
@@ -89,10 +125,14 @@ function calcularGebMasc() {
      var geb = (655.1 + totalPeso + totalAlt - totalIdade);
 
      if (geb > 655.1) {
+      container.style.display = 'block';
       document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL"
+    
      }
 
-  }
+  
+
+    }
 
 
 

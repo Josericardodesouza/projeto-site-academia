@@ -104,7 +104,7 @@ div#botoes {
 }
 
 
-a.botao {
+button.a {                                                                                                    
     width: 65px;
     height: 40px;
 
@@ -113,23 +113,24 @@ a.botao {
 
 
 
-a#botao-masc {
+button#botao-masc {
     background-color: aquamarine;
     
 
 }
 
-a#botao-fem {
+button#botao-fem {
     background-color: pink;
 }
 
 
 
 section#oculta {
+    color: white;
     background-color: blueviolet;
     width: 100vw;
     height: 150px;
-    display: block;
+    display: none;
     position: relative;
     justify-content: center;
 
@@ -140,7 +141,7 @@ div#saida {
     background-color: chartreuse;
     width: 90%;
     height: 30px;
-    display: none;
+    display: block;
     position: absolute;
 
 }
