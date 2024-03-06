@@ -93,6 +93,7 @@ nav#nav-topo {
     padding: 0px;
     background-color: orange;
     display: flex;
+    justify-content: space-between;
     top: 0px;
     
     
