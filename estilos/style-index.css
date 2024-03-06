@@ -86,20 +86,21 @@ body {
 
 
 nav#nav-topo {
-    color: black;
+  
     width: 100vw;
     height: 60px;
     margin: 0px;
     padding: 0px;
-    background-color: orange;
+    background-color: var(--atomicTangerine);
     display: flex;
     justify-content: space-between;
     top: 0px;
     
     
-   
+}
 
-  
+nav#nav-topo > img {
+    display: block;
 }
 
 
@@ -171,8 +172,13 @@ header {
 }
 
 header > p {
-    background-color: #eb7f0443;
-    font-size: 2em;
+    display: block;
+    position: absolute;
+    left: 0;
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background-color: #eb7f0443; */
+    font-size: 1.8em;
+   text-indent: 2px;
 }
 
 
@@ -214,16 +220,19 @@ section.secao-calculos {
 
 .container {
     /* background-color: rgba(255, 0, 0, 0.379); */
-    background-color: var(--cor2);
+    /* background-color: var(--cor2); */
+    /* background-color: var(--fulvous); #E98A15*/
+    background-image: linear-gradient(to right, #e98a15, #e28502);
+    
     width: 220px;
     color: black;
     display: block;
     height: 190px;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
     position: relative;
-  
+    box-shadow: 2.0px 2.0px 6px black;
     
   
  
@@ -248,6 +257,7 @@ section.secao-calculos {
     justify-content: center;
 
     text-align: center;
+    font-size: 0.9em;
 
 }
 
@@ -262,6 +272,8 @@ section.secao-calculos {
 
 
 .txt-container > p {
+    /* color: #ac460a; */
+    color: white;
     margin: 0px;
     margin-bottom: 8px;
     display: block;
@@ -291,13 +303,21 @@ div.botao-ir {
     align-items: center;
     border-radius: 9px;
     display: block;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: black;
     width: 50%;
     height: 20%;
     position: absolute;
     left: 25%;
    
  
+}
+
+main > p {
+    color: #E98A15;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: 'Kanit',  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
