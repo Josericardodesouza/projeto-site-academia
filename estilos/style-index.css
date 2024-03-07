@@ -177,8 +177,13 @@ header > p {
     left: 0;
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* background-color: #eb7f0443; */
-    font-size: 1.8em;
+    font-size: 1.9em;
    text-indent: 2px;
+   margin: 0px;
+   padding: 0px;
+   padding-top: 10px;
+   padding-right: 29px;
+  
 }
 
 
@@ -295,6 +300,7 @@ div.botao-ir > a {
     position: absolute;
     text-decoration: none;
     top: 25%;
+   
 
 }
 
@@ -309,6 +315,7 @@ div.botao-ir {
     height: 20%;
     position: absolute;
     left: 25%;
+    cursor: pointer;
    
  
 }
@@ -362,6 +369,7 @@ section.imagem-texto {
     font-family: 'Kanit';
 
 
+
 }
 
 
@@ -373,6 +381,10 @@ div.imagem {
     width: 100%;
     height: 250px;
     display: block;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 8px 8px;
+    /* border: 2px solid black; */
 
 }
 
@@ -383,7 +395,8 @@ div.imagem > img {
 
 div.texto {
 
-    background-color: white;
+    background-color: transparent;
+    padding-left: 12px;
     width: 80%;
     height: 210px;
     /* display: block; */
@@ -395,7 +408,7 @@ div#img-1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-left: 2px;
+    /* margin-left: 2px; */
 }
 
 div#img-2 {
@@ -403,7 +416,7 @@ div#img-2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-right: 2px;
+    /* margin-right: 2px; */
 }
 
 div#img-3 {
@@ -411,7 +424,24 @@ div#img-3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    margin-left: 2px;
+    /* margin-left: 2px; */
+}
+
+
+footer {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: #e28502;
+    text-align: center;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+footer > p {
+    margin: 0px;
+    padding: 2px 3px 0px 3px;
 }
 
 
