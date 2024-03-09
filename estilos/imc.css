@@ -170,8 +170,8 @@ div#entrada-dados {
     flex-direction: column;
     align-items: center;
 
-    border-radius: 8px;
-    box-shadow: 2.0px 2.0px 7px black;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
     /* border-radius: 8%; se juntos, este tem prioridade */
     /* bottom: 0; */
   
@@ -236,12 +236,17 @@ div#container-saida {
 div#saida {
 
     width: 85%;
-    height: 150px;
-    background-color: violet;
+    height: 200px;
+    background-image: linear-gradient(to right, #e98a15, #e28502);
+    /* background-color: violet; */
     position: relative;
     justify-content: center;
     display: inline-flex;
+    box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.797);
+    top: 2%;
+    border-radius: 0px 0px 8px 8px;
     
+    /* 2.0px 2.0px 7px black */
     
 
     /* display: flex;
@@ -273,16 +278,16 @@ div#saida {
 } */
 
 
-div#saida > p#saida-frase {
+div#saida > p#saida-res {
     text-align: center;
-    color: orange;
+    color: black;
     width: 80%;
     height: 30px;
-    background-color: black;
+    background-color: whitesmoke;
     display: block;
     position: absolute;
     margin: 0px;
-    top: 10%;
+    top: 15px;
     margin-bottom: 2px;
     border-radius: 9px 9px;
    
@@ -292,21 +297,36 @@ div#saida > p#saida-frase {
 
 }
 
+div#saida > p#saida-frase {
+    font-size: small;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 30px;
+    margin: 0;
+    top: 63px;
+    border-radius: 9px 9px;
+    display: block;
+    position: absolute;
+
+}
+
 
 div#saida >  p#saida-form {
     text-align: center;
-    color: orange;
+    color: black;
     width: 80%;
     height: 30px;
-    bottom: 39%;
-    background-color: black;
+    top: 114px;
+    /* bottom: 28%; */
+    background-color: whitesmoke;
     display: block;
     position: absolute;
     margin: 0;
     border-radius: 9px 9px;
    
 }
-
 /* div#saida-dados > div#btn-restart {
     width: 70%;
     display: block;

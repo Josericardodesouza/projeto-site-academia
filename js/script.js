@@ -26,24 +26,40 @@ function aparecer () {
     var imc = total.toFixed(1);
 
     if (imc < 17) {
-        document.getElementById("saida").innerHTML = "Voce esta abaixo do peso"
+        document.getElementById("saida-frase").innerHTML = "Voce esta muito abaixo do peso"
     } else if (imc >= 17.0 && imc <= 19.0) {
-        document.getElementById("saida").innerHTML = "Voce esta abaixo do peso"
+        document.getElementById("saida-frase").innerHTML = "Voce esta abaixo do peso"
     } else if (imc >= 18.50 && imc <= 25.0) {
-        document.getElementById("saida").innerHTML = "Voce esta com o peso normal"
+        document.getElementById("saida-frase").innerHTML = "Voce esta com o peso normal"
     } else if (imc >= 25.01 && imc <= 30.0) {
-        document.getElementById("saida").innerHTML = "Voce esta acima do peso"
+        document.getElementById("saida-frase").innerHTML = "Voce esta acima do peso"
     } else if (imc >= 30.0 && imc <= 35.0) {
-        document.getElementById("saida").innerHTML = "Obesidade 1"
+        document.getElementById("saida-frase").innerHTML = "Obesidade 1"
     } else if (imc >= 35.01 && imc <= 40.0) {
-        document.getElementById("saida").innerHTML = "Obesidade 2(severa)"
+        document.getElementById("saida-frase").innerHTML = "Obesidade 2(severa)"
     } else if (imc >= 40.1) {
-        document.getElementById("saida").innerHTML = "Obesidade 3(mórbida)"
+        document.getElementById("saida-frase").innerHTML = "Obesidade 3(mórbida)"
     }
-    document.getElementById("saida-frase").innerHTML = "O seu IMC é de " + imc
+    document.getElementById("saida-res").innerHTML = "O seu IMC é de " + imc
     document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " / (" + altura + " x 2)";
  }
 
+
+ function resetar() {
+    // var entPeso = document.getElementById('entrada-peso').value
+    // var entAltura = document.getElementById('entrada-altura').value
+    var container = document.getElementById("section-oculta");
+     if(container.style.display == 'block') {
+            document.getElementById('saida-res').innerHTML = "";
+            document.getElementById('saida-frase').innerHTML = "";
+            document.getElementById('saida-form').innerHTML = "";
+
+        } else {
+         
+        }
+
+
+ }
 
 
 

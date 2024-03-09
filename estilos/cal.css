@@ -73,22 +73,26 @@ div#texto-header > h2, p {
 
 section#container-entrada {
     width: 100vw;
-    height: 200px;
-    background-color: blue;
+    height: 150px;
+    /* background-color: blue; */
     position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 div#entrada-dados {
-    width: 90%;
-    
-    background-color: whitesmoke;
+    width: 85%;
+    height: 100%;
+    padding: 2px;
+    background-image: linear-gradient(to right, #e98a15, #e28502);
+    /* background-color: whitesmoke; */
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
   
    
 
@@ -99,7 +103,7 @@ div#entrada-dados {
     flex-direction: column;
     align-items: center; */
 }
-
+/* 
  section#container-entrada > div#entrada-dados > hr {
   
     width: 196px;
@@ -109,13 +113,17 @@ div#entrada-dados {
     display: inline-block;
     position: absolute;
    
-}
+} */
 
 
 h4 {
     text-align: center;
 }
 
+div#entrada-dados > input {
+    width: 20%;
+    
+}
 
 
 
@@ -126,10 +134,14 @@ section#container-entrada > a {
     bottom: 0;
 }
 
+h2 {
+    text-align: center;
+}
+
 section#section-oculta {
     background-color: rgb(101, 96, 96);
     width: 100vw;
-    height: 900px;
+    height: 500px;
     margin: 0px;
     padding: 0px;
     display: none;
