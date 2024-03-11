@@ -99,7 +99,9 @@ function calcularGebMasc() {
   var idadeInfor = document.getElementById("ent-idade").value
   var totalIdade = (6.76 * idadeInfor);
 
-  var geb = (66.47 + totalPeso + totalAlt - totalIdade);
+  var total = (66.47 + totalPeso + totalAlt - totalIdade);
+
+  var geb = total.toFixed(2)
 
    if (geb > 66.47 ) {
     container.style.display = 'block';
@@ -122,7 +124,9 @@ function calcularGebMasc() {
      var idadeInfor = document.getElementById("ent-idade").value
      var totalIdade = (4.68 * idadeInfor);
     
-     var geb = (655.1 + totalPeso + totalAlt - totalIdade);
+     var total = (655.1 + totalPeso + totalAlt - totalIdade);
+
+     var geb = total.toFixed(2);
 
      if (geb > 655.1) {
       container.style.display = 'block';

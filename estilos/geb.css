@@ -71,9 +71,10 @@ div#texto-header > h2, p {
 
 
 section#section-entrada {
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: white;
     width: 100vw;
-    height: 302px;
+    height: 195px;
     margin: 0px;
     display: flex;
     position: relative;
@@ -81,9 +82,10 @@ section#section-entrada {
 }
 
 div#container-entrada {
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-image: linear-gradient(to right, #e98a15, #e28502);
     width: 90%;
-    height: 300px;
+    height: 190px;
     margin: 0px;
     display: flex;
     position: absolute;
@@ -91,10 +93,42 @@ div#container-entrada {
     align-items: center;
 }
 
+
+div#container-entrada > label {
+    font-size: 0.9em;
+    color: whitesmoke;
+
+
+}
+
+div#container-entrada > input {
+    width: 20%;
+    height: 19px;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-top: 2px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+div#container-entrada > input:hover {
+    background-color: black;
+    height: 23px;
+    border: none;
+    color: #E98A15;
+
+}
+
+
+
+
 div#botoes {
     width: 100%;
     height: 50px;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     position: absolute;
     justify-content: space-around;
@@ -104,33 +138,62 @@ div#botoes {
 }
 
 
-button.a {                                                                                                    
+/* button.a {                                                                                                    
     width: 65px;
     height: 40px;
 
 
+} */
+
+
+div#botoes {
+    position: absolute;
+    bottom: 0;
+}
+
+button.botao {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: orange;
 }
 
 
 
 button#botao-masc {
-    background-color: aquamarine;
+    width: 72px;
+    height: 40px;
+    background-color: black;
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    border: 2px black;
     
 
 }
 
 button#botao-fem {
-    background-color: pink;
+    width: 72px;
+    height: 40px;
+    background-color: black;
+    /* background-color: pink; */
+    border-radius: 10px;
+    border: 2px black;
 }
 
 
 
 section#oculta {
+    display: none;
+    width: 100vw;
+}
+
+
+
+section#container {
     color: white;
     background-color: blueviolet;
     width: 100vw;
     height: 150px;
-    display: none;
+    display: flex;
     position: relative;
     justify-content: center;
 
@@ -138,12 +201,35 @@ section#oculta {
 
 
 div#saida {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    background-image: linear-gradient(to right, #e98a15, #e28502);
+    text-align: center;
+    color: black;
     width: 90%;
-    height: 30px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+div#saida > p#saida-geb {
     display: block;
     position: absolute;
+    top: 0;
+}
 
+
+div#saida > a > span.material-symbols-outlined {
+    width: 4px;
+    left: 47%;
+    display: block;
+    position: absolute;
+    bottom: 0;
 }
 
 
