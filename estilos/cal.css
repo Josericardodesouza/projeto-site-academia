@@ -183,14 +183,13 @@ section#section-oculta {
 
 .secao-saida {
     width: 100vw;
-    height: 70px;
-    background-color: white;
+    height: 90px;
+    background-color: orange;
     /* background-color: orange; */
     /* left: 7.7%;
     right: 7.7%; */
     margin-bottom: 25px;
     margin-top: 0;
-
     display: inline-block;
     position: relative;
     justify-content: center;

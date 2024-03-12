@@ -81,8 +81,7 @@ body {
     border: 0px;
 }
 
-
-
+ 
 
 
 nav#nav-topo {
@@ -116,46 +115,172 @@ nav#nav-topo > h5 {
 
 
 nav#nav-topo  > span {
-    color: red;
+    color: black;
     position: absolute;
     right: 0;
     padding-right: 20px;
 }
 
+span#span-nav {
+    font-size: 3em;
+}
+
+nav#oculta {
+    display: none;
+}
+
+nav#nav-menu {
+    background-color: red;
+    width: 100vw;
+    max-height: 60px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+div#menuHamb {
+    background-color: green;
+    display: inline-block;
+    flex-wrap: nowrap;
+  
+    width: 70%;
+    height: 26px;
+    margin: 0;
+    padding: 5px 0px 5px 0px;
+}
+
+menu, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    display: inline-block;
+     padding-left: 15px;
+    padding-right: 25px; 
+  
+}
 
 
 
-ul {
-    width: 30px;
-    color: black;
+/* menu#opcoes li {
+    display: block;
+ 
+
+
+} */
+
+div#menuHamb > menu#opcoes > ul > li > a {
+    color: #F98948;
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+li#cad  a {
+    display: block;
+   
+  
+ 
+
+
+}
+
+li#log  a {
+    display: block;
+     
+   
+   
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav#nav-menu {
+    background-color: #69140E;
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    position: relative;
+}
+
+
+div#menu {
+    background-color: blue;
+    width: 100%;
+    display: block;
+    position: absolute;
+    padding: 0;
+   
+}
+
+menu#opcoes > ul {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    color: green;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     font-style: normal;
     font-size: small;
     background-color: red;
     text-decoration: none;
-    display: flex;
-
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
 }
 
+li > a {
+    text-decoration: none;
+   
+    
+} */
 
 
 
-#menu {
-    display: none;
-    background-color: green;
-    margin: 0;
+
+
+
+
+
+
+   
+ 
+
+    
+
+    /* margin: 0;
     height: 20px;
     flex-basis: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap; 
   
 
-}
-
-#menu > a {
-    flex-basis: 100px;
+}*/
+/* #menu > a {
+    /* flex-basis: 200px;
     flex-grow: 1;
-    flex-shrink: 1;
-}
+    flex-shrink: 1; 
+} */
 
 
 header {
@@ -441,6 +566,7 @@ footer {
 }
 
 footer > p {
+    width: 100%;
     margin: 0px;
     padding: 2px 3px 0px 3px;
 }

@@ -226,7 +226,7 @@ div#saida {
 
 
 
-div#saida > p#saida-geb {
+div#saida > p#saida-geb{
     display: block;
     position: absolute;
     bottom: 20px;
