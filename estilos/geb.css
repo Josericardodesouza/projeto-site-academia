@@ -89,6 +89,7 @@ div#container-entrada {
     margin: 0px;
     display: flex;
     position: absolute;
+    bottom: 0;
     flex-direction: column;
     align-items: center;
 }
@@ -105,7 +106,8 @@ div#container-entrada > input {
     width: 20%;
     height: 19px;
     background-color: whitesmoke;
-    color: black;
+    color: black; 
+    /* color: orange; */
     border: 2px solid black;
     border-radius: 2px;
     margin-top: 2px;
@@ -115,10 +117,13 @@ div#container-entrada > input {
 }
 
 div#container-entrada > input:hover {
-    background-color: black;
+     background-color: black; 
+    /* background-color: orange; */
     height: 23px;
     border: none;
-    color: #E98A15;
+    /* color: black; */
+     color: #E98A15; 
+     border: 1px solid white;
 
 }
 
@@ -163,6 +168,7 @@ button#botao-masc {
     width: 72px;
     height: 40px;
     background-color: black;
+    color: rgb(10, 10, 201);
     /* background-color: aquamarine; */
     border-radius: 10px;
     border: 2px black;
@@ -171,6 +177,7 @@ button#botao-masc {
 }
 
 button#botao-fem {
+    color: rgb(217, 36, 96);
     width: 72px;
     height: 40px;
     background-color: black;
@@ -189,8 +196,9 @@ section#oculta {
 
 
 section#container {
-    color: white;
-    background-color: blueviolet;
+    /* color: white;
+    background-color: blueviolet; */
+    background-color: white;
     width: 100vw;
     height: 150px;
     display: flex;
@@ -204,9 +212,10 @@ div#saida {
     /* background-color: chartreuse; */
     background-image: linear-gradient(to right, #e98a15, #e28502);
     text-align: center;
-    color: black;
+    color: white;
+    font-weight: bold;
     width: 90%;
-    height: 60px;
+    height: 70px;
     display: flex;
     position: relative;
     justify-content: center;
@@ -220,11 +229,20 @@ div#saida {
 div#saida > p#saida-geb {
     display: block;
     position: absolute;
-    top: 0;
+    bottom: 20px;
+    text-align: center;
 }
+
+ /* div#saida > p#res {
+    display: block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}  */
 
 
 div#saida > a > span.material-symbols-outlined {
+    font-size: 1.5em;
     width: 4px;
     left: 47%;
     display: block;

@@ -78,6 +78,44 @@
 //   )
 // }
  
+function limiteNumPeso() {
+  var num = 5;
+  var limite = document.getElementById("ent-peso");
+
+  var limiteNum = limite.value;
+
+  if (limiteNum.length > num)
+
+   limite.value = limiteNum.slice(0, num);
+
+
+ }
+
+
+function limiteNumAlt() {
+  var num = 4;
+  var limite = document.getElementById("ent-altura");
+
+  var limiteNum = limite.value;
+
+  if (limiteNum.length > num)
+
+  limite.value = limiteNum.slice(0, num)
+
+}
+
+
+function limiteNumIdade() {
+  var num = 3;
+  var limite = document.getElementById("ent-idade");
+
+  var limiteNum = limite.value;
+
+  if (limiteNum.length > num)
+
+  limite.value = limiteNum.slice(0, num)
+
+}
 
 
 
@@ -105,7 +143,7 @@ function calcularGebMasc() {
 
    if (geb > 66.47 ) {
     container.style.display = 'block';
-    document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL";
+    document.getElementById("saidaGeb").innerHTML =  geb + " KCAL";
 
    }
 
@@ -130,13 +168,15 @@ function calcularGebMasc() {
 
      if (geb > 655.1) {
       container.style.display = 'block';
-      document.getElementById("saidaGeb").innerHTML = "O total deu " + geb + " KCAL"
+      document.getElementById("saidaGeb").innerHTML =  geb + " KCAL"
     
      }
 
   
 
     }
+
+
 
 
 

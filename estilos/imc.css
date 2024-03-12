@@ -210,6 +210,7 @@ div#entrada-dados > input:hover {
     border: none;
     color: #E98A15;
     background-color: black;
+    border: 1px solid white;
 }
 
 

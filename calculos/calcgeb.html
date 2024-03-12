@@ -47,13 +47,13 @@
 
            <div id="container-entrada">
                <label for="ent-peso">Informe seu peso (Kg): </label>
-               <input type="number" name="ent-peso" id="ent-peso" min="3" max="6" size="4" required>
+               <input type="number" name="ent-peso" id="ent-peso"size="4" required oninput="limiteNumPeso()">
                
                <label for="ent-altura">Informe sua altura (em centímetros): </label>
-               <input type="number" name="ent-altura" id="ent-altura" min="2" max="3" required>
+               <input type="number" name="ent-altura" id="ent-altura"  placeholder="ex: 160" required oninput="limiteNumAlt()">
         
                <label for="ent-idade">Informe sua idade: </label>
-               <input type="number" name="ent-idade" id="ent-idade" placeholder="" min="2" max="2" required>
+               <input type="number" name="ent-idade" id="ent-idade" placeholder="" required oninput="limiteNumIdade()">
                
                <div id="botoes">
                    <button type="button" id="botao-masc" class="botao"  onclick="calcularGebMasc()">cálculo masculino</button>
@@ -67,9 +67,11 @@
             
                 <section id="container">
                     <div id="saida">
+                         <!-- <p id="res">Resultado:</p>
+                        <br>  -->
                         <p id="saidaGeb"></p>
+                        <br>
                         <a>
-                            <br>
                             <span class="material-symbols-outlined">restart_alt</span></a>
                     </div>
                 </section>

@@ -139,10 +139,11 @@ div#entrada-dados > input {
 }
 
 div#entrada-dados > input:hover {
-    background-color: black;
+   background-color: black;
    height: 55px;
    border: none;
-  color: #E98A15;
+   color: #E98A15;
+   border: 1px solid white;
 
     /* height: 20.9;
     border: none;
