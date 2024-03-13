@@ -54,9 +54,15 @@ function aparecer () {
             document.getElementById('saida-frase').innerHTML = "";
             document.getElementById('saida-form').innerHTML = "";
 
-        } else {
-         
-        }
+     }
+
+            // box = document.getElementById('div-saida')
+            // if (box.style.display == 'block') {
+            //     box.style.display = 'none'
+            // } else {
+            //     box.style.display = 'block'
+            // }
+            // }
 
 
  }
