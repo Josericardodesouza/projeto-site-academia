@@ -4,9 +4,9 @@ desktop: 768 até 1400 ...
 
 
 
-largura padrão min: 234 px max: 457 
+largura padrão min: 234 px max: 443
 
-para tablets min: 458px max: 766 ( imagens recortadas, menu lateral some e as opções ficam no nav)
+para tablets min: 444px max: 766 ( imagens recortadas, menu lateral some e as opções ficam no nav)
 
 para desktops: 768px max: 2000px
 
