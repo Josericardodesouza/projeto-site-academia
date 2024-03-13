@@ -355,7 +355,7 @@ section.secao-calculos {
     margin: 0px;
     margin-bottom: 400px;
     justify-content: center;
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
    
 }
@@ -403,16 +403,6 @@ section.secao-calculos {
     font-size: 0.9em;
 
 }
-
-
- div#div-imc {
-    margin-right: 4px;
- }
-
- div#div-geb {
-    margin-left: 4px;
- }
-
 
 .txt-container > p {
     /* color: #ac460a; */

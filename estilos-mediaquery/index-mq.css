@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 440px) and (max-width: 766px ) {
+
+
+    section.secao-calculos {
+        width: 100vw;
+        height: 190px;
+        background-color: white;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+
+    div.container {
+        margin: 6px;
+       margin-bottom: 12px;
+
+    }
+    
+    
+
+}
