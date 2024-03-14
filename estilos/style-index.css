@@ -81,7 +81,14 @@ body {
     border: 0px;
 }
 
- 
+
+
+div#btns-links {
+    display: none;
+}
+
+
+
 
 
 nav#nav-topo {
@@ -404,6 +411,16 @@ section.secao-calculos {
 
 }
 
+div#div-imc {
+    margin-right: 4px;
+ }
+
+ div#div-geb {
+    margin-left: 4px;
+ }
+
+
+
 .txt-container > p {
     /* color: #ac460a; */
     color: white;
@@ -495,6 +512,8 @@ section.imagem-texto {
     /* display: flex; somente em tamanho de telas de tablet*/
     margin-bottom: 12px;
     font-family: 'Kanit';
+    /* display: flex;
+    flex-wrap: nowrap; */
 
 
 
@@ -525,8 +544,9 @@ div.texto {
 
     background-color: transparent;
     padding-left: 12px;
-    width: 80%;
-    height: 210px;
+    width: 90%;
+    height: auto;
+    /* height: 210px; */
     /* display: block; */
    
 }

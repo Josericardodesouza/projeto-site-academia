@@ -1,15 +1,28 @@
 
 function aparecer () {
+    var dado1 = document.getElementById("entrada-peso").value;
+    var dado2 = document.getElementById("entrada-altura").value;
     var botao = document.getElementById("executar");
     var container = document.getElementById("section-oculta")
 
-    botao.addEventListener('click', function(){
-        if(container.style.display == 'block') {
-            container.style.display = 'none';
+    botao.addEventListener('click', function() {
+        if (dado1 > 0 && dado2 > 0) {
+            container.style.display = 'block'
         } else {
-            container.style.display = 'block';
+            container.style.display = 'none'
         }
-    })
+    }
+    )
+
+
+
+    // botao.addEventListener('click', function(){
+    //     if(container.style.display == 'block') {
+    //         container.style.display = 'none';
+    //     } else {
+    //         container.style.display = 'block';
+    //     }
+    // })
 
 }
     
@@ -49,10 +62,13 @@ function aparecer () {
     // var entPeso = document.getElementById('entrada-peso').value
     // var entAltura = document.getElementById('entrada-altura').value
     var container = document.getElementById("section-oculta");
+    var divSaida = document.getElementById("saida")
      if(container.style.display == 'block') {
             document.getElementById('saida-res').innerHTML = "";
             document.getElementById('saida-frase').innerHTML = "";
             document.getElementById('saida-form').innerHTML = "";
+            divSaida.style.display = 'none';
+
 
      }
 
