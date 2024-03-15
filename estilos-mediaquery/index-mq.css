@@ -14,23 +14,30 @@
 
     div#btns-links {
         width: 50%;
-        height: 100px;
-        background-color: yellow;
+        height: 60px;
+        background-color: #F98948;
         display: flex;
         position: absolute;
         right: 0;
-        justify-content: center;
+        justify-content: space-between;
     }
 
 
     .btn-nav {
+        padding: 10px 0px 0px 0px;
+        font-size: 14px;
+        font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
-        background-color: red;
+        text-decoration: none;
+        background-color: black;
+        color: whitesmoke;
         display: block;
         min-width: 60px;
         max-width: 200px;
         height: 30px;
-        margin-top: 15px;
+        margin-top: 12px;
+        border-radius: 12px 12px;
+       
     
         
     }
@@ -43,13 +50,13 @@
 
     a#btn-login {
         position: absolute;
-        right: 15%;
+        right: 80px;
     }
 
     nav#nav-topo > img {
         display: block;
         position: absolute;
-        left: 5%;
+        left: 10px;
       
 
     }
@@ -63,10 +70,14 @@
         padding: 0px;
         background-color: var(--atomicTangerine);
         display: flex;
-        justify-content: space-around;
-        position: relative;
+        position: fixed;
+        top: 0;
       
-      
+    
+    }
+
+    div#menuHamb {
+        display: none;
     }
 
 
