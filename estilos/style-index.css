@@ -87,8 +87,14 @@ div#btns-links {
     display: none;
 }
 
-
-
+nav#fixa {
+    top: 0;
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
 
 
 nav#nav-topo {
@@ -100,7 +106,7 @@ nav#nav-topo {
     background-color: var(--atomicTangerine);
     display: flex;
     justify-content: space-between;
-    position: fixed;
+  
    
    
     
@@ -142,7 +148,8 @@ nav#oculta {
 nav#nav-menu {
     background-color: red;
     width: 100vw;
-    height: 60px;
+    max-height: 60px;
+    /* height: 60px; */
     margin: 0;
     padding: 0;
     display: flex;
