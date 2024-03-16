@@ -375,10 +375,11 @@ div#texto-inicial {
 
 section.secao-calculos {
     width: 100vw;
-    height: 190px;
+    height: auto;
     background-color: white;
     margin: 0px;
-    margin-bottom: 400px;
+    /* margin-bottom: 140px; */
+
     justify-content: center;
     display: flex; 
     flex-wrap: wrap;
@@ -488,6 +489,7 @@ main > p {
     font-size: 1.4em;
     text-align: center;
     font-family: 'Kanit',  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 4px;
 }
 
 

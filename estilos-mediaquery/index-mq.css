@@ -2,10 +2,14 @@
 
 
 
-/* configurações para todas as mediaqueries*/
+/* configurações de nav para todas as mediaqueries*/
 
 
 @media(min-width: 325px) {
+
+    nav#nav-topo {
+        border-bottom: 8px solid black;
+    }
 
     nav#nav-topo  > span {
         display: none;
@@ -97,23 +101,29 @@ header {
 }
 
 
-@media screen and (min-width: 454px) {
+/* @media screen and (min-width: 454px) {
 
     .secao-calculos {
-        height: 430px;
+        height: 500px;
+        margin-bottom: 500px;
 
     }
-}
+} */
 
 
 /* ------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 440px) and (max-width: 766px ) {
 
+    /* header > p {
+        width: 30%;
+    } deixa para a tela do tamanho do pc */ 
+
 
     section.secao-calculos {
         width: 100vw;
-        height: 190px;
+        height: auto;
+        /* margin-bottom: 50px; */
         background-color: white;
         justify-content: center;
         display: flex;
@@ -124,7 +134,7 @@ header {
     div.container {
         /* margin: 4px; */
        
-       margin: 0px 5px 5px 5px;
+       margin: 0px 5px 10px 5px;
     }
 
 
@@ -134,6 +144,9 @@ header {
     margin-right: 1;
  }
 
+ main > p {
+    margin-top: 20px;
+ }
 
 }
 
