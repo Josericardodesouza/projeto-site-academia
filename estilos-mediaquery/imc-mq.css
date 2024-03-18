@@ -30,5 +30,11 @@
 
     div#entrada-dados {
         width: 70%;
+
+    }
+
+    div#entrada-dados > input {
+        height: 30px;
+
     }
 }

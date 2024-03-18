@@ -174,9 +174,11 @@ section#container-entrada {
 
 
 div#entrada-dados {
+    font-family: 'Work Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
     display: flex;
     width: 85%;
-    height: 100%;
+    height: auto;
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: yellow; */
     position: absolute;
@@ -188,9 +190,11 @@ div#entrada-dados {
     /* border-radius: 8%; se juntos, este tem prioridade */
     /* bottom: 0; */
   
-   
-  
     
+}
+
+input#entrada-altura {
+    margin-bottom: 20px;
 }
 
 
