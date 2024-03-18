@@ -76,29 +76,40 @@ nav {
     height: 60px;
     margin: 0px;
     padding: 0px;
-    background-color: orange;
+    background-color: #F98948;
     display: flex;
     top: 0px;
+    /* position: fixed;
+    z-index: 0; */
 
 }
 
-nav > h5 {
+
+
+/* nav > h5 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 20px;
     margin: 0px;
     margin-right: 5px;
-}
+} */
 
-nav > span.material-symbols-outlined {
-    font-size: 39px;
+nav > a > span.material-symbols-outlined {
+    height: auto;
+    font-size: 36px;
     color: black;
     position: absolute;
-    top: 5px;
+    top: 2%;
     right: 0;
+    padding: 0;
     padding-right: 20px;
+    margin: 0;
 }
+
+/* nav > a > span.material-symbols-outlined:hover {
+    color: #b25f00;
+} */
 
 h1 {
     font-size: 21px;
@@ -118,6 +129,7 @@ header {
 }
 
 div#texto-header {
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orange;
     background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
@@ -128,8 +140,9 @@ div#texto-header {
 }
 
 div#texto-header > h2, p {
+    width: 89%;
     text-align: justify;
-    padding: 2px;
+    padding: 4px;
     margin-left: 0.4px;
     margin-right: 1px;
 }
@@ -211,6 +224,22 @@ div#entrada-dados > input:hover {
     color: #E98A15;
     background-color: black;
     border: 1px solid white;
+}
+
+
+a#executar {
+    bottom: 0;
+    height: 30px;
+    /* background-color: red; */
+    display: block;
+    font-size: 30px;
+    position: absolute;
+  
+}
+
+a#executar > span {
+   font-size: 30px;
+
 }
 
 
@@ -351,13 +380,7 @@ span#resetar.material-symbols-outlined   {
 
 
 
-span.material-symbols-outlined {
-    display: block;
-    font-size: 30px;
-    position: absolute;
-    top: 80%;
-    right: 43%;
-}
+
 
 /* div#container-btn {
     display: block;
