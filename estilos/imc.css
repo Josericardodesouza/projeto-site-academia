@@ -177,7 +177,9 @@ div#entrada-dados {
     font-family: 'Work Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     display: flex;
-    width: 85%;
+    /* width: 85%; */
+    min-width: 70%;
+    max-width: 85%;
     height: auto;
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: yellow; */

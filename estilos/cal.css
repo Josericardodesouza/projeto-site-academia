@@ -1,8 +1,45 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /* novas cores*/
+
+    --fulvous: #E98A15;
+    --atomicTangerine: #F98948;
+    --egyptianBlue: #29339B;
+    --coolGray: #A7A5C6;
+    --fernGreen: #3f784c;
+
+/* cores velhas*/
+
+    --tangerine: #EB7F04;
+    --blackbean: #3C1518;
+    --bloodred: #69140E;
+    --honolulu: #2176AE;
+    --rosequartz: #9A8C98;
+    --cor1: #59876D;
+    --cor2: #CFB094;
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+
+nav#fixa {
+        top: 0;
+        display: block;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
 }
 
 
@@ -13,9 +50,10 @@ nav {
     height: 60px;
     margin: 0px;
     padding: 0px;
-    background-color: orange;
+    background-color:#F98948;
     display: flex;
-    top: 0px;
+   
+   
 
 }
 
@@ -51,40 +89,63 @@ header {
     width: 100vw;
     height: 230px;
     position: relative;
+    margin: 0px 0px 10px 0px;
 
 }
 
 div#texto-header {
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orange;
+    background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
+    width: 100vw;
+    bottom: 0;
+    height: 50%;
+    position: absolute;
+    font-size: 0.9em;
+    /* color: orange;
     background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
     bottom: 0;
     height: 53%;
     position: absolute;
-    font-size: 0.9em;
+    font-size: 0.9em; */
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+   
 }
 
 div#texto-header > h2, p {
+    width: 89%;
     text-align: justify;
-    padding: 2px;
+    padding: 4px;
     margin-left: 0.4px;
     margin-right: 1px;
 }
 
 section#container-entrada {
     width: 100vw;
-    height: 150px;
+    height: 200px;
     /* background-color: blue; */
     position: relative;
     display: flex;
     justify-content: center;
     margin: 0;
+  
+ 
 }
 
 div#entrada-dados {
-    width: 85%;
-    height: 100%;
-    padding: 2px;
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 85%; 
+    /* min-width: 70%;
+    max-width: 85%; */
+    height: auto;
+    padding: 8px;
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: whitesmoke; */
     position: absolute;
@@ -93,6 +154,7 @@ div#entrada-dados {
     align-items: center;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
+    
   
    
 
@@ -128,19 +190,20 @@ div#entrada-dados > label {
 
 div#entrada-dados > input {
     width: 20%;
-    height: 50px;
+    height: 27px;
     background-color: whitesmoke;
     color: black;
     border: 2px solid black;
     border-radius: 2px;
-    margin-top: 2px;  
+    margin-top: 3px;
+    margin-bottom: 6px;
     font-weight: bold; 
     text-align: center;
 }
 
 div#entrada-dados > input:hover {
    background-color: black;
-   height: 55px;
+   height: 32px;
    border: none;
    color: #E98A15;
    border: 1px solid white;
@@ -151,29 +214,66 @@ div#entrada-dados > input:hover {
     background-color: black; */
 }
 
+a#calcular:hover {
+    color: white;
+    /* color: #69140E; */
+    cursor: pointer;
+}
 
 
-section#container-entrada > a {
-    width: 60px;
+
+ a#calcular {
+    bottom: 0%;
     height: 30px;
-    background-color: red;
-    bottom: 0;
+    /* background-color: red; */
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+   
 }
 
-h2 {
-    text-align: center;
+a#calcular > span {
+    font-size: 31px;
 }
+
+
+
+ /* a#executar {
+    bottom: 0;
+    /* background-color: red; 
+    display: block;
+   
+    position: absolute;
+  
+}
+
+a#executar > span {
+   font-size: 30px;
+
+} */
+
+ h2#h2-result {
+    text-align: center;
+} 
+
+
+
 
 section#section-oculta {
+ 
+    position: relative;
+   
     background-color: white;
     /* background-color: rgb(101, 96, 96); */
     width: 100vw;
     height: 500px;
-    margin: 0px;
+    margin: 100px 0px 0px 0px;
     padding: 0px;
-    display: none;
     /* display: none; */
-    transition: all .10s ease;
+   
+
+    /* display: none; */
+    /* transition: all .10s ease; */
 
 
 }
@@ -182,34 +282,43 @@ section#section-oculta {
 
 
 .secao-saida {
-    width: 100vw;
+    color: white;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    width: 85%;
     height: 90px;
-    background-color: orange;
+    background-color: black;
+    /* background-image: radial-gradient( #e98a15, #e28502); */
+    /* background-color: orange; */
     /* background-color: orange; */
     /* left: 7.7%;
     right: 7.7%; */
-    margin-bottom: 25px;
-    margin-top: 0;
+     margin-bottom: 15px;
+    margin-top: 0; 
     display: inline-block;
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
+    border-radius: 16px;
 
 
 }
 
 
-.container-saida {
+/* .container-saida {
     width: 100%;
     background-color: green;
     display: block;
     position: absolute;
-}
+} */
 
 
 .container-formula {
+    color: black;
+    font-size: 0.9em;
+    font-family: 'Work Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 50%;
-    background-color: aqua;
+    background-image: radial-gradient( #e98a15, #e28502);
+    /* background-color: aqua; */
     display: block;
     position: absolute;
     left: 25%;
@@ -219,6 +328,19 @@ section#section-oculta {
     padding: 3px;
 }
 
+ .numInput {
+    color: aqua;
+    /* color: yellow; */
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #F98948;
+}
 
 
 

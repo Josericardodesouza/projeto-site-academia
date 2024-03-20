@@ -48,7 +48,7 @@ function aparecer () {
     botao.addEventListener('click', function() {
 
         //novo if de teste
-        if (dado1.indexOf(',') !== -1 && dado1.indexOf('.') !== -1 && ) 
+        // if (dado1.indexOf(',') !== -1 && dado1.indexOf('.') !== -1 && ) 
 
 
 

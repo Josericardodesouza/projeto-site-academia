@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/cal.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="../estilos-mediaquery/clrs-mq.css">
     <title>Calculadora de Calorias</title>
 </head>
 <body>
-    <nav>
-        <h5>FITNESS PLUS</h5>
-        <span onclick="cliqueMenu()" class="material-symbols-outlined">home</span> 
-     </nav>
+    <nav id="fixa">
+        <nav>
+            <img src="../imagens/logo/logo-60x60.png" alt="logo do site">
+            <span onclick="cliqueMenu()" class="material-symbols-outlined">home</span>
+         </nav>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
      <a href="../index.html">Home</a>
      <a href="calccal.html">Calculadora de Calorias</a>
      <a href="calcgeb.html">Calculadora de GEB</a>
+     <br>
     
 
 
@@ -27,8 +35,7 @@
             <p>O <abbr>IMC</abbr> é uma forma de calcular se o indivíduo está em forma ou não, por meio do cálculo simples de seu peso dividido pela altura multiplicada por 2</p>
         </div>
     </header>
-
-    <br>
+   
     <main>
      
     <section id="container-entrada">
@@ -42,65 +49,71 @@
             <label for="ent-lipidios">Lipídios (gorduras totais)(g) </label>
             <input type="number" name="lipidios" id="ent-lipi" required placeholder="ex: 10,5g" min="1" max="4" size="4">
             <!-- <hr /> -->
+            <br>
             <a id="calcular" onclick="aparecer(); calcularCal()"><span class="material-symbols-outlined">calculate</span></a>
         </div>
       
     </section>
-    <br>
-    <h2>resultados</h2>
+
     <br>
 
-   <section id="section-oculta">
+    <h2>Resultados</h2>
+
+<!-- < -->
     
-       <section id="secao-cal" class="secao-saida">
-           <h4>Calorias totais</h4>
-           <h4 id="saida-totalCal"></h4>
-
-                <div id="saida-formCal" class="container-formula">
-                    <p id="formCal">fórmula:</p>
-                </div>
-       </section>
-
-       <h2>Fórmulas</h2>
-
-       
-        <section id="secao-carb" class="secao-saida">
-            <h4>Carboidratos</h4>
-            <h4 id="saida-totalCarb" 
-            class="formula"></h4>
-            <br>
-            
-
-            <div id="saida-formCarb" class="container-formula">
-                <p id="formCarb">fórmula</p>
-            </div>
-
-            
-        </section>
-
-
-        <section id="secao-prot" class="secao-saida">
-            <h4>Proteínas</h4>
-            <h4 id="saida-totalProt"></h4>
-            <br>
-            
-            <div id="saida-formProt" class="container-formula">
-                <p id="formProt">fórmula</p>
-            </div>
-        </section>
+       <section id="section-oculta">
+        <!-- <h2 id="h2-result">resultados</h2>  -->
+    
+               <section id="secao-cal" class="secao-saida">
+                   <h3>Calorias totais</h3>
+                   <h4 id="saida-totalCal" class="numInput"></h4>
+                        <div id="saida-formCal" class="container-formula">
+                            <p id="formCal">fórmula:</p>
+                        </div>
+               </section>
+          
+    
+           <h2>Fórmulas</h2>
+    
         
-        <section id="secao-lipid" class="secao-saida">
-            <h4>Lipidios</h4>
-            
-            <h4 id="saida-totalLipi"></h4>
-            <br>
-            <div id="saida-formLipid" class="container-formula">
-                <p id="formLipi">Fórmula</p>
-            </div>
-
-        </section>
-
-   </section>
+                <section id="secao-carb" class="secao-saida">
+                    <h3>Carboidratos</h3>
+                    <h4 id="saida-totalCarb"
+                    class="numInput"></h4>
+        
+                    <br>
+        
+                    <div id="saida-formCarb" class="container-formula">
+                        <p id="formCarb">fórmula</p>
+                    </div>
+                </section>
+        
+        
+                <section id="secao-prot" class="secao-saida">
+                    <h3>Proteínas</h3>
+                    <h4 id="saida-totalProt" class="numInput"></h4>
+                    <br>
+        
+                    <div id="saida-formProt" class="container-formula">
+                        <p id="formProt">fórmula</p>
+                    </div>
+                </section>
+        
+                <section id="secao-lipid" class="secao-saida">
+                    <h3>Lipidios</h3>
+        
+                    <h4 id="saida-totalLipi" class="numInput"></h4>
+                    <br>
+                    <div id="saida-formLipid" class="container-formula">
+                        <p id="formLipi">Fórmula</p>
+                    </div>
+        
+                </section>
+    </class=>
+    
+       </section>
+>
+</main>
 
     
 <!--     
