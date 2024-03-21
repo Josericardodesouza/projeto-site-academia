@@ -122,8 +122,9 @@ header {
     background-position: center center;
     background-size: cover;
     width: 100vw;
-    height: 230px;
+    height: 370px;
     position: relative;
+    margin: 0px 0px 10px 0px;
  
 
 }
@@ -148,10 +149,11 @@ div#texto-header > h2, p {
 }
 
 main {
-    height: 100vh;
+    
     /* background-color: red; */
     margin: 0px;
     padding: 0px;
+    height: auto;
   
 
 }
@@ -161,13 +163,11 @@ section#container-entrada {
     position: relative;
     display: flex;
    justify-content: center;
-  
-   
-   
-   
     /*margin: auto;  somente em telas maiores*/
     width: 100%;
-    height: 150px;
+  
+    
+    margin-bottom: 1px;
  
 }
 
@@ -183,7 +183,8 @@ div#entrada-dados {
     height: auto;
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: yellow; */
-    position: absolute;
+    /* position: absolute; estava causando sobreposição */ 
+    position: relative;
     flex-direction: column;
     align-items: center;
 
@@ -195,7 +196,7 @@ div#entrada-dados {
     
 }
 
-input#entrada-altura {
+input#entrada-peso {
     margin-bottom: 20px;
 }
 
@@ -250,20 +251,22 @@ a#executar > span {
 
 
 section#section-oculta {
-    display: none;
+    display: none; 
     position: relative;
+    height: 500px;
+    
 }
 
 
 div#container-saida {
     width: 100%;
-    height: 300px;
+    height: auto;
     /* background-color: aqua; */
     display: flex;
     position: relative;
-  
     flex-direction: column;
     align-items: center;
+    margin: 10px 0px 0px 0px;
    
   
 }
@@ -271,7 +274,9 @@ div#container-saida {
 
 div#saida {
 
-    width: 85%;
+    /* width: 85%; */
+    min-width: 70%;
+    max-width: 85%;
     height: 200px;
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: violet; */

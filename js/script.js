@@ -8,12 +8,13 @@ function limiteNumeros() {
     var lmtNumAlt = limiteAltura.value
 
     if (lmtNumPeso.length > refPeso) {
-        limitePeso.value = lmtNumPeso.slice(0, refPeso);
+        limitePeso.value = lmtNumPeso.slice(0, refPeso);                             
     }
 
-    if (lmtNumAlt.length > refAltura) {
+    if (lmtNumAlt.length > refAltura) {                                                   
 
     limiteAltura.value = lmtNumAlt.slice(0, refAltura);
+
     }
 
 
@@ -25,8 +26,22 @@ function limiteNumeros() {
 function aparecer () {
     var dado1 = document.getElementById("entrada-peso").value;
     var dado2 = document.getElementById("entrada-altura").value;
-    var botao = document.getElementById("executar");
-    var container = document.getElementById("section-oculta")
+    // var botao = document.getElementById("executar");
+    var container = document.getElementById("section-oculta");
+
+    switch (true) {
+        case (dado1.indexOf(',') === - 1 && dado1.indexOf('.') === -1): 
+             window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de PESO!');
+             container.style.display = 'none';
+             break;
+        case (dado2.indexOf(',') === - 1 && dado2.indexOf('.') === -1):
+            window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!');
+             container.style.display = 'none';
+             break;
+        default:
+            container.style.display = 'block';
+            break;
+    }
     // var confere = 0;
 
     // if (dado1.indexOf(',') === -1 || dado1.indexOf('.') === -1) {
@@ -45,35 +60,35 @@ function aparecer () {
     // }
 
 
-    botao.addEventListener('click', function() {
+    // botao.addEventListener('click', function() {
 
-        //novo if de teste
-        // if (dado1.indexOf(',') !== -1 && dado1.indexOf('.') !== -1 && ) 
-        //tentar substituir os if e else por switch case, fica mais elegante e prático. obg Deus
+    //     //novo if de teste
+    //     // if (dado1.indexOf(',') !== -1 && dado1.indexOf('.') !== -1 && ) 
+    //     //tentar substituir os if e else por switch case, fica mais elegante e prático. obg Deus
 
 
 
-        //if original ele ve se dado1 e dado2 é maior que 1, que e o valor inserido no input pelo usuário
-        // agora tem que verificar se os dado1 e dado2 são maiores que 1 e tem o . e , no input
-       // mas o condicional do if fica muito grande
-        if ( dado1 > 0 && dado2 > 0) {
-            container.style.display = 'block'
-         } else {
-             container.style.display = 'none'
-         }
+    //     //if original ele ve se dado1 e dado2 é maior que 1, que e o valor inserido no input pelo usuário
+    //     // agora tem que verificar se os dado1 e dado2 são maiores que 1 e tem o . e , no input
+    //    // mas o condicional do if fica muito grande
+    //     if ( dado1 > 0 && dado2 > 0) {
+    //         container.style.display = 'block'
+    //      } else {
+    //          container.style.display = 'none'
+    //      }
 
         
 
-        if (altura.indexOf(',') === -1 && altura.indexOf('.') === -1) {
-            window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!')
-         }
-     // icnrementar esses ifs no if do botao
+    //     if (altura.indexOf(',') === -1 && altura.indexOf('.') === -1) {
+    //         window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!')
+    //      }
+    //  // icnrementar esses ifs no if do botao
     
-         if (peso.indexOf(',') === -1 && peso.indexOf('.') === -1) {
-            window.alert('Você deve inserir um ponto(.) ou virgula(,) no campo de PESO!')
-         } 
-    }
-    )
+    //      if (peso.indexOf(',') === -1 && peso.indexOf('.') === -1) {
+    //         window.alert('Você deve inserir um ponto(.) ou virgula(,) no campo de PESO!')
+    //      } 
+    // }
+    
 
     
 }
@@ -111,14 +126,14 @@ function aparecer () {
     var imc = total.toFixed(1);
 
 
-     if (altura.indexOf(',') === -1 && altura.indexOf('.') === -1) {
-        window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!')
-     }
+    //  if (altura.indexOf(',') === -1 && altura.indexOf('.') === -1) {
+    //     window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!')
+    //  }
  
 
-     if (peso.indexOf(',') === -1 && peso.indexOf('.') === -1) {
-        window.alert('Você deve inserir um ponto(.) ou virgula(,) no campo de PESO!')
-     } 
+    //  if (peso.indexOf(',') === -1 && peso.indexOf('.') === -1) {
+    //     window.alert('Você deve inserir um ponto(.) ou virgula(,) no campo de PESO!')
+    //  } 
 
 
    
@@ -149,12 +164,18 @@ function aparecer () {
     // var entAltura = document.getElementById('entrada-altura').value
     var container = document.getElementById("section-oculta");
     var divSaida = document.getElementById("saida")
+    var alt = document.getElementById('entrada-altura')
+    var pes = document.getElementById('entrada-peso')
+
      if(container.style.display == 'block') {
+            alt.value = '';
+            pes.value = '';
             document.getElementById('saida-res').innerHTML = "";
             document.getElementById('saida-frase').innerHTML = "";
             document.getElementById('saida-form').innerHTML = "";
+            container.style.display = 'none';
             divSaida.style.display = 'none';
-
+           
 
      
     }

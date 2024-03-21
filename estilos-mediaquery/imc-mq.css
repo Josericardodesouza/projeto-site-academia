@@ -7,6 +7,10 @@
         left: 5px;
     }
 
+    header {
+        height: 270px;
+    }
+
     header > div#texto-header {
         width: 50%;
         height: 100%;
@@ -38,3 +42,6 @@
 
     }
 }
+
+
+/* exemplo : min-widht: 50% max-widht: 60% pois tem o valor maximo e minimo definido*/

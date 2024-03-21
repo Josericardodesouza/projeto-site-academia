@@ -33,4 +33,8 @@
         font-size: 1.4em;
     }
 
+    div#container-entrada > input {
+        width: 15%;
+    }
+
 }

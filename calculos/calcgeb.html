@@ -33,10 +33,10 @@
             <p>Insira suas informações para, a partir do cálculo feito com a fórmula de Harris Benedict, saber quantas calorias voce deve ingerir diariamente: </p>
         </div>
     </header>
-    <br>
+    
 <!-- 
     <p>eXPLICACÃO</p> -->
-    <br>
+    
 
     
 
@@ -47,7 +47,7 @@
     <label for="fem">Feminino</label>
     <input type="radio" name="gen" id="sexo" value="fem"> -->
 
-    <br>
+    
 
     <main>
         <section id="section-entrada">
@@ -61,8 +61,10 @@
         
                <label for="ent-idade">Informe sua idade: </label>
                <input type="number" name="ent-idade" id="ent-idade" placeholder="" required oninput="limiteNumIdade()">
+               <br>
                
                <div id="botoes">
+                
                    <button type="button" id="botao-masc" class="botao"  onclick="calcularGebMasc()">cálculo masculino</button>
                    <button type="button" id="botao-fem" class="botao"  onclick=" calcularGebFem()">calculo feminino</button>
                </div>

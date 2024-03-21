@@ -263,6 +263,24 @@ a#executar > span {
 
 } */
 
+  div#resetar {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  span#span-resetar {
+
+    font-size: 2em;
+ }
+
+ span#span-resetar:hover {
+   cursor: pointer;
+   color: #e28502;
+ }
+
  .h2Main {
     margin: 20px 0px 20px 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
