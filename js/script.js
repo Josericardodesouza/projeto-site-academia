@@ -49,6 +49,7 @@ function aparecer () {
 
         //novo if de teste
         // if (dado1.indexOf(',') !== -1 && dado1.indexOf('.') !== -1 && ) 
+        //tentar substituir os if e else por switch case, fica mais elegante e prático. obg Deus
 
 
 
