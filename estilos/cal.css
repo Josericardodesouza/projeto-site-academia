@@ -57,14 +57,14 @@ nav {
 
 }
 
-nav > h5 {
+/* nav > h5 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 20px;
     margin: 0px;
     margin-right: 5px;
-}
+} */
 
 nav > span.material-symbols-outlined {
     font-size: 39px;
@@ -87,14 +87,20 @@ header {
     background-position: center center;
     background-size: cover;
     width: 100vw;
-    height: 230px;
+    height: 390px;
     position: relative;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 25px 0px;
 
 }
 
+div#texto-header > h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+}
+
+
 div#texto-header {
-    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     color: orange;
     background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
@@ -119,6 +125,7 @@ main {
    
 }
 
+
 div#texto-header > h2, p {
     width: 89%;
     text-align: justify;
@@ -134,7 +141,11 @@ section#container-entrada {
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin-bottom: 20px;
+    /* margin: 0px 0px 40px 0px; */
+
+   
+    
   
  
 }
@@ -252,8 +263,13 @@ a#executar > span {
 
 } */
 
- h2#h2-result {
+ .h2Main {
+    margin: 20px 0px 20px 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    /* font-family: 'Work Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     text-align: center;
+
 } 
 
 
@@ -267,9 +283,10 @@ section#section-oculta {
     /* background-color: rgb(101, 96, 96); */
     width: 100vw;
     height: 500px;
-    margin: 100px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     padding: 0px;
-    /* display: none; */
+    display: none;
+
    
 
     /* display: none; */
@@ -284,7 +301,7 @@ section#section-oculta {
 .secao-saida {
     color: white;
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
-    width: 85%;
+    width: 89%;
     height: 90px;
     background-color: black;
     /* background-image: radial-gradient( #e98a15, #e28502); */
@@ -292,11 +309,14 @@ section#section-oculta {
     /* background-color: orange; */
     /* left: 7.7%;
     right: 7.7%; */
-     margin-bottom: 15px;
-    margin-top: 0; 
+     /* margin-bottom: 15px; */
+    margin-top: 10px; 
+    left: 5%;
+    right: 5%;
     display: inline-block;
     position: relative;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     border-radius: 16px;
 
@@ -313,7 +333,7 @@ section#section-oculta {
 
 
 .container-formula {
-    color: black;
+    color: #3C1518;
     font-size: 0.9em;
     font-family: 'Work Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 50%;
@@ -322,10 +342,14 @@ section#section-oculta {
     display: block;
     position: absolute;
     left: 25%;
-    bottom: 3px;
-    text-align: center;
+    bottom: 5px;
+ 
     border-radius: 11px;
     padding: 3px;
+}
+
+.container-formula > p {
+    text-align: center;
 }
 
  .numInput {
@@ -333,14 +357,21 @@ section#section-oculta {
     /* color: yellow; */
 }
 
-h2 {
+/* h2 {
     text-align: center;
-}
+} */
+
 
 h3 {
     text-align: center;
     color: #F98948;
 }
+
+
+
+/* section#secao-carb {
+    margin-top: 20px;
+} */
 
 
 

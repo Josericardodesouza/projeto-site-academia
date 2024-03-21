@@ -1,5 +1,36 @@
 @charset "UTF-8";
 
-@media screen and (min-width: "444px") and (max-width: "766px" ) {
-    
+@media (min-width: 400px) {
+
+    nav > img {
+        position: absolute;
+        left: 5px;
+    }
+
+    header {
+        height: 300px;
+    }
+
+    header > div#texto-header {
+        width: 50%;
+        height: 100%;
+       
+    }
+
+
+    div#texto-header > h2 {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    div#texto-header > p {
+
+        padding-left: 10px;
+        text-align: justify;
+    }
+
+    main > h2 {
+        font-size: 1.4em;
+    }
+
 }

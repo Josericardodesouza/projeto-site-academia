@@ -34,25 +34,34 @@
     padding: 0px;
 }
 
+nav#fixa {
+    top: 0;
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
 nav {
     color: black;
     width: 100vw;
     height: 60px;
     margin: 0px;
     padding: 0px;
-    background-color: orange;
+    background-color: #F98948;
     display: flex;
     top: 0px;
 }
 
-nav > h5 {
+/* nav > h5 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 20px;
     margin: 0px;
     margin-right: 5px;
-}
+} */
 
 
 nav > span.material-symbols-outlined {
@@ -72,16 +81,25 @@ h1 {
 
 
 header {
-    background-image: url(../imagens/imgs-background/imagem-rótulo.jpeg); /* deve ser a imagem de um rótulo*/
+    background-image: url(../imagens/imgs-background/woman-498257_1920.jpg); /* deve ser a imagem de um rótulo*/
     background-position: center center;
     background-size: cover;
     width: 100vw;
-    height: 290px;
+    height: 390px;
     position: relative;
+    margin: 0px 0px 25px 0px;
 
 }
 
+div#texto-header > h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+}
+
+
+
 div#texto-header {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     color: orange;
     background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
@@ -91,9 +109,18 @@ div#texto-header {
     font-size: 0.9em;
 }
 
+main {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+   
+}
+
 div#texto-header > h2, p {
+    width: 89%;
     text-align: justify;
-    padding: 2px;
+    padding: 4px;
     margin-left: 0.4px;
     margin-right: 1px;
 }

@@ -7,28 +7,42 @@
         left: 5px;
     }
 
+    header {
+        height: 300px;
+    }
+
     header > div#texto-header {
         width: 50%;
         height: 100%;
        
     }
 
+
     div#texto-header > h2 {
+        padding-top: 30px;
         text-align: center;
     }
 
     div#texto-header > p {
+
         padding-left: 10px;
         text-align: justify;
     }
 
+    main > h2 {
+        font-size: 1.4em;
+    }
 
 }
 
 
 @media (min-width: 768px) {
     div#entrada-dados {
-        width: 60%;
+        width: 70%;
+        transition: width 2s, height 1s;
+        transition-timing-function: ease;
+       
+      
     }
 }
 
