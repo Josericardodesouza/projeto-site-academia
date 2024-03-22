@@ -1,15 +1,69 @@
+
+function limiteNumeros() {
+    var refCarb = 4; // variáveis mantidas para melhor manutenção
+    var refProt = 4;
+    var refLipi = 4;
+    var carbInfor = document.getElementById("ent-carboidratos");
+    var protInfor = document.getElementById("ent-proteinas");
+    var lipidInfor = document.getElementById("ent-lipi");
+
+    var lmtNumCarb = carbInfor.value;
+    var lmtNumProt = protInfor.value;
+    var lmtNumLipi = lipidInfor.value;
+
+
+    if (lmtNumCarb.length > refCarb) {
+        carbInfor.value = lmtNumCarb.slice(0, refCarb);
+    }
+
+    if (lmtNumProt.length > refProt) {
+        protInfor.value = lmtNumProt.slice(0, refProt);
+    }
+
+    if (lmtNumLipi.length > refLipi) {
+        lipidInfor.value = lmtNumLipi.slice(0, refLipi);
+    }
+    
+}
+
+
+
+
 function aparecer() {
-    var botao = document.getElementById("calcular");
+    var entCarb = document.getElementById("ent-carboidratos").value;
+    var entProt = document.getElementById("ent-proteinas").value;
+    var entLipi = document.getElementById("ent-lipi").value;
     var container = document.getElementById("section-oculta");
 
-    botao.addEventListener('click', function(){
-        if (container.style.display == 'inline-block') {
+    switch (true) {
+        case (entCarb.indexOf(',') === -1 && entCarb.indexOf('.') === -1):
+            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de CARBOIDRATOS');
             container.style.display = 'none';
-        } else {
-            container.style.display = 'inline-block';
-        }
+            break;
+        case (entProt.indexOf(',') === -1 && entProt.indexOf('.') === -1):
+            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de PROTEÍNAS');
+            container.style.display = 'none';
+            break;
+        case (entLipi.indexOf(',') === -1 && entLipi.indexOf('.') === -1):
+            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de LIPÍDIOS');
+            container.style.display = 'none';
+            break;
+        default:
+            container.style.display = 'block';
+            break;
+
     }
-    )
+
+
+
+    // botao.addEventListener('click', function(){
+    //     if (container.style.display == 'inline-block') {
+    //         container.style.display = 'none';
+    //     } else {
+    //         container.style.display = 'inline-block';
+    //     }
+    // }
+    // )
 }
 
 function calcularCal() {
@@ -42,9 +96,32 @@ function calcularCal() {
     document.getElementById("saida-totalLipi").innerHTML = lipidios + "G lipídios"
 
     document.getElementById("formLipi").innerHTML = lipidios + "X 9 = " + totLipidios + "KCAL"
-
    
+}
 
-   
+
+function resetar() {
+    var valorInputCarb = document.getElementById("ent-carboidratos");
+    var valorInputProt = document.getElementById("ent-proteinas");
+    var valorInputLipi = document.getElementById("ent-lipi");
+    // var resultado = document.getElementsByClass("secao-saida");
+    var container = document.getElementById("section-oculta");
+
+    if (container.style.display == 'block') {
+        valorInputCarb.value = '';
+        valorInputProt.value = '';
+        valorInputLipi.value = '';
+        // resultado.style.display = 'none';
+        container.style.display = 'none';
+    }
+
+
+
+
+
+
+
+
+
 }
 

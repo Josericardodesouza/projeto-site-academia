@@ -251,8 +251,7 @@ button#botao-fem {
 
 
 section#oculta {
-    /* display: none; */
-    display: block;
+    display: none; 
     width: 100vw;
 }
 

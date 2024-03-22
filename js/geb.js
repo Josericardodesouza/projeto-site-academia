@@ -93,7 +93,7 @@ function limiteNumPeso() {
 
 
 function limiteNumAlt() {
-  var num = 4;
+  var num = 3;
   var limite = document.getElementById("ent-altura");
 
   var limiteNum = limite.value;

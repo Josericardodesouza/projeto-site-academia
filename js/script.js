@@ -2,18 +2,18 @@
 function limiteNumeros() {
     var refAltura = 4;
     var refPeso = 5;
-    var limitePeso = document.getElementById('entrada-peso')
-    var limiteAltura = document.getElementById('entrada-altura')
-    var lmtNumPeso = limitePeso.value
-    var lmtNumAlt = limiteAltura.value
+    var pesoInfor = document.getElementById('entrada-peso')
+    var alturaInfor = document.getElementById('entrada-altura')
+    var lmtNumPeso = pesoInfor.value
+    var lmtNumAlt = alturaInfor.value
 
     if (lmtNumPeso.length > refPeso) {
-        limitePeso.value = lmtNumPeso.slice(0, refPeso);                             
+        pesoInfor.value = lmtNumPeso.slice(0, refPeso);                             
     }
 
     if (lmtNumAlt.length > refAltura) {                                                   
 
-    limiteAltura.value = lmtNumAlt.slice(0, refAltura);
+    alturaInfor.value = lmtNumAlt.slice(0, refAltura);
 
     }
 
@@ -24,18 +24,18 @@ function limiteNumeros() {
 
 
 function aparecer () {
-    var dado1 = document.getElementById("entrada-peso").value;
-    var dado2 = document.getElementById("entrada-altura").value;
+    var entPeso = document.getElementById("entrada-peso").value;
+    var entAlt = document.getElementById("entrada-altura").value;
     // var botao = document.getElementById("executar");
     var container = document.getElementById("section-oculta");
 
     switch (true) {
-        case (dado1.indexOf(',') === - 1 && dado1.indexOf('.') === -1): 
-             window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de PESO!');
+        case (entPeso.indexOf(',') === - 1 && entPeso.indexOf('.') === -1): 
+             window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de PESO!');
              container.style.display = 'none';
              break;
-        case (dado2.indexOf(',') === - 1 && dado2.indexOf('.') === -1):
-            window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!');
+        case (entAlt.indexOf(',') === - 1 && entAlt.indexOf('.') === -1):
+            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de ALTURA!');
              container.style.display = 'none';
              break;
         default:
