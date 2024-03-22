@@ -218,6 +218,23 @@ function calcularGebMasc() {
   }
 
 
+  function resetar() {
+    var valorInputPeso = document.getElementById("ent-peso");
+    var valorInputAltura = document.getElementById("ent-altura");
+    var valorInputIdade = document.getElementById("ent-idade");
+    container = document.getElementById("oculta");
+
+    if (container.style.display == 'block') {
+      valorInputPeso.value = '';
+      valorInputAltura.value = '';
+      valorInputIdade.value = '';
+      container.style.display = 'none';
+
+    }
+
+  }
+
+
 
 
 
