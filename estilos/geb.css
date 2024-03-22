@@ -291,8 +291,9 @@ div#saida {
 
 
 
-div#saida > p {
+div#saida > p#saidaGeb {
     width: 50%;
+    height: auto;
     background-color: black;
     color: aqua;
     display: block;

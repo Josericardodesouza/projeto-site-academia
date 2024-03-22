@@ -118,15 +118,54 @@ function limiteNumIdade() {
 }
 
 
+function confere() {
+  var container = document.getElementById("oculta");
+  var entPeso = document.getElementById("ent-peso").value;
+  var entAlt = document.getElementById("ent-altura").value;
+  var entIdade = document.getElementById("ent-idade").value;
+ 
+ 
 
-  
-  
+  switch(true) {
+    case (entPeso.indexOf(',') === -1 && entPeso.indexOf('.') === -1):
+    
+      window.alert('Você deve inserir um ponto(.) ou vírgula (,) no campo de PESO');
+      container.style.display = 'none';
+      
+      break;
+
+    case (entAlt.indexOf(',') !== -1 || entAlt.indexOf('.') !== -1):
+      
+      window.alert('Você deve inserir sua altura sem ponto(.) ou vírgula(,)!');
+      container.style.display = 'none';
+      break;
+
+    case (entIdade.indexOf(',') !== -1 || entIdade.indexOf('.') !== -1):
+     
+      window.alert('Você não deve inserir ponto(.) ou vírgula (,) no campo de IDADE');
+      container.style.display = 'none';
+      break;
+
+      default:
+        container.style.display = 'block';
+        break;
+
+        // confirmaMasc = 2;
+        // confirmaFem = 2;
+
+  } 
+
+
+
+
+}
 
 
 
 function calcularGebMasc() {
 
-  var container = document.getElementById("oculta");
+  // var container = document.getElementById("oculta");
+
 
   var pesoInfor = document.getElementById("ent-peso").value
   var totalPeso = (13.75 * pesoInfor);
@@ -141,17 +180,21 @@ function calcularGebMasc() {
 
   var geb = total.toFixed(2)
 
-   if (geb > 66.47 ) {
-    container.style.display = 'block';
-    document.getElementById("saidaGeb").innerHTML =  geb + " KCAL";
 
-   }
 
+  
+    if (geb > 66.47) {
+      // container.style.display = 'block';
+      document.getElementById("saidaGeb").innerHTML =  geb + " KCAL";
+
+    }
+
+  
   }
 
   function calcularGebFem() {
 
-    var container = document.getElementById("oculta");
+    // var container = document.getElementById("oculta");
     
     var pesoInfor = document.getElementById("ent-peso").value
      var totalPeso = (9.56 * pesoInfor);
@@ -166,15 +209,13 @@ function calcularGebMasc() {
 
      var geb = total.toFixed(2);
 
-     if (geb > 655.1) {
-      container.style.display = 'block';
-      document.getElementById("saidaGeb").innerHTML =  geb + " KCAL"
-    
-     }
-
+     
+      if ( geb >= 655.1) {
+        // container.style.display = 'block';
+        document.getElementById("saidaGeb").innerHTML =  geb + " KCAL";
   
-
-    }
+      }
+  }
 
 
 
