@@ -112,9 +112,15 @@ nav > a > span.material-symbols-outlined {
 } */
 
 h1 {
-    font-size: 21px;
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #e28502;
+    background-color: black;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 header {
@@ -138,6 +144,13 @@ div#texto-header {
     height: 50%;
     position: absolute;
     font-size: 0.9em;
+}
+
+div#texto-header > h2 {
+    font-size: 2em;
+    margin-top: 4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
 }
 
 div#texto-header > h2, p {
@@ -220,17 +233,17 @@ div#entrada-dados > input {
     border: 3px solid black;
     border-radius: 4px;
     width: 45px;
-    height: 25px;
+    height: 30px;
     margin-top: 3px;   
   
 }
 
 div#entrada-dados > input:hover {
-    height: 20.9;
+    /* height: 20.9; */
     border: none;
     color: #E98A15;
     background-color: black;
-    border: 1px solid white;
+    border: 3px solid white;
 }
 
 
@@ -244,6 +257,10 @@ a#executar {
   
 }
 
+a#executar:hover {
+    cursor: pointer;
+}
+
 a#executar > span {
    font-size: 30px;
 
@@ -251,7 +268,7 @@ a#executar > span {
 
 
 section#section-oculta {
-    display: none; 
+    display: none;  
     position: relative;
     height: 500px;
     
@@ -267,6 +284,7 @@ div#container-saida {
     flex-direction: column;
     align-items: center;
     margin: 10px 0px 0px 0px;
+ 
    
   
 }
@@ -275,14 +293,20 @@ div#container-saida {
 div#saida {
 
     /* width: 85%; */
-    min-width: 70%;
-    max-width: 85%;
-    height: 200px;
+    width: 70%;
+    height: auto;
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: violet; */
-    position: relative;
+    
+    display: inline-block;
+    flex-direction: column;
+    align-items: center; 
     justify-content: center;
-    display: inline-flex;
+   
+    flex-direction: center;
+   
+ 
+  
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.797);
     top: 2%;
     border-radius: 0px 0px 8px 8px;
@@ -320,18 +344,20 @@ div#saida {
 
 
 div#saida > p#saida-res {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
     text-align: center;
     color: black;
     width: 80%;
-    height: 30px;
+    /* height: 30px; */
     background-color: whitesmoke;
     display: block;
-    position: absolute;
-    margin: 0px;
-    top: 15px;
-    margin-bottom: 2px;
+    /* position: absolute; */
+    margin: 10px auto 10px auto;
+    /* top: 15px; */
+    /* margin-bottom: 2px; */
     border-radius: 9px 9px;
-   
+    padding: 7px;
    
 
      /* NÃO TÁ ALINHADO DIREITO  */
@@ -339,33 +365,38 @@ div#saida > p#saida-res {
 }
 
 div#saida > p#saida-frase {
-    font-size: small;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
     text-align: center;
     color: black;
     background-color: whitesmoke;
     width: 80%;
-    height: 30px;
-    margin: 0;
-    top: 63px;
+    height: auto;
+    margin: 10px auto 10px auto;
+    /* top: 63px; */
     border-radius: 9px 9px;
     display: block;
-    position: absolute;
+    /* position: absolute; */
+    padding: 7px;
 
 }
 
 
 div#saida >  p#saida-form {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
     text-align: center;
     color: black;
     width: 80%;
-    height: 30px;
-    top: 114px;
+    /* height: 30px; */
+    /* top: 114px; */
     /* bottom: 28%; */
     background-color: whitesmoke;
     display: block;
-    position: absolute;
-    margin: 0;
+    /* position: absolute; */
+    margin: 10px auto 10px auto;
     border-radius: 9px 9px;
+    padding: 7px;
    
 }
 /* div#saida-dados > div#btn-restart {
@@ -383,9 +414,9 @@ span#resetar.material-symbols-outlined   {
     font-size: 30px;
     width: 30px;
     display: block;
-    position: absolute;
+    margin: auto;
+   
     bottom: 0px;
-    right: 43%;
 }
 
 

@@ -1,6 +1,21 @@
 @charset "UTF-8";
 
 @media (min-width: 400px) {
+
+/* 
+
+    div#entrada-dados > input {
+        color: black;
+        font-weight: bolder;
+        text-align: center;
+        background-color: whitesmoke;
+        border: 3px solid black;
+        border-radius: 4px;
+        width: 45px;
+        height: 30px;
+        margin-top: 3px;   
+      mexer com ele aqui ó. 
+    } */
     
     nav > img {
         position: absolute;
@@ -19,6 +34,7 @@
 
     div#texto-header > h2 {
         text-align: center;
+        margin-top: 30px;
     }
 
     div#texto-header > p {
@@ -27,10 +43,33 @@
     }
 
 
+    p#saida-res {
+        font-weight: 600;
+
+    }
+
+    p#saida-frase {
+        font-weight: 600;
+
+    }
+
+    p#saida-form {
+        font-weight: 600;
+
+    }
+
+
+
+    
+
+
+
+
+
 }
 
 
- @media (min-width: 400px) and (max-width: 700px) {
+ @media (min-width: 443px) and (max-width: 766px) {
 
     div#entrada-dados {
         width: 70%;
@@ -38,10 +77,32 @@
     }
 
     div#entrada-dados > input {
+        text-align: center;
         height: 30px;
 
     }
+
+  
+
+   
+}
+
+
+
+@media (min-width: 767px) {
+    div#entrada-dados > input {
+        text-align: center;
+        width: 50px;
+
+    }
+
 }
 
 
 /* exemplo : min-widht: 50% max-widht: 60% pois tem o valor maximo e minimo definido*/
+
+/*largura padrão min: 234 px max: 443
+
+para tablets min: 444px max: 766 ( imagens recortadas, menu lateral some e as opções ficam no nav)
+
+para desktops: 768px max: 2000px*/

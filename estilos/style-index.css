@@ -207,17 +207,17 @@ div#menuHamb > menu#opcoes > ul > li > a {
 li#cad  a {
     display: block;
     background-color: black;
-}
-
-li#cad a {
     cursor: pointer;
 }
+
+
 
 
 
 li#log  a {
     display: block;
     background-color: black;
+    right: 10%;
 
    
    
@@ -383,10 +383,11 @@ section.secao-calculos {
     height: auto;
     background-color: white;
     margin: 0px;
-    /* margin-bottom: 140px; */
+     margin-bottom: 30px;
 
     justify-content: center;
     display: flex; 
+    gap: 12px;
     flex-wrap: wrap;
    
 }
@@ -404,7 +405,7 @@ section.secao-calculos {
     height: 190px;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     position: relative;
     box-shadow: 2.0px 2.0px 6px black;
     
@@ -436,11 +437,11 @@ section.secao-calculos {
 }
 
 div#div-imc {
-    margin-right: 4px;
+    margin-right: 4px; 
  }
 
  div#div-geb {
-    margin-left: 4px;
+    margin-left: 4px; 
  }
 
 

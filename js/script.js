@@ -152,7 +152,7 @@ function aparecer () {
         } else if (imc >= 40.1) {
             document.getElementById("saida-frase").innerHTML = "Obesidade 3(mórbida)"
      }
-        // document.getElementById("saida-res").innerHTML = "O seu IMC é de " + imc
+     document.getElementById("saida-res").innerHTML = "O seu IMC é de " + imc
      document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " / (" + altura + " x 2)";
       
     }
