@@ -114,6 +114,7 @@ function aparecer () {
     var peso = document.getElementById("entrada-peso").value;
 
     var altura = document.getElementById("entrada-altura").value;
+    p = document.getElementById('saida-frase');
 
   
 
@@ -150,7 +151,8 @@ function aparecer () {
         } else if (imc >= 35.01 && imc <= 40.0) {
             document.getElementById("saida-frase").innerHTML = "Obesidade 2(severa)"
         } else if (imc >= 40.1) {
-            document.getElementById("saida-frase").innerHTML = "Obesidade 3(mórbida)"
+            p.style.color = 'red';
+            document.getElementById("saida-frase").innerHTML = "Obesidade 3(mórbida)! <br> Procure assistencia médica e nutricional o quanto antes."
      }
      document.getElementById("saida-res").innerHTML = "O seu IMC é de " + imc
      document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " / (" + altura + " x 2)";
