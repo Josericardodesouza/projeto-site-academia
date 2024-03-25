@@ -24,6 +24,7 @@ function limiteNumeros() {
         lipidInfor.value = lmtNumLipi.slice(0, refLipi);
     }
     
+
 }
 
 
@@ -34,26 +35,51 @@ function aparecer() {
     var entProt = document.getElementById("ent-proteinas").value;
     var entLipi = document.getElementById("ent-lipi").value;
     var container = document.getElementById("section-oculta");
+    var pErroCarb = document.getElementById("pErroCarb");
+    var pErroProt = document.getElementById("pErroProt");
+    var pErroLipi = document.getElementById("pErroLipi");
 
     switch (true) {
+
         case (entCarb.indexOf(',') === -1 && entCarb.indexOf('.') === -1):
-            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de CARBOIDRATOS');
+            pErroCarb.style.display = 'block';
+            pErroProt.style.display = 'none';
+            pErroLipi.style.display = 'none';
+
+            // pErroProt.style.display = 'none';
+            // pErroLipi.style.display = 'none';
             container.style.display = 'none';
             break;
+
         case (entProt.indexOf(',') === -1 && entProt.indexOf('.') === -1):
-            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de PROTEÍNAS');
+            pErroProt.style.display = 'block';
+            pErroCarb.style.display = 'none';
+            pErroLipi.style.display = 'none';
+
+            // pErroCarb.style.display = 'none';
+            // pErroLipi.style.display = 'none';
             container.style.display = 'none';
             break;
+
         case (entLipi.indexOf(',') === -1 && entLipi.indexOf('.') === -1):
-            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de LIPÍDIOS');
+            pErroLipi.style.display = 'block';
+            pErroCarb.style.display  = 'none';
+            pErroProt.style.display = 'none';
+            // pErroCarb.style.display = 'none';
+            // pErroProt.style.display = 'none';
             container.style.display = 'none';
             break;
+
         default:
+            pErroCarb.style.display = 'none';
+            pErroLipi.style.display = 'none';
+            pErroProt.style.display = 'none';
             container.style.display = 'block';
             container.scrollIntoView({behavior: "smooth"});
             break;
 
     }
+
 
 
 

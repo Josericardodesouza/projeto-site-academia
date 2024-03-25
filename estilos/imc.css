@@ -201,6 +201,7 @@ div#entrada-dados {
     position: relative;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     border-radius: 8px 8px 0px 0px;
     box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
@@ -210,9 +211,9 @@ div#entrada-dados {
     
 }
 
-input#entrada-peso {
-    margin-bottom: 20px;
-}
+/* input#entrada-peso {
+    margin-bottom: 0px;
+} */
 
 
 div#entrada-dados > label  {
@@ -224,7 +225,7 @@ div#entrada-dados > label  {
     margin: 0;
     margin-top: 8px;
   
-    
+
 }
 
 div#entrada-dados > input {
@@ -248,14 +249,26 @@ div#entrada-dados > input:hover {
     border: 3px solid white;
 }
 
+p#pErroAlt {
+    display: none;
+    width: auto;
+    margin: 0;
+}
+
+p#pErroPes {
+    display: none;
+    width: auto;
+    margin: 0;
+}
+
 
 a#executar {
-    bottom: 0;
+    bottom: 0%;
     height: 30px;
     /* background-color: red; */
     display: block;
     font-size: 30px;
-    position: absolute;
+    margin-top: 0px;
   
 }
 

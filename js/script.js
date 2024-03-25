@@ -28,21 +28,76 @@ function aparecer () {
     var entAlt = document.getElementById("entrada-altura").value;
     // var botao = document.getElementById("executar");
     var container = document.getElementById("section-oculta");
+    var pErroAlt = document.getElementById("pErroAlt")
+    var pErroPes = document.getElementById("pErroPes")
+
+    // var confereInputAlt = entAlt.value;
+    // var confereInputP = entPeso.value;
+
+
+
+     
+        // if (confereInputAlt.value === '' && confereInputP.value === ''){
+        // window.alert('Voce deve preencher os campos obrigatórios!')
+        // entPeso.value = '';
+        // entAlt.value = '';
+        // }
+    
+
+  
+
 
     switch (true) {
-        case (entPeso.indexOf(',') === - 1 && entPeso.indexOf('.') === -1): 
-             window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de PESO!');
-             container.style.display = 'none';
-             break;
+
+
+
         case (entAlt.indexOf(',') === - 1 && entAlt.indexOf('.') === -1):
-            window.alert('Voce deve inserir um ponto(.) ou vírgula(,) no campo de ALTURA!');
+             pErroAlt.innerHTML = 'Voce deve inserir um ponto(.) ou vírgula(,) no campo de ALTURA!';
              container.style.display = 'none';
+              pErroAlt.style.display = 'block';
+              pErroPes.style.display = 'none';
              break;
+
+        
+
+
+        case (entPeso.indexOf(',') === - 1 && entPeso.indexOf('.') === -1): 
+            //  pErroAlt.style.display = 'none';
+             pErroPes.innerHTML = 'Voce deve inserir um ponto(.) ou vírgula(,) no campo de PESO!';
+             pErroPes.style.display = 'block';
+             pErroAlt.style.display = 'none'
+             container.style.display = 'none';
+       
+             break;
+
+            //  case (entAlt.indexOf(',') === 1 && entAlt.indexOf('.') === 1):
+            // pErroAlt.style.display = 'none';
+            //  break;
+
+            //  case (entPeso.indexOf(',') ===  1 && entPeso.indexOf('.') === 1):
+            //  pErroPes.style.display = 'none';
+            //  break;
+        
+      
         default:
+             pErroAlt.style.display = 'none';
+             pErroPes.style.display = 'none';
+
             container.style.display = 'block';
             container.scrollIntoView({behavior: "smooth"});
             break;
     }
+
+
+   
+
+
+
+
+
+
+
+
     // var confere = 0;
 
     // if (dado1.indexOf(',') === -1 || dado1.indexOf('.') === -1) {
@@ -126,6 +181,15 @@ function aparecer () {
     var total = peso / (altura * altura);
 
     var imc = total.toFixed(1);
+
+
+   
+
+
+
+
+
+
 
 
     //  if (altura.indexOf(',') === -1 && altura.indexOf('.') === -1) {

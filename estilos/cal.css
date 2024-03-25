@@ -177,6 +177,7 @@ div#entrada-dados {
     align-items: center;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
+    text-align: center;
     
   
    
@@ -235,6 +236,26 @@ div#entrada-dados > input:hover {
     border: none;
     color: #E98A15;
     background-color: black; */
+}
+
+p#pErroCarb {
+    display: none;
+    width: auto;
+    margin: 0px;
+
+}
+
+p#pErroProt {
+    display: none;
+    width: auto;
+    margin: 0px;
+
+}
+
+p#pErroLipi {
+    display: none;
+    width: auto;
+    margin: 0px;
 }
 
 a#calcular:hover {
