@@ -12,7 +12,7 @@
         <nav id="fixa">
             <nav>
                 <img src="../imagens/logo/logo-60x60.png" alt="logo do site">
-                <span onclick="cliqueMenu()" class="material-symbols-outlined">home</span>
+                <a href="../index.html"><span class="material-symbols-outlined">home</span></a>
              </nav>
         </nav>
         <br>
@@ -54,13 +54,13 @@
 
            <div id="container-entrada">
                <label for="ent-peso">Informe seu peso (Kg): </label>
-               <input type="number" name="ent-peso" id="ent-peso"size="4" required oninput="limiteNumPeso()">
+               <input type="number" name="ent-peso" id="ent-peso" size="4" placeholder="ex: 57,0" required oninput="limiteNumPeso()">
                
                <label for="ent-altura">Informe sua altura (em centímetros): </label>
                <input type="number" name="ent-altura" id="ent-altura"  placeholder="ex: 160" required oninput="limiteNumAlt()">
         
                <label for="ent-idade">Informe sua idade: </label>
-               <input type="number" name="ent-idade" id="ent-idade" placeholder="" required oninput="limiteNumIdade()">
+               <input type="number" name="ent-idade" id="ent-idade" placeholder=" ex: 32" required oninput="limiteNumIdade()">
                <br>
                
                <div id="botoes">

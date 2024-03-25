@@ -36,14 +36,50 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 444px ) and (max-width: 776px ) {
     div#entrada-dados {
-        width: 70%;
-        transition: width 2s, height 1s;
-        transition-timing-function: ease;
-       
-      
+        width: 75%;
+
     }
+
+    /* section.secao-saida {
+        width: 75%;
+        transition: width 2s, height 1s;
+        transition-timing-function: ease; 
+
+    } */
+
+
 }
 
 
+@media (min-width: 767px) {
+    div#entrada-dados {
+        width: 50%;
+        transition: width 2s, height 1s;
+        transition-timing-function: ease;    
+    }
+
+    /* section.secao-saida {
+        width: 50%;
+        transition: width 2s, height 1s;
+        transition-timing-function: ease; 
+
+    } */
+
+
+}
+
+
+
+
+
+/*largura padrão min: 234 px max: 443
+
+
+
+para tablets min: 444px max: 766 ( imagens recortadas, menu lateral some e as opções ficam no nav)
+
+para desktops: 768px max: 2000px
+
+*/

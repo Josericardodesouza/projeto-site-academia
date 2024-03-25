@@ -72,13 +72,15 @@
  @media (min-width: 443px) and (max-width: 766px) {
 
     div#entrada-dados {
-        width: 70%;
+        width: 75%;
 
     }
 
     div#entrada-dados > input {
         text-align: center;
+        width: 60px;
         height: 30px;
+        transition: width 2s, height 1s;
 
     }
 
@@ -90,9 +92,24 @@
 
 
 @media (min-width: 767px) {
+    div#entrada-dados {
+        width: 50%;
+        /* transition: width 2s, height 1s; */
+        transition-timing-function: ease; 
+       
+
+    }
+
     div#entrada-dados > input {
+        width: 70px;
+        /* transition: width 2s, height 1s; */
+    }
+
+
+
+    div#entrada-dados > input > p {
         text-align: center;
-        width: 50px;
+   
 
     }
 

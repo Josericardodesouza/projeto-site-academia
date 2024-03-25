@@ -40,6 +40,7 @@ function aparecer () {
              break;
         default:
             container.style.display = 'block';
+            container.scrollIntoView({behavior: "smooth"});
             break;
     }
     // var confere = 0;
@@ -155,7 +156,7 @@ function aparecer () {
             document.getElementById("saida-frase").innerHTML = "Obesidade 3(mórbida)! <br> Procure assistencia médica e nutricional o quanto antes."
      }
      document.getElementById("saida-res").innerHTML = "O seu IMC é de " + imc
-     document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " / (" + altura + " x 2)";
+     document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " ÷ (" + altura + " x 2)";
       
     }
     

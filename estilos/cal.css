@@ -66,7 +66,7 @@ nav {
     margin-right: 5px;
 } */
 
-nav > span.material-symbols-outlined {
+nav > a > span.material-symbols-outlined {
     font-size: 39px;
     color: black;
     position: absolute;
@@ -76,10 +76,22 @@ nav > span.material-symbols-outlined {
 }
 
 h1 {
-    font-size: 19px;
+    /* font-size: 19px;
     text-align: center;
     margin-bottom: 10px;
-}
+     */
+     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     color: #e28502;
+     background-color: black;
+     overflow: hidden;
+     font-size: 16px;
+     font-weight: 700;
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 0px;
+     padding: 8px;
+ }
+
 
 
 header {
@@ -204,7 +216,7 @@ div#entrada-dados > input {
     height: 27px;
     background-color: whitesmoke;
     color: black;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 2px;
     margin-top: 3px;
     margin-bottom: 6px;
@@ -214,10 +226,10 @@ div#entrada-dados > input {
 
 div#entrada-dados > input:hover {
    background-color: black;
-   height: 32px;
+   
    border: none;
    color: #E98A15;
-   border: 1px solid white;
+   border: 3px solid white;
 
     /* height: 20.9;
     border: none;
@@ -303,7 +315,7 @@ section#section-oculta {
     height: 500px;
     margin: 20px 0px 0px 0px;
     padding: 0px;
-    display: none;
+    display: none; 
 
    
 

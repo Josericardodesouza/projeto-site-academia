@@ -50,6 +50,7 @@ function aparecer() {
             break;
         default:
             container.style.display = 'block';
+            container.scrollIntoView({behavior: "smooth"});
             break;
 
     }
@@ -81,7 +82,7 @@ function calcularCal() {
 
     var total = (totCarboidratos + totProteinas + totLipidios);
 
-    document.getElementById("saida-totalCal").innerHTML = total;
+    document.getElementById("saida-totalCal").innerHTML = total.toFixed(1);
 
     document.getElementById("formCal").innerHTML = carboidratos + " + " + proteinas + " + " + lipidios;
 

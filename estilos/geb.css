@@ -64,7 +64,7 @@ nav {
 } */
 
 
-nav > span.material-symbols-outlined {
+nav > a > span.material-symbols-outlined {
     font-size: 39px;
     color: black;
     position: absolute;
@@ -74,10 +74,21 @@ nav > span.material-symbols-outlined {
 }
 
 h1 {
-    font-size: 19px;
+    /* font-size: 19px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #e28502;
+    background-color: black;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 8px;
 }
+
 
 
 header {
@@ -178,11 +189,12 @@ div#container-entrada > input {
 div#container-entrada > input:hover {
      background-color: black; 
     /* background-color: orange; */
-    height: 23px;
+    height: 25px;
     border: none;
     /* color: black; */
      color: #E98A15; 
-     border: 1px solid white;
+     border: 3px solid white;
+     text-align: center;
 
 }
 

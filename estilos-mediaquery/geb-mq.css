@@ -38,3 +38,30 @@
     }
 
 }
+
+
+@media (min-width: 444px ) and (max-width: 776px ) {
+    div#container-entrada {
+        width: 75%;
+        
+    }
+
+    div#saida {
+        width: 75%;
+    }
+
+
+}
+
+
+@media (min-width: 767px) {
+    div#container-entrada {
+        width: 50%;
+        transition: width 2s, height 1s;
+        transition-timing-function: ease; 
+    }
+
+    div#saida {
+        width: 50%;
+    }
+}

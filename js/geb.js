@@ -148,6 +148,7 @@ function confere() {
 
       default:
         container.style.display = 'block';
+        container.scrollIntoView({behavior: "smooth"});
         break;
 
         // confirmaMasc = 2;
