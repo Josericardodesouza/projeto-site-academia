@@ -195,7 +195,24 @@ div#container-entrada > input:hover {
      color: #E98A15; 
      border: 3px solid white;
      text-align: center;
+}
 
+p#pErroPeso {
+    display: none;
+    width: auto;
+    margin: 0;
+}
+
+p#pErroAlt {
+    display: none;
+    width: auto;
+    margin: 0;
+}
+
+p#pErroIdade {
+    display: none;
+    width: auto;
+    margin: 0;
 }
 
 

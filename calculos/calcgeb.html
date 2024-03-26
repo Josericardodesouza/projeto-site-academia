@@ -55,12 +55,15 @@
            <div id="container-entrada">
                <label for="ent-peso">Informe seu peso (Kg): </label>
                <input type="number" name="ent-peso" id="ent-peso" size="4" placeholder="ex: 57,0" required oninput="limiteNumPeso()">
+               <p id="pErroPeso">Você deve inserir um ponto(.) ou vírgula (,)</p>
                
                <label for="ent-altura">Informe sua altura (em centímetros): </label>
                <input type="number" name="ent-altura" id="ent-altura"  placeholder="ex: 160" required oninput="limiteNumAlt()">
+               <p id="pErroAlt">Você deve inserir sua altura sem ponto(.) ou vírgula(,)!</p>
         
                <label for="ent-idade">Informe sua idade: </label>
                <input type="number" name="ent-idade" id="ent-idade" placeholder=" ex: 32" required oninput="limiteNumIdade()">
+               <p id="pErroIdade">formato inválido!</p>
                <br>
                
                <div id="botoes">

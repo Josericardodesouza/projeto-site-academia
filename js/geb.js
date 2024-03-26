@@ -123,26 +123,39 @@ function confere() {
   var entPeso = document.getElementById("ent-peso").value;
   var entAlt = document.getElementById("ent-altura").value;
   var entIdade = document.getElementById("ent-idade").value;
+  var pErroPeso = document.getElementById("pErroPeso")
+  var pErroAlt = document.getElementById("pErroAlt")
+  var pErroIdade = document.getElementById("pErroIdade")
+
  
  
 
   switch(true) {
     case (entPeso.indexOf(',') === -1 && entPeso.indexOf('.') === -1):
-    
-      window.alert('Você deve inserir um ponto(.) ou vírgula (,) no campo de PESO');
+      pErroPeso.style.display = 'block';
+      pErroAlt.style.display = 'none';
+      pErroIdade.style.display = 'none';
+
       container.style.display = 'none';
       
       break;
 
     case (entAlt.indexOf(',') !== -1 || entAlt.indexOf('.') !== -1):
+      pErroAlt.style.display = 'block';
+      pErroPeso.style.display = 'none';
+      pErroIdade.style.display = 'none';
       
-      window.alert('Você deve inserir sua altura sem ponto(.) ou vírgula(,)!');
+    
       container.style.display = 'none';
       break;
 
     case (entIdade.indexOf(',') !== -1 || entIdade.indexOf('.') !== -1):
+      pErroIdade.style.display = 'block';
+      pErroAlt.style.display = 'none';
+      pErroPeso.style.display = 'none';
+
      
-      window.alert('Você não deve inserir ponto(.) ou vírgula (,) no campo de IDADE');
+      // window.alert('Você não deve inserir ponto(.) ou vírgula (,) no campo de IDADE');
       container.style.display = 'none';
       break;
 
