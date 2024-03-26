@@ -132,6 +132,7 @@ function confere() {
 
   switch(true) {
     case (entPeso.indexOf(',') === -1 && entPeso.indexOf('.') === -1):
+      entPeso.value = "";
       pErroPeso.style.display = 'block';
       pErroAlt.style.display = 'none';
       pErroIdade.style.display = 'none';
