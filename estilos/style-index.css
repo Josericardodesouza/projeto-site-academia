@@ -602,6 +602,55 @@ div#img-3 {
 }
 
 
+ section#container-planos {
+    width: 100vw;
+    height: auto;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex; 
+    /* gap: 12px; */
+    flex-wrap: wrap;
+
+}
+
+.precos {
+    text-align: center;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+div#planoBasico {
+   
+  
+ 
+    background-color: red;
+}
+
+div#planoMedio {
+    background-color: green;
+} 
+
+div#planoAvancado {
+    background-color: pink;
+}
+
+div.plano {
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
 footer {
     width: 100vw;
     margin: 0px;
