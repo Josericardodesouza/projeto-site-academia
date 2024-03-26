@@ -249,6 +249,19 @@ div#entrada-dados > input:hover {
     border: 3px solid white;
 }
 
+p.pErro {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+p#pNull {
+    display: none;
+    width: auto;
+    margin: 0;
+}
+
+
 p#pErroAlt {
     display: none;
     width: auto;
@@ -256,7 +269,7 @@ p#pErroAlt {
 }
 
 p#pErroPes {
-    display: none;
+   display: none; 
     width: auto;
     margin: 0;
 }

@@ -31,10 +31,16 @@ function limiteNumeros() {
 
 
 function aparecer() {
+    var container = document.getElementById("section-oculta");
     var entCarb = document.getElementById("ent-carboidratos").value;
     var entProt = document.getElementById("ent-proteinas").value;
     var entLipi = document.getElementById("ent-lipi").value;
-    var container = document.getElementById("section-oculta");
+
+    var inputCarb = document.getElementById("ent-carboidratos");
+    var inputProt = document.getElementById("ent-proteinas");
+    var inputLipi = document.getElementById("ent-lipi");
+  
+
     var pErroCarb = document.getElementById("pErroCarb");
     var pErroProt = document.getElementById("pErroProt");
     var pErroLipi = document.getElementById("pErroLipi");
@@ -46,6 +52,10 @@ function aparecer() {
             pErroProt.style.display = 'none';
             pErroLipi.style.display = 'none';
 
+            inputCarb.style.borderColor = 'red';
+            inputLipi.style.borderColor = 'black';
+            inputProt.style.borderColor = 'black';
+
             // pErroProt.style.display = 'none';
             // pErroLipi.style.display = 'none';
             container.style.display = 'none';
@@ -56,6 +66,10 @@ function aparecer() {
             pErroCarb.style.display = 'none';
             pErroLipi.style.display = 'none';
 
+            inputProt.style.borderColor = 'red';
+            inputCarb.style.borderColor = 'black';
+            inputLipi.style.borderColor = 'black';
+
             // pErroCarb.style.display = 'none';
             // pErroLipi.style.display = 'none';
             container.style.display = 'none';
@@ -65,6 +79,12 @@ function aparecer() {
             pErroLipi.style.display = 'block';
             pErroCarb.style.display  = 'none';
             pErroProt.style.display = 'none';
+
+            inputLipi.style.borderColor = 'red';
+            inputCarb.style.borderColor = 'black';
+            inputProt.style.borderColor = 'black';
+
+
             // pErroCarb.style.display = 'none';
             // pErroProt.style.display = 'none';
             container.style.display = 'none';
@@ -75,6 +95,12 @@ function aparecer() {
             pErroLipi.style.display = 'none';
             pErroProt.style.display = 'none';
             container.style.display = 'block';
+
+            inputCarb.style.borderColor = 'black';
+            inputProt.style.borderColor = 'black';
+            inputLipi.style.borderColor = 'black';
+
+
             container.scrollIntoView({behavior: "smooth"});
             break;
 

@@ -125,6 +125,9 @@ function confere() {
   var entPeso = document.getElementById("ent-peso").value;
   var entAlt = document.getElementById("ent-altura").value;
   var entIdade = document.getElementById("ent-idade").value;
+  var inputPeso = document.getElementById("ent-peso")
+  var inputAlt = document.getElementById("ent-altura")
+  var inputIdade = document.getElementById("ent-idade")
   var pErroPeso = document.getElementById("pErroPeso")
   var pErroAlt = document.getElementById("pErroAlt")
   var pErroIdade = document.getElementById("pErroIdade")
@@ -139,30 +142,42 @@ function confere() {
        pErroAlt.style.display = 'none';
        pErroIdade.style.display = 'none';
 
+       inputPeso.style.borderColor = 'red';
+       inputAlt.style.borderColor = 'black';
+       inputIdade.style.borderColor = 'black';
+
       container.style.display = 'none';
 
       console.log('erroPeso')
       
       break;
 
-    case (entAlt.indexOf(',') === -1 || entAlt.indexOf('.') === -1):
+    case (entAlt.indexOf(',') === 1 || entAlt.indexOf('.') === 1 || entAlt === ''):
         
         pErroAlt.style.display = 'block';
         pErroPeso.style.display = 'none';
         pErroIdade.style.display = 'none';
+
+        inputAlt.style.borderColor = 'red';
+        inputPeso.style.borderColor = 'black';
+        inputIdade.style.borderColor = 'black';
         
       
         container.style.display = 'none';
-        console.log('erroAlt')
+        console.log('erroAlt');
         break;
 
 
-    case (entIdade.indexOf(',') === -1 || entIdade.indexOf('.') === -1):
+    case (entIdade.indexOf(',') === 1 || entIdade.indexOf('.') === 1 || entIdade === ''):
 
      
     pErroIdade.style.display = 'block';
     pErroAlt.style.display = 'none';
     pErroPeso.style.display = 'none';
+
+    inputIdade.style.borderColor = 'red';
+    inputPeso.style.borderColor = 'black';
+    inputAlt.style.borderColor = 'black';
 
   
    // window.alert('Você não deve inserir ponto(.) ou vírgula (,) no campo de IDADE');
@@ -179,6 +194,13 @@ function confere() {
         pErroAlt.style.display = 'none';
         pErroIdade.style.display = 'none';
         container.style.display = 'block';
+
+        inputAlt.style.borderColor = 'black';
+        inputPeso.style.borderColor = 'black';
+        inputIdade.style.borderColor = 'black';
+        
+
+
         console.log('default')
       
         container.scrollIntoView({behavior: "smooth"});

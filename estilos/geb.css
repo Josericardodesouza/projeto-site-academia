@@ -197,6 +197,13 @@ div#container-entrada > input:hover {
      text-align: center;
 }
 
+p.pErro {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+   
+}
+
 p#pErroPeso {
     display: none;
     width: auto;

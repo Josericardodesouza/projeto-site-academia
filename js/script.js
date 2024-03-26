@@ -26,10 +26,15 @@ function limiteNumeros() {
 function aparecer () {
     var entPeso = document.getElementById("entrada-peso").value;
     var entAlt = document.getElementById("entrada-altura").value;
+
+    var inputPeso = document.getElementById("entrada-peso");
+    var inputAlt = document.getElementById("entrada-altura");
+
     // var botao = document.getElementById("executar");
     var container = document.getElementById("section-oculta");
     var pErroAlt = document.getElementById("pErroAlt")
     var pErroPes = document.getElementById("pErroPes")
+    var pNull = document.getElementById("pNull")
 
     // var confereInputAlt = entAlt.value;
     // var confereInputP = entPeso.value;
@@ -49,13 +54,21 @@ function aparecer () {
 
     switch (true) {
 
+        // case (entAlt.indexOf() === -1 && entPeso.indexOf() === -1):
+        //     pNull.style.display = 'block';
+        //     console.log('teste');
+
+        //     break;
 
 
         case (entAlt.indexOf(',') === - 1 && entAlt.indexOf('.') === -1):
-             pErroAlt.innerHTML = 'Voce deve inserir um ponto(.) ou vírgula(,) no campo de ALTURA!';
+            //   pErroAlt.innerHTML = 'Voce deve inserir um ponto(.) ou vírgula(,) no campo de ALTURA!';
              container.style.display = 'none';
               pErroAlt.style.display = 'block';
               pErroPes.style.display = 'none';
+
+              inputAlt.style.borderColor = 'red';
+              inputPeso.style.borderColor = 'black';
              break;
 
         
@@ -63,10 +76,15 @@ function aparecer () {
 
         case (entPeso.indexOf(',') === - 1 && entPeso.indexOf('.') === -1): 
             //  pErroAlt.style.display = 'none';
-             pErroPes.innerHTML = 'Voce deve inserir um ponto(.) ou vírgula(,) no campo de PESO!';
+            //  pErroPes.innerHTML = 'Voce deve inserir um ponto(.) ou vírgula(,) no campo de PESO!';
              pErroPes.style.display = 'block';
              pErroAlt.style.display = 'none'
              container.style.display = 'none';
+
+             inputPeso.style.borderColor = 'red';
+             inputAlt.style.borderColor = 'black';
+
+
        
              break;
 
@@ -82,6 +100,9 @@ function aparecer () {
         default:
              pErroAlt.style.display = 'none';
              pErroPes.style.display = 'none';
+
+             inputPeso.style.borderColor = 'black';
+             inputAlt.style.borderCColor = 'black';
 
             container.style.display = 'block';
             container.scrollIntoView({behavior: "smooth"});
