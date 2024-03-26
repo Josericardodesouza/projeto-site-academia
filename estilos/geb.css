@@ -152,7 +152,7 @@ div#container-entrada {
     /* background-color: yellow; */
     background-image: linear-gradient(to bottom, #e98a15, #e28502);
     width: 85%;
-    height: 100%;
+    height: auto;
     margin: 0px;
     margin-bottom: 20px;
     display: flex;
@@ -213,6 +213,7 @@ p#pErroIdade {
     display: none;
     width: auto;
     margin: 0;
+    margin-bottom: 30px;
 }
 
 
@@ -224,9 +225,8 @@ div#botoes {
     /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
     justify-content: space-around;
-    bottom: 7px;
+    bottom: 0;
     text-align: center;
     font-size: 0.9em;
     padding: 0px 0px 4px 0px;
@@ -243,7 +243,7 @@ div#botoes {
 
 
 div#botoes {
-    position: absolute;
+   
     bottom: 0;
 }
 

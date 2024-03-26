@@ -1,3 +1,5 @@
+
+
 // function calculoMasculino() {
 
     
@@ -131,42 +133,54 @@ function confere() {
  
 
   switch(true) {
-    case (entPeso.indexOf(',') === -1 && entPeso.indexOf('.') === -1):
-      entPeso.value = "";
-      pErroPeso.style.display = 'block';
-      pErroAlt.style.display = 'none';
-      pErroIdade.style.display = 'none';
+    case (entPeso.indexOf(',') === -1 && entPeso.indexOf('.') === -1): /* correto*/
+      
+       pErroPeso.style.display = 'block';
+       pErroAlt.style.display = 'none';
+       pErroIdade.style.display = 'none';
 
       container.style.display = 'none';
+
+      console.log('erroPeso')
       
       break;
 
-    case (entAlt.indexOf(',') !== -1 || entAlt.indexOf('.') !== -1):
-      entAlt.value = "";
-      pErroAlt.style.display = 'block';
-      pErroPeso.style.display = 'none';
-      pErroIdade.style.display = 'none';
+    case (entAlt.indexOf(',') === -1 || entAlt.indexOf('.') === -1):
+        
+        pErroAlt.style.display = 'block';
+        pErroPeso.style.display = 'none';
+        pErroIdade.style.display = 'none';
+        
       
-    
-      container.style.display = 'none';
-      break;
+        container.style.display = 'none';
+        console.log('erroAlt')
+        break;
 
-    case (entIdade.indexOf(',') !== -1 || entIdade.indexOf('.') !== -1):
-      entIdade.value = "";
-      pErroIdade.style.display = 'block';
-      pErroAlt.style.display = 'none';
-      pErroPeso.style.display = 'none';
+
+    case (entIdade.indexOf(',') === -1 || entIdade.indexOf('.') === -1):
 
      
-      // window.alert('Você não deve inserir ponto(.) ou vírgula (,) no campo de IDADE');
-      container.style.display = 'none';
-      break;
+    pErroIdade.style.display = 'block';
+    pErroAlt.style.display = 'none';
+    pErroPeso.style.display = 'none';
+
+  
+   // window.alert('Você não deve inserir ponto(.) ou vírgula (,) no campo de IDADE');
+   container.style.display = 'none';
+   console.log('erroIdade');
+   break;
+
+
+
 
       default:
+      
         pErroPeso.style.display = 'none';
         pErroAlt.style.display = 'none';
         pErroIdade.style.display = 'none';
         container.style.display = 'block';
+        console.log('default')
+      
         container.scrollIntoView({behavior: "smooth"});
         break;
 
@@ -187,6 +201,7 @@ function calcularGebMasc() {
   // var container = document.getElementById("oculta");
 
 
+
   var pesoInfor = document.getElementById("ent-peso").value
   var totalPeso = (13.75 * pesoInfor);
 
@@ -205,6 +220,7 @@ function calcularGebMasc() {
   
     if (geb > 66.47) {
       // container.style.display = 'block';
+      
       document.getElementById("saidaGeb").innerHTML =  geb + " KCAL";
 
     }
@@ -215,6 +231,8 @@ function calcularGebMasc() {
   function calcularGebFem() {
 
     // var container = document.getElementById("oculta");
+
+    
     
     var pesoInfor = document.getElementById("ent-peso").value
      var totalPeso = (9.56 * pesoInfor);
@@ -232,6 +250,7 @@ function calcularGebMasc() {
      
       if ( geb >= 655.1) {
         // container.style.display = 'block';
+       
         document.getElementById("saidaGeb").innerHTML =  geb + " KCAL";
   
       }
@@ -242,7 +261,7 @@ function calcularGebMasc() {
     var valorInputPeso = document.getElementById("ent-peso");
     var valorInputAltura = document.getElementById("ent-altura");
     var valorInputIdade = document.getElementById("ent-idade");
-    container = document.getElementById("oculta");
+    var container = document.getElementById("oculta");
 
     if (container.style.display == 'block') {
       valorInputPeso.value = '';
