@@ -141,6 +141,7 @@ function confere() {
       break;
 
     case (entAlt.indexOf(',') !== -1 || entAlt.indexOf('.') !== -1):
+      entAlt.value = "";
       pErroAlt.style.display = 'block';
       pErroPeso.style.display = 'none';
       pErroIdade.style.display = 'none';
@@ -150,6 +151,7 @@ function confere() {
       break;
 
     case (entIdade.indexOf(',') !== -1 || entIdade.indexOf('.') !== -1):
+      entIdade.value = "";
       pErroIdade.style.display = 'block';
       pErroAlt.style.display = 'none';
       pErroPeso.style.display = 'none';
@@ -160,6 +162,9 @@ function confere() {
       break;
 
       default:
+        pErroPeso.style.display = 'none';
+        pErroAlt.style.display = 'none';
+        pErroIdade.style.display = 'none';
         container.style.display = 'block';
         container.scrollIntoView({behavior: "smooth"});
         break;
