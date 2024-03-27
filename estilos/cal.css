@@ -225,7 +225,7 @@ div#entrada-dados > input {
     text-align: center;
 }
 
-div#entrada-dados > input:hover {
+div#entrada-dados > input:focus {
    background-color: black;
    
    border: none;

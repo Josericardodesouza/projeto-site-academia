@@ -186,7 +186,7 @@ div#container-entrada > input {
 
 }
 
-div#container-entrada > input:hover {
+div#container-entrada > input:focus {
      background-color: black; 
     /* background-color: orange; */
     height: 25px;
