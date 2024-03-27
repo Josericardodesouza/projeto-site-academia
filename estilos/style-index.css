@@ -610,38 +610,60 @@ div#img-3 {
     padding: 0;
     justify-content: center;
     display: flex; 
-    /* gap: 12px; */
+    gap: 10px; 
     flex-wrap: wrap;
+
 
 }
 
-.precos {
+
+
+.vlrPlano {
     text-align: center;
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 10px;
 
 }
 
+.nomePlano {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+
+
+
 div#planoBasico {
-   
-  
- 
-    background-color: red;
+/*    
+    background-color: white;; */
 }
 
 div#planoMedio {
-    background-color: green;
+    /* background-color: green; */
 } 
 
 div#planoAvancado {
-    background-color: pink;
+    /* background-color: pink; */
 }
 
-div.plano {
-    margin: 10px 0px 10px 0px;
-    width: 70%;
+div.divPlano {
+    background-color: white;
+     margin: 10px 10px 10px 10px; 
+    width: 270px;
     height: auto;
+    border-radius: 10px 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
 
+}
+
+ul {
+    text-align: center;
 }
 
 
