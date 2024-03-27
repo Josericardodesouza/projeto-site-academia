@@ -209,6 +209,8 @@ h4 {
 div#entrada-dados > label {
     font-size: 0.9em;
     color: whitesmoke;
+    font-size: 0.8em;
+    font-weight: 600;
 
 }
 

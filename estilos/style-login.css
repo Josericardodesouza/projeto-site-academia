@@ -1,3 +1,133 @@
+
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /* novas cores*/
+
+    --fulvous: #E98A15;
+    --atomicTangerine: #F98948;
+    --egyptianBlue: #29339B;
+    --coolGray: #A7A5C6;
+    --fernGreen: #3f784c;
+
+/* cores velhas*/
+
+    --tangerine: #EB7F04;
+    --blackbean: #3C1518;
+    --bloodred: #69140E;
+    --honolulu: #2176AE;
+    --rosequartz: #9A8C98;
+    --cor1: #59876D;
+    --cor2: #CFB094;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+nav {
+    color: black;
+    width: 100vw;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F98948;
+    display: flex;
+    top: 0px;
+    /* position: fixed;
+    z-index: 0; */
+
+}
+
+
+
+/* nav > h5 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0px;
+    margin-right: 5px;
+} */
+
+nav > a > span.material-symbols-outlined {
+    height: auto;
+    font-size: 36px;
+    color: black;
+    position: absolute;
+    top: 2%;
+    right: 0;
+    padding: 0;
+    padding-right: 20px;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    
+
+}
+
+section {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    padding: 15px;
+
+}
+
+div#container-login {
+    background-color: green;
+    align-items: center;
+    width: 92%;
+    display: flex;
+    padding-left: 20px;
+
+}
+
+label {
+    background-color: yellow;
+
+}
+
+input {
+
+    background-color: pink;
+
+
+}
+
+
+footer {
+
+
+}
+
+
+
+
+
+
+
+
+
+/*
+
+
 header > form {
 
     background-color: #101119;
@@ -11,7 +141,7 @@ header > form {
 
     border: 3px solid var(--tangerina);
     box-shadow: 2px 2px 70px rgb(230, 151, 5);
-    /* box-shadow: 10px 10px 10px rgba(10, 218, 190, 0.57); */
+    /* box-shadow: 10px 10px 10px rgba(10, 218, 190, 0.57); 
     border-radius: 6px; 
     
 }
@@ -51,7 +181,7 @@ form > div.campo-entrada {
     margin-left: 0px;
     margin-right: 0px;
     padding: 2px;
-    /* background-color: green; */
+     background-color: green; 
     color: white;
   
     
@@ -59,7 +189,7 @@ form > div.campo-entrada {
 }
 
 form > div.campo-entrada > input {
-    /* background-color:red; */
+     background-color:red; 
     max-width: 45vw;
     height: 30px;
     background-color: rgb(183, 197, 180);
@@ -84,4 +214,4 @@ div.campo-entrada {
 }
 
 
-
+ */

@@ -535,12 +535,12 @@ h3 {
 }
 
 
-section.imagem-texto {
+/* section.imagem-texto {
     /* display: flex; somente em tamanho de telas de tablet*/
     /* font-family: 'Kanit'; */
     /* display: flex;
     flex-wrap: nowrap; */
-}
+
 
 section.imagem-texto > .texto > p {
     margin: 0;

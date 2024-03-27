@@ -217,7 +217,8 @@ div#entrada-dados {
 
 
 div#entrada-dados > label  {
-    font-size: 1.2em;
+    font-size: 1.0em;
+    font-weight: 700;
     color: whitesmoke;
     width: 60%;
     height: 15%;
