@@ -186,6 +186,14 @@ header {
         flex-wrap: nowrap;
     }
 
+
+
+    div.imagem {
+        width: 70%;
+        height: 340px;
+        margin: 10px;
+    }
+
     div.container {
         /* margin: 4px; */
        
@@ -196,4 +204,11 @@ header {
         margin-left: 0;
         margin-right: 1;
      }
+
+     section#txt-img2 {
+        flex-direction: row-reverse;
+
+     }
+
+   
 }
