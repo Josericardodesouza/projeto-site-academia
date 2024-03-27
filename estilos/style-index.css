@@ -713,6 +713,7 @@ div.divPlano {
     border-radius: 10px 10px;
     padding-left: 12px;
     padding-right: 12px;
+    box-shadow: 2.0px 2.0px 10px orange;
     
 
 }
