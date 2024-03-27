@@ -490,14 +490,14 @@ div.botao-ir {
  
 }
 
-main > p {
+/* main > p {
     color: black;
     font-size: 2.0em;
     text-align: center;
     font-weight: 400;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 40px;
-}
+} */
 
 
 
@@ -537,8 +537,7 @@ h3 {
 
 section.imagem-texto {
     /* display: flex; somente em tamanho de telas de tablet*/
-    /* margin-bottom: 12px; */
-    font-family: 'Kanit';
+    /* font-family: 'Kanit'; */
     /* display: flex;
     flex-wrap: nowrap; */
 }
@@ -546,6 +545,7 @@ section.imagem-texto {
 section.imagem-texto > .texto > p {
     margin: 0;
     padding: 10px;
+   
 }
 
 
@@ -556,7 +556,7 @@ section.imagem-texto > .texto > p {
 div.imagem {
     width: 100vw;
     height: 300px;
-    display: block;
+ 
     margin: 0;
     padding: 0px;
     border-radius: 2px 2px;
@@ -573,15 +573,22 @@ div.imagem > img {
 div.texto {
 
     background-color: transparent;
+    margin: 0;
     padding-left: 12px;
     padding: 7px;
     width: 90%;
-    height: auto;
+    justify-content: center;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0em;
+    
     
     /* height: 210px; */
     /* display: block; */
    
 }
+
+
+
 
 
 
@@ -600,23 +607,23 @@ section#txt-img2 {
 section#txt-img3 {
     background-color: black;
     color: #da8208;
+    height: 100%;
+    padding: 0;
+    float: right;
+    margin-bottom: 40px;
+  
 
 }
 
-section#txt-img4 {
+/* section#txt-img4 {
     background-color: #da8208;
     color: black;
 
-}
+} */
 
-
-
-div#texto-2 {
-    float: left;
-}
 
 div#img-1 {
-    background-image: url(../imagens/pexels-ivan-samkov-4164772.jpg);
+    background-image: url(../imagens/imgs-background/pexels-william-choquette-1954524\ \(1\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -624,19 +631,21 @@ div#img-1 {
 }
 
 div#img-2 {
-    background-image: url(../imagens/pexels-jonathan-borba-13896072.jpg);
+    background-image: url(../imagens/imgs-background/pexels-cottonbro-studio-4325451.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     float: right;
+    margin: 0px 0px 0px 0px;
+   
     /* margin-right: 2px; */
 }
 
 div#img-3 {
-    background-image: url(../imagens/pexels-anush-gorak-1431283.jpg);
+    background-image: url(../imagens/imgs-background/pexels-kampus-production-6922169.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: right bottom;
     /* margin-left: 2px; */
 }
 

@@ -194,6 +194,10 @@ header {
         margin: 10px;
     }
 
+    div#img-2 {
+        margin: 10px;
+    }
+
     div.container {
         /* margin: 4px; */
        
@@ -210,5 +214,12 @@ header {
 
      }
 
+     div.texto {
+        padding: 20px;
+        font-size: 1.0em;
+        
+     }
    
 }
+
+
