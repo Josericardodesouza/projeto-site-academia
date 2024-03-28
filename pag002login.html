@@ -22,17 +22,21 @@
       
         </p>
       <section>
-       
-      
+
+   
               <div id="container-login">
-            
+                
+                <div id="img">
+                    <img src="imagens/logo/logo-recortada.png" alt="">
+                </div>
+                
                   <form action="cadastroLogin.php" method="post">
-                      <label for="id-email">E-MAIL 
+                      <label for="id-email">DIGITE SEU EMAIL 
                       </label>
                       <input type="email" name="inputemail" id="input-email" required  placeholder="ex: gigachad@gmail.com" autocomplete="on" oninput="contaCaracteres()">
                       <p id="email-erro" class="msg-erro">Está faltando o "@" em seu email</p>
                       <!-- <br> -->
-                      <label for="input-nome">SENHA</label>
+                      <label for="input-nome">DIGITE SUA SENHA</label>
                       <input type="password" name="input-senha" id="input-senha" placeholder="" required oninput="contaCaracteres()">
                       <p id="senha-erro" class="msg-erro">Sua senha é muito curta</p>
                   </form>
@@ -75,9 +79,9 @@
             }
 
 
-            if (lmtSenha.length > refSenha) {
-                senha.value = lmtSenha.slice(0, refSenha);
-            }
+            // if (lmtSenha.length > refSenha) {
+            //     senha.value = lmtSenha.slice(0, refSenha);
+            // }
 
             // while (input.value.length <= 8) {
             //     input.style.borderColor = 'red';

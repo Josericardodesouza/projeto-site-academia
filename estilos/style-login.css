@@ -120,7 +120,8 @@ section {
     width: 100vw;
     background-color: white;
     /* background-color: red; */
-    height: 130px;
+    height: auto;
+    display: inline-block;
    justify-content: center;
    align-items: center;
    margin-bottom: 20px;
@@ -129,31 +130,48 @@ section {
 }
 
 
+div#img {
+    display: block;
+    width: 50%;
+}
+
+div#img > img {
+    margin: auto;
+}
+
+
+
+/* imagem da logo do site acima dos campos do login*/
+
+
 
 
 div#container-login {
     /* background-color: green; */
     background-color: #EB7F04;
-    margin: auto;
-    width: 70%;
+     margin: auto;
+    width: 93%;
     height: auto;
-    display: flex;
-    padding: 10px;
+    display: block;
+    justify-content: center;
+    padding: 5px; 
     border-radius: 10px 10px;
 }
 
 
 form {
+    margin: 0;
+    padding: 0;
     display: inline-block;
-    width: 70%;
+    width: 95%;
    
 }
 
 label {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     width: 80px;
      height: auto;
      display: block;
+     text-align: justify;
     /* background-color: yellow; */
     font-weight: 600;
      font-size: 1.0em;
@@ -165,14 +183,16 @@ input {
     background-color: pink;
     margin-bottom: 10px;
     /* width: 20%; */
-    height: 25px;
+    height: 27px;
     background-color: whitesmoke;
     color: black; 
     /* color: orange; */
     border: 1px solid black;
-    border-radius: 2px;
-    margin-top: 2px;
+    border-radius: 9px;
+    margin-top: 4px;
     font-weight: bold;
+    display: block;
+    text-indent: 9px;
     /* text-align: center; */
 
 }
@@ -194,6 +214,7 @@ div#acessar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 0px 0px 10px 10px;
 }
 
 div#acessar > p {
@@ -205,6 +226,8 @@ div#acessar > p {
 }
 
 div#acessar > button {
+    color: white;
+    font-weight: 200;
     background-color: #EB7F04;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
@@ -218,7 +241,7 @@ div#acessar > button {
 }
 
 
-.msgErro {
+p.msg-erro {
     display: none;
 }
 
@@ -232,17 +255,36 @@ footer {
 
 /* ---------- mediaQuery -------------------*/
 
-@media (min-width: 533px) {
 
+/* imagem da logo do site ao lado dos campos para não precisar mais centralizar*/
+
+@media (min-width: 589px) {
+
+
+    div#container-login {
+        width: 65%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+       
+    }
+
+    div#img {
+        display: block;
+    }
     
 
      form {
-        width: 100%;
-        padding-left: 25%;
+        width: 50%;
         display: block;
+        padding: 5px;
         justify-content: center;
         /* padding-left: 25%; */
       
+    }
+
+    div#acessar {
+        width: 45%;
     }
 
 
