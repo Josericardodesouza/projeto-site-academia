@@ -87,30 +87,53 @@ section {
     justify-content: center;
     height: 130px;
     padding: 15px;
+    display: inline-block;
 
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 div#container-login {
     background-color: green;
     align-items: center;
-    width: 92%;
-    display: flex;
-    padding-left: 20px;
+    width: 97%;
+  
 
 }
 
 label {
+    width: 20px;
     background-color: yellow;
+     margin-right: 5px; 
 
 }
 
 input {
-
+    min-width: 20px;
     background-color: pink;
+    margin-bottom: 10px;
+    /* width: 20%; */
+    height: 25px;
+    background-color: whitesmoke;
+    color: black; 
+    /* color: orange; */
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 2px;
+    font-weight: bold;
+    /* text-align: center; */
 
 
 }
 
+input:hover {
+border: none;
+color: #E98A15;
+border: 3px solid white;
+
+}
 
 footer {
 
