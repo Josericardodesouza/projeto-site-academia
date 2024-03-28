@@ -51,6 +51,42 @@ nav {
 }
 
 
+header {
+    background-image: url(../imagens/imgs-background/pexels-victor-freitas-703016.jpg);
+
+
+
+  
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 270px;
+    position: relative;
+    margin: 0px 0px 20px 0px;
+}
+
+header > h1 {
+  
+    color: #EB7F04;
+    font-weight: 600;
+    font-family: 'Impact', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    position: absolute;
+    margin-top: 60px;
+    left: 20px;
+}
+
+header > p {
+    width: 40%;
+    margin-bottom: 2px;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+
 
 /* nav > h5 {
     color: black;
@@ -76,42 +112,56 @@ nav > a > span.material-symbols-outlined {
 main {
     width: 100vw;
     height: auto;
-    justify-content: center;
+ 
     
-
 }
 
 section {
-    background-color: red;
-    display: flex;
-    justify-content: center;
+    width: 100vw;
+    background-color: white;
+    /* background-color: red; */
     height: 130px;
-    padding: 15px;
-    display: inline-block;
-
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-div#container-login {
-    background-color: green;
-    align-items: center;
-    width: 97%;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
   
 
 }
 
+
+
+
+div#container-login {
+    /* background-color: green; */
+    background-color: #EB7F04;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px 10px;
+}
+
+
+form {
+    display: inline-block;
+    width: 70%;
+   
+}
+
 label {
-    width: 20px;
-    background-color: yellow;
-     margin-right: 5px; 
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     width: 80px;
+     height: auto;
+     display: block;
+    /* background-color: yellow; */
+    font-weight: 600;
+     font-size: 1.0em;
 
 }
 
 input {
-    min-width: 20px;
+    /* min-width: 20px; */
     background-color: pink;
     margin-bottom: 10px;
     /* width: 20%; */
@@ -125,14 +175,51 @@ input {
     font-weight: bold;
     /* text-align: center; */
 
+}
+
+input:focus {
+    border: none;
+    color: #E98A15;
+    border: 1px solid white;
 
 }
 
-input:hover {
-border: none;
-color: #E98A15;
-border: 3px solid white;
 
+
+div#acessar {
+    background-color: black;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#acessar > p {
+    display: block;
+    color: orange;
+    text-decoration: underline;
+    margin: 10px 0px 10px 0px;
+  
+}
+
+div#acessar > button {
+    background-color: #EB7F04;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    margin-top: 10px;
+    width: 50px;
+    height: 25px;
+    display: block;
+    border: 1px black;
+    border-radius: 2px 2px;
+  
+}
+
+
+.msgErro {
+    display: none;
 }
 
 footer {
@@ -140,6 +227,26 @@ footer {
 
 }
 
+
+
+
+/* ---------- mediaQuery -------------------*/
+
+@media (min-width: 533px) {
+
+    
+
+     form {
+        width: 100%;
+        padding-left: 25%;
+        display: block;
+        justify-content: center;
+        /* padding-left: 25%; */
+      
+    }
+
+
+}
 
 
 

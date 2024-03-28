@@ -13,25 +13,92 @@
        <!-- <h5>FITNESS PLUS</h5> -->
        <a href="../index.html"><span class="material-symbols-outlined">home</span></a>
     </nav>
+    <header>
+        <h1>LOGIN</h1>
+        <p>FAÇA LOGIN PARA USAR A VERSÃO <mark>WEB</mark> DO NOSSO APLICATIVO!</p>
+    </header>
 
     <main>
-      <section>
-        <p>faça login para usar a versão <mark>web</mark> do nosso aplicativo!
+      
         </p>
+      <section>
+       
+      
               <div id="container-login">
             
-                  <form action="pag002login.html" method="post">
-                      <label for="id-email">E-mail</label>
-                      <input type="email" name="inputemail" id="input-email" required minlength="5" maxlength="40" placeholder="ex: gigachad@gmail.com" autocomplete="on">
-                      <br>
-                      <label for="input-nome">Senha</label>
-                      <input type="password" name="input-nome" id="input-nome" placeholder="" required>
+                  <form action="cadastroLogin.php" method="post">
+                      <label for="id-email">E-MAIL 
+                      </label>
+                      <input type="email" name="inputemail" id="input-email" required  placeholder="ex: gigachad@gmail.com" autocomplete="on" oninput="contaCaracteres()">
+                      <p id="email-erro" class="msg-erro">Está faltando o "@" em seu email</p>
+                      <!-- <br> -->
+                      <label for="input-nome">SENHA</label>
+                      <input type="password" name="input-senha" id="input-senha" placeholder="" required oninput="contaCaracteres()">
+                      <p id="senha-erro" class="msg-erro">Sua senha é muito curta</p>
                   </form>
               </div>
-          
+              <div id="acessar">
+                  <button onclick="enviar()">LOGIN</button>
+              
+                  <p>Não tenho uma conta</p>
+              </div>
       </section>
 
+     
+
+    
+
     </main>
+
+
+
+
+
+    <script>
+        
+        function contaCaracteres() {
+            refEmail = 30;
+            refSenha = 15;
+            minSenha = 8;
+
+            
+            var email = document.getElementById("input-email")
+            var senha = document.getElementById("input-senha")
+            var input = document.getElementById("input-senha")
+          
+
+            lmtEmail = email.value;
+            lmtSenha = senha.value;
+
+            if (lmtEmail.length > refEmail) {
+                email.value = lmtEmail.slice(0, refEmail);
+            }
+
+
+            if (lmtSenha.length > refSenha) {
+                senha.value = lmtSenha.slice(0, refSenha);
+            }
+
+            // while (input.value.length <= 8) {
+            //     input.style.borderColor = 'red';
+
+
+            // }
+
+                
+       
+
+           
+
+                
+
+    //         if (lmtNumCarb.length > refCarb) {
+    //     carbInfor.value = lmtNumCarb.slice(0, refCarb);
+    // }
+        }
+
+
+    </script>
 
 
 
