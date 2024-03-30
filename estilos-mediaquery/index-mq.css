@@ -25,7 +25,7 @@
         display: flex;
         position: relative;
         justify-content: space-around;
-        right: 6px;
+        right: 10px;
        
       
         
@@ -93,6 +93,7 @@
         height: 60px;
         margin: 0px;
         padding: 0px;
+
         background-color: var(--atomicTangerine);
         display: flex;
         position: fixed;
@@ -102,7 +103,7 @@
     }
 
     div#menuHamb {
-        display: none;
+        /* display: none; */
     }
 
 
@@ -180,6 +181,12 @@ header {
 
 
 @media screen and (min-width: 766px) {
+
+    div#btns-links {
+        right: 17px;
+    }
+
+
 
     .imagem-texto {
         display: flex;

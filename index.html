@@ -14,15 +14,23 @@
     <nav id="fixa">
         <nav id="nav-topo">
             <!-- <h5>FITNESS PLUS</h5> -->
-            <img src="imagens/logo/logo-60x60.png" alt="logo do site">
+            <picture>
+            <source media = "(min-width: 600px)" srcset= "imagens/logo/logo-90x90.png" type="image/png">
+              <img src="imagens/logo/logo-60x60.png" alt="logo do site">
+            </picture>
+            
             <span onclick="cliqueMenu()" class="material-symbols-outlined" id="span-nav">menu</span>
             <br>
             <div id="btns-links">
-                <a class="btn-nav" id="btn-cad" href="pag002login.html">LOGIN</a>
+                <a class="btn-nav" id="btn-login" href="pag002login.html">LOGIN</a>
                 
-                <a class="btn-nav" id="btn-login" href="pag002login.html">CADASTRO</a>
+                <a class="btn-nav" id="btn-cad" href="pag003Cadastro.html">CADASTRO</a>
             </div>
         </nav>
+
+       
+      
+
         <nav id="oculta">
             <nav id="nav-menu">
                 <div id="menuHamb">
@@ -36,7 +44,8 @@
             </nav>
         </nav>
     </nav>
-    <br>
+  
+   
 
      <header>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Its <br> <mark>FITNESS</mark></p>
