@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style-login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="imagens/logo/logo-60x60.png" alt="logo do site">
+       <!-- <h5>FITNESS PLUS</h5> -->
+       <a href="../index.html"><span class="material-symbols-outlined">home</span></a>
+    </nav>
+    <header>
+        <h1>LOGIN</h1>
+        <p>FAÇA SEU CADASTRO PARA SER <mark>LOREM FITNESS!</mark></p>
+    </header>
+
+    <main>
+      
+        </p>
+      <section>
+
+   
+              <div id="container-cadastro">
+                
+                <div id="img">
+                    <img src="imagens/logo/logo-recortada.png" alt="">
+                </div>
+                
+                  <form action="cadastroLogin.php" method="post">
+                      <label for="input-nome">DIGITE NOME
+                      </label>
+                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="contaCaracteres()">
+                      <p id="email-erro" class="msg-erro">Este campo é obrigatório</p>
+                      <!-- <br> -->
+
+                      <label for="input-sobrenome">DIGITE SEU SOBRENOME</label>
+                      <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" required oninput="contaCaracteres()">
+                      <p id="senha-erro" class="msg-erro">Este campo é obrigatório</p>
+
+                      <label for="input-rg">DIGITE SEU RG</label>
+                      <input type="number" name="input-rg" id="input-rg" placeholder="" required oninput="contaCaracteres()">
+
+                      <label for="input-cpf">DIGITE SEU CPF</label>
+                      <input type="number" name="input-cpf" id="input-cpf" placeholder="" required oninput="contaCaracteres()">
+
+                      <label for="input-endereco">digite seu endereço</label>
+                      <input type="text" name="input-endereco" id="input-endereco" placeholder="" required oninput="contaCaracteres()">
+
+                      <label for="input-telefone">digite seu telefone</label>
+                      <input type="number" name="input-telefone" id="input-endereco" placeholder="" required oninput="contaCaracteres()">
+
+                      <label for="estatura">digite sua estatura</label>
+                      <input type="number" name="input-estatura" id="input-estatura" placeholder="" required oninput="contaCaracteres()">
+
+                
+
+
+                  </form>
+              </div>
+              <div id="acessar">
+                  <button onclick="enviar()">LOGIN</button>
+              
+                  <p>Não tenho uma conta</p>
+              </div>
+      </section>
+
+     
+
+    
+
+    </main>
+
+
+
+
+
+    <script>
+        
+        function contaCaracteres() {
+            refEmail = 30;
+            refSenha = 15;
+            minSenha = 8;
+
+            
+            var email = document.getElementById("input-email")
+            var senha = document.getElementById("input-senha")
+            var input = document.getElementById("input-senha")
+          
+
+            lmtEmail = email.value;
+            lmtSenha = senha.value;
+
+            if (lmtEmail.length > refEmail) {
+                email.value = lmtEmail.slice(0, refEmail);
+            }
+
+
+            // if (lmtSenha.length > refSenha) {
+            //     senha.value = lmtSenha.slice(0, refSenha);
+            // }
+
+            // while (input.value.length <= 8) {
+            //     input.style.borderColor = 'red';
+
+
+            // }
+
+                
+       
+
+           
+
+                
+
+    //         if (lmtNumCarb.length > refCarb) {
+    //     carbInfor.value = lmtNumCarb.slice(0, refCarb);
+    // }
+        }
+
+
+    </script>
+
+
+
+
+    <!-- Cadastre-se gratuitamente ou faça login
+    <form action="pag002login.html" method="post">
+    <div class="campo-entrada">
+        <label for="id-email">Email</label>
+            <input type="email" name="email" id="id-email" required minlength="1" maxlength="40" size="30" placeholder="giga.ch4d@email.com" autocomplete="on"></input>
+    </div>
+        <div class="campo-entrada">
+            <label for="id-senha">Senha</label>
+            <input type="password" name="senha" id="id-senha" required minlength="8" maxlength="11" size="30" placeholder="insira sua senha"></div>
+        </div>
+
+     </form> -->
+
+     <!-- endereço ,email, telefone, peso, estatura-->
+    
+</body>
+</html>
