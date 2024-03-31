@@ -33,16 +33,17 @@
                   <form action="cadastroLogin.php" method="post">
                       <label for="id-email">DIGITE SEU EMAIL 
                       </label>
-                      <input type="email" name="inputemail" id="input-email" required  placeholder="ex: gigachad@gmail.com" autocomplete="on" oninput="contaCaracteres()">
+                      <input type="text" name="inputemail" id="input-email" required  placeholder="ex: gigachad@gmail.com" autocomplete="on">
                       <p id="email-erro" class="msg-erro">Está faltando o "@" em seu email</p>
+                      <p id="email-erro-.com" class="msg-erro">Está faltando o .COM</p>
                       <!-- <br> -->
                       <label for="input-nome">DIGITE SUA SENHA</label>
-                      <input type="password" name="input-senha" id="input-senha" placeholder="" required oninput="contaCaracteres()">
+                      <input type="password" name="input-senha" id="input-senha" placeholder="" required oninput="senhaConfere()">
                       <p id="senha-erro" class="msg-erro">Sua senha é muito curta</p>
                   </form>
               </div>
               <div id="acessar">
-                  <button onclick="enviar()">LOGIN</button>
+                  <button onclick="confere(); contaCaracteres()">LOGIN</button>
               
                   <p>Não tenho uma conta</p>
               </div>
@@ -65,10 +66,9 @@
             refSenha = 15;
             minSenha = 8;
 
-            
             var email = document.getElementById("input-email")
             var senha = document.getElementById("input-senha")
-            var input = document.getElementById("input-senha")
+       
           
 
             lmtEmail = email.value;
@@ -77,6 +77,93 @@
             if (lmtEmail.length > refEmail) {
                 email.value = lmtEmail.slice(0, refEmail);
             }
+
+        }
+
+
+
+            function confere() {
+                var entEmail = document.getElementById("input-email").value
+                var entSenha = document.getElementById("input-senha").value
+                var inputEmail = document.getElementById("input-email");
+                var inputSenha = document.getElementById("input-senha");
+                var pErroCom = document.getElementById("email-erro-.com");
+                var pErroEmail = document.getElementById("email-erro");
+           
+
+                
+
+
+                switch (true) {
+
+                     case (entEmail.indexOf('@') === -1 || entEmail.indexOf('') === 1):
+                        pErroEmail.style.display = 'block';
+                        pErroSenha.style.display = 'none';
+                        inputEmail.style.borderColor = 'red';
+                     break;
+
+                     case (entEmail.indexOf('.com') === -1):
+                        pErroCom.style.display = 'block';
+                        pErroEmail.style.display = 'none';
+                        inputEmail.style.borderColor = 'red';
+                        break;
+
+
+                  
+
+
+                default:
+                    pErroEmail.style.display = 'none';
+                    pErroCom.style.display = 'none';
+                    inputEmail.style.borderColor = 'black';
+                  
+
+                    break;
+                }
+
+
+
+                function senhaConfere() {
+                    var senha = document.getElementById("input-email").value
+                    var pErroSenha = document.getElementById("senha-erro");
+
+                    var teste = senha.length;
+
+                    while (teste < 5) {
+                        pErroSenha.style.display = 'block';
+
+                    }
+
+                }
+               
+
+            
+
+
+
+
+
+
+
+ 
+ 
+
+//   switch(true) {
+//     case (entPeso.indexOf(',') === -1 && entPeso.indexOf('.') === -1): /* correto*/
+      
+//     
+//   
+
+//        inputPeso.style.borderColor = 'red';
+//        inputAlt.style.borderColor = 'black';
+//        inputIdade.style.borderColor = 'black';
+
+//       container.style.display = 'none';
+
+//       console.log('erroPeso')
+      
+//       break;
+
 
 
             // if (lmtSenha.length > refSenha) {
