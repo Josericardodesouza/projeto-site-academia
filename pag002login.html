@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,18 +34,20 @@
                       <label for="id-email">DIGITE SEU EMAIL 
                       </label>
                       <input type="text" name="inputemail" id="input-email" required  placeholder="ex: gigachad@gmail.com" autocomplete="on">
-                      <p id="email-erro" class="msg-erro">Está faltando o "@" em seu email</p>
-                      <p id="email-erro-.com" class="msg-erro">Está faltando o .COM</p>
+                      <p id="email-erro" class="msg-erro"> *Está faltando o "@" em seu email</p>
+                      <p id="email-erro-.com" class="msg-erro"> *Está faltando o .COM</p>
                       <!-- <br> -->
                       <label for="input-nome">DIGITE SUA SENHA</label>
                       <input type="password" name="input-senha" id="input-senha" placeholder="" required oninput="senhaConfere()">
-                      <p id="senha-erro" class="msg-erro">Sua senha é muito curta</p>
+                      <p id="senha-erro" class="msg-erro"> *Sua senha é muito curta</p>
                   </form>
               </div>
               <div id="acessar">
                   <button onclick="confere(); contaCaracteres()">LOGIN</button>
               
-                  <p>Não tenho uma conta</p>
+                  <a href="pag003Cadastro.html">
+                      <p>Não tenho uma conta</p>
+                  </a>
               </div>
       </section>
 
@@ -84,9 +86,7 @@
 
             function confere() {
                 var entEmail = document.getElementById("input-email").value
-                var entSenha = document.getElementById("input-senha").value
                 var inputEmail = document.getElementById("input-email");
-                var inputSenha = document.getElementById("input-senha");
                 var pErroCom = document.getElementById("email-erro-.com");
                 var pErroEmail = document.getElementById("email-erro");
            
@@ -98,7 +98,6 @@
 
                      case (entEmail.indexOf('@') === -1 || entEmail.indexOf('') === 1):
                         pErroEmail.style.display = 'block';
-                        pErroSenha.style.display = 'none';
                         inputEmail.style.borderColor = 'red';
                      break;
 
@@ -121,17 +120,22 @@
                     break;
                 }
 
+            }
 
 
-                function senhaConfere() {
-                    var senha = document.getElementById("input-email").value
+                function senhaConfere() { // não funcionava pois estava dentro da função confere
+                    var senha = document.getElementById("input-senha").value
+                    var inputSenha = document.getElementById("input-senha")
                     var pErroSenha = document.getElementById("senha-erro");
 
-                    var teste = senha.length;
-
-                    while (teste < 5) {
+                   
+                    if (senha.length < 7) {
                         pErroSenha.style.display = 'block';
+                        inputSenha.style.borderColor = 'red';
+                        console.log('passou')
 
+                    } else {
+                        pErroSenha.style.display = 'none';
                     }
 
                 }
@@ -186,7 +190,7 @@
     //         if (lmtNumCarb.length > refCarb) {
     //     carbInfor.value = lmtNumCarb.slice(0, refCarb);
     // }
-        }
+     
 
 
     </script>

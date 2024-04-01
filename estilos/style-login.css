@@ -187,7 +187,7 @@ input {
     background-color: whitesmoke;
     color: black; 
     /* color: orange; */
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 9px;
     margin-top: 4px;
     font-weight: bold;
@@ -198,9 +198,9 @@ input {
 }
 
 input:focus {
-    border: none;
+   
     color: #E98A15;
-    border: 1px solid white;
+    border: 4px solid;
 
 }
 
@@ -217,13 +217,14 @@ div#acessar {
     border-radius: 0px 0px 10px 10px;
 }
 
-div#acessar > p {
+div#acessar >  a {
     display: block;
     color: orange;
     text-decoration: underline;
     margin: 10px 0px 10px 0px;
-  
 }
+
+
 
 div#acessar > button {
     color: white;
@@ -243,6 +244,7 @@ div#acessar > button {
 
 p.msg-erro {
     display: none;
+    margin-bottom: 2.5px;
 }
 
 footer {
