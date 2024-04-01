@@ -33,18 +33,20 @@
                   <form action="cadastroLogin.php" method="post">
                       <label for="input-nome">digite seu nome</label>
                       <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="contaCaracteres()">
-                      <p id="email-erro" class="msg-erro">Este campo é obrigatório</p>
+                      <p id="nome-erro-num" class="msg-erro">Este campo não pode conter números</p>
+                      <p id="nome-erro" class="msg-erro">Este campo é obrigatório</p>
                       <!-- <br> -->
 
                       <label for="input-sobrenome">digite seu sobrenome</label>
                       <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" required oninput="contaCaracteres()">
-                      <p id="senha-erro" class="msg-erro">Este campo é obrigatório</p>
+                      <p id="sobrenome-erro" class="msg-erro">Este campo é obrigatório</p>
 
                       <label for="input-rg">digite seu RG</label>
-                      <input type="number" name="input-rg" id="input-rg" placeholder="" required oninput="contaCaracteres()">
+                      <input type="number" name="input-rg" id="input-rg" required oninput="contaCaracteres()">
+                      <p id="rg-erro" class="msg-erro">Formato inváldo</p>
 
                       <label for="input-cpf">digite seu CPF</label>
-                      <input type="number" name="input-cpf" id="input-cpf" placeholder="" required oninput="contaCaracteres()">
+                      <input type="text" name="input-cpf" id="input-cpf" maxlength="14" oninput="mascaraCpf()">
 
                       <label for="input-endereco">digite seu endereço</label>
                       <input type="text" name="input-endereco" id="input-endereco" placeholder="" required oninput="contaCaracteres()">
@@ -61,7 +63,9 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button onclick="enviar()">LOGIN</button>
+                  <button onclick="confereNome()">LOGIN</button>
+
+                  <!-- enviar(); -->
               
                   <p>já sou inscrito na LOREM IPSUM FITNESS</p>
               </div>
@@ -97,6 +101,63 @@
                 email.value = lmtEmail.slice(0, refEmail);
             }
 
+        }
+
+
+        function confereNome() {
+            var nome = document.getElementById("input-nome").value
+            var erroNull = document.getElementById("nome-erro")
+            var erroNum = document.getElementById("nome-erro-num")
+
+
+            switch(true) {
+                case (nome.indexOf('[0-9]') === -1):
+                    erroNum.style.display = 'block';
+                    erroNull.style.display = 'none';
+                    break;
+
+                case (nome.indexOf('') === -1):
+                    erroNull.style.display = 'block';
+                    erroNum.style.display = 'none';
+                    
+            }
+        }
+
+
+        function mascaraCpf() {
+            var inputCpf = document.getElementById("input-cpf")
+                // var inputCpf = parseFloat(document.getElementById("input-cpf"));
+
+                inputCpf.addEventListener('keypress', function() {
+                    var cpfLength = inputCpf.value.length
+
+                    if (cpfLength === 3 || cpfLength === 7) {
+                        inputCpf.value += '.'
+                        // confere = 12
+
+                    } else if (cpfLength === 11) {
+                        inputCpf.value += '-'
+
+                    }
+
+
+                }
+             )
+
+
+                // switch (true) {
+                //     case (inputCpf.value.length != Number && inputCpf.indexOf('.') === -1 && inputCpf.indexOf('-') === -1):
+                //         inputCpf.value = '';
+                // }
+
+
+
+         
+        }
+
+
+
+           
 
             // if (lmtSenha.length > refSenha) {
             //     senha.value = lmtSenha.slice(0, refSenha);
@@ -118,7 +179,7 @@
     //         if (lmtNumCarb.length > refCarb) {
     //     carbInfor.value = lmtNumCarb.slice(0, refCarb);
     // }
-        }
+        
 
 
     </script>

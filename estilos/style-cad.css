@@ -189,10 +189,11 @@ input {
     /* color: orange; */
     border: 1px solid black;
     border-radius: 9px;
-    margin-top: 4px;
+    
     font-weight: bold;
     display: block;
     text-indent: 9px;
+    margin-bottom: 10px;
     /* text-align: center; */
 
 }
