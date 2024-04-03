@@ -102,7 +102,7 @@ function aparecer () {
              pErroPes.style.display = 'none';
 
              inputPeso.style.borderColor = 'black';
-             inputAlt.style.borderCColor = 'black';
+             inputAlt.style.borderColor = 'black';
 
             container.style.display = 'block';
             container.scrollIntoView({behavior: "smooth"});
