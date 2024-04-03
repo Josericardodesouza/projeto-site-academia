@@ -59,7 +59,7 @@
                       <p id="saida-logradouro-rua"></p>
 
                       <label for="input-telefone">digite seu número de celular:</label>
-                      <input type="text" name="input-telefone" id="input-telefone" placeholder="" maxlength="14" required oninput="mascaraTelefone(); confereNum()">
+                      <input type="text" name="input-telefone" id="input-telefone" placeholder="" maxlength="14" required oninput="mascaraTelefone(); confereNum(); contaNums()">
                       <p id="pErroNum" class="msg-erro">Formato inválido</p>
                       <p id="pErroQtd" class="msg-erro">Numeros insuficientes!</p>
 
@@ -90,7 +90,7 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button onclick="peso(); validaCep(); contaNums()">LOGIN</button>
+                  <button onclick="peso(); validaCep()">LOGIN</button>
 
                   <!-- enviar(); -->
               
@@ -235,6 +235,14 @@
 
             }
 
+
+            // if(/^\d+$/.test(inputNum) ) {
+            //         window.alert('Todos são numeros')
+            //     } else {
+            //    window.alert('Está faltando número ou contém caracteres não numéricos.');
+            //      }
+
+
             // if (qtdNums < 14) {
             //     pErroQtd.style.display = 'block';
             // } else {
@@ -246,35 +254,51 @@
            
             }
 
+
+
+function contaNums() {
+
+    var inputNum = document.getElementById("input-telefone").value
+
+
+    switch('true') {
+    case (
+    inputNum[2] !== /(0-9)/ ||
+    inputNum[4]  !== /(0-9)/ ||
+    inputNum[5]  !== /(0-9)/ ||
+    inputNum[6]  !== /(0-9)/ ||
+    inputNum[7]  !== /(0-9)/ ||
+    inputNum[8]  !== /(0-9/) ||
+    inputNum[10] !== /(0-9)/ ||
+    inputNum[11]  !== /(0-9)/ ||
+    inputNum[12]  !== /(0-9)/ ||
+    inputNum[13]  !== /(0-9)/ ||
+    inputNum[14]  !== /(0-9)/
+    ): 
+    console.log('esta faltando numero');
+    break;
+    // function contaNums() {
+
+    default: 
+
+    console.log('Passou')
+
+    }
+}
+
+
+
  
 
-            function contaNums() {
+            // function contaNums() {
 
-                var inputNum = document.getElementById("input-telefone").value
+            //     var inputNum = document.getElementById("input-telefone").value
+
+               
 
 
-                switch('true') {
-                case (
-            inputNum[2] === isNaN ||
-            inputNum[4] === isNaN ||
-            inputNum[5] === isNaN ||
-            inputNum[6] === isNaN ||
-            inputNum[7] === isNaN ||
-            inputNum[8] === isNaN ||
-            inputNum[10] === isNaN ||
-            inputNum[11] === isNaN ||
-            inputNum[12] === isNaN ||
-            inputNum[13] === isNaN ||
-            inputNum[14] === isNaN
-            ): 
-                console.log('esta faltando numero');
-                break;
 
-                default: 
-                 console.log('CERTAO')
-
-            }
-            }
+            // }
 
         
 
