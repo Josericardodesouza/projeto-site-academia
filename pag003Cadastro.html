@@ -82,7 +82,7 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button onclick="confereNome()">LOGIN</button>
+                  <button onclick="confereNome(); buscarLocal()">LOGIN</button>
 
                   <!-- enviar(); -->
               
@@ -187,7 +187,8 @@
 
             var request = new XMLHttpRequest();
 
-            request.open('GET', 'https://viacep.com.br/ws/' + request + '/json/')
+            request.open('GET', 'https://viacep.com.br/ws/' + inputCEP + '/json/')
+            request.send();
 
             request.onload = function() {
                 let dadosLocal = JSON.parse(this.responseText)
@@ -195,6 +196,11 @@
                 let estado = dadosLocal.uf;
                 let cidade = dadosLocal.localidade;
                 let rua = dadosLocal.logradouro;
+
+
+                document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
+                document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + ".";
+                document.getElementById("saida-logradouro-rua").innerHTML = "Endereço: " + rua + ".";
 
             }
         }
