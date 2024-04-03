@@ -188,6 +188,15 @@
             var request = new XMLHttpRequest();
 
             request.open('GET', 'https://viacep.com.br/ws/' + request + '/json/')
+
+            request.onload = function() {
+                let dadosLocal = JSON.parse(this.responseText)
+
+                let estado = dadosLocal.uf;
+                let cidade = dadosLocal.localidade;
+                let rua = dadosLocal.logradouro;
+
+            }
         }
 
 
