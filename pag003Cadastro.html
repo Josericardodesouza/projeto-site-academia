@@ -39,8 +39,9 @@
                       <!-- <br> -->
 
                       <label for="input-sobrenome">digite seu sobrenome</label>
-                      <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" required oninput="">
+                      <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="">
                       <p id="sobrenome-erro" class="msg-erro">Este campo é obrigatório</p>
+                      <p id="sobrenome-erro-num" class="msg-erro">Este campo não pode conter números</p>
 
                       <label for="input-rg">digite seu RG (opcional)</label>
                       <input type="text" name="input-rg" id="input-rg" maxlength="12" oninput="mascaraRG()">
@@ -61,7 +62,7 @@
                       <label for="input-telefone">digite seu número de celular:</label>
                       <input type="text" name="input-telefone" id="input-telefone" placeholder="" maxlength="14" required oninput="mascaraTelefone(); confereNum()">
                       <p id="pErroNum" class="msg-erro">Formato inválido</p>
-                      <p id="pErroQtd" class="msg-erro">Numeros insuficientes!</p>
+                      <p id="pErroQtdNum" class="msg-erro">Desculpe, Você se esqueceu de algum número</p>
 
                       <p>informações físicas</p>
 
@@ -75,7 +76,7 @@
                       <p id="pErroPesoNull" style="display: none;">O campo não deve ficar vazio!</p>
                       
 
-                      <label for="">Por quê deseja se cadastrar na Lorem Ipsum Fitness?</label>
+                      <label for="">Por quê deseja se cadastrar na Lorem Ipsum Fitness? (opcional)</label>
                       <select name="selecObj" id="selecObj">
                         <option value="nenhum" selected disabled >Selecionar</option>
                         <option value="opt-perderPeso">Quero perder peso!</option>
@@ -90,7 +91,7 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button onclick="contaNums()">LOGIN</button>
+                  <button onclick="confereNomeSobrenome(); contaNums(); peso()">LOGIN</button>
 
                   <!-- enviar(); -->
               
@@ -151,6 +152,57 @@
         // }
 
 
+        function confereNomeSobrenome() {
+            var inputNome = document.getElementById("input-nome").value
+            var inputSobrenome = document.getElementById("input-sobrenome").value
+            var pErroNome = document.getElementById("nome-erro")
+            var pErroNomeNum = document.getElementById("nome-erro-num")
+            var pErroSobrenome = document.getElementById("sobrenome-erro")
+            var pErroSobNum = document.getElementById("sobrenome-erro-num")
+
+            switch (true) {
+            case (inputNome.indexOf('') === -1): 
+             pErroNome.style.display = 'block';
+             break;
+
+            case (typeof inputNome === Number): 
+             pErroNomeNum.style.display = 'block';
+             break;
+
+            case (inputSobrenome.indexOf('') === -1): 
+             pErroSobrenome.style.display = 'block';
+             break;
+
+            case (typeof inputSobrenome === Number): 
+             pErroSobNum.style.display = 'block';
+             break;
+
+             default: 
+
+            //  pErroNome.style.display = 'none';
+            //  pErroNomeNum.style.display = 'none';
+            //  pErroSobrenome.style.display = 'none';
+            //  pErroSobNum.style.display = 'none';
+          
+
+
+    //         if (!/[0-9]/.test(inputNum[1])) {
+    //     pErroQtdNums.style.display = 'block';
+    //     console.log('Falta numero na posi 1')
+    // }
+
+    //estudar expressões regulares
+
+
+            }
+
+
+             
+
+
+
+
+        }
         
         function mascaraRG() {
             var inputRg = document.getElementById("input-rg")
@@ -259,52 +311,66 @@
 function contaNums() {
 
     var inputNum = document.getElementById("input-telefone").value
+    var pErroQtdNums = document.getElementById("pErroQtdNum")
+
 
 
     
     if (!/[0-9]/.test(inputNum[1])) {
+        pErroQtdNums.style.display = 'block';
         console.log('Falta numero na posi 1')
     }
 
     else if (!/[0-9]/.test(inputNum[2])) {
+        pErroQtdNums.style.display = 'block';
         console.log('Falta número na posi 2')
     }
 
     else if (!/[0-9]/.test(inputNum[4])) {
-    console.log('Falta numero na posi 4')
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 4')
     }
 
     else if (!/[0-9]/.test(inputNum[5])) {
-    console.log('Falta numero na posi 5')
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 5')
     }
 
     else if (!/[0-9]/.test(inputNum[6])) { 
-    console.log('Falta numero na posi 6')
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 6')
     }
 
     else if (!/[0-9]/.test(inputNum[7])) { 
-    console.log('Falta numero na posi 7')
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 7')
     }
 
     else if (!/[0-9]/.test(inputNum[8])) {
-    console.log('Falta numero na posi 8') 
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 8') 
     }
 
     else if (!/[0-9]/.test(inputNum[10])) {
-    console.log('Falta numero na posi 10')
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 10')
     }
 
-    else if (!/[0-9]/.test(inputNum[11])) { 
-    console.log('Falta numero na posi 11')
+    else if (!/[0-9]/.test(inputNum[11])) {
+        pErroQtdNums.style.display = 'block'; 
+        console.log('Falta numero na posi 11')
     }
 
     else if (!/[0-9]/.test(inputNum[12])) {
-    console.log('Falta numero na posi 12')
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 12')
     }
 
     else if (!/[0-9]/.test(inputNum[13])) {
-    console.log('Falta numero na posi 13')
+        pErroQtdNums.style.display = 'block';
+        console.log('Falta numero na posi 13')
     } else {
+        pErroQtdNums.style.display = 'none';
         console.log('Tem todos os números!')
     }
 
