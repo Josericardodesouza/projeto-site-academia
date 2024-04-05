@@ -187,7 +187,7 @@ input {
     background-color: whitesmoke;
     color: black; 
     /* color: orange; */
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 9px;
     
     font-weight: bold;
@@ -199,9 +199,9 @@ input {
 }
 
 input:focus {
-    border: none;
+    height: 27px;
     color: #E98A15;
-    border: 1px solid white;
+    border: 4px solid white;
 
 }
 

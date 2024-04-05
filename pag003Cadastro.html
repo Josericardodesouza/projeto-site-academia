@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
                   <form action="cadastroLogin.php" method="post">
                     <p>Informações pessoais: </p>
                       <label for="input-nome">digite seu nome</label>
-                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="">
+                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeNum()">
                       <p id="nome-erro-num" class="msg-erro">Este campo não pode conter números</p>
                       <p id="nome-erro" class="msg-erro">Este campo é obrigatório</p>
                       <!-- <br> -->
@@ -54,7 +54,7 @@
                       <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="" oninput="mascaraCep()" required>
                       <button onclick="buscarLocal()">buscar local</button>
 
-
+                      <p id="p-erro-local" class="msg-erro">Por favor, insira um CEP válido</p>
                       <p id="saida-uf"></p>
                       <p id="saida-cidade"></p>
                       <p id="saida-logradouro-rua"></p>
@@ -91,7 +91,7 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button onclick="confereNomeSobrenome(); contaNums(); peso()">LOGIN</button>
+                  <button id="btn-login" onclick="confereNomeNull(); contaNums(); peso()">LOGIN</button>
 
                   <!-- enviar(); -->
               
@@ -152,32 +152,74 @@
         // }
 
 
-        function confereNomeSobrenome() {
-            var inputNome = document.getElementById("input-nome").value
-            var inputSobrenome = document.getElementById("input-sobrenome").value
-            var pErroNome = document.getElementById("nome-erro")
-            var pErroNomeNum = document.getElementById("nome-erro-num")
-            var pErroSobrenome = document.getElementById("sobrenome-erro")
-            var pErroSobNum = document.getElementById("sobrenome-erro-num")
+        function confereNomeNum() {
+            let inputNome = document.getElementById("input-nome")
+            // var inputSobrenome = document.getElementById("input-sobrenome").value
+            let pErroNomeNum = document.getElementById("nome-erro-num")
+            
+            // var pErroSobrenome = document.getElementById("sobrenome-erro")
+            // var pErroSobNum = document.getElementById("sobrenome-erro-num")
 
-            switch (true) {
-            case (inputNome.indexOf('') === -1): 
-             pErroNome.style.display = 'block';
-             break;
+            inputNomeValue = inputNome.value;
 
-            case (typeof inputNome === Number): 
+          if (/\d/.test(inputNomeValue)) {
              pErroNomeNum.style.display = 'block';
-             break;
+             inputNome.style.borderColor = 'red';
+            //  document.getElementById('btn-login').disabled = 'true'
+           
+         } else {
+            inputNome.style.borderColor = 'white';
+            pErroNomeNum.style.display = 'none';
+            // document.getElementById('btn-login').disabled = 'false'
+         }
 
-            case (inputSobrenome.indexOf('') === -1): 
-             pErroSobrenome.style.display = 'block';
-             break;
 
-            case (typeof inputSobrenome === Number): 
-             pErroSobNum.style.display = 'block';
-             break;
+        }
 
-             default: 
+
+
+
+        function confereNomeNull() {
+            let inputNome = document.getElementById("input-nome");
+            let pErroNull = document.getElementById("nome-erro")
+
+            inputNomeValue  = inputNome.value;
+
+            if (inputNomeValue === '') {
+                pErroNull.style.display = 'block';
+                inputNome.style.borderColor = 'red';
+
+            } else {
+                pErroNull.style.display = 'none';
+                inputNome.style.borderColor = 'white';
+            }
+
+        }
+        
+
+            
+
+        //      case (inputNome === " "): 
+        //       pErroNome.style.display = 'block';
+        //       pErroNomeNum.style.display = 'none';
+
+        //       break;
+
+        //       default: 
+        //        pErroNome.style.display = 'none';
+        //        pErroNomeNum.style.display = 'none';
+        // }
+  
+        //     }
+
+
+        function confereSobrenome() {
+            var inputSobrenome = document.getElementById("input-sobrenome").value
+
+
+       
+
+            
 
             //  pErroNome.style.display = 'none';
             //  pErroNomeNum.style.display = 'none';
@@ -202,7 +244,7 @@
 
 
 
-        }
+        
         
         function mascaraRG() {
             var inputRg = document.getElementById("input-rg")
@@ -416,6 +458,7 @@ function contaNums() {
 
         function buscarLocal() {
             var inputCEP = document.getElementById('input-cep').value
+            var pErroLocal = document.getElementById("p-erro-local")
 
             var request = new XMLHttpRequest();
 
@@ -425,14 +468,31 @@ function contaNums() {
             request.onload = function() {
                 let dadosLocal = JSON.parse(this.responseText)
 
-                let estado = dadosLocal.uf;
-                let cidade = dadosLocal.localidade;
-                let rua = dadosLocal.logradouro;
+                var estado = dadosLocal.uf;
+                var cidade = dadosLocal.localidade;
+                var rua = dadosLocal.logradouro;
+
+                switch (true) { // fiz sozinho, o copilot só disse que deveria trocar o "undefined." por undefined pois é uma variável indefinida
+                    case (estado === undefined):
+                     pErroLocal.style.display = 'block';
+                     break;
+
+                    case (cidade === undefined): 
+                     pErroLocal.style.display = 'block';
+                     break;
+
+                    case (rua === undefined): 
+                     pErroLocal.style.display = 'block';
+                     break;
+
+                     default: 
+                      pErroLocal.style.display = 'none';
+                      document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
+                      document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + ".";
+                      document.getElementById("saida-logradouro-rua").innerHTML = "Endereço: " + rua + ".";
+                }
 
 
-                document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
-                document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + ".";
-                document.getElementById("saida-logradouro-rua").innerHTML = "Endereço: " + rua + ".";
 
             }
         }
@@ -514,6 +574,13 @@ function contaNums() {
        
             //  break;
         }
+
+
+
+
+
+        //FUNÇÃO PARA QUE, QUANDO ALGUMA MENSAGEM DE ERRO ESTEJA HABILITADA, O BOTÃO GANHA UM DISABLE
+             // document.getElementById('btn-login').disabled = 'false'
   
 
 
