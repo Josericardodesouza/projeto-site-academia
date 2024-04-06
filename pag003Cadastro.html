@@ -48,7 +48,7 @@
                     
 
                       <label for="input-rg">digite seu RG (opcional)</label>
-                      <input type="text" name="input-rg" id="input-rg" maxlength="12" oninput="mascaraRG()">
+                      <input type="text" name="input-rg" id="input-rg" maxlength="12" required oninput="mascaraRG(); mascaraRgConfere()">
                       <p id="rg-erro" class="msg-erro">Formato inváldo</p>
 
                       <label for="input-cpf">digite seu CPF</label>
@@ -373,84 +373,123 @@
                     inputRg.value += '-'
             })
 
-            if (/^[0-9]{3}-[0-9]{3}-[0-9]$/.test(inputRgValue)) {
 
-              pErroRg.style.display = 'none';
-              inputRg.style.borderColor = 'black';
+        }
 
-            } else {
+
+
+            function mascaraRgConfere() {
+                var inputRg = document.getElementById("input-rg")
+                var pErroRg = document.getElementById("rg-erro")
+
+                inputRgValue = inputRg.value
+
+                if (!/^\d{2}.\d{3}.\d{3}-\d{1}$/.test(inputRgValue)) {
+                 pErroRg.style.display = 'none';
+                 inputRg.style.borderColor = 'black';
+                 console.log('todos os caracteres são numéricos')
+
+                } else {
+
+                pErroRg.style.display = 'block';
+               inputRg.style.borderColor = 'red';
+               console.log('Tem caractere que não é numérico');
+               }
+
+                /*inputRg.addEventListener('keypress', function() {
+
+             if (/^d{2}.d{3}.d{3}-d{1}$/.test(inputRgValue)) {
+
+                 pErroRg.style.display = 'none';
+                 inputRg.style.borderColor = 'black';
+            //    console.log('tem caractere sem ser numerico')
+            //    console.log('borda vermelha')
+
+
+
+             } else {
                 pErroRg.style.display = 'block';
                 inputRg.style.borderColor = 'red';
-            }
+                
+                //  console.log('Todos os caracteres são numeros ')
+                //  console.log('borda verde')
+                }
+
+                })
+
+
+            
         
   
-            // if (!/[0-9]/.test(inputRgValue[0])) {
-            //    pErroRg.style.display = 'block';
-            //    inputRg.style.borderColor = 'red';
-            //    console.log('Falta numero na posi 1 RG')
-            // }
+             /*if (!/[0-9]/.test(inputRgValue[0])) {
+               pErroRg.style.display = 'block';
+               inputRg.style.borderColor = 'red';
+               console.log('Falta numero na posi 1 RG')
+             }
 
-            // else if (!/[0-9]/.test(inputRgValue[1])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 2 RG')
-            // }
+             else if (!/[0-9]/.test(inputRgValue[1])) {
+                pErroRg.style.display = 'block';
+                inputRg.style.borderColor = 'red';
+                console.log('Falta número na posição 2 RG')
+             }
 
-            // else if (!/[0-9]/.test(inputRgValue[3])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 3 RG')
-            // }
+             else if (!/[0-9]/.test(inputRgValue[3])) {
+                pErroRg.style.display = 'block';
+                 inputRg.style.borderColor = 'red';
+                 console.log('Falta número na posição 3 RG')
+             }
 
-            // else if (!/[0-9]/.test(inputRgValue[4])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 4 RG')
-            // }
+             else if (!/[0-9]/.test(inputRgValue[4])) {
+                 pErroRg.style.display = 'block';
+                 inputRg.style.borderColor = 'red';
+                 console.log('Falta número na posição 4 RG')
+             }
 
-            // else if (!/[0-9]/.test(inputRgValue[5])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 5 RG')
-            // }
-
-            
-            // else if (!/[0-9]/.test(inputRgValue[6])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 6 RG')
-
-            // }
-        
-            // else if (!/[0-9]/.test(inputRgValue[8])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 8 RG')
-
-            // }
+             else if (!/[0-9]/.test(inputRgValue[5])) {
+                pErroRg.style.display = 'block';
+                inputRg.style.borderColor = 'red';
+                console.log('Falta número na posição 5 RG')
+             }
 
             
-            // else if (!/[0-9]/.test(inputRgValue[9])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 9 RG')
-            // }
+             else if (!/[0-9]/.test(inputRgValue[6])) {
+                pErroRg.style.display = 'block';
+                inputRg.style.borderColor = 'red';
+                console.log('Falta número na posição 6 RG')
+
+             }
+    
+             else if (!/[0-9]/.test(inputRgValue[8])) {
+                pErroRg.style.display = 'block';
+                inputRg.style.borderColor = 'red';
+                console.log('Falta número na posição 8 RG')
+
+             }
 
             
-            // else if (!/[0-9]/.test(inputRgValue[10])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 10 RG')
-
-            // }
+             else if (!/[0-9]/.test(inputRgValue[9])) {
+                pErroRg.style.display = 'block';
+                inputRg.style.borderColor = 'red';
+                console.log('Falta número na posição 9 RG')
+             }
 
             
-            // else if (!/[0-9]/.test(inputRgValue[12])) {
-            //     pErroRg.style.display = 'block';
-            //     inputRg.style.borderColor = 'red';
-            //     console.log('Falta número na posição 12 RG')
+             else if (!/[0-9]/.test(inputRgValue[10])) {
+                pErroRg.style.display = 'block';
+                inputRg.style.borderColor = 'red';
+                 console.log('Falta número na posição 10 RG')
 
-            // }
+             }
+
+            
+             else if (!/[0-9]/.test(inputRgValue[12])) {
+                 pErroRg.style.display = 'block';
+                 inputRg.style.borderColor = 'red';
+                 console.log('Falta número na posição 12 RG')
+
+             }
+
+             */
 
     
               
