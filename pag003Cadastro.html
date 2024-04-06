@@ -33,19 +33,19 @@
                   <form action="cadastroLogin.php" method="post">
                     <p>Informações pessoais: </p>
                       <label for="input-nome">digite seu nome</label>
-                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus()">
+                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
                       <p id="nome-erro-num" class="msg-erro">Este campo não pode conter números</p>
                       <p id="nome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
                       <p id="nome-erro" class="msg-erro">Este campo é obrigatório</p>
-                      <p id="nome-erro-invalido"></p>
+                
                       <!-- <br> -->
 
                       <label for="input-sobrenome">digite seu sobrenome</label>
-                      <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="confereNomeSobrenomeNum(); inputNullFocus()">
+                      <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="confereNomeSobrenomeNum(); inputNullFocus(); sobrenomeCaractereInvalido()">
                       <p id="sobrenome-erro" class="msg-erro">Este campo é obrigatório</p>
                       <p id="sobrenome-erro-num" class="msg-erro">Este campo não pode conter números</p>
                       <p id="sobrenome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
-                      <p id="sobrenome-erro-invalido"></p>
+                    
 
                       <label for="input-rg">digite seu RG (opcional)</label>
                       <input type="text" name="input-rg" id="input-rg" maxlength="12" oninput="mascaraRG()">
@@ -95,7 +95,7 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso(); confereCaractereInvalido()">LOGIN</button>
+                  <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso()">LOGIN</button>
 
                   <!-- enviar(); -->
               
@@ -261,37 +261,52 @@
 
 
 
-        function confereCaractereInvalido() {
+        function nomeCaractereInvalido() {
             let inputNome = document.getElementById("input-nome")
-            let inputSobrenome = document.getElementById("input-sobrenome")
             let pNomeCaractereInv = document.getElementById("nome-erro-caractereInv")
-            let pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
+           
 
             let inputNomeValue = inputNome.value
-            let inputSobrenomeValue = inputSobrenome.value
+           
 
             if (!/[a-zA-Z]/.test(inputNomeValue)) {
                 pNomeCaractereInv.style.display = 'block';
                 inputNome.style.borderColor = 'red'
-                // console.log('Há no acento')
+                 console.log('Há uma / no campo nome')
             } else {
                 pNomeCaractereInv.style.display = 'none';
                 inputNome.style.borderColor = 'white'
 
-                // console.log('Não há acentos')
+                 console.log('a barra em NOME foi removida')
             }
+
+
+            
+
+        }
+
+
+        function sobrenomeCaractereInvalido() {
+            let inputSobrenome = document.getElementById("input-sobrenome")
+            let pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
+
+            let inputSobrenomeValue = inputSobrenome.value
 
 
             if (!/[a-zA-Z]/.test(inputSobrenomeValue)) {
                 pSobrenomeCaractereInv.style.display = 'block';
                 inputSobrenome.style.borderColor = 'red';
-                // console.log('Há no acento no sobrenome')
+                 console.log('Há uma barra no sobrenome')
             } else {
                 pSobrenomeCaractereInv.style.display = 'none';
                 inputSobrenome.style.borderColor = 'white';
-                // console.log('Não há acentos no sobrenome')
+                console.log('Não há uma barra no sobrenome')
             }
             
+
+
+
+
 
 
         }
@@ -345,18 +360,104 @@
         
         function mascaraRG() {
             var inputRg = document.getElementById("input-rg")
+            var pErroRg = document.getElementById("rg-erro")
+
+            inputRgValue = inputRg.value
 
             inputRg.addEventListener('keypress', function() {
                 var rgLength = inputRg.value.length
 
                 if (rgLength === 2 || rgLength === 6) {
                     inputRg.value += '.'
-                } else if (rgLength === 10) {
+                } else if (rgLength === 10) 
                     inputRg.value += '-'
-
-                }
             })
-    }
+
+            if (/^[0-9]{3}-[0-9]{3}-[0-9]$/.test(inputRgValue)) {
+
+              pErroRg.style.display = 'none';
+              inputRg.style.borderColor = 'black';
+
+            } else {
+                pErroRg.style.display = 'block';
+                inputRg.style.borderColor = 'red';
+            }
+        
+  
+            // if (!/[0-9]/.test(inputRgValue[0])) {
+            //    pErroRg.style.display = 'block';
+            //    inputRg.style.borderColor = 'red';
+            //    console.log('Falta numero na posi 1 RG')
+            // }
+
+            // else if (!/[0-9]/.test(inputRgValue[1])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 2 RG')
+            // }
+
+            // else if (!/[0-9]/.test(inputRgValue[3])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 3 RG')
+            // }
+
+            // else if (!/[0-9]/.test(inputRgValue[4])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 4 RG')
+            // }
+
+            // else if (!/[0-9]/.test(inputRgValue[5])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 5 RG')
+            // }
+
+            
+            // else if (!/[0-9]/.test(inputRgValue[6])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 6 RG')
+
+            // }
+        
+            // else if (!/[0-9]/.test(inputRgValue[8])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 8 RG')
+
+            // }
+
+            
+            // else if (!/[0-9]/.test(inputRgValue[9])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 9 RG')
+            // }
+
+            
+            // else if (!/[0-9]/.test(inputRgValue[10])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 10 RG')
+
+            // }
+
+            
+            // else if (!/[0-9]/.test(inputRgValue[12])) {
+            //     pErroRg.style.display = 'block';
+            //     inputRg.style.borderColor = 'red';
+            //     console.log('Falta número na posição 12 RG')
+
+            // }
+
+    
+              
+            
+        }
+
+            
 
 
         function mascaraCpf() {
