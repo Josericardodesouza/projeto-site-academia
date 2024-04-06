@@ -33,15 +33,19 @@
                   <form action="cadastroLogin.php" method="post">
                     <p>Informações pessoais: </p>
                       <label for="input-nome">digite seu nome</label>
-                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeNum()">
+                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus()">
                       <p id="nome-erro-num" class="msg-erro">Este campo não pode conter números</p>
+                      <p id="nome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
                       <p id="nome-erro" class="msg-erro">Este campo é obrigatório</p>
+                      <p id="nome-erro-invalido"></p>
                       <!-- <br> -->
 
                       <label for="input-sobrenome">digite seu sobrenome</label>
-                      <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="">
+                      <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="confereNomeSobrenomeNum(); inputNullFocus()">
                       <p id="sobrenome-erro" class="msg-erro">Este campo é obrigatório</p>
                       <p id="sobrenome-erro-num" class="msg-erro">Este campo não pode conter números</p>
+                      <p id="sobrenome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
+                      <p id="sobrenome-erro-invalido"></p>
 
                       <label for="input-rg">digite seu RG (opcional)</label>
                       <input type="text" name="input-rg" id="input-rg" maxlength="12" oninput="mascaraRG()">
@@ -91,7 +95,7 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button id="btn-login" onclick="confereNomeNull(); contaNums(); peso()">LOGIN</button>
+                  <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso(); confereCaractereInvalido()">LOGIN</button>
 
                   <!-- enviar(); -->
               
@@ -152,26 +156,49 @@
         // }
 
 
-        function confereNomeNum() {
+        function confereNomeSobrenomeNum() {
             let inputNome = document.getElementById("input-nome")
+            let inputSobrenome = document.getElementById("input-sobrenome")
             // var inputSobrenome = document.getElementById("input-sobrenome").value
             let pErroNomeNum = document.getElementById("nome-erro-num")
+            let pErroSobrenomeNum = document.getElementById("sobrenome-erro-num")
+            
             
             // var pErroSobrenome = document.getElementById("sobrenome-erro")
             // var pErroSobNum = document.getElementById("sobrenome-erro-num")
 
-            inputNomeValue = inputNome.value;
+           let inputNomeValue = inputNome.value;
+           let inputSobrenomeValue = inputSobrenome.value;
 
           if (/\d/.test(inputNomeValue)) {
              pErroNomeNum.style.display = 'block';
              inputNome.style.borderColor = 'red';
             //  document.getElementById('btn-login').disabled = 'true'
            
-         } else {
+         }
+          else {
             inputNome.style.borderColor = 'white';
             pErroNomeNum.style.display = 'none';
             // document.getElementById('btn-login').disabled = 'false'
          }
+
+
+
+         if (/\d/.test(inputSobrenomeValue)) {
+             pErroSobrenomeNum.style.display = 'block';
+             inputSobrenome.style.borderColor = 'red';
+            
+           
+         }
+          else {
+            inputSobrenome.style.borderColor = 'white';
+            pErroSobrenomeNum.style.display = 'none';
+           
+         }
+
+
+
+
 
 
         }
@@ -179,20 +206,93 @@
 
 
 
-        function confereNomeNull() {
+        function confereNomeSobrenomeNull() {
             let inputNome = document.getElementById("input-nome");
-            let pErroNull = document.getElementById("nome-erro")
+            let inputSobrenome = document.getElementById("input-sobrenome")
 
-            inputNomeValue  = inputNome.value;
+            let pErroNomeNull = document.getElementById("nome-erro")
+            let pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+
+
+            let inputNomeValue  = inputNome.value;
+            let inputSobrenomeValue = inputSobrenome.value;
+
+
 
             if (inputNomeValue === '') {
-                pErroNull.style.display = 'block';
+                pErroNomeNull.style.display = 'block';
                 inputNome.style.borderColor = 'red';
 
-            } else {
-                pErroNull.style.display = 'none';
-                inputNome.style.borderColor = 'white';
             }
+
+
+
+            if (inputSobrenomeValue === '') {
+                pErroSobrenomeNull.style.display = 'block';
+                inputSobrenome.style.borderColor = 'red';
+
+            }
+
+        }
+
+
+        function inputNullFocus() {
+            let inputNome = document.getElementById("input-nome");
+            let inputSobrenome = document.getElementById("input-sobrenome")
+
+            let pErroNomeNull = document.getElementById("nome-erro")
+            let pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+
+            let inputNomeValue  = inputNome.value;
+            let inputSobrenomeValue = inputSobrenome.value;
+
+
+                if (inputNomeValue !== '' || inputSobrenomeValue !== '') {
+                    pErroNomeNull.style.display = 'none';
+                    pErroSobrenomeNull.style.display = 'none';
+                    inputSobrenome.style.borderColor = 'white';
+                    inputNome.style.borderColor = 'white';
+                }
+            }
+
+
+
+
+
+
+
+        function confereCaractereInvalido() {
+            let inputNome = document.getElementById("input-nome")
+            let inputSobrenome = document.getElementById("input-sobrenome")
+            let pNomeCaractereInv = document.getElementById("nome-erro-caractereInv")
+            let pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
+
+            let inputNomeValue = inputNome.value
+            let inputSobrenomeValue = inputSobrenome.value
+
+            if (!/[a-zA-Z]/.test(inputNomeValue)) {
+                pNomeCaractereInv.style.display = 'block';
+                inputNome.style.borderColor = 'red'
+                // console.log('Há no acento')
+            } else {
+                pNomeCaractereInv.style.display = 'none';
+                inputNome.style.borderColor = 'white'
+
+                // console.log('Não há acentos')
+            }
+
+
+            if (!/[a-zA-Z]/.test(inputSobrenomeValue)) {
+                pSobrenomeCaractereInv.style.display = 'block';
+                inputSobrenome.style.borderColor = 'red';
+                // console.log('Há no acento no sobrenome')
+            } else {
+                pSobrenomeCaractereInv.style.display = 'none';
+                inputSobrenome.style.borderColor = 'white';
+                // console.log('Não há acentos no sobrenome')
+            }
+            
+
 
         }
         
@@ -212,9 +312,6 @@
   
         //     }
 
-
-        function confereSobrenome() {
-            var inputSobrenome = document.getElementById("input-sobrenome").value
 
 
        
@@ -236,7 +333,7 @@
     //estudar expressões regulares
 
 
-            }
+            
 
 
              
@@ -365,7 +462,7 @@ function contaNums() {
 
     else if (!/[0-9]/.test(inputNum[2])) {
         pErroQtdNums.style.display = 'block';
-        console.log('Falta número na posi 2')
+        console.log('Falta número na posi 2')    
     }
 
     else if (!/[0-9]/.test(inputNum[4])) {
@@ -581,7 +678,7 @@ function contaNums() {
 
         //FUNÇÃO PARA QUE, QUANDO ALGUMA MENSAGEM DE ERRO ESTEJA HABILITADA, O BOTÃO GANHA UM DISABLE
              // document.getElementById('btn-login').disabled = 'false'
-  
+        // os inputs serão limpos quando a div aparecer
 
 
 
