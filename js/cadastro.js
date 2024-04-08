@@ -264,8 +264,8 @@
 
             function mascaraRgConfere() {
                 var inputRgValue = document.getElementById("input-rg").value
-                // var inputRg = document.getElementById("input-rg")
-                // var pErroRg = document.getElementById("rg-erro")
+                 var inputRg = document.getElementById("input-rg")
+                var pErroRg = document.getElementById("rg-erro")
 
                 // var rgLength = inputRg.value.length
 
@@ -273,7 +273,7 @@
 
                 /*console.log('valor inicial RG = ' + inputRgValue) // ele está recebendo 12 invés de 2,*/
 
-                console.log(inputRgValue[0])
+                /*console.log(inputRgValue[0])
                 console.log(inputRgValue[1])
                 console.log(inputRgValue[3])
                 console.log(inputRgValue[4])
@@ -284,19 +284,27 @@
                 console.log(inputRgValue[9])
                 console.log(inputRgValue[10])
              
-                console.log(inputRgValue[12])
+                console.log(inputRgValue[12])*/
 
+
+
+                
                 // tentar com While
                 //tentar com OnChange
 
 
                
 
-                // if (!/^\d{2}.\d{3}.\d{3}-\d{2}$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
-                //     console.log('é caractere')
-                // } else {
-                //     console.log('é numero')
-                // }
+                 if (/^\d{2}(.)\d{3}(.)\d{3}(-)\d{2}$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
+                    console.log('tudo certo')
+                    pErroRg.style.display = 'block';
+                    inputRg.style.borderColor = 'red';
+
+                } else {
+                     console.log('tem caractere no meio');
+                     pErroRg.style.display = 'none'
+                     inputRg.style.borderColor = 'black';
+                 }
 
                 
                 

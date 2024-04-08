@@ -16,6 +16,7 @@ function cliqueMenu() {
     botao.addEventListener('click', function(){
         if (container.style.display == 'block') {
             container.style.display = 'none';
+            console.log('passou')
         } else {
             container.style.display = 'block';
         }
