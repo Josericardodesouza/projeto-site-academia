@@ -289,14 +289,21 @@
                 // tentar com While
                 //tentar com OnChange
 
-                if (/^\d{2}.?\d{3}.?\d{4}\d$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
-                    console.log('é caractere')
+
+                For
+                
+                ((!/^\d{2}.?\d{3}.?\d{4}\d$/.test(inputRgValue))) {
+                    console.log("é caractere")
+                }
+
+                // if (/^\d{2}.?\d{3}.?\d{4}\d$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
+                //     console.log('é caractere')
 
                 
-                } else {
-                  console.log('é numero')
+                // } else {
+                //   console.log('é numero')
                    
-                }
+                // }
 
                 
                 
