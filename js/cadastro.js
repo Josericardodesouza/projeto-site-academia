@@ -286,6 +286,9 @@
              
                 console.log(inputRgValue[12])
 
+                // tentar com While
+                //tentar com OnChange
+
                 if (/^\d{2}.?\d{3}.?\d{4}\d$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
                     console.log('é caractere')
 
