@@ -243,7 +243,7 @@
         
          function mascaraRG() {
              var inputRg = document.getElementById("input-rg")
-             var pErroRg = document.getElementById("rg-erro")
+            //  var pErroRg = document.getElementById("rg-erro")
 
              inputRgValue = inputRg.value
              
@@ -264,10 +264,10 @@
 
             function mascaraRgConfere() {
                 var inputRgValue = document.getElementById("input-rg").value
-                var inputRg = document.getElementById("input-rg")
-                var pErroRg = document.getElementById("rg-erro")
+                // var inputRg = document.getElementById("input-rg")
+                // var pErroRg = document.getElementById("rg-erro")
 
-                var rgLength = inputRg.value.length
+                // var rgLength = inputRg.value.length
 
              
 
@@ -290,19 +290,12 @@
                 //tentar com OnChange
 
 
-                For
-                
-                ((!/^\d{2}.?\d{3}.?\d{4}\d$/.test(inputRgValue))) {
-                    console.log("é caractere")
-                }
+               
 
-                // if (/^\d{2}.?\d{3}.?\d{4}\d$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
+                // if (!/^\d{2}.\d{3}.\d{3}-\d{2}$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
                 //     console.log('é caractere')
-
-                
                 // } else {
-                //   console.log('é numero')
-                   
+                //     console.log('é numero')
                 // }
 
                 
@@ -487,8 +480,8 @@
 
         function confereNum() {
             var inputNum = document.getElementById("input-telefone").value
-            var pErro = document.getElementById("pErroNum")
-            var pErroQtd = document.getElementById("pErroQtd")
+            // var pErro = document.getElementById("pErroNum")
+            // var pErroQtd = document.getElementById("pErroQtd")
             // var qtdNums = inputNum.value.length
 
             switch(true) {

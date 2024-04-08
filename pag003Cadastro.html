@@ -47,8 +47,8 @@
                       <p id="sobrenome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
                     
 
-                      <label for="input-rg">digite seu RG (opcional)</label>
-                      <input type="text" name="input-rg" id="input-rg" maxlength="12" required oninput=" mascaraRgConfere(); mascaraRG()">
+                      <label for="input-rg">digite seu RG</label>
+                      <input type="text" name="input-rg" id="input-rg" maxlength="12" required oninput="mascaraRG()">
                       <p id="rg-erro" class="msg-erro">Formato inváldo</p>
 
                       <label for="input-cpf">digite seu CPF</label>
@@ -96,6 +96,8 @@
               </div>
               <div id="acessar">
                   <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso()">LOGIN</button>
+
+                  <!--O botão vai receber a função do RG-->
 
                   <!-- enviar(); -->
               
