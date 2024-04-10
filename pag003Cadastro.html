@@ -48,7 +48,7 @@
                     
 
                       <label for="input-rg">digite seu RG</label>
-                      <input type="text" name="input-rg" id="input-rg" maxlength="12" required oninput="mascaraRG()">
+                      <input type="text" name="input-rg" id="input-rg" maxlength="12" required oninput="mascaraRG(); mascaraRgConfere()">
                       <p id="rg-erro" class="msg-erro">Formato inváldo</p>
 
                       <label for="input-cpf">digite seu CPF</label>
@@ -97,7 +97,7 @@
               </div>
               <div id="acessar">
                 <p id="erro-null" style="display: none;">Todos os campos devem estar preenchidos!</p>
-                  <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso(); mascaraRgConfere(); confereInputNull(); confereMsgErro()">CADASTRAR</button>
+                  <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso(); confereInputNull(); confereMsgErro()">CADASTRAR</button>
 
                   <!--O botão vai receber a função do RG-->
 

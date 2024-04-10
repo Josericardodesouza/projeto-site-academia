@@ -138,6 +138,9 @@
                     inputSobrenome.style.borderColor = 'white';
                     inputNome.style.borderColor = 'white';
                 }
+
+
+                
             }
 
 
@@ -152,9 +155,11 @@
            
 
             let inputNomeValue = inputNome.value
+
+            //regex correto
            
 
-            if (!/[a-zA-Z]/.test(inputNomeValue)) {
+            if (!/^[a-zA-ZÀ-ü' ]+$/.test(inputNomeValue)) {
                 pNomeCaractereInv.style.display = 'block';
                 inputNome.style.borderColor = 'red'
                  console.log('Há uma / no campo nome')
@@ -164,7 +169,6 @@
 
                  console.log('a barra em NOME foi removida')
             }
-
 
             
 
@@ -178,7 +182,9 @@
             let inputSobrenomeValue = inputSobrenome.value
 
 
-            if (!/[a-zA-Z]/.test(inputSobrenomeValue)) {
+            // regex correto
+
+            if (!/^[a-zA-ZÀ-ü' ]+$/.test(inputSobrenomeValue)) {
                 pSobrenomeCaractereInv.style.display = 'block';
                 inputSobrenome.style.borderColor = 'red';
                  console.log('Há uma barra no sobrenome')
@@ -294,13 +300,20 @@
                 // tentar com While
                 //tentar com OnChange
 
+                // !/^[a-zA-ZÀ-ü' ]+$/.test
 
-               
+                //(!/^\d{2}.?\d{3}.?\d{3}-?\d{2}$/
 
-                 if (!/^\d{2}(.)\d{3}(.)\d{3}(-)\d{2}$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
+
+
+                // verificar se a quantidade de .s for maior que 2, que é o padrão e se - é maior que 1
+
+                // verifica se a quantidade de numeros é maior ou menor que a quantidade padrão
+
+             
+                if (!(/^\d{2}.?\d{3}.?\d{3}-?\d{2}$/).test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
                     console.log('tudo certo')
                     pErroRg.style.display = 'none';
-                    inputRg.style.borderColor = 'black';
 
                 } else {
 
@@ -309,6 +322,9 @@
                      inputRg.style.borderColor = 'red';
                  }
 
+
+
+                 // ele tá dando erro só na primeira letra pois o ^ corresponde á primeira letra da string
                 
                 
 
@@ -881,6 +897,8 @@ function contaNums() {
                 container.style.display = 'block';
 
                 container.scrollIntoView({behavior: "smooth"})
+                // colocar o scrool também com a primeira mensagem de erro
+
 
                 document.getElementById("saida-uf").style.display = 'none'
 
