@@ -53,10 +53,11 @@
 
                       <label for="input-cpf">digite seu CPF</label>
                       <input type="text" name="input-cpf" id="input-cpf" maxlength="14" oninput="mascaraCpf()">
+                      <p id="cpf-erro" class="msg-erro">Formato inválido</p>
 
                       <label for="input-cep">digite seu CEP</label>
                       <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="" oninput="mascaraCep()" required>
-                      <button onclick="buscarLocal()">buscar local</button>
+                      <button id="btn-cep" onclick="buscarLocal()">buscar local</button>
 
                       <p id="p-erro-local" class="msg-erro">Por favor, insira um CEP válido</p>
                       <p id="saida-uf"></p>
@@ -76,11 +77,11 @@
                       <label for="peso">informe seu peso</label>
                       <input type="number" name="input-peso" id="input-peso" placeholder="" required>
                       
-                      <p id="pErroPeso" style="display: none;">Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>
-                      <p id="pErroPesoNull" style="display: none;">O campo não deve ficar vazio!</p>
+                      <p id="pErroPeso" class="msg-erro">Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>
+                      <p id="pErroPesoNull" class="msg-erro">O campo não deve ficar vazio!</p>
                       
 
-                      <label for="">Por quê deseja se cadastrar na Lorem Ipsum Fitness? (opcional)</label>
+                      <label for="selecObj">Por quê deseja se cadastrar na Lorem Ipsum Fitness? (opcional)</label>
                       <select name="selecObj" id="selecObj">
                         <option value="nenhum" selected disabled >Selecionar</option>
                         <option value="opt-perderPeso">Quero perder peso!</option>
@@ -95,7 +96,8 @@
                   </form>
               </div>
               <div id="acessar">
-                  <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso(); mascaraRgConfere()">LOGIN</button>
+                <p id="erro-null" style="display: none;">Todos os campos devem estar preenchidos!</p>
+                  <button id="btn-login" onclick="confereNomeSobrenomeNull(); contaNums(); peso(); mascaraRgConfere(); confereInputNull(); confereMsgErro()">CADASTRAR</button>
 
                   <!--O botão vai receber a função do RG-->
 
@@ -103,6 +105,18 @@
               
                   <p>já sou inscrito na LOREM IPSUM FITNESS</p>
               </div>
+      </section>
+      
+
+      <section id="section-oculta">
+          <section id="cadastro">
+            <div id="cad-efetuado">
+                <p>CADASTRO EFETUADO COM SUCESSO!</p>
+                <span class="material-symbols-outlined">
+                    task_alt
+                    </span>
+            </div>
+          </section>
       </section>
 
      

@@ -211,6 +211,11 @@ select {
     color: #EB7F04;
 }
 
+button#btn-cep {
+    
+}
+
+
 
 /* select > option {
     background-color: #EB7F04;
@@ -253,10 +258,56 @@ div#acessar > button {
   
 }
 
-
 p.msg-erro {
+    color: rgb(196, 4, 4);
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    display: none;
+    font-size: 0.9em;
+    text-decoration: solid;
+    
+}
+
+
+section#section-oculta {
     display: none;
 }
+
+
+section#cadastro {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+div#cad-efetuado {
+    display: inline-block;
+    padding: 5px;
+    color: var(--atomicTangerine);
+    background-color: black;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    color: greenyellow;
+
+    border-radius: 10px 10px 10px 10px;
+}
+
+div#cad-efetuado > p {
+    margin: 10px 0px 10px 0px;
+}
+
+div#cad-efetuado > span {
+    font-size: 2.1em;
+}
+
+
 
 footer {
 

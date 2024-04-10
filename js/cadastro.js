@@ -39,6 +39,8 @@
         // }
 
 
+        
+
         function confereNomeSobrenomeNum() {
             let inputNome = document.getElementById("input-nome")
             let inputSobrenome = document.getElementById("input-sobrenome")
@@ -762,6 +764,95 @@ function contaNums() {
        
             //  break;
         }
+
+
+        function confereInputNull() {
+
+            let container = document.getElementById("section-oculta")
+            let pErro = document.getElementById("erro-null")
+    
+
+          if (document.getElementById("input-nome").value === '') {
+            pErro.style.display = 'block';
+
+          } else if (document.getElementById("input-sobrenome").value === '') {
+
+            pErro.style.display = 'block';
+
+          } else if (document.getElementById("input-cpf").value === '') {
+
+            pErro.style.display = 'block';
+
+          } else if (document.getElementById("input-cep").value === '') {
+
+            pErro.style.display = 'block';
+
+          } else if (document.getElementById("input-telefone").value === '') {
+
+            pErro.style.display = 'block';
+
+          } else if (document.getElementById("input-estatura").value === '') {
+
+            pErro.style.display = 'block';
+
+          } else if (document.getElementById("input-peso").value === '') {
+
+            pErro.style.display = 'block';
+
+          } else {
+
+            pErro.style.display = 'none';
+            
+          }
+
+
+        }
+
+
+
+          function confereMsgErro() {
+
+            if (document.getElementById("nome-erro").style.display === 'block' ) {
+                document.body.style.background = 'blue';
+            } 
+
+
+
+
+            //é nessa função que a section oculta aparece, se o p de erro dos inputs vazios estiver com display block
+
+          }
+
+
+
+
+
+        //    switch (true) {
+
+        //     case pErro[1].style.display === 'block':    
+        //     case pErro[2].style.display === 'block': 
+        //     case pErro[3].style.display === 'block': 
+        //     case pErro[4].style.display === 'block': 
+        //     case pErro[5].style.display === 'block':
+        //     case pErro[6].style.display === 'block':
+        //     case pErro[7].style.display === 'block':
+
+        //     document.getElementById('btn-login').disabled = true
+        //     container.style.display = 'none'
+
+        //     break;
+
+        //     default: 
+
+        //     container.scrollIntoView({behavior: "smooth"});
+
+        //     document.getElementById('btn-login').disabled = false
+        //     container.style.display = 'block';
+
+        //    }
+
+        
+
 
 
 
