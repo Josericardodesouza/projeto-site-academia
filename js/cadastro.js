@@ -297,15 +297,16 @@
 
                
 
-                 if (/^\d{2}(.)\d{3}(.)\d{3}(-)\d{2}$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
+                 if (!/^\d{2}(.)\d{3}(.)\d{3}(-)\d{2}$/.test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
                     console.log('tudo certo')
-                    pErroRg.style.display = 'block';
-                    inputRg.style.borderColor = 'red';
+                    pErroRg.style.display = 'none';
+                    inputRg.style.borderColor = 'black';
 
                 } else {
+
                      console.log('tem caractere no meio');
-                     pErroRg.style.display = 'none'
-                     inputRg.style.borderColor = 'black';
+                     pErroRg.style.display = 'block'
+                     inputRg.style.borderColor = 'red';
                  }
 
                 
@@ -802,6 +803,7 @@ function contaNums() {
           } else {
 
             pErro.style.display = 'none';
+
             
           }
 
@@ -812,14 +814,99 @@ function contaNums() {
 
           function confereMsgErro() {
 
+            let container = document.getElementById("section-oculta")
+
+            let pLocal = document.getElementsByClassName("info-local")
+
             if (document.getElementById("nome-erro").style.display === 'block' ) {
-                document.body.style.background = 'blue';
-            } 
+
+                document.getElementById("btn-login").disabled = true 
+
+            } else if (document.getElementById("nome-erro-num").style.display === 'block') {
+
+                document.getElementById('btn-login').disabled = true 
+
+            } else if (document.getElementById("nome-erro-caractereInv").style.display === 'block'){
+
+                document.getElementById("btn-login").disabled = true
+
+            } else if (document.getElementById("sobrenome-erro").style.display === 'block') {
+
+                document.getElementById("btn-login").disabled = true
+
+            } else if (document.getElementById("sobrenome-erro-num").style.display === 'block') {
+
+                document.getElementById("btn-login").disabled = true
+
+            } else if (document.getElementById("sobrenome-erro-caractereInv").style.display === 'block') {
+
+                document.getElementById('btn-login').disabled = true
+
+            } else if (document.getElementById("rg-erro").style.display === 'block') {
+
+                document.getElementById('btn-login').disabled = true
+
+            } else if (document.getElementById("cpf-erro").style.display === 'block') {
+
+                document.getElementById('btn-login').disabled = true
+
+            } else if (document.getElementById("p-erro-local").style.display === 'block') {
+
+                document.getElementById('btn-login').disabled = true
+
+            } else if (document.getElementById("pErroNum").style.display === 'block') {
+
+                document.getElementById("btn-login").disabled = true
+
+            } else if (document.getElementById("pErroQtdNum").style.display === 'block') {
+
+                document.getElementById("btn-login").disabled = true
+
+            } else if (document.getElementById("pErroPeso").style.display === 'block') {
+
+                document.getElementById('btn-login').disabled = true
+
+            } else if (document.getElementById("pErroPesoNull").style.display === 'block') {
+
+                document.getElementById('btn-login').disabled = true
+
+            } else if (document.getElementById("erro-null").style.display === 'block') {
+
+                document.getElementById("btn-login").disable = true 
+
+            } else {
+
+                document.getElementById('btn-login').disabled = false
+
+                container.style.display = 'block';
+
+                container.scrollIntoView({behavior: "smooth"})
+
+                document.getElementById("saida-uf").style.display = 'none'
+
+                document.getElementById("saida-cidade").style.display = 'none'
+
+                document.getElementById("saida-logradouro-rua").style.display = 'none'
+
+                document.querySelectorAll('input').forEach(input => {
+                    input.value = ''
+
+                }
+
+            )}
+
+            
+
+
+        
 
 
 
 
             //é nessa função que a section oculta aparece, se o p de erro dos inputs vazios estiver com display block
+
+
+            // para rrsolver o problema de o p do erro não sumir depois de limpar o input, é usar um if para quando estiver vazio, reiniciado,  ou limpar ele automaticamente
 
           }
 

@@ -14,7 +14,7 @@
        <a href="../index.html"><span class="material-symbols-outlined">home</span></a>
     </nav>
     <header>
-        <h1>LOGIN</h1>
+        <h1>CADASTRO</h1>
         <p>FAÇA SEU CADASTRO PARA SER <mark>LOREM FITNESS!</mark></p>
     </header>
 
@@ -60,9 +60,9 @@
                       <button id="btn-cep" onclick="buscarLocal()">buscar local</button>
 
                       <p id="p-erro-local" class="msg-erro">Por favor, insira um CEP válido</p>
-                      <p id="saida-uf"></p>
-                      <p id="saida-cidade"></p>
-                      <p id="saida-logradouro-rua"></p>
+                      <p id="saida-uf" class="info-local"></p>
+                      <p id="saida-cidade" class="info-local"></p>
+                      <p id="saida-logradouro-rua" class="info-local"></p>
 
                       <label for="input-telefone">digite seu número de celular:</label>
                       <input type="text" name="input-telefone" id="input-telefone" placeholder="" maxlength="14" required oninput="mascaraTelefone(); confereNum()">
@@ -75,7 +75,7 @@
                       <input type="text" name="input-estatura" id="input-estatura" placeholder="" maxlength="4" required oninput="estatura()">
 
                       <label for="peso">informe seu peso</label>
-                      <input type="number" name="input-peso" id="input-peso" placeholder="" required>
+                      <input type="number" name="input-peso" id="input-peso" placeholder="">
                       
                       <p id="pErroPeso" class="msg-erro">Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>
                       <p id="pErroPesoNull" class="msg-erro">O campo não deve ficar vazio!</p>
