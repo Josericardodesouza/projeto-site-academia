@@ -277,9 +277,6 @@
 
                 // var rgLength = inputRg.value.length
 
-             
-
-                /*console.log('valor inicial RG = ' + inputRgValue) // ele está recebendo 12 invés de 2,*/
 
                 /*console.log(inputRgValue[0])
                 console.log(inputRgValue[1])
@@ -488,6 +485,63 @@
 
                 }
              )
+
+        }
+
+
+        function mascaraCpfConfere() {
+            var inputCpf = document.getElementById("input-cpf")
+            var inputCpfValue = document.getElementById("input-cpf").value
+
+            let ponto = inputCpfValue.split('.').length -1;
+            let traco = inputCpfValue.split('-').length - 1;
+
+            console.log(inputCpfValue) 
+
+            if (inputCpfValue[3] !== '.' && inputCpfValue[7] !== '.' && inputCpfValue[11] !== '-') {
+
+                // a questão do formato inválido é na função do botao
+
+                console.log('formato inválido')
+                inputCpf.style.borderColor = 'red';
+
+            } else {
+                inputCpf.style.borderColor = 'green'
+
+                console.log('pontos e - na posicao correta')
+            }
+
+            if (ponto > 2 || traco > 1) {
+                console.log('Tem pontos e tracos a mais')
+                inputCpf.style.borderColor = 'red';
+
+            } else {
+
+                console.log('tem a quantidade certa de pontos e um traco')
+                inputCpf.style.borderColor = 'green';
+
+            }
+
+            if (inputCpfValue.length === 13) {
+                console.log('Numeros suficientes')
+                inputCpf.style.borderColor = 'green';
+
+            } else {
+                console.log('Numeros insuficientes')
+                inputCpf.style.borderColor = 'red';
+
+
+            }
+
+
+
+            if (inputCpfValue === '') {
+                console.log('Campo vazio')
+            }
+
+
+
+
 
         }
 
