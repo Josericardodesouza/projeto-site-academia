@@ -53,16 +53,20 @@ nav {
 
 header {
     background-image: url(../imagens/imgs-background/pexels-victor-freitas-703016.jpg);
-
-
-
-  
     background-position: center center;
     background-size: cover;
     width: 100vw;
     height: 270px;
     position: relative;
     margin: 0px 0px 20px 0px;
+}
+
+
+header > div {
+    background-color: black;
+    width: 20%;
+    height: 100%;
+
 }
 
 header > h1 {
@@ -72,18 +76,36 @@ header > h1 {
     font-family: 'Impact', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60px;
     position: absolute;
-    margin-top: 60px;
-    left: 20px;
+    /*margin-top: 60px;*/
+    bottom: 5px;
+    left: 5px;
+    background-color: black;
+   /* left: 20px;*/
 }
 
-header > p {
+
+/*header > p {
     width: 40%;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    color: white;
+    color: var(--atomicTangerine);
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
+    background-color: black;
+    border-radius: 0px 10px 0px 0px;
+
+    padding: 5px 5px 5px 10px;
+}*/
+
+
+
+
+mark {
+    color: red;
+    background-color: transparent;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -113,6 +135,30 @@ main {
     width: 100vw;
     height: auto;
  
+    
+}
+
+
+div#pqn-texto {
+    display: flex;
+    width: 70%;
+    height: 70px;
+    background-color: black;
+    margin: auto;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+    color: var(--atomicTangerine);
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#pqn-texto > p {
+
+   
+
     
 }
 
@@ -261,6 +307,10 @@ footer {
 /* imagem da logo do site ao lado dos campos para não precisar mais centralizar*/
 
 @media (min-width: 589px) {
+
+    div#pqn-texto {
+        width: 45%;
+    }
 
 
     div#container-login {

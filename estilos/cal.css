@@ -44,6 +44,9 @@ nav#fixa {
 
 
 
+
+
+
 nav {
     color: black;
     width: 100vw;
@@ -52,6 +55,8 @@ nav {
     padding: 0px;
     background-color:#F98948;
     display: flex;
+    position: absolute;
+    top: 0;
    
    
 
