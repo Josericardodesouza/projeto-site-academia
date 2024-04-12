@@ -14,14 +14,17 @@
        <a href="index.html"><span class="material-symbols-outlined">home</span></a>
     </nav>
     <header>
-        <h1>CADASTRO</h1>
-        <p>FAÇA SEU CADASTRO PARA SER <mark>LOREM FITNESS!</mark></p>
+        <div id="titulo-cad">
+          <h1>CADASTRO</h1>
+        </div>
+
     </header>
 
     <main>
       
         </p>
       <section>
+        <div id="pqn-texto-cad"><p>FAÇA SEU CADASTRO PARA SER <mark>LOREM FITNESS!</mark></p></div>
 
    
               <div id="container-cadastro">
@@ -31,7 +34,7 @@
                 </div>
                 
                   <form action="cadastroLogin.php" method="post">
-                    <p>Informações pessoais: </p>
+                    <h3>INFORMAÇÕES PESSOAIS:  </h3>
                       <label for="input-nome">digite seu nome</label>
                       <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
                       <p id="nome-erro-num" class="msg-erro">Este campo não pode conter números</p>
@@ -103,7 +106,9 @@
 
                   <!-- enviar(); -->
               
-                  <p>já sou inscrito na LOREM IPSUM FITNESS</p>
+                  <a href="pag002login.html">
+                    <p>já sou inscrito na LOREM IPSUM FITNESS</p>
+                  </a>
               </div>
       </section>
       

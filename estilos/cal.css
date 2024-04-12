@@ -72,11 +72,13 @@ nav {
 } */
 
 nav > a > span.material-symbols-outlined {
-    font-size: 39px;
+    height: auto;
+    font-size: 36px;
     color: black;
     position: absolute;
-    top: 5px;
+    top: 20%;
     right: 0;
+    padding: 0;
     padding-right: 20px;
 }
 

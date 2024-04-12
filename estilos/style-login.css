@@ -52,7 +52,7 @@ nav {
 
 
 header {
-    background-image: url(../imagens/imgs-background/pexels-victor-freitas-703016.jpg);
+    background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
     background-position: center center;
     background-size: cover;
     width: 100vw;
@@ -144,15 +144,17 @@ div#pqn-texto {
     width: 70%;
     height: 70px;
     background-color: black;
-    margin: auto;
+     margin: auto; 
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 0.8em;
     text-align: center;
     align-items: center;
-    padding: 2px;
+    justify-content: center;
     color: var(--atomicTangerine);
     border-radius: 10px 10px 0px 0px;
+    border: 5px solid black;
+
 }
 
 div#pqn-texto > p {
@@ -167,9 +169,6 @@ section {
     background-color: white;
     /* background-color: red; */
     height: auto;
-    display: inline-block;
-   justify-content: center;
-   align-items: center;
    margin-bottom: 20px;
   
 
@@ -195,7 +194,7 @@ div#img > img {
 div#container-login {
     /* background-color: green; */
     background-color: #EB7F04;
-     margin: auto;
+     margin: auto; 
     width: 93%;
     height: auto;
     display: block;
@@ -256,11 +255,12 @@ div#acessar {
     background-color: black;
     width: 70%;
     height: auto;
-    margin: auto;
+    margin: auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0px 0px 10px 10px;
+    border: 5px solid black;
 }
 
 div#acessar >  a {
@@ -310,6 +310,8 @@ footer {
 
     div#pqn-texto {
         width: 45%;
+        text-align: center;
+        justify-content: center;
     }
 
 
@@ -337,6 +339,12 @@ footer {
 
     div#acessar {
         width: 45%;
+    }
+
+
+    div#pqn-texto {
+
+
     }
 
 

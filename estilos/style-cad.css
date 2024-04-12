@@ -65,18 +65,26 @@ header {
     margin: 0px 0px 20px 0px;
 }
 
-header > h1 {
-  
-    color: #EB7F04;
-    font-weight: 600;
-    font-family: 'Impact', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 60px;
+div#titulo-cad {
+    background-color: black;
+    width: 100vw;
+    align-items: left;
+    bottom: 0;
     position: absolute;
-    margin-top: 60px;
-    left: 20px;
+    
 }
 
-header > p {
+div#titulo-cad > h1 {
+    padding: 5px;
+    color: #EB7F04;
+    font-weight: 500;
+    font-family: 'Impact', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+  
+ 
+}
+
+/* header > p {
     width: 40%;
     margin-bottom: 2px;
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
@@ -84,7 +92,7 @@ header > p {
     color: white;
     position: absolute;
     bottom: 10px;
-}
+} */
 
 
 
@@ -116,6 +124,7 @@ main {
     
 }
 
+
 section {
     width: 100vw;
     background-color: white;
@@ -130,14 +139,45 @@ section {
 }
 
 
+div#pqn-texto-cad {
+    display: flex;
+    width: 55%;
+    height: 70px;
+    background-color: black;
+     margin: auto; 
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--atomicTangerine);
+    border-radius: 10px 10px 0px 0px;
+    border: 5px solid black;
+}
+
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-align: center;
+   font-weight: 200;
+   margin: 10px 0px 10px 0px;
+}
+
+
 div#img {
     display: block;
     width: 50%;
+    
 }
 
+/* 
 div#img > img {
     margin: auto;
-}
+} */
+
+
+
 
 
 
@@ -156,6 +196,7 @@ div#container-cadastro {
     justify-content: center;
     padding: 5px; 
     border-radius: 10px 10px;
+    padding: 10px 0px 10px 10px;
 }
 
 
@@ -209,11 +250,25 @@ select {
     width: 50%;
     background-color: black;
     color: #EB7F04;
+    margin-bottom: 20px;
 }
 
 button#btn-cep {
-    
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 4px 4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1em;
+    color: var(--coolGray);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.33);
+     margin-bottom: 10px; 
 }
+
+button#btn-cep:hover {
+    cursor: pointer;
+}
+
+
 
 
 
@@ -226,20 +281,25 @@ button#btn-cep {
 
 div#acessar {
     background-color: black;
-    width: 70%;
+    width: 55%;
     height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
 }
 
-div#acessar > p {
+div#acessar > a {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
     display: block;
     color: orange;
     text-decoration: underline;
     margin: 10px 0px 10px 0px;
+  
   
 }
 
@@ -248,14 +308,13 @@ div#acessar > button {
     font-weight: 200;
     background-color: #EB7F04;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 200;
+    font-size: 1.2em;
     margin-top: 10px;
-    width: 50px;
-    height: 25px;
+    width: auto;
+    height: 30px;
     display: block;
-    border: 1px black;
-    border-radius: 2px 2px;
-  
+    border: 5px solid #EB7F04 ;
+    border-radius: 4px 4px;
 }
 
 p.msg-erro {
@@ -322,7 +381,16 @@ footer {
 
 /* imagem da logo do site ao lado dos campos para não precisar mais centralizar*/
 
-@media (min-width: 589px) {
+@media (min-width: 600px) {
+
+
+    div#pqn-texto-cad {
+        width: 45%;
+    }
+
+    h3 {
+        text-align: left;
+    }
 
 
     div#container-cadastro {
@@ -330,12 +398,13 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
+        align-items: center;
        
     }
 
     div#img {
         display: block;
-        margin-top: 15%;
+        /* margin-top: 15%; */
     }
     
 
