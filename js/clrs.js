@@ -167,7 +167,6 @@ function resetar() {
         valorInputLipi.value = '';
         // resultado.style.display = 'none';
         container.style.display = 'none';
-        divCalc.scrollIntoView({behavior: "smooth"});
        
     }
 
