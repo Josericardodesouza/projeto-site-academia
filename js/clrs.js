@@ -159,6 +159,7 @@ function resetar() {
     var valorInputLipi = document.getElementById("ent-lipi");
     // var resultado = document.getElementsByClass("secao-saida");
     var container = document.getElementById("section-oculta");
+    var divCalc = document.getElementById("entrada-dados");
 
     if (container.style.display == 'block') {
         valorInputCarb.value = '';
@@ -166,6 +167,8 @@ function resetar() {
         valorInputLipi.value = '';
         // resultado.style.display = 'none';
         container.style.display = 'none';
+        divCalc.scrollIntoView({behavior: "smooth"});
+       
     }
 
 

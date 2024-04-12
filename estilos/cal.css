@@ -36,7 +36,7 @@
 nav#fixa {
         top: 0;
         display: block;
-        position: fixed;
+        position: sticky;
         margin: 0;
         padding: 0;
         z-index: 2;
@@ -57,6 +57,7 @@ nav {
     display: flex;
     position: absolute;
     top: 0;
+    align-items: center;
    
    
 
@@ -94,7 +95,7 @@ h1 {
      font-size: 16px;
      font-weight: 700;
      text-align: center;
-     margin-top: 20px;
+     /* margin-top: 20px; */
      margin-bottom: 0px;
      padding: 8px;
  }

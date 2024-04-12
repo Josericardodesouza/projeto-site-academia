@@ -10,16 +10,24 @@
 
 
 function cliqueMenu() {
-    var botao = document.getElementById("span-nav");
+    var botao = document.getElementById("btn-hamb");
     var container = document.getElementById("oculta");
 
     botao.addEventListener('click', function(){
-        if (container.style.display == 'block') {
+
+        if (container.style.display === 'block') {
             container.style.display = 'none';
-            console.log('passou')
+            console.log('escondeu')
+
+          
+
         } else {
+
             container.style.display = 'block';
+            console.log('mostrou')
+          
         }
     }
     )
+
 }

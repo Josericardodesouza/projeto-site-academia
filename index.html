@@ -19,7 +19,7 @@
               <img src="imagens/logo/logo-60x60.png" alt="logo do site">
             </picture>
             
-            <span onclick="cliqueMenu()" class="material-symbols-outlined" id="span-nav">menu</span>
+            <button id="btn-hamb" onclick="cliqueMenu()"><span class="material-symbols-outlined" id="span-nav">more_horiz</span></button>
             <br>
             <div id="btns-links">
                 <a class="btn-nav" id="btn-login" href="pag002login.html">LOGIN</a>
@@ -28,11 +28,12 @@
             </div>
         </nav>
 
-        <nav id="oculta">
+        <nav id="oculta" class="menu">
             <div id="div-menu">
                 <div id="menuHamb">
                     <div id="opcoes">
                             <a id="cad" href="pag002login.html" class="btn">CADASTRO</a>
+                            <p id="linha">-</p>
                             <a id="log" href="pag002login.html" class="btn">LOGIN</a>
                     </div>
                 </div>
