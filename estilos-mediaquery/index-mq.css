@@ -5,6 +5,20 @@
 /* configurações de nav para todas as mediaqueries*/
 
 
+@media (max-width: 285px) {
+
+    .container {
+        width: 220px;
+        height: 230px;
+    }
+
+    .txt-container > p {
+        font-size: 0.9em;
+
+        
+    }
+}
+
 @media(min-width: 325px) {
 
     nav#nav-topo {

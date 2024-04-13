@@ -439,8 +439,9 @@ section.secao-calculos {
      margin-bottom: 30px;
 
     justify-content: center;
+   
     display: flex; 
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
    
 }
@@ -452,10 +453,12 @@ section.secao-calculos {
     /* background-color: var(--fulvous); #E98A15*/
     background-image: linear-gradient(to right, #e98a15, #e28502);
     
-    width: 220px;
+    /* width: 220px; */
+    width: 260px;
     color: black;
     display: block;
-    height: 190px;
+    /* height: 190px; */ 
+    height: 230px;
     border-radius: 10px;
     overflow: hidden;
     /* margin-bottom: 12px; */
@@ -469,7 +472,7 @@ section.secao-calculos {
 
 .img-container {
     /* background-color:forestgreen; */
-    height: 100px;
+    height: 110px;
     margin: 0px;
     display: block;
     
@@ -477,10 +480,15 @@ section.secao-calculos {
 
 }
 
+
+div#div-geb-container {
+    margin: 0;
+}
+
 .txt-container {
-    height: 87px;
+    height: auto;
     /* background-color: rgba(255, 255, 0, 0.523); */
-    margin: 0px;
+    margin: 10px 0px 0px 0px;
     display: block;
     justify-content: center;
 
@@ -501,6 +509,8 @@ div#div-imc {
 
 .txt-container > p {
     /* color: #ac460a; */
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0em;
     color: white;
     margin: 0px;
     margin-bottom: 8px;
@@ -509,7 +519,8 @@ div#div-imc {
 }
 
 .txt-container > h4 {
-    font-size: 1em;
+    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
     display: block;
     margin: 0px;
     margin-bottom: 1px;
@@ -523,15 +534,19 @@ div.botao-ir > a {
     position: absolute;
     text-decoration: none;
     top: 25%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+
    
 
 }
 
 
 div.botao-ir {
-    align-items: center;
+    justify-content: center;
     border-radius: 9px;
-    display: block;
+    display: flex;
     /* background-color: cadetblue; */
     background-color: black;
     width: 50%;
@@ -539,6 +554,7 @@ div.botao-ir {
     position: absolute;
     left: 25%;
     cursor: pointer;
+    bottom: 8px;
    
  
 }
@@ -559,7 +575,7 @@ div#imagem-imc {
     background-image: url(../imagens/imgs-background/pexels-annushka-ahuja-7992184.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: bottom left;
 
 }
 
