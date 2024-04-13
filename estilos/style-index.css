@@ -759,6 +759,8 @@ div#planoAdvanced > .vlrPlano {
 }
 
 div.divPlano {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
     background-color: white;
      margin: 10px 10px 10px 10px; 
     width: 260px;

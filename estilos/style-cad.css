@@ -208,6 +208,11 @@ form {
    
 }
 
+
+.material-symbols-outlined {
+    font-size: 17px;
+}
+
 label {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      height: auto;
