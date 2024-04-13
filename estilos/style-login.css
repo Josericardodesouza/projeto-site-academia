@@ -204,6 +204,15 @@ div#container-login {
 }
 
 
+div#container-login > form > label > span {
+    font-size: 17px;
+    height: 14px;
+    padding-right: 5px;
+    transform: translateY(25%);
+  
+}
+
+
 form {
     margin: 0;
     padding: 0;
@@ -212,15 +221,18 @@ form {
    
 }
 
+
+
 label {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     height: auto;
+     height: 20px;
      display: block;
      text-align: justify;
     /* background-color: yellow; */
     font-weight: 600;
      font-size: 1.0em;
-
+     position: relative;
+   
 }
 
 input {

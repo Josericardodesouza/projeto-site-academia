@@ -761,7 +761,7 @@ div#planoAdvanced > .vlrPlano {
 div.divPlano {
     background-color: white;
      margin: 10px 10px 10px 10px; 
-    width: 270px;
+    width: 260px;
     height: auto;
     border-radius: 10px 10px;
     padding-left: 12px;
@@ -790,9 +790,13 @@ div.plano > span {
     /* font-size: 5px; */
 }
 
+span.li-cel {
+    font-size: 17px;
+}
+
 
 span.li-live {
-    font-size: 20px; /* ir ajustando o fonte-size paraa cada icone*/
+    font-size: 17px; /* ir ajustando o fonte-size paraa cada icone*/
 
 }
 
@@ -802,6 +806,7 @@ span.li-equip {
 }
 
 span.li-pred {
+    font-size: 17px;
 
 
 }
