@@ -210,8 +210,24 @@ form {
 
 
 .material-symbols-outlined {
-    font-size: 17px;
+    font-size: 20px;
+    transform: translateY(26%);
+    padding-right: 2.5px;
 }
+
+img.icon {
+    width: 25px;
+    height: 20px;
+    transform: translateY(22%);
+    padding-right: 2.5px;
+}
+
+span.person {
+
+
+}
+
+
 
 label {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
