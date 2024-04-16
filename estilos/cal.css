@@ -180,8 +180,7 @@ div#entrada-dados {
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: whitesmoke; */
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     align-items: center;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
@@ -214,11 +213,14 @@ h4 {
     text-align: center;
 }
 
+
+
 div#entrada-dados > label {
     font-size: 0.9em;
     color: whitesmoke;
     font-size: 0.8em;
     font-weight: 600;
+    display: block;
 
 }
 
@@ -287,8 +289,9 @@ a#calcular:hover {
     height: 30px;
     /* background-color: red; */
     display: block;
-    position: absolute;
+  
     margin-top: 10px;
+    margin: auto;
    
 }
 

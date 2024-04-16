@@ -233,12 +233,23 @@ div#entrada-dados {
 } */
 
 
+img.icon {
+    width: 25px;
+    height: 20px;
+    transform: translateY(30%);
+    padding-right: 2.5px;
+    margin-bottom: 2px;
+
+}
+
+
+
 div#entrada-dados > label  {
     font-size: 1.0em;
     font-weight: 700;
     color: whitesmoke;
     width: 60%;
-    height: 15%;
+    height: auto;
     text-align: center;
     margin: 0;
     margin-top: 8px;

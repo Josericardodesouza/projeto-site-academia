@@ -188,6 +188,7 @@
                 pSobrenomeCaractereInv.style.display = 'block';
                 inputSobrenome.style.borderColor = 'red';
                  console.log('Há uma barra no sobrenome')
+                 
             } else {
                 pSobrenomeCaractereInv.style.display = 'none';
                 inputSobrenome.style.borderColor = 'white';
