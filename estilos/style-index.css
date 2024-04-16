@@ -163,7 +163,7 @@ nav#nav-topo > picture {
 nav#oculta {
     display: none;
     width: 100vw; 
-    z-index: 1;
+ 
    
 
 }
@@ -190,6 +190,7 @@ div#div-menu {
      justify-content: center;
 
 
+
 }
 
 
@@ -202,11 +203,13 @@ div#menuHamb {
     height: 43px;
     margin: 0;
     margin-top: 60px;
+ 
 
 }
 
 p#linha {
     color: var(--atomicTangerine);
+   
 }
 
 
