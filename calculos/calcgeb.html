@@ -47,15 +47,18 @@
         <section id="section-entrada">
 
            <div id="container-entrada">
-               <label for="ent-peso">DIGITE SEU PESO (Kg): </label>
+
+            
+            <label for="ent-altura"><img src="../imagens/icones/height.svg" alt="icone de altura" class="icon">DIGITE SUA ALTURA (em centímetros): </label>
+            <input type="number" name="ent-altura" id="ent-altura" placeholder="ex: 160" required oninput="limiteNumAlt()">
+            <p id="pErroAlt" class="pErro" value="teste">formato inválido!</p>
+
+
+               <label for="ent-peso"><img src="../imagens/icones/scale_1641269.svg" alt="icone peso" class="icon">DIGITE SEU PESO (Kg): </label>
                <input type="number" name="ent-peso" id="ent-peso" size="4" placeholder="ex: 57,0" required oninput="limiteNumPeso()">
                <p id="pErroPeso" class="pErro">formato inválido!</p>
-               
-               <label for="ent-altura">DIGITE SUA ALTURA (em centímetros): </label>
-               <input type="number" name="ent-altura" id="ent-altura" placeholder="ex: 160" required oninput="limiteNumAlt()">
-               <p id="pErroAlt" class="pErro" value="teste">formato inválido!</p>
         
-               <label for="ent-idade">DIGITE SUA IDADE: </label>
+               <label for="ent-idade"><span class="material-symbols-outlined">cake</span>DIGITE SUA IDADE: </label>
                <input type="number" name="ent-idade" id="ent-idade" placeholder=" ex: 32" required oninput="limiteNumIdade()">
                <p id="pErroIdade" class="pErro">formato inválido!</p>
                <br>

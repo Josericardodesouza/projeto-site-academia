@@ -158,10 +158,12 @@ section#container-entrada {
     width: 100vw;
     height: 200px;
     /* background-color: blue; */
-    position: relative;
-    display: flex;
-    justify-content: center;
+
     margin-bottom: 20px;
+
+
+
+ 
     /* margin: 0px 0px 40px 0px; */
 
    
@@ -173,19 +175,28 @@ section#container-entrada {
 div#entrada-dados {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 85%; 
+
+    margin: auto;
+   
     /* min-width: 70%;
     max-width: 85%; */
     height: auto;
     padding: 8px;
     background-image: linear-gradient(to right, #e98a15, #e28502);
     /* background-color: whitesmoke; */
-    position: absolute;
-    display: inline-block;
-    align-items: center;
+ 
+    display: flex;
+
     border-radius: 8px 8px 8px 8px;
     box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
     text-align: center;
+    align-items: center;
     
+    
+   
+    flex-direction: column;
+
+  
   
    
 
@@ -211,6 +222,14 @@ div#entrada-dados {
 
 h4 {
     text-align: center;
+}
+
+
+div#entrada-dados > label > span {
+    color: black;
+    font-size: 25px;
+    transform: translateY(24%);
+    padding-right: 2.5px;
 }
 
 
@@ -372,7 +391,7 @@ section#section-oculta {
     color: white;
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     width: 89%;
-    height: 90px;
+    height: auto;
     background-color: black;
     /* background-image: radial-gradient( #e98a15, #e28502); */
     /* background-color: orange; */
@@ -403,6 +422,8 @@ section#section-oculta {
 
 
 .container-formula {
+    margin: auto;
+    margin-bottom: 10px;
     color: #3C1518;
     font-size: 0.9em;
     font-family: 'Work Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -410,10 +431,6 @@ section#section-oculta {
     background-image: radial-gradient( #e98a15, #e28502);
     /* background-color: aqua; */
     display: block;
-    position: absolute;
-    left: 25%;
-    bottom: 5px;
- 
     border-radius: 11px;
     padding: 3px;
 }

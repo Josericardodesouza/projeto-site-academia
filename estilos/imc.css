@@ -190,35 +190,40 @@ main {
 }
 
 section#container-entrada {
-    /* background-color: pink;  */
-    position: relative;
-    display: flex;
-   justify-content: center;
-    /*margin: auto;  somente em telas maiores*/
     width: 100%;
-  
-    
     margin-bottom: 1px;
+    
+    /* background-color: pink;  */
+
+ 
+    /*margin: auto;  somente em telas maiores*/
+
  
 }
 
 
 
 div#entrada-dados {
+    
+    background-image: linear-gradient(to right, #e98a15, #e28502);
+       /* width: 85%; */
+       min-width: 70%;
+       max-width: 85%;
+       height: auto;
+
+       margin: auto;
+
     font-family: 'Work Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
     font-size: 13px;
+
     display: flex;
-    /* width: 85%; */
-    min-width: 70%;
-    max-width: 85%;
-    height: auto;
-    background-image: linear-gradient(to right, #e98a15, #e28502);
+    text-align: center;
+    flex-direction: column;
+
+    align-items: center;
+ 
     /* background-color: yellow; */
     /* position: absolute; estava causando sobreposição */ 
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 
     border-radius: 8px 8px 0px 0px;
     box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
@@ -245,6 +250,7 @@ img.icon {
 
 
 div#entrada-dados > label  {
+    display: block;
     font-size: 1.0em;
     font-weight: 700;
     color: whitesmoke;
@@ -253,11 +259,13 @@ div#entrada-dados > label  {
     text-align: center;
     margin: 0;
     margin-top: 8px;
+
   
 
 }
 
 div#entrada-dados > input {
+    display: block;
     color: black;
     font-weight: bolder;
     text-align: center;
