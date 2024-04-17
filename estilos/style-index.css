@@ -160,10 +160,11 @@ nav#nav-topo > picture {
 
 
 
-nav#oculta {
+nav#opt-oculta {
     display: none;
     width: 100vw; 
- 
+   
+
    
 
 }
@@ -263,6 +264,7 @@ div#opcoes {
     width: 100%;
     height: auto;
     margin: 0;
+    margin-bottom: 2px;
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -806,10 +808,9 @@ ul {
 li {
     margin: 10px;
 }
-
+/* 
 div.plano > span {
-    /* font-size: 5px; */
-}
+    /* font-size: 5px;  */
 
 span.li-cel {
     font-size: 17px;
@@ -821,10 +822,10 @@ span.li-live {
 
 }
 
-span.li-equip {
+/*span.li-equip {
 
 
-}
+}*/
 
 span.li-pred {
     font-size: 17px;
@@ -834,10 +835,10 @@ span.li-pred {
 
 
 
-span.icons-lista {
+/*span.icons-lista {
 
 
-}
+}*/
 
 
 

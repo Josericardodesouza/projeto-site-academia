@@ -6,29 +6,35 @@
 //     }
 // }
 
+console.log('aqui')
+
+
+var botao = document.getElementById("btn-hamb");
+var container = document.getElementById("opt-oculta");
 
 
 
 function cliqueMenu() {
-    var botao = document.getElementById("btn-hamb");
-    var container = document.getElementById("oculta");
+
+    console.log('chamou a função')
 
     botao.addEventListener('click', function(){
 
-        switch(true) {
-            case (container.style.display === 'none'):
-              container.style.display = 'block';
-              console.log('mostrou')
-              break;
+        if (container.style.display === 'none') {
+            container.style.display = 'block';
+            // container.style.position = 'fixed'
+            // container.style.zIndex = '1'
+            console.log('mostrou')
 
-            case (container.style.display === 'block'): 
-               
+        } else {
+            
             container.style.display = 'none';
+            // container.style.position = 'inherit'
+            // container.style.zIndex = '0'
             console.log('escondeu')
-             
-
+          
         }
-
-})
+    }
+    )
 
 }
