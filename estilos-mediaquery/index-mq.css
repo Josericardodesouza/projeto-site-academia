@@ -21,6 +21,13 @@
 
 @media(min-width: 325px) {
 
+
+    nav#opt-oculta, div#opcoes, div#menuHamb {
+        display: none;
+        z-index: 0;
+        height: 0;
+    }
+
     nav#nav-topo {
   
        
