@@ -15,17 +15,20 @@ function cliqueMenu() {
 
     botao.addEventListener('click', function(){
 
-        if (container.style.display === 'none') {
-            container.style.display = 'block';
-            console.log('mostrou')
+        switch(true) {
+            case (container.style.display === 'none'):
+              container.style.display = 'block';
+              console.log('mostrou')
+              break;
 
-        } else {
-            
+            case (container.style.display === 'block'): 
+               
             container.style.display = 'none';
             console.log('escondeu')
-          
+             
+
         }
-    }
-    )
+
+})
 
 }
