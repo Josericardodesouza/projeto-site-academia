@@ -95,7 +95,8 @@
     div#entrada-dados {
         width: 50%;
         /* transition: width 2s, height 1s; */
-        transition-timing-function: ease; 
+        transition: width 2s, height 1s;
+        transition-timing-function: ease;  
        
 
     }

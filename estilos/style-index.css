@@ -812,6 +812,24 @@ li {
 div.plano > span {
     /* font-size: 5px;  */
 
+
+.divPlano > ul > li > .ico-img {
+    width: 19px;
+    height: 19px;
+    padding-right: 4px ;
+
+}
+
+.ico-img-rezise {
+    width: 20px;
+    height: 20px;
+}
+
+/* ul > li > span#personalDgtal {
+
+    transform: translateY(20%);
+} */
+
 span.li-cel {
     font-size: 17px;
 }
