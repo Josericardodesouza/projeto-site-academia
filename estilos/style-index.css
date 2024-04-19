@@ -108,6 +108,7 @@ nav#nav-topo {
    justify-content: space-between;
    align-items: center;
    position: fixed;
+   border-bottom: 4px solid  black;
 }
 
 
@@ -784,7 +785,7 @@ div.divPlano {
     font-size: 16px;
     background-color: white;
      margin: 10px 10px 10px 10px; 
-    width: 260px;
+    width: 250px;
     height: auto;
     border-radius: 10px 10px;
     padding-left: 12px;
@@ -883,8 +884,11 @@ footer {
 }
 
 footer > p {
-    margin: 0px;
-    padding: 2px 3px 0px 3px;
+    font-size: 19px;
+    margin: 20px 0px 20px 0px;
+    
+
+
 }
 
 
@@ -893,6 +897,102 @@ mark {
     color: #da8208;
 }
 
+footer > span {
+    font-size: 17px;
+}
+
+
+
+div#footer-block {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    /* height: 120px; */
+    color: var(--atomicTangerine);
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+div#footer-block > span {
+    padding-top: 9px;
+    font-size: 27px;
+}
+
+div#footer-block > p {
+    padding: 15px 4px 20px 4px;
+    margin: 0;
+   
+  
+    
+    
+   
+
+}
+
+div#footer-flex {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 50px; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+
+div#logo-footer {
+
+    display: block;
+}
+
+
+div#div-footer-links {
+    width: auto;
+    height: auto;
+    list-style: none;
+    position: relative;
+    
+}
+
+div#div-footer-links > li {
+  
+    width: 178px;
+    height: 60px;
+    margin: 0;
+    justify-items: flex-start;
+    display: block;
+    align-items: center;
+    
+
+}
+
+div#footer-flex > div#div-footer-links > li > a {
+  
+    text-decoration: underline;
+    color: black;
+    position: absolute;
+    
+  
+}
+
+div#footer-flex > div#div-footer-links > li > img {
+    width: 60px;
+    height: 40px;
+
+    margin: 0;
+    margin-right: 10px;
+    left: 0;
+    position: absolute;
+    transform: translateY(-17%);
+ 
+  
+}
 
 
 
