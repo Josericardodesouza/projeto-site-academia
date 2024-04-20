@@ -1,0 +1,177 @@
+
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+:root {
+
+    /* novas cores*/
+
+    --fulvous: #E98A15;
+    --atomicTangerine: #F98948;
+    --egyptianBlue: #29339B;
+    --coolGray: #A7A5C6;
+    --fernGreen: #3f784c;
+
+/* cores velhas*/
+
+    --tangerine: #EB7F04;
+    --blackbean: #3C1518;
+    --bloodred: #69140E;
+    --honolulu: #2176AE;
+    --rosequartz: #9A8C98;
+    --cor1: #59876D;
+    --cor2: #CFB094;
+  
+
+    /* é melhor pegar uma cor unica e ir pegando os tons mais escuros dela, igual  o site do tailwind*/
+
+
+    /* --cor1: #101119;
+    --cor2: #8d99ae;
+    --cor3: #edf2f4;
+    --cor4: #d80032; */
+
+}
+
+
+footer {
+    width: 100vw;
+    height: auto;
+    /* height: 150px; */
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+    background-color: var(--atomicTangerine);
+    /* background-color: black; */
+    color: black;
+    text-align: center;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+footer > p {
+    width: 90%;
+    text-align: center;
+    font-size: 19px;
+    margin: 20px auto 20px auto;
+    
+
+
+}
+
+
+mark {
+    background-color: transparent;
+    color: #da8208;
+}
+
+footer > span {
+    font-size: 17px;
+}
+
+
+
+div#footer-block {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    /* height: 120px; */
+    color: var(--atomicTangerine);
+    background-color: black;
+    font-size: 15px;
+   
+   
+   
+  
+}
+
+div#footer-block > span {
+    margin: auto;
+   
+    padding-top: 9px;
+    font-size: 27px;
+}
+
+div#footer-block > p {
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 15px 0px 20px 0px;
+    margin: auto;
+   
+  
+    
+    
+   
+
+}
+
+div#footer-flex {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 50px; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+
+div#logo-footer {
+
+    display: block;
+}
+
+
+div#div-footer-links {
+    width: auto;
+    height: auto;
+    list-style: none;
+    position: relative;
+    
+}
+
+div#div-footer-links > li {
+  
+    width: 178px;
+    height: 60px;
+    margin: 0;
+    justify-items: flex-start;
+    display: block;
+    align-items: center;
+    
+
+}
+
+div#footer-flex > div#div-footer-links > li > a {
+  
+    text-decoration: underline;
+    color: black;
+    position: absolute;
+    
+  
+}
+
+div#footer-flex > div#div-footer-links > li > img {
+    width: 60px;
+    height: 40px;
+
+    margin: 0;
+    margin-right: 10px;
+    left: 0;
+    position: absolute;
+    transform: translateY(-17%);
+ 
+  
+}
+

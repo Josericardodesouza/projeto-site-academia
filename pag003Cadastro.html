@@ -41,7 +41,7 @@
                 
                   <form action="cadastroLogin.php" method="post">
                     <h3>INFORMAÇÕES PESSOAIS:  </h3>
-                      <label for="input-nome"><span class="input-nome material-symbols-outlined">person</span>digite seu nome</label>
+                      <label for="input-nome"><span class="input-nome material-symbols-outlined">person</span>DIGITE SEU NOME</label>
                       <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
                       <p id="nome-erro-num" class="msg-erro">Este campo não pode conter números</p>
                       <p id="nome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
@@ -49,28 +49,28 @@
                 
                       <!-- <br> -->
 
-                      <label for="input-sobrenome"><span class="icon-person material-symbols-outlined">person</span>digite seu sobrenome</label>
+                      <label for="input-sobrenome"><span class="icon-person material-symbols-outlined">person</span>DIGITE SEU SOBRENOME</label>
                       <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="confereNomeSobrenomeNum(); inputNullFocus(); sobrenomeCaractereInvalido()">
                       <p id="sobrenome-erro" class="msg-erro">Este campo é obrigatório</p>
                       <p id="sobrenome-erro-num" class="msg-erro">Este campo não pode conter números</p>
                       <p id="sobrenome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
                     
 
-                      <label for="input-rg"><span class="icon-identid material-symbols-outlined">id_card</span>digite seu RG</label>
+                      <label for="input-rg"><span class="icon-identid material-symbols-outlined">id_card</span>DIGITE SEU <abbr title="registro geral">RG</abbr></label>
                       <input type="text" name="input-rg" id="input-rg" maxlength="12" required oninput="mascaraRG(); mascaraRgConfere()">
                       <p id="rg-erro" class="msg-erro">Formato inváldo</p>
 
-                      <label for="input-cpf"><span class="icon-identid material-symbols-outlined">id_card</span>digite seu CPF</label>
+                      <label for="input-cpf"><span class="icon-identid material-symbols-outlined">id_card</span>DIGITE SEU <abbr title="numero do Cartão da Pessoa Física">CPF</abbr></label>
                       <input type="text" name="input-cpf" id="input-cpf" maxlength="14" oninput="mascaraCpf(); mascaraCpfConfere()">
                       <p id="cpf-erro" class="msg-erro">Formato inválido</p>
 
-                      <label for="input-cep"><span class="icon-local material-symbols-outlined">pin_drop</span>digite seu CEP</label>
+                      <label for="input-cep"><span class="icon-local material-symbols-outlined">pin_drop</span>DIGITE SEU <abbr title="Código de Endereçamento Postal">CEP</abbr></label>
                       <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="" oninput="mascaraCep()" required>
                       <button id="btn-cep" onclick="buscarLocal()">buscar local</button>
                       <br>
 
 
-                      <span class="icon-local-erro material-symbols-outlined">fmd_bad</span><p id="p-erro-local" class="msg-erro">Por favor, insira um CEP válido</p>
+                      <span class="icon-local-erro material-symbols-outlined">fmd_bad</span><p id="p-erro-local" class="msg-erro">Por favor, insira um <abbr>CEP</abbr> válido</p>
 
                      
 
@@ -78,7 +78,7 @@
                       <p id="saida-cidade" class="info-local"></p>
                       <p id="saida-logradouro-rua" class="info-local"></p>
 
-                      <label for="input-telefone"><span class="icon-tel material-symbols-outlined">phone</span>digite seu número de celular:</label>
+                      <label for="input-telefone"><span class="icon-tel material-symbols-outlined">phone</span>DIGITE SEU NÚMERO DE CELULAR:</label>
                       <input type="text" name="input-telefone" id="input-telefone" placeholder="" maxlength="14" required oninput="mascaraTelefone(); confereNum()">
                       <p id="pErroNum" class="msg-erro">Formato inválido</p>
                       <p id="pErroQtdNum" class="msg-erro">Desculpe, Você se esqueceu de algum número</p>
@@ -87,17 +87,17 @@
 
                      
 
-                      <label for="estatura"> <img src="imagens/icones/height.svg" alt="icone de altura" class="icon">digite sua estatura</label>
+                      <label for="estatura"> <img src="imagens/icones/height.svg" alt="icone de altura" class="icon">INFORME SUA ALTURA</label>
                       <input type="text" name="input-estatura" id="input-estatura" placeholder="" maxlength="4" required oninput="estatura()">
 
-                      <label for="peso"><img src="imagens/icones/scale_1641269.svg" alt="icone de altura" class="icon">informe seu peso</label>
+                      <label for="peso"><img src="imagens/icones/scale_1641269.svg" alt="icone de altura" class="icon">INFORME SEU PESO</label>
                       <input type="number" name="input-peso" id="input-peso" placeholder="">
                       
                       <p id="pErroPeso" class="msg-erro">Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>
                       <p id="pErroPesoNull" class="msg-erro">O campo não deve ficar vazio!</p>
                       
 
-                      <label for="selecObj"><span class="material-symbols-outlined" id="happy-face">mood</span>Por quê deseja se cadastrar na Lorem Ipsum Fitness? (opcional)</label>
+                      <label for="selecObj"><span class="material-symbols-outlined" id="happy-face">mood</span>Por quê deseja se cadastrar na <mark>Lorem Ipsum Fitness</mark>? (opcional)</label>
                       <select name="selecObj" id="selecObj">
                         <option value="nenhum" selected disabled >Selecionar</option>
                         <option value="opt-perderPeso">Quero perder peso!</option>
