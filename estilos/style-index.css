@@ -478,7 +478,7 @@ section.secao-calculos {
 
 .img-container {
     /* background-color:forestgreen; */
-    height: 110px;
+    height: 110px; /*aumentar aqui e ir mexendo no height do h4 talvez, pois a div com o texto tá sumindo,, talvez tenha haver com o display block ou o z index;*/
     margin: 0px;
     display: block;
     
