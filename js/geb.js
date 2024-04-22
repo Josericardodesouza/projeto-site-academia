@@ -240,7 +240,7 @@ function calcularGebMasc() {
 
 
   
-    if (geb > 66.47) {
+    if (geb > 66.50) {
       // container.style.display = 'block';
       
       document.getElementById("saidaGeb").innerHTML =  geb + " KCAL";
