@@ -33,7 +33,7 @@
     margin: 0px;
     padding: 0px;
 }
-
+/* 
 nav#fixa {
     top: 0;
     display: block;
@@ -55,18 +55,18 @@ nav {
    align-items: center;
 }
 
-/* nav > h5 {
+ nav > h5 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 20px;
     margin: 0px;
     margin-right: 5px;
-} */
+} 
 
 
-nav > a > span.material-symbols-outlined {
-    /* font-size: 39px; */
+/*nav > a > span.material-symbols-outlined {
+ /*font-size: 39px; 
     font-size: 36px;
     color: black;
     position: absolute;
@@ -74,7 +74,8 @@ nav > a > span.material-symbols-outlined {
     right: 0;
     padding: 0;
     padding-right: 20px;
-}
+
+} */
 
 h1 {
     /* font-size: 19px;

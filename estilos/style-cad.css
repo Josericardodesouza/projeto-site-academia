@@ -35,7 +35,7 @@
 }
 
 
-
+/* 
 nav {
     color: black;
     width: 100vw;
@@ -48,7 +48,7 @@ nav {
     /* position: fixed;
     z-index: 0; */
 
-}
+
 
 
 header {
@@ -116,7 +116,7 @@ nav > a > span.material-symbols-outlined {
     padding: 0;
     padding-right: 20px;
     margin: 0;
-}
+} 
 
 main {
     width: 100vw;
@@ -211,7 +211,7 @@ form {
 }
 
 
-.material-symbols-outlined {
+div#container-cadastro > .material-symbols-outlined {
     font-size: 20px;
     transform: translateY(26%);
     padding-right: 2.5px;

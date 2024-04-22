@@ -36,7 +36,7 @@
 
 
 
-nav {
+/*nav {
     color: black;
     width: 100vw;
     height: 60px;
@@ -46,9 +46,9 @@ nav {
     display: flex;
     top: 0px;
     /* position: fixed;
-    z-index: 0; */
+    z-index: 0; 
 
-}
+}*/
 
 
 header {

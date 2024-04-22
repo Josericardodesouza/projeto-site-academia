@@ -33,21 +33,21 @@
 }
 
 
-nav#fixa {
+/*nav#fixa {
         top: 0;
         display: block;
         position: sticky;
         margin: 0;
         padding: 0;
         z-index: 2;
-}
+}*/
 
 
 
 
 
 
-nav {
+/*nav {
     color: black;
     width: 100vw;
     height: 60px;
@@ -63,6 +63,8 @@ nav {
 
 }
 
+*/
+
 /* nav > h5 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
@@ -70,9 +72,9 @@ nav {
     font-size: 20px;
     margin: 0px;
     margin-right: 5px;
-} */
+}  */
 
-nav > a > span.material-symbols-outlined {
+/*nav > a > span.material-symbols-outlined {
     height: auto;
     font-size: 36px;
     color: black;
@@ -81,7 +83,7 @@ nav > a > span.material-symbols-outlined {
     right: 0;
     padding: 0;
     padding-right: 20px;
-}
+}*/
 
 h1 {
     /* font-size: 19px;
