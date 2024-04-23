@@ -42,6 +42,7 @@
     --egyptianBlue: #29339B;
     --coolGray: #A7A5C6;
     --fernGreen: #3f784c;
+    --corMsgErro: #c80815;
 
 /* cores velhas*/
 
@@ -232,27 +233,35 @@ div#entrada-dados > input:focus {
     border: 3px solid white;
 }
 
+span.icon-erro {
+    font-size: 13px;
+    transform: translateY(13%);
+    margin-right: 2.5px;
+}
+
 p.pErro {
+    color: var(--corMsgErro);
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9em;
+    font-size: 14px;
     text-align: center;
+    display: block;
 }
 
 p#pNull {
-    display: none;
+    
     width: auto;
     margin: 0;
 }
 
 
 p#pErroAlt {
-    display: none;
+    
     width: auto;
     margin: 0;
 }
 
 p#pErroPes {
-   display: none; 
+
     width: auto;
     margin: 0;
 }

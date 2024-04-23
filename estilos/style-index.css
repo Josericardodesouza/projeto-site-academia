@@ -463,8 +463,8 @@ section.secao-calculos {
     width: 260px;
     color: black;
     display: block;
-    /* height: 190px; */ 
-    height: 230px;
+    /* height: 190px;230px height original */ 
+    height: 265px;
     border-radius: 10px;
     overflow: hidden;
     /* margin-bottom: 12px; */
@@ -478,7 +478,7 @@ section.secao-calculos {
 
 .img-container {
     /* background-color:forestgreen; */
-    height: 110px; /*aumentar aqui e ir mexendo no height do h4 talvez, pois a div com o texto tá sumindo,, talvez tenha haver com o display block ou o z index;*/
+    height: 140px; /*aumentar aqui e ir mexendo no height do h4 talvez, pois a div com o texto tá sumindo,, talvez tenha haver com o display block ou o z index; 110px height original*/
     margin: 0px;
     display: block;
     
@@ -581,7 +581,7 @@ div#imagem-imc {
     background-image: url(../imagens/imgs-background/pexels-annushka-ahuja-7992184.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom 10% left;
 
 }
 
