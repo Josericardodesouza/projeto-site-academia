@@ -39,6 +39,9 @@
         // }
 
 
+        var iconeErroNome = 
+
+
         
 
         function confereNomeSobrenomeNum() {
@@ -722,6 +725,8 @@ function contaNums() {
             var inputCEP = document.getElementById('input-cep').value
             var pErroLocal = document.getElementById("p-erro-local")
 
+            var icon = document.getElementById("erro-local-icon")
+
             var request = new XMLHttpRequest();
 
             request.open('GET', 'https://viacep.com.br/ws/' + inputCEP + '/json/')
@@ -736,18 +741,22 @@ function contaNums() {
 
                 switch (true) { // fiz sozinho, o copilot só disse que deveria trocar o "undefined." por undefined pois é uma variável indefinida
                     case (estado === undefined):
+                    icon.style.display = 'block'
                      pErroLocal.style.display = 'block';
                      break;
 
                     case (cidade === undefined): 
+                     icon.style.display = 'block'
                      pErroLocal.style.display = 'block';
                      break;
 
                     case (rua === undefined): 
+                     icon.style.display = 'block'
                      pErroLocal.style.display = 'block';
                      break;
 
                      default: 
+                     icon.style.display = 'none'
                       pErroLocal.style.display = 'none';
                       document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
                       document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + ".";

@@ -352,11 +352,37 @@ div#acessar > button {
 
 }
 
+
+div.div-msg-erro {
+    width: auto;
+    display: block;
+    margin-bottom: 8px;
+  
+
+}
+
+div#div-erro-local {
+    display: flex;
+}
+
+span.icon-erro {
+   
+    font-size: 16px;
+    transform: translateY(10%);
+    margin-right: 2px;
+}
+
+span#icon-local-erro {
+    
+    font-size: 20px;
+  
+}
+
 p.msg-erro {
     color: rgb(196, 4, 4);
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    display: none;
+    display: block;
     font-size: 0.9em;
     text-decoration: solid;
     

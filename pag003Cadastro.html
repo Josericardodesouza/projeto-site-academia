@@ -49,26 +49,38 @@
                     <h3>INFORMAÇÕES PESSOAIS:  </h3>
                       <label for="input-nome"><span class="input-nome material-symbols-outlined">person</span>DIGITE SEU NOME</label>
                       <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
-                      <p id="nome-erro-num" class="msg-erro">Este campo não pode conter números</p>
-                      <p id="nome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
-                      <p id="nome-erro" class="msg-erro">Este campo é obrigatório</p>
-                
+
+
+                      <div class="div-msg-erro">
+                        <p id="nome-erro-num" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> campo não pode conter números</p>
+                        <p id="nome-erro-caractereInv" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Este campo não pode conter caracteres inválidos!</p>
+                        <p id="nome-erro" class="msg-erro"><span class=" icon-erro material-symbols-outlined">error</span>Este campo é obrigatório</p>
+                      </div>
                       <!-- <br> -->
 
                       <label for="input-sobrenome"><span class="icon-person material-symbols-outlined">person</span>DIGITE SEU SOBRENOME</label>
                       <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="confereNomeSobrenomeNum(); inputNullFocus(); sobrenomeCaractereInvalido()">
-                      <p id="sobrenome-erro" class="msg-erro">Este campo é obrigatório</p>
-                      <p id="sobrenome-erro-num" class="msg-erro">Este campo não pode conter números</p>
-                      <p id="sobrenome-erro-caractereInv" class="msg-erro">Este campo não pode conter caracteres inválidos!</p>
+
+                      <div class="div-msg-erro">
+                        <p id="sobrenome-erro" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Este campo é obrigatório</p>
+                        <p id="sobrenome-erro-num" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Este campo não pode conter números</p>
+                        <p id="sobrenome-erro-caractereInv" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Este campo não pode conter caracteres inválidos!</p>
+                      </div>
                     
 
                       <label for="input-rg"><span class="icon-identid material-symbols-outlined">id_card</span>DIGITE SEU <abbr title="registro geral">RG</abbr></label>
                       <input type="text" name="input-rg" id="input-rg" maxlength="12" required oninput="mascaraRG(); mascaraRgConfere()">
-                      <p id="rg-erro" class="msg-erro">Formato inváldo</p>
+
+                      <div class="div-msg-erro">
+                        <p id="rg-erro" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Formato inváldo</p>
+                      </div>
 
                       <label for="input-cpf"><span class="icon-identid material-symbols-outlined">id_card</span>DIGITE SEU <abbr title="numero do Cartão da Pessoa Física">CPF</abbr></label>
                       <input type="text" name="input-cpf" id="input-cpf" maxlength="14" oninput="mascaraCpf(); mascaraCpfConfere()">
-                      <p id="cpf-erro" class="msg-erro">Formato inválido</p>
+
+                     <div class="div-msg-erro">
+                       <p id="cpf-erro" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Formato inválido</p>
+                     </div>
 
                       <label for="input-cep"><span class="icon-local material-symbols-outlined">pin_drop</span>DIGITE SEU <abbr title="Código de Endereçamento Postal">CEP</abbr></label>
                       <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="" oninput="mascaraCep()" required>
@@ -76,9 +88,9 @@
                       <br>
 
 
-                      <span class="icon-local-erro material-symbols-outlined">fmd_bad</span><p id="p-erro-local" class="msg-erro">Por favor, insira um <abbr>CEP</abbr> válido</p>
-
-                     
+                       
+                        <p id="p-erro-local" class="msg-erro"><span class="icon-erro material-symbols-outlined" id="icon-local-erro">fmd_bad</span>Por favor, insira um <abbr>CEP</abbr> válido</p>
+                      
 
                       <p id="saida-uf" class="info-local"></p>
                       <p id="saida-cidade" class="info-local"></p>
@@ -86,10 +98,14 @@
 
                       <label for="input-telefone"><span class="icon-tel material-symbols-outlined">phone</span>DIGITE SEU NÚMERO DE CELULAR:</label>
                       <input type="text" name="input-telefone" id="input-telefone" placeholder="" maxlength="14" required oninput="mascaraTelefone(); confereNum()">
-                      <p id="pErroNum" class="msg-erro">Formato inválido</p>
-                      <p id="pErroQtdNum" class="msg-erro">Desculpe, Você se esqueceu de algum número</p>
 
-                      <p>informações físicas</p>
+
+                      <div class="div-msg-erro">
+                        <p id="pErroNum" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Formato inválido</p>
+                        <p id="pErroQtdNum" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Desculpe, Você se esqueceu de algum número</p>
+                      </div>
+
+                      <h3>INFORMAÇÕES FÍSICAS</h3>
 
                      
 
@@ -99,9 +115,12 @@
                       <label for="peso"><img src="imagens/icones/scale_1641269.svg" alt="icone de altura" class="icon">INFORME SEU PESO</label>
                       <input type="number" name="input-peso" id="input-peso" placeholder="">
                       
-                      <p id="pErroPeso" class="msg-erro">Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>
-                      <p id="pErroPesoNull" class="msg-erro">O campo não deve ficar vazio!</p>
-                      
+                      <div class="div-msg-erro">
+                        <p id="pErroPeso" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>
+
+                        <p id="pErroPesoNull" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> O campo não deve ficar vazio!</p>
+                        
+                      </div>
 
                       <label for="selecObj"><span class="material-symbols-outlined" id="happy-face">mood</span>Por quê deseja se cadastrar na <mark>Lorem Ipsum Fitness</mark>? (opcional)</label>
                       <select name="selecObj" id="selecObj">
