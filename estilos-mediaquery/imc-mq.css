@@ -101,6 +101,12 @@
 
     }
 
+    div#saida { /* nem compensa colocar*/
+        transition: width 2s, height 1s;
+        transition-timing-function: ease;  
+
+    }
+
     div#entrada-dados > input {
         width: 70px;
         /* transition: width 2s, height 1s; */

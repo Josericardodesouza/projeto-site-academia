@@ -60,12 +60,12 @@
         transition-timing-function: ease;    
     }
 
-    /* section.secao-saida {
-        width: 50%;
+     section.secao-saida {
+        width: 70%;
         transition: width 2s, height 1s;
         transition-timing-function: ease; 
 
-    } */
+    } 
 
 
 }

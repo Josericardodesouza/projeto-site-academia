@@ -131,13 +131,15 @@ main {
     margin: 0px;
     padding: 0px;
     height: auto;
+   
   
 
 }
 
 section#container-entrada {
     width: 100%;
-    margin-bottom: 1px;
+    height: 262px;
+  
     
     /* background-color: pink;  */
 
@@ -156,8 +158,8 @@ div#entrada-dados {
        min-width: 70%;
        max-width: 85%;
        height: auto;
-
        margin: auto;
+      position: relative;
 
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
 
@@ -172,8 +174,8 @@ div#entrada-dados {
     /* background-color: yellow; */
     /* position: absolute; estava causando sobreposição */ 
 
-    border-radius: 8px 8px 0px 0px;
-    box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
+    border-radius: 8px 8px 8px 8px;
+    /* box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797); */
     /* border-radius: 8%; se juntos, este tem prioridade */
     /* bottom: 0; */
   
@@ -274,6 +276,7 @@ a#executar {
     display: block;
     font-size: 30px;
     margin-top: 0px;
+    margin-bottom: 10px;
   
 }
 
@@ -283,14 +286,15 @@ a#executar:hover {
 
 a#executar > span {
    font-size: 30px;
+  
 
 }
 
 
 section#section-oculta {
-    display: none;  
+    display: block;  
+    height: 250px;
     position: relative;
-    height: 500px;
     
 }
 
@@ -303,7 +307,7 @@ div#container-saida {
     position: relative;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
  
    
   
@@ -311,24 +315,21 @@ div#container-saida {
 
 
 div#saida {
+    position: relative;
 
     /* width: 85%; */
     width: 70%;
     height: auto;
-    background-image: linear-gradient(to right, #e98a15, #e28502);
+    background-color: black;
+    /* background-image: linear-gradient(to right, #e98a15, #e28502); */
     /* background-color: violet; */
     
-    display: inline-block;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-   
-    flex-direction: center;
+
    
  
   
-    box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.797);
-    top: 2%;
+    /* box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.797);
+    top: 2%; */
     border-radius: 0px 0px 8px 8px;
     
     /* 2.0px 2.0px 7px black */

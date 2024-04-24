@@ -145,8 +145,9 @@ section#section-entrada {
     /* background-color: blue; */
     background-color: white;
     width: 100vw;
-    height: 235px;
+    height: 250px;
     margin: 0px;
+    display: block;
    
 }
 
@@ -323,9 +324,13 @@ button#botao-fem {
 
 
 section#oculta {
-    display: none; 
+    display: block; 
     width: 100vw;
-    position: absolute;
+    height: 200px;
+    z-index: 0;
+
+  
+ 
 }
 
 
@@ -335,13 +340,14 @@ section#container {
     background-color: blueviolet; */
     background-color: white;
     width: 100vw;
-    /* height: 150px; */
     height: auto;
+    /* height: 150px; */
+  
     display: flex;
     position: relative;
     justify-content: center;
     margin-top: 10px;
-    z-index: 0;
+ 
     
 
 }
@@ -353,13 +359,21 @@ div#saida {
     color: white;
     font-weight: bold;
     width: 85%;
-    height: 70px;
+    height: auto;
     display: flex;
-    position: relative;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  
+    
+
+
     border-radius: 8px 8px 8px 8px;
     margin-top: 2px;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.797);
+   
+    
+    
     /* box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.797); */
 
 }
@@ -368,15 +382,18 @@ div#saida {
 
 
 div#saida > p#saidaGeb {
-    width: 50%;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    width: 75%;
     height: auto;
-    background-color: black;
-    color: aqua;
+    background-color: whitesmoke;
+    color: black;
     display: block;
-    position: absolute;
-     top: 15%;
+  
+   
+    
     text-align: center;
-    border-radius: 2px 2px 2px 2px;
+    border-radius: 4px 4px;
 }
 
  /* div#saida > p#res {
@@ -389,11 +406,12 @@ div#saida > p#saidaGeb {
 
 div#saida > a > span.material-symbols-outlined {
     font-size: 1.9em;
-    width: 4px;
-    left: 47%;
+    width: auto;
     display: block;
-    position: absolute;
     bottom: 0;
+   
+    padding-bottom: 10px;
+   
 }
 
 
