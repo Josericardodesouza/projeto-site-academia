@@ -102,6 +102,7 @@
     }
 
     div#saida { /* nem compensa colocar*/
+        width: 47%;
         transition: width 2s, height 1s;
         transition-timing-function: ease;  
 
