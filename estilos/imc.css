@@ -321,6 +321,8 @@ div#saida {
     width: 70%;
     height: auto;
     background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* background-image: linear-gradient(to right, #e98a15, #e28502); */
     /* background-color: violet; */
     
@@ -364,21 +366,35 @@ div#saida {
 } */
 
 
-div#saida > p#saida-res {
+div#saida >.saida-p {
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
     text-align: center;
     color: black;
     width: 80%;
-    /* height: 30px; */
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     background-color: whitesmoke;
     display: block;
-    /* position: absolute; */
     margin: 10px auto 10px auto;
-    /* top: 15px; */
-    /* margin-bottom: 2px; */
+    height: auto;
     border-radius: 9px 9px;
     padding: 7px;
+
+}
+
+
+div#saida > p#saida-res {
+    font-weight: 500;
+   
+
+  
+    /* height: 30px; */
+  
+  
+    /* position: absolute; */
+    
+    /* top: 15px; */
+    /* margin-bottom: 2px; */
+
    
 
      /* NÃO TÁ ALINHADO DIREITO  */
@@ -386,38 +402,34 @@ div#saida > p#saida-res {
 }
 
 div#saida > p#saida-frase {
-    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    text-align: center;
-    color: black;
-    background-color: whitesmoke;
-    width: 80%;
-    height: auto;
-    margin: 10px auto 10px auto;
+   
+    
+   
+  
     /* top: 63px; */
-    border-radius: 9px 9px;
-    display: block;
+   
+   
     /* position: absolute; */
-    padding: 7px;
+   
 
 }
 
 
 div#saida >  p#saida-form {
-    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    text-align: center;
-    color: black;
-    width: 80%;
+   
+   
+    
     /* height: 30px; */
     /* top: 114px; */
     /* bottom: 28%; */
-    background-color: whitesmoke;
-    display: block;
+
+  
     /* position: absolute; */
-    margin: 10px auto 10px auto;
-    border-radius: 9px 9px;
-    padding: 7px;
+   
+  
+   
    
 }
 /* div#saida-dados > div#btn-restart {
@@ -432,6 +444,7 @@ div#saida >  p#saida-form {
 
 
 span#resetar.material-symbols-outlined   {
+    color: #e28502;
     font-size: 30px;
     width: 30px;
     display: block;
