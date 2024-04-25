@@ -382,7 +382,7 @@ p.msg-erro {
     color: rgb(196, 4, 4);
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    display: block;
+    display: none;
     font-size: 0.9em;
     text-decoration: solid;
     

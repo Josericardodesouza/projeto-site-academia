@@ -54,11 +54,7 @@
         
     var pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
 
-    var inputRg = document.getElementById("input-rg")
-
-    var inputRgValue = document.getElementById("input-rg").value
-        
-    var pErroRg = document.getElementById("rg-erro")
+   
 
      
     var inputCpf = document.getElementById("input-cpf")
@@ -93,12 +89,14 @@
           if (/\d/.test(inputNomeValue)) {
              pErroNomeNum.style.display = 'block';
              inputNome.style.borderColor = 'red';
+            
             //  document.getElementById('btn-login').disabled = 'true'
            
          }
           else {
             inputNome.style.borderColor = 'white';
             pErroNomeNum.style.display = 'none';
+          
             // document.getElementById('btn-login').disabled = 'false'
          }
 
@@ -185,7 +183,7 @@
             //regex correto
            
 
-            if (!/^[a-zA-ZÀ-ü' ]+$/.test(inputNomeValue)) {
+            if (!/^[a-zA-ZÀ-ü' ?\d]+$/.test(inputNomeValue)) {
                 pNomeCaractereInv.style.display = 'block';
                 inputNome.style.borderColor = 'red'
                  console.log('Há uma / no campo nome')
@@ -194,6 +192,15 @@
                 inputNome.style.borderColor = 'white'
 
                  console.log('a barra em NOME foi removida')
+            }
+
+
+
+            if (inputNomeValue === '') {
+                inputNome.style.borderColor = 'white'
+                pErroNomeNull.style.display = 'none'
+                pErroNomeNum.style.display = 'none'
+                pNomeCaractereInv.style.display = 'none'
             }
 
             
@@ -209,7 +216,7 @@
 
             // regex correto
 
-            if (!/^[a-zA-ZÀ-ü' ]+$/.test(inputSobrenomeValue)) {
+            if (!/^[a-zA-ZÀ-ü' ?\d]+$/.test(inputSobrenomeValue)) {
                 pSobrenomeCaractereInv.style.display = 'block';
                 inputSobrenome.style.borderColor = 'red';
                  console.log('Há uma barra no sobrenome')
@@ -218,6 +225,14 @@
                 pSobrenomeCaractereInv.style.display = 'none';
                 inputSobrenome.style.borderColor = 'white';
                 console.log('Não há uma barra no sobrenome')
+            }
+
+        
+            if (inputSobrenomeValue === '') {
+                inputSobrenome.style.borderColor = 'white'
+                pErroSobrenomeNull.style.display = 'none'
+                pErroSobrenomeNull.style.display = 'none'
+                pSobrenomeCaractereInv.style.display = 'none'
             }
             
 
@@ -277,18 +292,29 @@
         
          function mascaraRG() {
             
+            let inputRg = document.getElementById("input-rg")
+            let inputRgValue = document.getElementById("input-rg").value
+                
+           // var pErroRg = document.getElementById("rg-erro")
+            
             //  var pErroRg = document.getElementById("rg-erro")
 
-             inputRgValue = inputRg.value
+            console.log(inputRgValue)
              
 
             inputRg.addEventListener('keypress', function() {
-                var rgLength = inputRg.value.length
+                let rgLength = inputRgValue.length
 
                  if (rgLength === 2 || rgLength === 6) {
                    inputRg.value += '.'
-                } else if (rgLength === 10) 
+                   console.log('ponto')
+
+                } else if (rgLength === 10) {
                     inputRg.value += '-'
+                    console.log('traço')
+
+                }
+
              })
 
 
@@ -297,42 +323,12 @@
 
 
             function mascaraRgConfere() {
+                var inputRgValue = document.getElementById("input-rg").value
               
-
-                // var rgLength = inputRg.value.length
-
-
-                /*console.log(inputRgValue[0])
-                console.log(inputRgValue[1])
-                console.log(inputRgValue[3])
-                console.log(inputRgValue[4])
-                console.log(inputRgValue[5])
-                console.log(inputRgValue[6])
-               
-                console.log(inputRgValue[8])
-                console.log(inputRgValue[9])
-                console.log(inputRgValue[10])
              
-                console.log(inputRgValue[12])*/
-
-
-
-                
-                // tentar com While
-                //tentar com OnChange
-
-                // !/^[a-zA-ZÀ-ü' ]+$/.test
-
-                //(!/^\d{2}.?\d{3}.?\d{3}-?\d{2}$/
-
-
-
-                // verificar se a quantidade de .s for maior que 2, que é o padrão e se - é maior que 1
-
-                // verifica se a quantidade de numeros é maior ou menor que a quantidade padrão
-
-             
-                if (!(/^\d{2}.?\d{3}.?\d{3}-?\d{2}$/).test(inputRgValue)) { // tá funcionando/ sem o !, 1 é numero, e a tambem
+                /*if ((/^\d{2}\.\d{3}\.\d{3}\-\d{2}+$/).test(inputRgValue)) { 
+                    
+                    // tá funcionando/ sem o !, 1 é numero, e a tambem
                     console.log('tudo certo')
                     pErroRg.style.display = 'none';
 
