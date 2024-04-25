@@ -63,7 +63,7 @@
     var inputCpfValue = document.getElementById("input-cpf").value
 
     var inputTel = document.getElementById("input-telefone")
-    var inputNum = document.getElementById("input-telefone").value
+
 
     var inputNum = document.getElementById("input-telefone").value
     var pErroQtdNums = document.getElementById("pErroQtdNum")
@@ -555,9 +555,35 @@
 
 
         function mascaraCpfConfere() {
+            var inputCpf = document.getElementById("input-cpf")
+
+        
+            var inputCpfValue = document.getElementById("input-cpf").value
+
+            var pErroCpf = document.getElementById("cpf-erro")
+
+            if (!/^\d{3}\.\d{3}\.\d{3}\-\d{2}/.test(inputCpfValue)) {
+                console.log('Inválido')
+                inputCpf.style.borderColor = 'red'
+                pErroCpf.style.display = 'block'
+
+            } else {
+                console.log('Tudo certo!')
+                inputCpf.style.borderColor = 'white'
+                pErroCpf.style.display = 'none'
+            }
+
+
+            if (inputCpfValue === '') {
+                inputCpf.style.borderColor = 'white'
+                pErroCpf.style.display = 'none'
+
+            }
+
+            
            
 
-            let ponto = inputCpfValue.split('.').length -1;
+            /*let ponto = inputCpfValue.split('.').length -1;
             let traco = inputCpfValue.split('-').length - 1;
 
             console.log(inputCpfValue) 
@@ -601,7 +627,7 @@
 
             if (inputCpfValue === '') {
                 console.log('Campo vazio')
-            }
+            }*/
 
 
 
@@ -611,12 +637,35 @@
 
 
         function mascaraTelefone() {
+
+
+             inputTel.addEventListener('click', function() {
+
+
+                    if (inputNum === '') {
+
+                    inputTel.value = '(';
+
+                    
+             }})
           
 
             inputTel.addEventListener('keypress', function() {
                 var numTel = inputTel.value.length
 
-                if (numTel === 9) {
+              
+            
+
+                if (numTel === 3) {
+                    inputTel.value += ')'
+                }
+
+
+             if (numTel === 4){
+                inputTel.value += ' '
+             }
+
+                if (numTel === 10) {
                     inputTel.value  += '-'
                 }
             }
@@ -624,12 +673,26 @@
         }
 
         function confereNum() {
+         
+            var inputNum = document.getElementById("input-telefone").value
+
+            if (!/^\(\d{2}\)\s\d{5}\-\d{4}$/.test(inputNum)) {
+                console.log('numInválido')
+    
+            } else {
+                console.log('numVálido')
+            }
+
+
+        }
+
+            
           
             // var pErro = document.getElementById("pErroNum")
             // var pErroQtd = document.getElementById("pErroQtd")
             // var qtdNums = inputNum.value.length
 
-            switch(true) {
+           /* switch(true) {
 
             
              case (inputNum[0] !== '('): 
@@ -672,14 +735,10 @@
    
            
             }
-
+*/
 
 
 function contaNums() {
-
-  
-
-
 
     
     if (!/[0-9]/.test(inputNum[1])) {
@@ -784,7 +843,7 @@ function contaNums() {
             var inputCEP = document.getElementById('input-cep').value
             var pErroLocal = document.getElementById("p-erro-local")
 
-            var icon = document.getElementById("erro-local-icon")
+            var icon = document.getElementById("icon-local-erro")
 
             var request = new XMLHttpRequest();
 
