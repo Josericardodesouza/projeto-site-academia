@@ -39,14 +39,40 @@
         // }
 
 
-        let inputNome = document.getElementById("input-nome")
-        let inputSobrenome = document.getElementById("input-sobrenome")
-        let pErroNomeNum = document.getElementById("nome-erro-num")
-        let pErroSobrenomeNum = document.getElementById("sobrenome-erro-num")
+    var inputNome = document.getElementById("input-nome")
+    var inputSobrenome = document.getElementById("input-sobrenome")
+    var pErroNomeNum = document.getElementById("nome-erro-num")
+    var pErroSobrenomeNum = document.getElementById("sobrenome-erro-num")
 
 
-        let pErroNomeNull = document.getElementById("nome-erro")
-        let pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+    var pErroNomeNull = document.getElementById("nome-erro")
+    var pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+
+    
+    var pNomeCaractereInv = document.getElementById("nome-erro-caractereInv")
+
+        
+    var pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
+
+    var inputRg = document.getElementById("input-rg")
+
+    var inputRgValue = document.getElementById("input-rg").value
+        
+    var pErroRg = document.getElementById("rg-erro")
+
+     
+    var inputCpf = document.getElementById("input-cpf")
+
+        
+    var inputCpfValue = document.getElementById("input-cpf").value
+
+    var inputTel = document.getElementById("input-telefone")
+    var inputNum = document.getElementById("input-telefone").value
+
+    var inputNum = document.getElementById("input-telefone").value
+    var pErroQtdNums = document.getElementById("pErroQtdNum")
+
+  
 
 
 
@@ -127,11 +153,7 @@
 
 
         function inputNullFocus() {
-            let inputNome = document.getElementById("input-nome");
-            let inputSobrenome = document.getElementById("input-sobrenome")
-
-            let pErroNomeNull = document.getElementById("nome-erro")
-            let pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+      
 
             let inputNomeValue  = inputNome.value;
             let inputSobrenomeValue = inputSobrenome.value;
@@ -155,8 +177,7 @@
 
 
         function nomeCaractereInvalido() {
-            let inputNome = document.getElementById("input-nome")
-            let pNomeCaractereInv = document.getElementById("nome-erro-caractereInv")
+          
            
 
             let inputNomeValue = inputNome.value
@@ -181,8 +202,7 @@
 
 
         function sobrenomeCaractereInvalido() {
-            let inputSobrenome = document.getElementById("input-sobrenome")
-            let pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
+      
 
             let inputSobrenomeValue = inputSobrenome.value
 
@@ -256,7 +276,7 @@
         
         
          function mascaraRG() {
-             var inputRg = document.getElementById("input-rg")
+            
             //  var pErroRg = document.getElementById("rg-erro")
 
              inputRgValue = inputRg.value
@@ -277,9 +297,7 @@
 
 
             function mascaraRgConfere() {
-                var inputRgValue = document.getElementById("input-rg").value
-                 var inputRg = document.getElementById("input-rg")
-                var pErroRg = document.getElementById("rg-erro")
+              
 
                 // var rgLength = inputRg.value.length
 
@@ -473,7 +491,7 @@
 
 
         function mascaraCpf() {
-            var inputCpf = document.getElementById("input-cpf")
+           
                 // var inputCpf = parseFloat(document.getElementById("input-cpf"));
 
                 inputCpf.addEventListener('keypress', function() {
@@ -496,8 +514,7 @@
 
 
         function mascaraCpfConfere() {
-            var inputCpf = document.getElementById("input-cpf")
-            var inputCpfValue = document.getElementById("input-cpf").value
+           
 
             let ponto = inputCpfValue.split('.').length -1;
             let traco = inputCpfValue.split('-').length - 1;
@@ -553,7 +570,7 @@
 
 
         function mascaraTelefone() {
-            inputTel = document.getElementById("input-telefone")
+          
 
             inputTel.addEventListener('keypress', function() {
                 var numTel = inputTel.value.length
@@ -566,7 +583,7 @@
         }
 
         function confereNum() {
-            var inputNum = document.getElementById("input-telefone").value
+          
             // var pErro = document.getElementById("pErroNum")
             // var pErroQtd = document.getElementById("pErroQtd")
             // var qtdNums = inputNum.value.length
@@ -619,8 +636,7 @@
 
 function contaNums() {
 
-    var inputNum = document.getElementById("input-telefone").value
-    var pErroQtdNums = document.getElementById("pErroQtdNum")
+  
 
 
 
