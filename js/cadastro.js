@@ -292,26 +292,36 @@
         
          function mascaraRG() {
             
-            let inputRg = document.getElementById("input-rg")
-            let inputRgValue = document.getElementById("input-rg").value
+            var inputRg = document.getElementById("input-rg")
+            var inputRgValue = document.getElementById("input-rg").value
                 
            // var pErroRg = document.getElementById("rg-erro")
             
             //  var pErroRg = document.getElementById("rg-erro")
 
             console.log(inputRgValue)
+
+            
+       
              
 
             inputRg.addEventListener('keypress', function() {
-                let rgLength = inputRgValue.length
+                var rgLength = inputRg.value.length
 
-                 if (rgLength === 2 || rgLength === 6) {
+                 if (rgLength === 2) {
+                    inputRg.value += '.'
+                    console.log('ponto')
+                    console.log(rgLength)
+
+                 } else if (rgLength === 6) {
                    inputRg.value += '.'
                    console.log('ponto')
+                   console.log(rgLength)
 
                 } else if (rgLength === 10) {
                     inputRg.value += '-'
                     console.log('traço')
+                    console.log(rgLength)
 
                 }
 
@@ -323,7 +333,42 @@
 
 
             function mascaraRgConfere() {
+                var inputRg = document.getElementById('input-rg')
                 var inputRgValue = document.getElementById("input-rg").value
+               var  pErroRg = document.getElementById("rg-erro")
+
+
+                    // if (!/^[a-zA-ZÀ-ü' ?\d]+$/.test(inputSobrenomeValue))
+
+
+               
+
+                 if (!/^\d{2}\.\d{3}\.\d{3}\-\d$/.test(inputRgValue)) {
+                    console.log('Inválido')
+                    inputRg.style.borderColor = 'red'
+                    pErroRg.style.display = 'block'
+
+                 } else {
+                    console.log('Tudo certo!')
+                    inputRg.style.borderColor = 'white'
+                    pErroRg.style.display = 'none'
+                
+                 
+                 }
+                 
+                 
+                 if (inputRgValue === '') {
+                    pErroRg.style.display = 'none'
+                    inputRg.style.borderColor = 'white'
+                 }
+
+                }
+                
+
+            
+                
+
+            
               
              
                 /*if ((/^\d{2}\.\d{3}\.\d{3}\-\d{2}+$/).test(inputRgValue)) { 
@@ -481,7 +526,7 @@
     
               
             
-        }
+        
 
             
 
