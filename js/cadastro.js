@@ -39,17 +39,23 @@
         // }
 
 
-        var iconeErroNome = 
+        let inputNome = document.getElementById("input-nome")
+        let inputSobrenome = document.getElementById("input-sobrenome")
+        let pErroNomeNum = document.getElementById("nome-erro-num")
+        let pErroSobrenomeNum = document.getElementById("sobrenome-erro-num")
+
+
+        let pErroNomeNull = document.getElementById("nome-erro")
+        let pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+
 
 
         
 
         function confereNomeSobrenomeNum() {
-            let inputNome = document.getElementById("input-nome")
-            let inputSobrenome = document.getElementById("input-sobrenome")
+          
             // var inputSobrenome = document.getElementById("input-sobrenome").value
-            let pErroNomeNum = document.getElementById("nome-erro-num")
-            let pErroSobrenomeNum = document.getElementById("sobrenome-erro-num")
+       
             
             
             // var pErroSobrenome = document.getElementById("sobrenome-erro")
@@ -95,11 +101,7 @@
 
 
         function confereNomeSobrenomeNull() {
-            let inputNome = document.getElementById("input-nome");
-            let inputSobrenome = document.getElementById("input-sobrenome")
-
-            let pErroNomeNull = document.getElementById("nome-erro")
-            let pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+         
 
 
             let inputNomeValue  = inputNome.value;

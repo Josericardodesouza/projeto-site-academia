@@ -4,6 +4,50 @@
 
 /* configurações de nav para todas as mediaqueries*/
 
+/*@media (max-width: 220px) {
+
+    header > p {
+        font-size: 0.9em;
+        width: 50%;
+        height: auto;
+        bottom: 0;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    div.container {
+        width: 80vw;
+    };
+    
+
+    .divPlano {
+        font: 0.8em;
+        gap: 0;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+    footer > div#footer-flex {
+        font-size: 0.9em;
+        width: 30px;
+    }
+
+    div#footer-flex > div#div-footer-links > li {
+        width: 20px;
+    }
+}
+
+
+*/
 
 @media (max-width: 285px) {
 
