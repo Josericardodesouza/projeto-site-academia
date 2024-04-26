@@ -66,6 +66,8 @@
 
 
     var inputNum = document.getElementById("input-telefone").value
+
+    var pErroTel = document.getElementById("pErroNum")
     var pErroQtdNums = document.getElementById("pErroQtdNum")
 
   
@@ -644,17 +646,22 @@
 
 
 
-         
           
-
+        
             inputTel.addEventListener('keypress', function() {
                 var numTel = inputTel.value.length
 
 
-            
+                if (numTel === 1) {
+                    inputTel.value = '(' + inputTel.value.slice(0)
+
+                }
+
+          
                 
                 if (numTel === 3) {
                     inputTel.value += ')'
+                 
                     
                 }
 
@@ -670,14 +677,24 @@
             )
         }
 
+    
+
         function confereNum() {
          
             var inputNum = document.getElementById("input-telefone").value
 
             if (!/^\(\d{2}\)\s\d{5}\-\d{4}$/.test(inputNum)) {
+
+                //inputTel.style.borderColor = 'red'
+                // pErroTel.style.display = 'block'
+
                 console.log('numInválido')
     
             } else {
+
+              //  inputTel.style.borderColor = 'white'
+               // pErroTel.style.display = 'none'
+
                 console.log('numVálido')
             }
 
@@ -736,7 +753,7 @@
 */
 
 
-function contaNums() {
+/*function contaNums() {
 
     
     if (!/[0-9]/.test(inputNum[1])) {
@@ -811,7 +828,7 @@ function contaNums() {
     // ): 
 
 
-    }
+    }*/
 
 
 
