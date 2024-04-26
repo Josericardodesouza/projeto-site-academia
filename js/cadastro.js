@@ -535,6 +535,10 @@
            
                 // var inputCpf = parseFloat(document.getElementById("input-cpf"));
 
+
+
+       
+
                 inputCpf.addEventListener('keypress', function() {
                     var cpfLength = inputCpf.value.length
 
@@ -639,25 +643,19 @@
         function mascaraTelefone() {
 
 
-             inputTel.addEventListener('click', function() {
 
-
-                    if (inputNum === '') {
-
-                    inputTel.value = '(';
-
-                    
-             }})
+         
           
 
             inputTel.addEventListener('keypress', function() {
                 var numTel = inputTel.value.length
 
-              
-            
 
+            
+                
                 if (numTel === 3) {
                     inputTel.value += ')'
+                    
                 }
 
 
