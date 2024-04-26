@@ -1129,6 +1129,12 @@
 
 
 
+          var msgBmv = document.getElementById("bmvndo").innerHTML = 'Bem-vindo ' + inputNome + inputSobrenome
+
+
+
+
+
         //    switch (true) {
 
         //     case pErro[1].style.display === 'block':    
