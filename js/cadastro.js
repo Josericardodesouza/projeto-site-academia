@@ -1127,9 +1127,17 @@
 
 
 
+          /*function msg() {
+    
+
+          var msg = document.getElementById("bem-vindo")
+
+          msg.innerHTML = 'Bem-vindo'
 
 
-          var msgBmv = document.getElementById("bmvndo").innerHTML = 'Bem-vindo ' + inputNome + inputSobrenome
+          }
+
+          */
 
 
 
