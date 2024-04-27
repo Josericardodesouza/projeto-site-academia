@@ -410,7 +410,7 @@ p.msg-erro {
 
 
 section#section-oculta {
-    display: none;
+    display: block;
 }
 
 
@@ -439,6 +439,8 @@ div#cad-efetuado {
     color: greenyellow;
 
     border-radius: 10px 10px 10px 10px;
+
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.797);
 }
 
 div#cad-efetuado > p#saida-bmvd {
