@@ -657,7 +657,10 @@
 
                 }
 
-          
+                //swtich(numTel)
+          //case 3
+          // case 4
+          //case 10
                 
                 if (numTel === 3) {
                     inputTel.value += ')'
