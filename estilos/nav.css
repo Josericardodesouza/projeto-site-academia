@@ -19,9 +19,8 @@ nav#nav-itens {
     background-color: #F98948;
     display: flex;
     justify-content: space-between;
- 
   
-    position: relative;
+   
 
     border-bottom: 4px solid  black;
     
@@ -32,9 +31,10 @@ nav#nav-itens {
 
 nav#nav-itens > picture {
     display: block;
-   height: auto; 
+   
    margin: 0;
    padding-left: 5px;
+  
 
 }
 
@@ -56,14 +56,22 @@ nav#nav-itens > a > span.material-symbols-outlined {
     font-size: 36px;
     color: black;
    
-    transform: translateY(25%);
+    transform: translateY(27%);
   
     padding: 0;
-    padding-right: 20px;
+    padding-right: 15px;
   
 ;
 }
 
 nav#nav-itens > a {
     text-decoration: none;
+}
+
+@media (min-width: 600px) {
+
+    nav#nav-itens > picture {
+    transform: translateY(-25%);
+
+    }
 }
