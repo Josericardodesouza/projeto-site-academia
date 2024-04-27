@@ -1034,6 +1034,8 @@
 
             let pLocal = document.getElementsByClassName("info-local")
 
+            let  pBmvd = document.getElementById("saida-bmvd")
+
             if (document.getElementById("nome-erro").style.display === 'block' ) {
 
                 document.getElementById("btn-login").disabled = true 
@@ -1095,6 +1097,8 @@
                 document.getElementById('btn-login').disabled = false
 
                 container.style.display = 'block';
+
+                pBmvd.innerHTML = 'Olá ' + inputNome.value + ', seja muito bem vindo á LOREM IPSUM FITNESS!'
 
                 container.scrollIntoView({behavior: "smooth"})
                 // colocar o scrool também com a primeira mensagem de erro

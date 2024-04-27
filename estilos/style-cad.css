@@ -425,12 +425,14 @@ section#cadastro {
 
 div#cad-efetuado {
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     color: var(--atomicTangerine);
     background-color: black;
     width: 70%;
+    height: auto;
     margin: auto;
     text-align: center;
+    align-items: center;
 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
@@ -439,13 +441,34 @@ div#cad-efetuado {
     border-radius: 10px 10px 10px 10px;
 }
 
-div#cad-efetuado > p {
-    margin: 10px 0px 10px 0px;
+div#cad-efetuado > p#saida-bmvd {
+    color: var(--atomicTangerine);
+    width: 90%;
+   
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px auto 10px auto;
+    
+  
+}
+
+div#cad-efetuado > h3 {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+   
 }
 
 div#cad-efetuado > span {
     font-size: 2.1em;
+    margin-bottom: 10px;
 }
+
+
 
 
 
@@ -501,6 +524,9 @@ footer {
     div#acessar {
         width: 45%;
     }
+
+
+
 
 
 }
