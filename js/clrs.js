@@ -1,8 +1,8 @@
 
 function limiteNumeros() {
-    var refCarb = 4; // variáveis mantidas para melhor manutenção
-    var refProt = 4;
-    var refLipi = 4;
+    var refCarb = 5; // variáveis mantidas para melhor manutenção
+    var refProt = 5;
+    var refLipi = 5;
     var carbInfor = document.getElementById("ent-carboidratos");
     var protInfor = document.getElementById("ent-proteinas");
     var lipidInfor = document.getElementById("ent-lipi");

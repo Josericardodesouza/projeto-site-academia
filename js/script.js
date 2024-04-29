@@ -241,7 +241,7 @@ function aparecer () {
             document.getElementById("saida-frase").innerHTML = "Obesidade 3(mórbida)! <br> Procure assistencia médica e nutricional o quanto antes."
      }
      document.getElementById("saida-res").innerHTML = "O seu IMC é de " + imc
-     document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + " ÷ (" + altura + " x 2)";
+     document.getElementById("saida-form").innerHTML = "Fórmula: " + peso + ' &#247 ' + " ( " + altura + " x 2)";
       
     }
     
@@ -250,6 +250,7 @@ function aparecer () {
  function resetar() {
     // var entPeso = document.getElementById('entrada-peso').value
     // var entAltura = document.getElementById('entrada-altura').value
+    var containerEntrada = document.getElementById("entrada-dados")
     var container = document.getElementById("section-oculta");
     var divSaida = document.getElementById("saida")
     var alt = document.getElementById('entrada-altura')
@@ -263,6 +264,8 @@ function aparecer () {
             document.getElementById('saida-form').innerHTML = "";
             container.style.display = 'none';
             divSaida.style.display = 'none';
+
+            containerEntrada.scrollIntoView({behavior: "smooth"});
            
 
      

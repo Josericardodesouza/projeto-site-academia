@@ -297,15 +297,22 @@ p#pErroLipi {
     margin: 0px;
 }
 
-a#calcular:hover {
+button#calcular:hover {
     color: white;
     /* color: #69140E; */
     cursor: pointer;
 }
 
+button.botao {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
 
 
- a#calcular {
+
+ button#calcular {
     bottom: 0%;
     height: 30px;
     /* background-color: red; */
@@ -316,7 +323,7 @@ a#calcular:hover {
    
 }
 
-a#calcular > span {
+button#calcular > span {
     font-size: 31px;
 }
 
@@ -342,16 +349,23 @@ a#executar > span {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+ 
   }
-  
-  span#span-resetar {
 
-    font-size: 2em;
- }
+  button#botao-resetar > span#span-resetar  {
+    width: auto;
+    height: auto;
+    font-size: 41px;
+  }
+
+
+ 
+  
+  
 
  span#span-resetar:hover {
    cursor: pointer;
-   color: #e28502;
+    color: #e28502; 
  }
 
  .h2Main {
@@ -374,9 +388,9 @@ section#section-oculta {
     /* background-color: rgb(101, 96, 96); */
     width: 100vw;
     height: 700px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 100px 0px;
     padding: 0px;
-    display: inline-block; 
+    display: none; 
    
 
    

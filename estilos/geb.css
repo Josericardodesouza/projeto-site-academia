@@ -145,7 +145,7 @@ section#section-entrada {
     /* background-color: blue; */
     background-color: white;
     width: 100vw;
-    height: 250px;
+    height: auto;
     margin: 0px;
     display: block;
    
@@ -324,7 +324,7 @@ button#botao-fem {
 
 
 section#oculta {
-    display: block; 
+    display: none; 
     width: 100vw;
     height: 200px;
     z-index: 0;
