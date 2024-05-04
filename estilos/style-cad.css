@@ -411,7 +411,7 @@ p.msg-erro {
 
 
 section#section-oculta {
-    display: block;
+    display: none;
 }
 
 
@@ -471,6 +471,10 @@ div#cad-efetuado > span {
     margin-bottom: 10px;
 }
 
+
+p#p-erro-local > abbr {
+    margin: 0px 3.5px 0px 3.5px;
+}
 
 
 

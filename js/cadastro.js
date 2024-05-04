@@ -875,20 +875,20 @@
                 var cidade = dadosLocal.localidade;
                 var rua = dadosLocal.logradouro;
 
-                switch (true) { // fiz sozinho, o copilot só disse que deveria trocar o "undefined." por undefined pois é uma variável indefinida
+                switch (true) { 
                     case (estado === undefined):
                     icon.style.display = 'block'
-                     pErroLocal.style.display = 'block';
+                     pErroLocal.style.display = 'flex';
                      break;
 
                     case (cidade === undefined): 
                      icon.style.display = 'block'
-                     pErroLocal.style.display = 'block';
+                     pErroLocal.style.display = 'flex';
                      break;
 
                     case (rua === undefined): 
                      icon.style.display = 'block'
-                     pErroLocal.style.display = 'block';
+                     pErroLocal.style.display = 'flex';
                      break;
 
                      default: 
@@ -1069,6 +1069,8 @@
                 document.getElementById('btn-login').disabled = true
 
             } else if (document.getElementById("p-erro-local").style.display === 'block') {
+                var teste = document.getElementById("input-cep")
+                teste.scrollIntoView({behavior: "smooth"});
 
                 document.getElementById('btn-login').disabled = true
 
