@@ -890,7 +890,7 @@
                 request.send();
     
                 request.onload = function() {
-                    let dadosLocal = JSON.parse(this.responseText)
+                    let dadosLocal = JSON.parse(this.responseText);
     
                     var estado = dadosLocal.uf;
                     var cidade = dadosLocal.localidade;
@@ -927,7 +927,7 @@
 
                     if (rua !== '') {
                         document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro: " + rua;
-                        
+
                     } else {
                         document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro não encontrado."
                     }
