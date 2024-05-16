@@ -226,8 +226,21 @@ img.icon {
 }
 
 span.person {
+    transform: translateY(22%)
 
 
+}
+
+span.icon-identid {
+    transform: translateY(22%);
+}
+
+span.icon-local {
+    transform: translateY(22%);
+}
+
+span.icon-tel {
+    transform: translateY(18%);
 }
 
 
@@ -247,8 +260,8 @@ abbr {
     font-weight: 700;
 }
 
-mark {
-    color: orange;
+label > mark {
+    color: red;
     background-color: transparent;
     font-weight: 800;
 }
@@ -409,6 +422,11 @@ p.msg-erro {
     
 }
 
+p.info-local {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    
+}
 
 section#section-oculta {
     display: none;

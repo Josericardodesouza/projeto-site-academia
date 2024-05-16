@@ -860,51 +860,131 @@
         function buscarLocal() { // vai ser chamada pelo input quando ele estiver completo, usar regex
             var inputCEP = document.getElementById('input-cep').value
             var pErroLocal = document.getElementById("p-erro-local")
-
-            if (inputCEP.length > 9) 
-
             var icon = document.getElementById("icon-local-erro")
+            
 
-            var request = new XMLHttpRequest();
-
-            request.open('GET', 'https://viacep.com.br/ws/' + inputCEP + '/json/')
-            request.send();
-
-            request.onload = function() {
-                let dadosLocal = JSON.parse(this.responseText)
-
-                var estado = dadosLocal.uf;
-                var cidade = dadosLocal.localidade;
-                var rua = dadosLocal.logradouro;
-
-                switch (true) { 
-                    case (estado === undefined):
-                    icon.style.display = 'block'
-                     pErroLocal.style.display = 'flex';
-                     break;
-
-                    case (cidade === undefined): 
-                     icon.style.display = 'block'
-                     pErroLocal.style.display = 'flex';
-                     break;
-
-                    case (rua === undefined): 
-                     icon.style.display = 'block'
-                     pErroLocal.style.display = 'flex';
-                     break;
-
-                     default: 
-                     icon.style.display = 'none'
-                      pErroLocal.style.display = 'none';
-                      document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
-                      document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + ".";
-                      document.getElementById("saida-logradouro-rua").innerHTML = "Endereço: " + rua + ".";
-                }
+            if (inputCEP.length < 9)  {
+                icon.style.display = 'block'
+                pErroLocal.style.display = 'flex';
+                // document.getElementById("saida-uf").innerHTML = ''
+                document.getElementById("saida-cidade").innerHTML = ''
+                document.getElementById("saida-logradouro-rua").innerHTML = ''
+                document.getElementById("saida-bairro").innerHTML = ''
 
 
+            } else {
 
+
+                icon.style.display = 'none'
+                pErroLocal.style.display = 'none';
+                
             }
+
+
+            if (inputCEP.length === 9) { // se não der jeito, envolver isso tudo numa função
+
+
+                var request = new XMLHttpRequest();
+
+                request.open('GET', 'https://viacep.com.br/ws/' + inputCEP + '/json/')
+                request.send();
+    
+                request.onload = function() {
+                    let dadosLocal = JSON.parse(this.responseText)
+    
+                    var estado = dadosLocal.uf;
+                    var cidade = dadosLocal.localidade;
+                    var rua = dadosLocal.logradouro;
+                    var bairro = dadosLocal.bairro;
+    
+                    switch (true) { 
+                        case (estado === undefined):
+                        icon.style.display = 'block'
+                         pErroLocal.style.display = 'flex';
+                         break;
+    
+                        case (cidade === undefined): 
+                         icon.style.display = 'block'
+                         pErroLocal.style.display = 'flex';
+                         break;
+    
+                        case (rua === undefined): 
+                         icon.style.display = 'block'
+                         pErroLocal.style.display = 'flex';
+                         break;
+
+                         case (bairro === undefined): 
+                         icon.style.display = 'block'
+                         pErroLocal.style.display = 'flex';
+                         break;
+    
+                         default: 
+                         icon.style.display = 'none'
+                          pErroLocal.style.display = 'none';
+                        //   document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
+                          document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + "/" + estado + ".";
+                    }
+
+                    if (rua !== '') {
+                        document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro: " + rua;
+                        
+                    } else {
+                        document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro não encontrado."
+                    }
+
+                    if (bairro !== '') {
+                        document.getElementById("saida-bairro").innerHTML = "Bairro: " + bairro;
+                    } else {
+                        document.getElementById("saida-bairro").innerHTML = "Bairro não encontrado.";
+                    }
+
+
+
+
+
+
+                    // switch(true) {
+
+                    //     case (rua !== ''):
+                    //         document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro: " + rua + ".";
+                    //         break;
+
+                    //     case (bairro !== ''):
+                    //         document.getElementById("saida-bairro").innerHTML = "Bairro: " + bairro + ".";
+                    //         break;
+
+                    //     default:
+
+
+
+                    // }
+
+    
+                }
+                
+            }
+
+            
+        if (inputCEP.length < 1) {
+            icon.style.display = 'none'
+            pErroLocal.style.display = 'none';
+            document.getElementById("saida-uf").innerHTML = ''
+            document.getElementById("saida-cidade").innerHTML = ''
+            document.getElementById("saida-logradouro-rua").innerHTML = ''
+            document.getElementById("saida-bairro").innerHTML = ''
+
         }
+
+    }
+
+
+
+
+
+
+
+
+
 
         function mascaraCep() {
             var inputCep = document.getElementById("input-cep")

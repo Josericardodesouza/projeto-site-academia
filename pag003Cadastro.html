@@ -48,7 +48,7 @@
                 
                   <form action="cadastroLogin.php" method="post">
                     <h3>INFORMAÇÕES PESSOAIS:  </h3>
-                      <label for="input-nome"><span class="input-nome material-symbols-outlined">person</span>DIGITE SEU NOME</label>
+                      <label for="input-nome"><span class="input-nome material-symbols-outlined person">person</span>DIGITE SEU NOME</label>
                       <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
 
 
@@ -59,7 +59,7 @@
                       </div>
                       <!-- <br> -->
 
-                      <label for="input-sobrenome"><span class="icon-person material-symbols-outlined">person</span>DIGITE SEU SOBRENOME</label>
+                      <label for="input-sobrenome"><span class="icon-person material-symbols-outlined person">person</span>DIGITE SEU SOBRENOME</label>
                       <input type="text" name="input-sobrenome" id="input-sobrenome" placeholder="" oninput="confereNomeSobrenomeNum(); inputNullFocus(); sobrenomeCaractereInvalido()">
 
                       <div class="div-msg-erro">
@@ -93,9 +93,10 @@
                         <p id="p-erro-local" class="msg-erro"><span class="icon-erro material-symbols-outlined" id="icon-local-erro">fmd_bad</span>Por favor, insira um <abbr> CEP </abbr> válido</p>
                       
 
-                      <p id="saida-uf" class="info-local"></p>
+                      <!-- <p id="saida-uf" class="info-local"></p> -->
                       <p id="saida-cidade" class="info-local"></p>
                       <p id="saida-logradouro-rua" class="info-local"></p>
+                      <p id="saida-bairro" class="info-local"></p>
 
                       <label for="input-telefone"><span class="icon-tel material-symbols-outlined">phone</span>DIGITE SEU NÚMERO DE CELULAR:</label>
                       <input type="tel" name="input-telefone" id="input-telefone"  placeholder="(11) 12345-6789" maxlength="15" required oninput="mascaraTelefone(); confereNum()">
