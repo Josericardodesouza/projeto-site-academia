@@ -857,9 +857,11 @@
 
         
 
-        function buscarLocal() {
+        function buscarLocal() { // vai ser chamada pelo input quando ele estiver completo, usar regex
             var inputCEP = document.getElementById('input-cep').value
             var pErroLocal = document.getElementById("p-erro-local")
+
+            if (inputCEP.length > 9) 
 
             var icon = document.getElementById("icon-local-erro")
 

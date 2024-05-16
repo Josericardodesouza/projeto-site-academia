@@ -84,8 +84,8 @@
                      </div>
 
                       <label for="input-cep"><span class="icon-local material-symbols-outlined">pin_drop</span>DIGITE SEU <abbr title="Código de Endereçamento Postal">CEP</abbr></label>
-                      <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="" oninput="mascaraCep()" required>
-                      <button id="btn-cep" onclick="buscarLocal()">buscar local</button>
+                      <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="" oninput="mascaraCep(); buscarLocal()" required>
+                      <!-- <button id="btn-cep" onclick="buscarLocal()">buscar local</button> -->
                       <br>
 
 
@@ -114,7 +114,7 @@
                       <input type="text" name="input-estatura" id="input-estatura" placeholder="" maxlength="4" required oninput="estatura()">
 
                       <label for="peso"><img src="imagens/icones/scale_1641269.svg" alt="icone de altura" class="icon">INFORME SEU PESO</label>
-                      <input type="number" name="input-peso" id="input-peso" placeholder="">
+                      <input type="text" name="input-peso" id="input-peso" placeholder="" maxlength="6" required oninput="peso()">
                       
                       <div class="div-msg-erro">
                         <p id="pErroPeso" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>

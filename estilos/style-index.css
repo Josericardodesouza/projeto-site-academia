@@ -535,12 +535,14 @@ div#div-imc {
 
 
 div.botao-ir > a {
+    width: auto;
     color: orange;
     margin: 0px;
     padding: 0px;
-    position: absolute;
+    display: block;
+    
     text-decoration: none;
-    top: 25%;
+    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
     font-size: 1.2em;
@@ -551,15 +553,17 @@ div.botao-ir > a {
 
 
 div.botao-ir {
-    justify-content: center;
+   
     border-radius: 9px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color: cadetblue; */
     background-color: black;
     width: 50%;
     height: 20%;
     position: absolute;
-    left: 25%;
+    left: 25%; 
     cursor: pointer;
     bottom: 8px;
    
@@ -682,7 +686,8 @@ section#txt-img2 {
 
 section#txt-img3 {
     background-color: black;
-    color: #da8208;
+    /* color: #da8208; */
+    color: whitesmoke;
     height: 100%;
     padding: 0;
     float: right;
