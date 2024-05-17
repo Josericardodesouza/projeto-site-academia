@@ -215,52 +215,6 @@ p#linha {
    
 }
 
-
-
-
-
-
-    /* height: 26px; */
-
-    /* margin: 0;
-    padding: 5px 0px 0px 0px;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.603); */
-   
-
-
-
-
-/* 
-div#menu {
-    background-color: blue;
-    width: 100%;
-    display: block;
-    position: absolute;
-    padding: 0;
-   
-} */
-
-
-
- /* menu#opcoes > ul {
-    display: flex;
-    position: absolute;
-    width: 100%;
-   
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    font-style: normal;
-    font-size: small;
-    background-color: red;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  
-}  */
-
-
-
-
 div#opcoes {
 
     width: 100%;
@@ -271,8 +225,6 @@ div#opcoes {
     display: flex;
     justify-content: space-around;
     border-bottom: 2px solid var(--atomicTangerine);
-    
-
 
 
 }
@@ -285,20 +237,6 @@ div#opcoes a {
     display: block;
     margin-bottom: 5px;
 } 
-
-
-
-
-/* 
-menu > ul {
-    margin: 0;
-    padding: 0; 
-   
-} */
-
-
-
-
 
 
 div#menuHamb > div#opcoes > a {
@@ -342,32 +280,6 @@ div#opcoes > a {
 
 
 
-
-   
- 
-
-    
-
-   /* margin: 0;
-    height: 20px;
-    flex-basis: 20px;
-    justify-content: space-between;
-    flex-wrap: wrap; */
-  
-
- /* #menu > a {
-    flex-basis: 200px;
-    flex-grow: 1;
-    flex-shrink: 1; 
-}  */
-
-
-
-
-
-
-
-
  header { 
     display: flex;
     position: relative;
@@ -401,11 +313,6 @@ div#opcoes > a {
    padding-left: 10px;
   
 }
-
-/* div#texto-header {
-    padding: 0;
-    margin: 0px 10px 0px 0px;
-} */
 
 
 mark {
@@ -637,10 +544,6 @@ section.imagem-texto > .texto > p {
     padding: 10px;
    
 }
-
-
-/* section.imagem-texto1 { */
-    /* as sections vão ter cor de fundo para quando serem para desktops, preto e laranja, ou laranja e o azul bonito, ai as letras vão ter as cores preto ou laranja, ou o azul, ve aí*/
 
 
 div.imagem {
@@ -901,10 +804,6 @@ span.li-pred {
 }
 
 
-/*span.icons-lista {
-
-
-}*/
 
 
 
@@ -916,135 +815,3 @@ span.li-pred {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* section#secao1 {
-    width: 95vw;
-    height: 610px;
-    margin: 2px 2px;
-    position: relative;
-    background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: inline-block;
-} */
-
-
-
-/* div#imagem-lateral-1 {
-    background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
-    background-size: cover;
-    /* transform: translateX(53%); */
-    /* border-radius: 20px; */
-    /* padding: 0px;
-    width: 100vw;
-    height: 400px; */
-
-/* 
- div.assinar {
-    height: 47px;
-    border-radius: 0px 0px 30px 30px;
-    background-color: #190b28;
-    text-decoration: none;
-    display: block;
-    margin: 0px;
-    margin-top: -8px;
-    padding: 0px;
-
- }
-
- div.assinar > a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 200;
-    color: #ea8c34;
-    position: relative;
-    top: 25%;
-    text-decoration: none;
- }
-
-section#secao1 > div#plano-basico {
-    text-align: center;
-    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    width: 54vw;
-    min-height: 32vh;
-    color: #96031a;
-    font-weight: 300;
-    background-color: whitesmoke;
-    position: absolute;
-    display: inline-block;
-    top: 20%;
-    bottom: 20%;
-    left: 20%;
-    right: 20%;
-  
-    margin-top: 8px;
-    margin-bottom: 0px;
-    padding: 3px;
- 
-    padding-bottom: 3px;
-    border-radius: 30px 30px;
-}
-
-div#plano-basico > h4 {
-    font-weight: 600;
-}
-
-
-div.titulo-cartao {
-    display: block;
-    top: 2%;
-    margin: 0px;
-    position: relative;
-    
-    bottom: 3%;
-
-}
-
-div#titulo-basico > h4 {
-    color: greenyellow;
-    
-}
-
-
-
-
-section#secao1 > div#plano-basico > span {
-
-    color: green;
-    font-weight: bolder;
-    transform: translateY(5px);
-    margin: 0px;
-    margin-bottom: 2px;
-} */
-
-
-
-
-
-/* main > div#texto-maior {
-    color: black;
-    background-color: rgba(0, 0, 0, 0.627);
-    font-size: 30px;
-    max-width: 300px;
-    border-radius: 0% 50% 50% 0%;
-}
-
-main > div#texto-maior > p {
-    margin: 50px;
-}
-
-
-
-section#texto-imagem {
-    display: flex;
-} */
