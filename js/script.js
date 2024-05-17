@@ -30,36 +30,17 @@ function aparecer () {
     var inputPeso = document.getElementById("entrada-peso");
     var inputAlt = document.getElementById("entrada-altura");
 
-    // var botao = document.getElementById("executar");
     var container = document.getElementById("section-oculta");
     var pErroAlt = document.getElementById("pErroAlt")
     var pErroPes = document.getElementById("pErroPes")
-    var pNull = document.getElementById("pNull")
+    /*var pNull = document.getElementById("pNull")*/
 
-    // var confereInputAlt = entAlt.value;
-    // var confereInputP = entPeso.value;
-
-
-
-     
-        // if (confereInputAlt.value === '' && confereInputP.value === ''){
-        // window.alert('Voce deve preencher os campos obrigatórios!')
-        // entPeso.value = '';
-        // entAlt.value = '';
-        // }
-    
+ 
 
   
 
 
     switch (true) {
-
-        // case (entAlt.indexOf() === -1 && entPeso.indexOf() === -1):
-        //     pNull.style.display = 'block';
-        //     console.log('teste');
-
-        //     break;
-
 
         case (entAlt.indexOf(',') === - 1 && entAlt.indexOf('.') === -1):
             //   pErroAlt.innerHTML = 'Voce deve inserir um ponto(.) ou vírgula(,) no campo de ALTURA!';
@@ -87,14 +68,6 @@ function aparecer () {
 
        
              break;
-
-            //  case (entAlt.indexOf(',') === 1 && entAlt.indexOf('.') === 1):
-            // pErroAlt.style.display = 'none';
-            //  break;
-
-            //  case (entPeso.indexOf(',') ===  1 && entPeso.indexOf('.') === 1):
-            //  pErroPes.style.display = 'none';
-            //  break;
         
       
         default:
@@ -109,81 +82,7 @@ function aparecer () {
             break;
     }
 
-
-   
-
-
-
-
-
-
-
-
-    // var confere = 0;
-
-    // if (dado1.indexOf(',') === -1 || dado1.indexOf('.') === -1) {
-    //     window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!')
-    //     confere = 0;
-    // }else{
-
-    //     confere = 1;
-    // }
-
-    // if (dado2.indexOf(',') === -1 || dado2.indexOf('.') === -1) {
-    //     window.alert('Você deve inserir um ponto(.) ou virgula(,) no campo de PESO!')
-    //     confere = 0;
-    // } else {
-    //     confere = 1;
-    // }
-
-
-    // botao.addEventListener('click', function() {
-
-    //     //novo if de teste
-    //     // if (dado1.indexOf(',') !== -1 && dado1.indexOf('.') !== -1 && ) 
-    //     //tentar substituir os if e else por switch case, fica mais elegante e prático. obg Deus
-
-
-
-    //     //if original ele ve se dado1 e dado2 é maior que 1, que e o valor inserido no input pelo usuário
-    //     // agora tem que verificar se os dado1 e dado2 são maiores que 1 e tem o . e , no input
-    //    // mas o condicional do if fica muito grande
-    //     if ( dado1 > 0 && dado2 > 0) {
-    //         container.style.display = 'block'
-    //      } else {
-    //          container.style.display = 'none'
-    //      }
-
-        
-
-    //     if (altura.indexOf(',') === -1 && altura.indexOf('.') === -1) {
-    //         window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!')
-    //      }
-    //  // icnrementar esses ifs no if do botao
-    
-    //      if (peso.indexOf(',') === -1 && peso.indexOf('.') === -1) {
-    //         window.alert('Você deve inserir um ponto(.) ou virgula(,) no campo de PESO!')
-    //      } 
-    // }
-    
-
-    
 }
-
-
-
-    // botao.addEventListener('click', function(){
-    //     if(container.style.display == 'block') {
-    //         container.style.display = 'none';
-    //     } else {
-    //         container.style.display = 'block';
-    //     }
-    // })
-
-
-
-
-    
 
 
  function calcular() {
@@ -193,37 +92,11 @@ function aparecer () {
     var altura = document.getElementById("entrada-altura").value;
     p = document.getElementById('saida-frase');
 
-  
-
-    //  var container = document.getElementById("section-oculta")
-
-    // var confere = 0;
-
     var total = peso / (altura * altura);
 
     var imc = total.toFixed(1);
 
 
-   
-
-
-
-
-
-
-
-
-    //  if (altura.indexOf(',') === -1 && altura.indexOf('.') === -1) {
-    //     window.alert('Voce deve inserir um ponto(.) ou virgula(,) no campo de ALTURA!')
-    //  }
- 
-
-    //  if (peso.indexOf(',') === -1 && peso.indexOf('.') === -1) {
-    //     window.alert('Você deve inserir um ponto(.) ou virgula(,) no campo de PESO!')
-    //  } 
-
-
-   
  if ( imc < 17) {
          document.getElementById("saida-frase").innerHTML = "Voce esta muito abaixo do peso"
      } else if (imc >= 17.0 && imc <= 19.0) {
@@ -274,6 +147,20 @@ function aparecer () {
 
 
 
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
      
 //   switch (calculoIMC) {
 
@@ -299,54 +186,7 @@ function aparecer () {
 //      }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // box = document.getElementById('div-saida')
-            // if (box.style.display == 'block') {
-            //     box.style.display = 'none'
-            // } else {
-            //     box.style.display = 'block'
-            // }
-            // }
-
-
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var btn = document.querySelector("botao");
-// var resultado = document.querySelector("container-saida");
-
-// btn.addEventListener('click', function(){
-//    if (resultado.style.display === 'block') {
-//       resultado.style.display = 'none';
-//    } else {
-//       resultado.style.display = 'block';
-
-// )}
-
 
 
 
