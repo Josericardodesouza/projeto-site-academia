@@ -106,17 +106,6 @@ function aparecer() {
 
     }
 
-
-
-
-    // botao.addEventListener('click', function(){
-    //     if (container.style.display == 'inline-block') {
-    //         container.style.display = 'none';
-    //     } else {
-    //         container.style.display = 'inline-block';
-    //     }
-    // }
-    // )
 }
 
 function calcularCal() {
