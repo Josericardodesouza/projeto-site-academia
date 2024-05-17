@@ -34,58 +34,6 @@
 }
 
 
-/*nav#fixa {
-        top: 0;
-        display: block;
-        position: sticky;
-        margin: 0;
-        padding: 0;
-        z-index: 2;
-}*/
-
-
-
-
-
-
-/*nav {
-    color: black;
-    width: 100vw;
-    height: 60px;
-    margin: 0px;
-    padding: 0px;
-    background-color:#F98948;
-    display: flex;
-    position: absolute;
-    top: 0;
-    align-items: center;
-   
-   
-
-}
-
-*/
-
-/* nav > h5 {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 20px;
-    margin: 0px;
-    margin-right: 5px;
-}  */
-
-/*nav > a > span.material-symbols-outlined {
-    height: auto;
-    font-size: 36px;
-    color: black;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    padding: 0;
-    padding-right: 20px;
-}*/
-
 h1 {
     /* font-size: 19px;
     text-align: center;
@@ -327,21 +275,6 @@ button#calcular > span {
     font-size: 31px;
 }
 
-
-
- /* a#executar {
-    bottom: 0;
-    /* background-color: red; 
-    display: block;
-   
-    position: absolute;
-  
-}
-
-a#executar > span {
-   font-size: 30px;
-
-} */
 
   div#resetar {
     width: 100vw;
