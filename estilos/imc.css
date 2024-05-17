@@ -55,24 +55,12 @@
     --cor2: #CFB094;
   
 
-    /* é melhor pegar uma cor unica e ir pegando os tons mais escuros dela, igual  o site do tailwind*/
-
-
-    /* --cor1: #101119;
-    --cor2: #8d99ae;
-    --cor3: #edf2f4;
-    --cor4: #d80032; */
-
 }
 
 * {
     margin: 0px;
     padding: 0px;
 }
-
-/* nav > a > span.material-symbols-outlined:hover {
-    color: #b25f00;
-} */
 
 h1 {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -178,10 +166,6 @@ div#entrada-dados {
   
     
 }
-
-/* input#entrada-peso {
-    margin-bottom: 0px;
-} */
 
 
 img.icon {
@@ -353,26 +337,6 @@ div#saida {
    
 }
 
-
-/* div#botao-resetar {
-    width: 100%;
-    display: block;
-    position: absolute;
-} */
-
-
-
-
-
-/* hr {
-    background-color: rgb(7, 100, 100);
-    width: 100%;
-    height: 4px;
-    margin-top: 2px;
-    display: block;
-} */
-
-
 div#saida >.saida-p {
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -440,15 +404,6 @@ div#saida >  p#saida-form {
    
    
 }
-/* div#saida-dados > div#btn-restart {
-    width: 70%;
-    display: block;
-    position: absolute;
-    margin: 0;
- 
-  
-  
-} */
 
 
 span#resetar.material-symbols-outlined   {
@@ -461,46 +416,12 @@ span#resetar.material-symbols-outlined   {
     bottom: 0px;
 }
 
-
-
-
-
-
-/* div#container-btn {
-    display: block;
-    background-color: aquamarine;
-    width: 30px;
-    height: 20px;
-}
-
-div#container-btn > a {
-    width: 50%;
-    height: 10%;
-    bottom: 0%;
-    display: block;
-    background-color: white; */
     
 
 
 hr {
     color: white;
 }
-
-
-
-
-
-   
-  
-
- 
-
-
-
-/* 
-a > .material-symbols-outlined {
-   
-} */
 
 
 
