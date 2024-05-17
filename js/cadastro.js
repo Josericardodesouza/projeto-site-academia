@@ -1,72 +1,20 @@
-  // function contaCaracteres() {
-        //     refEmail = 30;
-        //     refSenha = 15;
-        //     minSenha = 8;
 
-            
-        //     var email = document.getElementById("input-email")
-        //     var senha = document.getElementById("input-senha")
-        //     var input = document.getElementById("input-senha")
-          
-
-        //     lmtEmail = email.value;
-        //     lmtSenha = senha.value;
-
-        //     if (lmtEmail.length > refEmail) {
-        //         email.value = lmtEmail.slice(0, refEmail);
-        //     }
-
-        // }
-
-
-        // function confereNome() {
-        //     var nome = document.getElementById("input-nome").value
-        //     var erroNull = document.getElementById("nome-erro")
-        //     var erroNum = document.getElementById("nome-erro-num")
-
-
-        //     switch(true) {
-        //         case (nome.indexOf('[0-9]') === -1):
-        //             erroNum.style.display = 'block';
-        //             erroNull.style.display = 'none';
-        //             break;
-
-        //         case (nome.indexOf('') === -1):
-        //             erroNull.style.display = 'block';
-        //             erroNum.style.display = 'none';
-                    
-        //     }
-        // }
 
 
     var inputNome = document.getElementById("input-nome")
     var inputSobrenome = document.getElementById("input-sobrenome")
     var pErroNomeNum = document.getElementById("nome-erro-num")
     var pErroSobrenomeNum = document.getElementById("sobrenome-erro-num")
-
-
     var pErroNomeNull = document.getElementById("nome-erro")
     var pErroSobrenomeNull = document.getElementById("sobrenome-erro")
-
-    
     var pNomeCaractereInv = document.getElementById("nome-erro-caractereInv")
-
-        
     var pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
 
-   
-
-     
     var inputCpf = document.getElementById("input-cpf")
-
-        
     var inputCpfValue = document.getElementById("input-cpf").value
 
     var inputTel = document.getElementById("input-telefone")
-
-
     var inputNum = document.getElementById("input-telefone").value
-
     var pErroTel = document.getElementById("pErroNum")
     var pErroQtdNums = document.getElementById("pErroQtdNum")
 
@@ -248,41 +196,7 @@
 
             
 
-        //      case (inputNome === " "): 
-        //       pErroNome.style.display = 'block';
-        //       pErroNomeNum.style.display = 'none';
-
-        //       break;
-
-        //       default: 
-        //        pErroNome.style.display = 'none';
-        //        pErroNomeNum.style.display = 'none';
-        // }
-  
-        //     }
-
-
-
        
-
-            
-
-            //  pErroNome.style.display = 'none';
-            //  pErroNomeNum.style.display = 'none';
-            //  pErroSobrenome.style.display = 'none';
-            //  pErroSobNum.style.display = 'none';
-          
-
-
-    //         if (!/[0-9]/.test(inputNum[1])) {
-    //     pErroQtdNums.style.display = 'block';
-    //     console.log('Falta numero na posi 1')
-    // }
-
-    //estudar expressões regulares
-
-
-            
 
 
              
@@ -367,171 +281,6 @@
                 }
                 
 
-            
-                
-
-            
-              
-             
-                /*if ((/^\d{2}\.\d{3}\.\d{3}\-\d{2}+$/).test(inputRgValue)) { 
-                    
-                    // tá funcionando/ sem o !, 1 é numero, e a tambem
-                    console.log('tudo certo')
-                    pErroRg.style.display = 'none';
-
-                } else {
-
-                     console.log('tem caractere no meio');
-                     pErroRg.style.display = 'block'
-                     inputRg.style.borderColor = 'red';
-                 }
-
-
-
-                 // ele tá dando erro só na primeira letra pois o ^ corresponde á primeira letra da string
-                
-                
-
-
-                /*if (/^\d{2}.?\d{3}.?\d{4}\d{1}$/.teste(inputRgValue)) {
-                 console.log('valor do input = ' + inputRgValue)
-                 pErroRg.style.display = 'none';
-                 inputRg.style.borderColor = 'black';
-                 console.log('todos os caracteres são numéricos')
-
-                } else {
-
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Tem caractere que não é numérico');
-               }*/
-
-
-
-               
-
-               /* inputRg.addEventListener('keypress', function() {
-                  
-
-               if (/^\d{2}.?\d{3}.?\d{4}\d{1}$/.test(rgLength)) {
-             
-                pErroRg.style.display = 'none';
-                 inputRg.style.borderColor = 'black';
-                 console.log('Todos os caracteres são numeros ')
-                 console.log('borda verde')
-
-
-               } else {
-
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                
-                 console.log('tem caractere sem ser numerico')
-                 console.log('borda vermelha')
-                }
-
-                })*/
-
-                
-
-
-            
-        
-  
-            /* if (!(Number(inputRgValue[0]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Falta numero na posi 1 RG')
-             }
-
-             else if (i(Number(inputRgValue[1]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Falta número na posição 2 RG')
-             }
-
-             else if (isNaN(Number(inputRgValue[3]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                 inputRg.style.borderColor = 'red';
-                 console.log('Falta número na posição 3 RG')
-             }
-
-             else if (isNaN(Number(inputRgValue[4]))) {
-                console.log('valor do input = ' + inputRgValue)
-                 pErroRg.style.display = 'block';
-                 inputRg.style.borderColor = 'red';
-                 console.log('Falta número na posição 4 RG')
-             }
-
-             else if (isNaN(Number(inputRgValue[5]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Falta número na posição 5 RG')
-             }
-
-            
-             else if (isNaN(Number(inputRgValue[6]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Falta número na posição 6 RG')
-
-             }
-    
-             else if (isNaN(Number(inputRgValue[8]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Falta número na posição 8 RG')
-
-             }
-
-            
-             else if (isNaN(Number(inputRgValue[9]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Falta número na posição 9 RG')
-             }
-
-            
-             else if (isNaN(Number(inputRgValue[10]))) {
-                console.log('valor do input = ' + inputRgValue)
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                 console.log('Falta número na posição 10 RG')
-
-             }
-
-            
-             else if (isNaN(Number(inputRgValue[12]))) {
-                console.log('valor do input = ' + inputRgValue)
-                 pErroRg.style.display = 'block';
-                 inputRg.style.borderColor = 'red';
-                 console.log('Falta número na posição 12 RG')
-
-             }  else {
-                console.log('valor do input = ' + inputRgValue)
-
-                pErroRg.style.display = 'block';
-                inputRg.style.borderColor = 'red';
-                console.log('Tem caractere que não é numérico');
-            }
-
-            */
-
-
-    
-              
-            
-        
-
-            
-
 
         function mascaraCpf() {
            
@@ -586,58 +335,6 @@
 
             }
 
-            
-           
-
-            /*let ponto = inputCpfValue.split('.').length -1;
-            let traco = inputCpfValue.split('-').length - 1;
-
-            console.log(inputCpfValue) 
-
-            if (inputCpfValue[3] !== '.' && inputCpfValue[7] !== '.' && inputCpfValue[11] !== '-') {
-
-                // a questão do formato inválido é na função do botao
-
-                console.log('formato inválido')
-                inputCpf.style.borderColor = 'red';
-
-            } else {
-                inputCpf.style.borderColor = 'green'
-
-                console.log('pontos e - na posicao correta')
-            }
-
-            if (ponto > 2 || traco > 1) {
-                console.log('Tem pontos e tracos a mais')
-                inputCpf.style.borderColor = 'red';
-
-            } else {
-
-                console.log('tem a quantidade certa de pontos e um traco')
-                inputCpf.style.borderColor = 'green';
-
-            }
-
-            if (inputCpfValue.length === 13) {
-                console.log('Numeros suficientes')
-                inputCpf.style.borderColor = 'green';
-
-            } else {
-                console.log('Numeros insuficientes')
-                inputCpf.style.borderColor = 'red';
-
-
-            }
-
-
-
-            if (inputCpfValue === '') {
-                console.log('Campo vazio')
-            }*/
-
-
-
-
 
         }
 
@@ -656,11 +353,6 @@
                     inputTel.value = '(' + inputTel.value.slice(0)
 
                 }
-
-                //swtich(numTel)
-          //case 3
-          // case 4
-          //case 10
                 
                 if (numTel === 3) {
                     inputTel.value += ')'
@@ -688,15 +380,11 @@
 
             if (!/^\(\d{2}\)\s\d{5}\-\d{4}$/.test(inputNum)) {
 
-                //inputTel.style.borderColor = 'red'
-                // pErroTel.style.display = 'block'
+         
 
                 console.log('numInválido')
     
             } else {
-
-              //  inputTel.style.borderColor = 'white'
-               // pErroTel.style.display = 'none'
 
                 console.log('numVálido')
             }
@@ -704,59 +392,9 @@
 
         }
 
-            
-          
-            // var pErro = document.getElementById("pErroNum")
-            // var pErroQtd = document.getElementById("pErroQtd")
-            // var qtdNums = inputNum.value.length
-
-           /* switch(true) {
-
-            
-             case (inputNum[0] !== '('): 
-              console.log('erro 1');
-              pErroNum.style.display = 'block';
-              break;
-             
-             case (inputNum[3] !== ')'): 
-             console.log('erro 3');
-             pErroNum.style.display = 'block';
-             break;
-
-             case (inputNum[0] === '('): 
-              console.log('tudo certo!');
-              pErroNum.style.display = 'none'
-              break;
-
-            case (inputNum[3] === ')'): 
-            console.log('tudo certo!');
-            pErroNum.style.display = 'none';
-            break;
-
-            }
 
 
-            // if(/^\d+$/.test(inputNum) ) {
-            //         window.alert('Todos são numeros')
-            //     } else {
-            //    window.alert('Está faltando número ou contém caracteres não numéricos.');
-            //      }
-
-
-            // if (qtdNums < 14) {
-            //     pErroQtd.style.display = 'block';
-            // } else {
-            //     pErroQtd.style.display = 'none';
-            // }
-
-
-   
-           
-            }
-*/
-
-
-/*function contaNums() {
+/*function contaNumsTeste() {
 
     
     if (!/[0-9]/.test(inputNum[1])) {
@@ -832,21 +470,6 @@
 
 
     }*/
-
-
-
-
- 
-
-            // function contaNums() {
-
-            //     var inputNum = document.getElementById("input-telefone").value
-
-               
-
-
-
-            // }
 
         
 
@@ -943,22 +566,7 @@
 
 
 
-                    // switch(true) {
-
-                    //     case (rua !== ''):
-                    //         document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro: " + rua + ".";
-                    //         break;
-
-                    //     case (bairro !== ''):
-                    //         document.getElementById("saida-bairro").innerHTML = "Bairro: " + bairro + ".";
-                    //         break;
-
-                    //     default:
-
-
-
-                    // }
-
+           
     
                 }
                 
