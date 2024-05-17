@@ -124,7 +124,7 @@ div#texto-header > h2 {
 div#texto-header {
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     color: orange;
-    background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
+    background-image: linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
     bottom: 0;
     height: 50%;
@@ -237,9 +237,8 @@ div#entrada-dados > label > span {
 
 
 div#entrada-dados > label {
-    font-size: 0.9em;
     color: whitesmoke;
-    font-size: 0.8em;
+    font-size: 13px;
     font-weight: 600;
     display: block;
 

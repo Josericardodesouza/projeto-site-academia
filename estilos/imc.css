@@ -161,10 +161,7 @@ div#entrada-dados {
        margin: auto;
       position: relative;
 
-    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
-
-    font-size: 13px;
-
+  
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -200,7 +197,8 @@ img.icon {
 
 div#entrada-dados > label  {
     display: block;
-    font-size: 1.0em;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
     font-weight: 700;
     color: whitesmoke;
     width: 60%;

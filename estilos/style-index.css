@@ -371,7 +371,7 @@ div#opcoes > a {
  header { 
     display: flex;
     position: relative;
-     top: 40px; 
+    top: 40px; 
     color: white;
     width: 100vw;
     height: 310px;
@@ -428,14 +428,24 @@ main > a {
 
 div#texto-inicial {
     width: 98%;
-    font-size: 0.7em;
-    margin: 0px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+   
+    margin: 50px 0px 50px 0px;
+  
     padding: 0px;
     text-align: center;
-    font-family: 'Sui', Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: 'Sui', Verdana, Geneva, Tahoma, sans-serif;*/
 }
+
+div#texto-inicial > h3 {
+    font-size: 18.72px;
+    font-weight: 600;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#texto-inicial > p {
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 
 section.secao-calculos {

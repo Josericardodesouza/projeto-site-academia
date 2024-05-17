@@ -49,6 +49,7 @@
                       <input type="text" name="inputemail" id="input-email" required  placeholder="ex: gigachad@gmail.com" autocomplete="on">
                       <p id="email-erro" class="msg-erro"> *Está faltando o "@" em seu email</p>
                       <p id="email-erro-.com" class="msg-erro"> *Está faltando o .COM</p>
+                      <p id="erro-email-teste" class="msg-erro">Email não encontrado</p>
                       <!-- <br> -->
                       <label for="input-nome"><span class="material-symbols-outlined">key</span>DIGITE SUA SENHA</label>
                       <input type="password" name="input-senha" id="input-senha" placeholder="" required oninput="senhaConfere()">
@@ -195,6 +196,23 @@
                     }
 
                 }
+
+
+                 /*function validaEmail() {
+                     var inputEmail = document.getElementById("input-email");
+                     var msgErro = document.getElementById("erro-email-teste")
+
+
+                     const validaEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+                     if (inputEmail.value !== validaEmail) {
+                         msgErro.style.display = 'block'
+                     } else {
+                         msgErro.style.display = 'none'
+                     }
+
+             
+                 }*/
                
 
             
