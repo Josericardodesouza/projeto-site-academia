@@ -146,14 +146,18 @@ div#pqn-texto-cad {
     width: 60%;
     height: 70px;
     background-color: black;
-     margin: auto; 
+    color: var(--atomicTangerine);
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 0.8em;
+     margin: auto; 
+    
+   
+   
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: var(--atomicTangerine);
+   
     border-radius: 10px 10px 0px 0px;
     border: 5px solid black;
 }

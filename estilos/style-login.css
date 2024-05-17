@@ -146,15 +146,15 @@ div#pqn-texto {
     display: flex;
     width: 70%;
     height: 70px;
+    margin: auto; 
     background-color: black;
-     margin: auto; 
+    color: var(--atomicTangerine);
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 0.8em;
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: var(--atomicTangerine);
     border-radius: 10px 10px 0px 0px;
     border: 5px solid black;
     
