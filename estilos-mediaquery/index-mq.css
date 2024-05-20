@@ -72,6 +72,10 @@
         height: 0;
     }
 
+    button#btn-hamb {
+        display: none;
+    }
+
     nav#nav-topo {
   
        
@@ -198,6 +202,43 @@ header {
 } */
 
 
+
+
+@media (min-width: 425px) {
+
+    
+    header {
+        width: 100vw;
+        height: 410px;
+        display: flex;
+       
+      
+    }
+
+    div#header-p {
+      
+        width: auto;
+        display: block;
+        font-size: 0.9em;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    div#header-p > p {
+        text-align: center;
+        padding: 0;
+    }
+
+    div#header-p > p > mark {
+        color: black;
+        font-size: 1.5em;
+        text-shadow: #e28502 2px 20px 0px;
+       
+    }
+
+}
+
+
 /* ------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 440px) and (max-width: 766px ) {
@@ -247,8 +288,47 @@ header {
 
 @media screen and (min-width: 766px) {
 
+
+    
+    header {
+        width: 100vw;
+        height: 620px;
+        display: flex;
+       
+      
+    }
+
+    div#header-p {
+        margin: auto;
+        width: auto;
+        display: block;
+        font-size: 1.5em;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    div#header-p > p {
+        text-align: center;
+        padding: 0;
+    }
+
+    div#header-p > p > mark {
+        color: black;
+        font-size: 1.9em;
+        text-shadow: #e28502 2px 40px 0px;
+       
+    }
+
+
+    span#span-nav {
+        display: none;
+    }
+
+
+
+
     div#btns-links {
-        right: 17px;
+        right: 25px;
     }
 
 

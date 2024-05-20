@@ -54,6 +54,14 @@
 }
 
 
+@media (min-width: 765px) {
+    header {
+        height: 420px;
+        
+    }
+}
+
+
 @media (min-width: 767px) {
     div#container-entrada {
         width: 50%;

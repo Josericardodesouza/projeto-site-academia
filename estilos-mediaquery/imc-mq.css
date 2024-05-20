@@ -60,12 +60,16 @@
 
 
 
+}
+
+
+
+
+@media (min-width: 765px) {
     
-
-
-
-
-
+    header {
+        height: 420px;
+    }
 }
 
 

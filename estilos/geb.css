@@ -97,7 +97,7 @@ h1 {
 
 header {
     background-image: url(../imagens/imgs-background/woman-498257_1920.jpg); /* deve ser a imagem de um rótulo*/
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
     width: 100vw;
     height: 390px;

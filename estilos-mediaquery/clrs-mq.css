@@ -9,6 +9,8 @@
 
     header {
         height: 300px;
+        background-position: right top;
+       
     }
 
     header > div#texto-header {
@@ -36,6 +38,9 @@
 }
 
 
+
+
+
 @media (min-width: 444px ) and (max-width: 776px ) {
     div#entrada-dados {
         width: 75%;
@@ -50,6 +55,16 @@
     } */
 
 
+}
+
+
+
+@media (min-width: 765px) {
+    
+    header {
+        height: 420px;
+        background-image: url(../imagens/imgs-background/imagem-rótulo2.jpeg);
+    }
 }
 
 
