@@ -20,7 +20,9 @@
 
   
 
-
+    inputTel.onclick = function() {
+        this.value = '('
+    }
 
         
 
@@ -340,6 +342,7 @@
 
 
         function mascaraTelefone() {
+
 
 
 
