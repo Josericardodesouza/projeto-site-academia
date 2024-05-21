@@ -89,7 +89,7 @@ header {
 div#texto-header {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orange;
-    background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
+    background-image: linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
     bottom: 0;
     height: 50%;
@@ -97,19 +97,18 @@ div#texto-header {
     font-size: 0.9em;
 }
 
-div#texto-header > h2 {
+header > div#texto-header > h2 {
     font-size: 2em;
-    margin-top: 4px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
 }
 
-div#texto-header > h2, p {
-    width: 89%;
+div#texto-header > p {
+    width: 69%;
+    padding-left: 5%;
     text-align: justify;
-    padding: 4px;
-    margin-left: 0.4px;
-    margin-right: 1px;
+    margin: 0px 0.4px 0px 1px;
+ 
 }
 
 main {

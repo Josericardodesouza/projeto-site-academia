@@ -26,16 +26,15 @@
         height: 270px;
     }
 
-    header > div#texto-header {
-        width: 50%;
-        height: 100%;
+    /* header > div#texto-header {
+        width: 100%;
+        height: auto;
        
-    }
-
+    } */
+/* 
     div#texto-header > h2 {
-        text-align: center;
         margin-top: 30px;
-    }
+    } */
 
     div#texto-header > p {
         padding-left: 10px;
