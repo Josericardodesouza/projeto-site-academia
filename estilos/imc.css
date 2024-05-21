@@ -62,6 +62,26 @@
     padding: 0px;
 }
 
+div#links-pags {
+    background-color: black;
+    height: 30px;
+    vertical-align: center;
+    padding: 3px 0px 3px 15px;
+
+}
+
+
+div#links-pags > a {
+    font-family: 'kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #e28502;
+    margin-right: 2px;
+}
+
+div#links-pags > a:hover {
+    color: orange;
+}
+/* 
 h1 {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #e28502;
@@ -73,7 +93,8 @@ h1 {
     margin-top: 20px;
     margin-bottom: 0px;
     padding: 8px;
-}
+} */
+
 
 header {
     background-image: url(../imagens/imgs-background/pexels-beyzahzah-15319043.jpg);
@@ -86,26 +107,29 @@ header {
 
 }
 
-div#texto-header {
+div#texto-header { /*para mobile*/
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orange;
     background-image: linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
     bottom: 0;
-    height: 50%;
+    height: auto;
     position: absolute;
     font-size: 0.9em;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 5%;
 }
 
 header > div#texto-header > h2 {
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 div#texto-header > p {
     width: 69%;
-    padding-left: 5%;
+    
     text-align: justify;
     margin: 0px 0.4px 0px 1px;
  
