@@ -1,5 +1,6 @@
 
 
+//testando vars globais
 
     var inputNome = document.getElementById("input-nome")
     var inputSobrenome = document.getElementById("input-sobrenome")
