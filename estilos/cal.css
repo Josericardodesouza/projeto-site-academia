@@ -90,7 +90,7 @@ div#texto-header {
 
 main {
     width: 100vw;
-    height: auto;
+    height: auto;;
     margin: 0;
     padding: 0;
    
@@ -195,15 +195,16 @@ div#entrada-dados > label {
 
 div#entrada-dados > input {
     width: 20%;
-    height: 27px;
+    height: 30px;
     background-color: whitesmoke;
     color: black;
     border: 3px solid black;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-top: 3px;
     margin-bottom: 6px;
     font-weight: bold; 
     text-align: center;
+    
 }
 
 div#entrada-dados > input:focus {
@@ -219,7 +220,14 @@ div#entrada-dados > input:focus {
     background-color: black; */
 }
 
+span.icon-erro {
+    font-size: 20px;
+    transform: translateY(20%);
+    margin-right: 2.5px;
+}
+
 p.pErro {
+    color: red;
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.9em;
     text-align: center;

@@ -206,12 +206,12 @@ div#container-entrada > label {
 
 div#container-entrada > input {
     width: 20%;
-    height: 25px;
+    height: 30px;
     background-color: whitesmoke;
     color: black; 
     /* color: orange; */
     border: 3px solid black;
-    border-radius: 2px;
+    border-radius: 5px;
     margin-top: 2px;
     font-weight: bold;
     text-align: center;
@@ -232,7 +232,16 @@ div#container-entrada > input:focus {
      text-align: center;
 }
 
+
+span.icon-erro {
+   font-size: 1.0em;
+   margin-right: 3.6px;
+   transform: translateY(20%);
+
+}
+
 p.pErro {
+    color: red;
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.9em;
     text-align: center;
@@ -307,6 +316,7 @@ button#botao-masc {
     /* background-color: aquamarine; */
     border-radius: 10px;
     border: 2px black;
+    cursor: pointer;
     
 
 }
@@ -319,6 +329,7 @@ button#botao-fem {
     /* background-color: pink; */
     border-radius: 10px;
     border: 2px black;
+    cursor: pointer;
 }
 
 

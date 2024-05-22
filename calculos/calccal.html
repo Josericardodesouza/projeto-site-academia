@@ -47,15 +47,15 @@
         <div id="entrada-dados">
             <label for="ent-carboidratos"><span class="material-symbols-outlined">nutrition</span>CARBOIDRATOS (g)</label>
             <input type="number" name="carboidratos" id="ent-carboidratos" required placeholder="ex: 30,0" min="1" max="5" size="5" oninput="limiteNumeros()">
-            <p id="pErroCarb" class="pErro">formato inválido</p>
+            <p id="pErroCarb" class="pErro"><span class="icon-erro material-symbols-outlined">error</span>formato inválido</p>
             
             <label for="ent-proteinas"><span class="material-symbols-outlined">egg</span>PROTEÍNAS (g)</label>
             <input type="number" name="proteinas" id="ent-proteinas" required placeholder="ex: 9,2" min="1" max="5" size="5" oninput="limiteNumeros()">
-            <p id="pErroProt" class="pErro">formato inválido!</p>
+            <p id="pErroProt" class="pErro"><span class="icon-erro material-symbols-outlined">error</span>formato inválido!</p>
             
             <label for="lipidios"><span class="material-symbols-outlined">fastfood</span>LIPÍDIOS (GORDURAS TOTAIS) (g) </label>
             <input type="number" name="lipidios" id="ent-lipi" required placeholder="ex: 10,5" min="1" max="5" size="5" oninput="limiteNumeros()">
-            <p id="pErroLipi" class="pErro">formato inválido!</p>
+            <p id="pErroLipi" class="pErro"><span class="icon-erro material-symbols-outlined">error</span>formato inválido!</p>
             <!-- <hr /> -->
             <br>
             <button id="calcular" class="botao" onclick="aparecer(); calcularCal()"><span class="material-symbols-outlined">calculate</span></button>

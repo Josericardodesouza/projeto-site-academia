@@ -149,6 +149,7 @@ main {
 section#container-entrada {
     width: 100%;
     height: auto;
+    margin: 48px 0px 0px 0px;
   
     
     /* background-color: pink;  */
@@ -170,6 +171,7 @@ div#entrada-dados {
        height: auto;
        margin: auto;
       position: relative;
+      box-shadow: 1px -2px 9px rgba(0, 0, 0, 0.797);
 
   
     display: flex;
@@ -436,7 +438,10 @@ span#resetar.material-symbols-outlined   {
   
    
     bottom: 0px;
+
+    cursor: pointer;
 }
+
 
     
 
