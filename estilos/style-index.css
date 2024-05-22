@@ -184,27 +184,30 @@ nav#opt-oculta {
 }
 
 
-
+/* 
 div#div-menu {
-    /* background-color: #69140E; */
+    /* background-color: #69140E; 
     width: 100vw;
     height: 30px;
     display: flex;
     position: relative;
-}
 
-
+ */
 
 
 
 div#div-menu {
     /* background-color: red; */
      width: 100vw;
-     height: 60px; 
+     height: auto; 
      margin: 0;
      padding: 0;
      display: flex;
      justify-content: center;
+     position: fixed;
+     top: 64px;
+     z-index: 10;
+     transition: bottom 2.5s ease;
 
 
 
