@@ -167,13 +167,11 @@
         display: flex;
         position: fixed;
         top: 0;
+
       
     
     }
 
-    div#menuHamb {
-        /* display: none; */
-    }
 
 
 
@@ -206,18 +204,25 @@ header {
 
 @media (min-width: 425px) {
 
+    html {
+        width: 100vw;
+    }
+
     
     header {
         width: 100vw;
         height: 410px;
         display: flex;
+        box-sizing: border-box;
+        
+       
        
       
     }
 
     div#header-p {
       
-        width: auto;
+        width: 70%;
         display: block;
         font-size: 0.9em;
         padding: 0;
@@ -292,12 +297,16 @@ header {
 
 @media screen and (min-width: 766px) {
 
+    nav {
+        width: 100vw;
+    }
+
 
     
     header {
         width: 100vw;
         height: 620px;
-        display: flex;
+   
        
       
     }
@@ -338,6 +347,7 @@ header {
 
 
     .imagem-texto {
+        width: 100vw;
         display: flex;
         flex-wrap: nowrap;
     }
@@ -351,7 +361,7 @@ header {
     }
 
     div#img-2 {
-        margin: 10px;
+        padding: 10px;
     }
 
     div.container {
