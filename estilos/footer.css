@@ -44,7 +44,7 @@
 
 
 footer {
-    width: 100vw;
+    width: 80vw;
     height: auto;
     /* height: 150px; */
     margin: 0px;
@@ -117,7 +117,7 @@ div#footer-block > p {
 
 div#footer-flex {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     gap: 50px; 
     flex-wrap: wrap;

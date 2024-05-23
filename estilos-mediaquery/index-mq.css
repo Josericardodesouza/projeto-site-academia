@@ -148,6 +148,8 @@
 
 
     nav#nav-topo > img {
+        margin: 0;
+        padding: 0;
         display: block;
         position: absolute;
         left: 10px;
@@ -183,6 +185,8 @@ header {
     background-image: url(../imagens/imgs-background/pexels-anush-gorak-1229356.jpg);
     background-size: cover;
     background-position: center center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -204,8 +208,10 @@ header {
 
 @media (min-width: 425px) {
 
-    html {
+    html, main {
         width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 
     
@@ -213,7 +219,7 @@ header {
         width: 100vw;
         height: 410px;
         display: flex;
-        box-sizing: border-box;
+    
         
        
        
@@ -227,6 +233,7 @@ header {
         font-size: 0.9em;
         padding: 0;
         margin-left: 20px;
+        margin: 0;
     }
 
     div#header-p > p {
@@ -256,13 +263,16 @@ header {
 
 
     section.secao-calculos {
-        width: 100vw;
+        margin: 0;
+        padding: 0;
+        width: 100%;
         height: auto;
         /* margin-bottom: 50px; */
         background-color: white;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+
        
     }
 
@@ -275,8 +285,8 @@ header {
 
 
  div#div-imc {
-    margin-left: 0;
-    margin-right: 1; 
+    margin: 0px 1px 0px 0px;
+    
  }
 
  main > p {
@@ -297,15 +307,15 @@ header {
 
 @media screen and (min-width: 766px) {
 
-    nav {
-        width: 100vw;
-    }
+  
+
+
 
 
     
     header {
-        width: 100vw;
-        height: 620px;
+      
+        min-height: 620px;
    
        
       
@@ -381,8 +391,10 @@ header {
      }
 
      div.texto {
+        margin: 0;
         padding: 20px;
         font-size: 1.0em;
+
         
      }
    

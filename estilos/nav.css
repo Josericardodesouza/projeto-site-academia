@@ -2,12 +2,17 @@
 
 
 nav#fixa {
+    width: 100vw;
     display: block;
     position: sticky; /* solução temporária para Nav sobrepondo conteúdo*/
     margin: 0;
     padding: 0;
     z-index: 2;
     top: 0;
+}
+
+nav#nav-topo {
+    width: 100vw;
 }
 
 nav#nav-itens {
@@ -74,4 +79,6 @@ nav#nav-itens > a {
     transform: translateY(-25%);
 
     }
+
+
 }
