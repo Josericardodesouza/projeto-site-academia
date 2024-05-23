@@ -67,6 +67,8 @@ nav#nav-itens > a > span.material-symbols-outlined {
   
     padding: 0;
     padding-right: 15px;
+
+    cursor: pointer;
   
 ;
 }

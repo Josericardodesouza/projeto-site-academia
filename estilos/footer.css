@@ -44,7 +44,7 @@
 
 
 footer {
-    width: 80vw;
+    width: 100vw;
     height: auto;
     /* height: 150px; */
     margin: 0px;
@@ -161,6 +161,12 @@ div#footer-flex > div#div-footer-links > li > a {
     
   
 }
+
+div#footer-flex > div#div-footer-links > li > a:hover {
+    color: whitesmoke;
+}
+
+
 
 div#footer-flex > div#div-footer-links > li > img {
     width: 60px;
