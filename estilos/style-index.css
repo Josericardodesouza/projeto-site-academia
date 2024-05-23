@@ -71,24 +71,14 @@
 
 
 
-html {
+html, body {
 
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     border: 0;
-    z-index: 0;
-    
-}
 
-body {
-  
-  
-    border: 0px;
-    margin: 0;
-    padding: 0;
- 
-   
+    
 }
 
 
@@ -113,10 +103,10 @@ nav#nav-topo {
     margin: 0px;
     padding: 0px;
     border-bottom: 4px solid  black;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
 
 }
 
@@ -308,7 +298,7 @@ div#opcoes > a {
     vertical-align: center;
   
     color: white;
-    width: 100vw;
+    min-width: 100vw;
     height: 320px;
     background-image: url(../imagens/gigachad-recortado.jpg);
     background-size: cover;
@@ -354,11 +344,12 @@ div#header-p > p > mark {
 
 
 
-main {
-    width: 100vw;
+/* main {
+    width: 98vw;
+    margin: auto;
     margin: 0px;
     padding: 0px;
-}
+} */
 
 
 main > a {
@@ -440,6 +431,7 @@ section.secao-calculos {
 
 div#div-geb-container {
     margin: 0;
+    padding: 0;
 }
 
 .txt-container {
