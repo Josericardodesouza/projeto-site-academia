@@ -62,25 +62,7 @@
     padding: 0px;
 }
 
-div#links-pags {
-    background-color: black;
-    height: 30px;
-    vertical-align: center;
-    padding: 3px 0px 3px 15px;
 
-}
-
-
-div#links-pags > a {
-    font-family: 'kanit', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: #e28502;
-    margin-right: 2px;
-}
-
-div#links-pags > a:hover {
-    color: orange;
-}
 /* 
 h1 {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
