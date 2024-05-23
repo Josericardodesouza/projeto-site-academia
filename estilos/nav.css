@@ -13,6 +13,7 @@ nav#fixa {
 
 nav#nav-topo {
     width: 100vw;
+
 }
 
 nav#nav-itens {
@@ -24,6 +25,7 @@ nav#nav-itens {
     background-color: #F98948;
     display: flex;
     justify-content: space-between;
+    vertical-align: middle;
   
    
 
@@ -61,7 +63,7 @@ nav#nav-itens > a > span.material-symbols-outlined {
     font-size: 36px;
     color: black;
    
-    transform: translateY(27%);
+    transform: translateY(31%);
   
     padding: 0;
     padding-right: 15px;

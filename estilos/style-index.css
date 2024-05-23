@@ -153,6 +153,7 @@ nav#nav-topo > picture {
     margin: 0;
     padding-left: 5px;
     display: block;
+    transform: translateY(1%);
   
 
 } 
