@@ -63,6 +63,14 @@
 }
 
 
+html, body {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+
+
+
 /* 
 h1 {
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -86,27 +94,28 @@ header {
     height: 370px;
     position: relative;
     margin: 0px 0px 10px 0px;
-
 }
 
 div#texto-header { /*para mobile*/
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orange;
     background-image: linear-gradient(rgba(29, 25, 25, 0.962), black);
-    width: 100vw;
+    width: 100%;
     bottom: 0;
     height: auto;
     position: absolute;
     font-size: 0.9em;
     padding-top: 45px;
     padding-bottom: 45px;
-    padding-left: 5%;
+ 
 }
 
 header > div#texto-header > h2 {
+    width: auto;
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
+    padding-left: 5px;
 }
 
 div#texto-header > p {
@@ -114,6 +123,8 @@ div#texto-header > p {
     
     text-align: justify;
     margin: 0px 0.4px 0px 1px;
+    padding-left: 5px;
+    text-indent: 2px;
  
 }
 
@@ -206,12 +217,17 @@ div#entrada-dados > input {
     color: black;
     font-weight: bolder;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     border: 3px solid black;
     border-radius: 4px;
-    width: 55px;
+    width: 30%;
     height: 30px;
     margin-top: 3px;   
+    /* border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; */
   
 }
 
