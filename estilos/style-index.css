@@ -29,6 +29,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+
 
 
 
@@ -336,7 +339,8 @@ div#header-p {
 
 
 div#header-p > p > mark {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton-SC', sans-serif;
+    font-weight: bolder;
     font-size: 1.5em;
     color: black;
     text-shadow: #e28502 2px 40px 0px;
@@ -486,8 +490,8 @@ div.botao-ir > a {
     
     text-decoration: none;
     
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
+    font-family: 'Anton-SC', sans-serif;
+    font-weight: bolder;
     font-size: 1.2em;
 
    
@@ -693,7 +697,7 @@ div#img-3 {
 .vlrPlano {
     text-align: center;
     font-size: 2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton-SC', sans-serif;
     margin-top: 40px;
     margin-bottom: 10px;
 
@@ -702,7 +706,7 @@ div#img-3 {
 .nomePlano {
     text-align: center;
     font-size: 1.5em;
-    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif sans-serif;
     margin: 0;
 }
 
@@ -812,7 +816,7 @@ span.li-pred {
    text-decoration: none;
     align-items: center ;
     justify-content: center;
-    font-family: Impact, Haettenschweiler, sans-serif;
+    font-family: 'Anton-SC', sans-serif;
     font-size: 1.3em;
     font-weight: 600;
     display: flex;
