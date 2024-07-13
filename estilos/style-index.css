@@ -320,7 +320,7 @@ div#header-p {
 
  div#header-p > p { 
     width: auto;
-   font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: 'Kanit', Impact, Haettenschweiler, sans-serif;
     /* background-color: #eb7f0443; */
    font-size: 1.5em;
    text-indent: 2px;
@@ -336,7 +336,7 @@ div#header-p {
 
 
 div#header-p > p > mark {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, sans-serif;
     font-size: 1.5em;
     color: black;
     text-shadow: #e28502 2px 40px 0px;
@@ -469,7 +469,7 @@ div#div-imc {
 }
 
 .txt-container > h4 {
-    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Kanit', Impact, Haettenschweiler, sans-serif;
     font-size: 1.2em;
     display: block;
     margin: 0px;
@@ -486,7 +486,7 @@ div.botao-ir > a {
     
     text-decoration: none;
     
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, sans-serif;
     font-weight: 100;
     font-size: 1.2em;
 
@@ -693,7 +693,7 @@ div#img-3 {
 .vlrPlano {
     text-align: center;
     font-size: 2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, sans-serif;
     margin-top: 40px;
     margin-bottom: 10px;
 
@@ -702,7 +702,7 @@ div#img-3 {
 .nomePlano {
     text-align: center;
     font-size: 1.5em;
-    font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Kanit', Impact, Haettenschweiler, sans-serif;
     margin: 0;
 }
 
@@ -812,7 +812,7 @@ span.li-pred {
    text-decoration: none;
     align-items: center ;
     justify-content: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, sans-serif;
     font-size: 1.3em;
     font-weight: 600;
     display: flex;
