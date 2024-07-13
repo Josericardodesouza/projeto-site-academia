@@ -2,6 +2,9 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+
 /* configurações de nav para todas as mediaqueries*/
 
 /*@media (max-width: 220px) {
@@ -103,14 +106,16 @@
 
     .btn-nav {
         /* padding: 10px 0px 0px 0px; */
-        font-size: 12px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: 300;
+        font-size: 10px;
+        font-family: 'Anton-SC', sans-serif;
+        font-weight: 900;
         text-align: center;
         text-decoration: none;
         background-color: black;
         color: #e28502;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 55px;
         height: auto;
         /* margin-top: 12px; */
