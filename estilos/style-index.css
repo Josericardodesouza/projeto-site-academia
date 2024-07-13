@@ -261,7 +261,7 @@ div#menuHamb > div#opcoes > a {
 
     /* color: #F98948; */
 
-    font-family: Impact, Haettenschweiler, sans-serif;
+    font-family: 'Impact', Haettenschweiler, sans-serif;
     font-size: 12px;
     font-weight: 300;
     text-decoration: none;
@@ -320,7 +320,7 @@ div#header-p {
 
  div#header-p > p { 
     width: auto;
-   font-family: Kanit, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     /* background-color: #eb7f0443; */
    font-size: 1.5em;
    text-indent: 2px;
@@ -336,7 +336,7 @@ div#header-p {
 
 
 div#header-p > p > mark {
-    font-family: Impact, Haettenschweiler, sans-serif;
+    font-family: 'Impact', Haettenschweiler, sans-serif;
     font-size: 1.5em;
     color: black;
     text-shadow: #e28502 2px 40px 0px;
@@ -812,7 +812,7 @@ span.li-pred {
    text-decoration: none;
     align-items: center ;
     justify-content: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, sans-serif;
     font-size: 1.3em;
     font-weight: 600;
     display: flex;
