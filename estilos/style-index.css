@@ -320,7 +320,7 @@ div#header-p {
 
  div#header-p > p { 
     width: auto;
-   font-family: 'Kanit', Impact, Haettenschweiler, sans-serif;
+   font-family: 'Kanit', Impact, sans-serif;
     /* background-color: #eb7f0443; */
    font-size: 1.5em;
    text-indent: 2px;
@@ -336,7 +336,7 @@ div#header-p {
 
 
 div#header-p > p > mark {
-    font-family: Impact, Haettenschweiler, sans-serif;
+    font-family: 'Impact', sans-serif;
     font-size: 1.5em;
     color: black;
     text-shadow: #e28502 2px 40px 0px;
@@ -371,11 +371,11 @@ div#texto-inicial {
 div#texto-inicial > h3 {
     font-size: 18.72px;
     font-weight: 600;
-    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kanit', Verdana, sans-serif;
 }
 
 div#texto-inicial > p {
-    font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kanit', Verdana, sans-serif;
 }
 
 
