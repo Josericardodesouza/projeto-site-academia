@@ -5,6 +5,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
 :root {
 
     /* novas cores*/
@@ -65,7 +69,7 @@ header {
 }
 
 div#texto-header > h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton-SC', sans-serif;
     font-weight: 300;
 }
 

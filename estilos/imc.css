@@ -30,6 +30,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+
 
 
 
@@ -113,7 +116,7 @@ div#texto-header { /*para mobile*/
 header > div#texto-header > h2 {
     width: auto;
     font-size: 2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton-SC', sans-serif;
     font-weight: 500;
     padding-left: 5px;
 }
