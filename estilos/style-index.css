@@ -698,6 +698,7 @@ div#img-3 {
 
 .vlrPlano {
     text-align: center;
+    font-weight: 700;
     font-size: 2em;
     font-family: 'Anton-SC', sans-serif;
     margin-top: 40px;
@@ -819,8 +820,8 @@ span.li-pred {
     align-items: center ;
     justify-content: center;
     font-family: 'Anton-SC', sans-serif;
+    font-weight: 700;
     font-size: 1.3em;
-    font-weight: 600;
     display: flex;
     color: #e28502;
     background-color: black;
