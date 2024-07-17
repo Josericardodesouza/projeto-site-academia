@@ -86,9 +86,11 @@ nav#nav-itens > a {
 
 div#links-pags {
     background-color: black;
-    height: 30px;
+    height: auto;
     vertical-align: center;
     padding: 3px 0px 3px 15px;
+    flex-wrap: wrap;
+    display: flex;
 
 }
 

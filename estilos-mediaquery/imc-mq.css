@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
 
 /* 
 
@@ -15,7 +15,7 @@
         height: 30px;
         margin-top: 3px;   
       mexer com ele aqui ó. 
-    } */
+    } 
     
     nav > img {
         position: absolute;
@@ -23,7 +23,7 @@
     }
 
     header {
-        height: 270px;
+        height: 400px;
     }
 
     /* header > div#texto-header {
@@ -35,6 +35,9 @@
     div#texto-header > h2 {
         margin-top: 30px;
     } */
+
+
+    /*
 
     div#texto-header > p {
         padding-left: 10px;
@@ -55,11 +58,36 @@
     p#saida-form {
         font-weight: 600;
 
+    }*/
+
+
+
+    @media (min-width: 400px) {
+
+
+    header {
+        position: inherit;
+    }
+            
+    header > div#texto-header {
+        width: 50%;
+        height: 100%;
+        position: inherit;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+
+    div#texto-header > p {
+        width: 95%;
+    }
     }
 
 
 
-}
+
 
 
 

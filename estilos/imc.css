@@ -94,7 +94,7 @@ header {
     background-position: center center;
     background-size: cover;
     width: 100vw;
-    height: 370px;
+    height: 400px;
     position: relative;
     margin: 0px 0px 10px 0px;
 }
@@ -102,35 +102,42 @@ header {
 div#texto-header { /*para mobile*/
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orange;
-    background-image: linear-gradient(rgba(29, 25, 25, 0.962), black);
+     background-image: linear-gradient(rgba(29, 25, 25, 0.962), black); 
     width: 100%;
     bottom: 0;
     height: auto;
     position: absolute;
-    font-size: 0.9em;
-    padding-top: 45px;
-    padding-bottom: 45px;
+   
+    padding: 10px 0px 10px 0px;
+  
+    display: flex;
+    flex-direction: column;
+    vertical-align: bottom;
+
  
 }
 
 header > div#texto-header > h2 {
     width: auto;
-    font-size: 2em;
+    font-size: 1.2em;
     font-family: 'Anton-SC', sans-serif;
     font-weight: 900;
     padding-left: 5px;
+    display: block;
     /* color: var(--atomicTangerine); */
 }
 
 div#texto-header > p {
-    font-size: 1.2em;
-    width: 69%;
+    font-size: 0.9em;
+    width: 75%;
     
     text-align: justify;
     margin: 0px 0.4px 0px 1px;
     padding-left: 5px;
     text-indent: 2px;
     color: white;
+    display: block;
+   
 }
 
 main {

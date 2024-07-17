@@ -68,21 +68,19 @@ header {
 
 }
 
-div#texto-header > h2 {
-    font-family: 'Anton-SC', sans-serif;
-    font-weight: 900;
-    font-size: 2em;
-}
-
 
 div#texto-header {
     font-family: 'Kanit', Verdana, Geneva, Tahoma, sans-serif;
     color: orange;
     background-image: linear-gradient(rgba(29, 25, 25, 0.962), black);
-    width: 100vw;
+    width: 100%;
     bottom: 0;
-    height: 50%;
+    height: auto;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    vertical-align: bottom;
+    padding: 10px 0px 10px 0px;
     /* color: orange;
     background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
@@ -92,9 +90,18 @@ div#texto-header {
     font-size: 0.9em; */
 }
 
+div#texto-header > h2 {
+    font-family: 'Anton-SC', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    display: block;
+
+}
+
 
 div#texto-header > p {
     color: white;
+    display: block;
 }
 
 main {
