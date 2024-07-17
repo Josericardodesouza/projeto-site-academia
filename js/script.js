@@ -33,6 +33,9 @@ function aparecer () {
     var container = document.getElementById("section-oculta");
     var pErroAlt = document.getElementById("pErroAlt")
     var pErroPes = document.getElementById("pErroPes")
+
+
+    var ponto = document.getElementById("executar")
     /*var pNull = document.getElementById("pNull")*/
 
  
@@ -78,9 +81,10 @@ function aparecer () {
              inputAlt.style.borderColor = 'black';
 
             container.style.display = 'block';
-            container.scrollIntoView({behavior: "smooth"});
+            ponto.scrollIntoView({behavior: "smooth"});
             break;
     }
+    
 
 }
 
@@ -123,11 +127,12 @@ function aparecer () {
  function resetar() {
     // var entPeso = document.getElementById('entrada-peso').value
     // var entAltura = document.getElementById('entrada-altura').value
-    var containerEntrada = document.getElementById("entrada-dados")
+    // var containerEntrada = document.getElementById("entrada-dados")
     var container = document.getElementById("section-oculta");
     var divSaida = document.getElementById("saida")
     var alt = document.getElementById('entrada-altura')
     var pes = document.getElementById('entrada-peso')
+    var ponto = document.getElementById("texto-header")
 
      if(container.style.display == 'block') {
             alt.value = '';
@@ -138,7 +143,7 @@ function aparecer () {
             container.style.display = 'none';
             divSaida.style.display = 'none';
 
-            containerEntrada.scrollIntoView({behavior: "smooth"});
+            ponto.scrollIntoView({behavior: "smooth"});
            
 
      

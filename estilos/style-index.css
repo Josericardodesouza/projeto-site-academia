@@ -236,7 +236,7 @@ div#opcoes {
     width: 100%;
     height: auto;
     margin: 0;
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -698,9 +698,9 @@ div#img-3 {
 
 .vlrPlano {
     text-align: center;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2em;
-    font-family: 'Anton-SC', sans-serif;
+    font-family: 'Kanit', sans-serif;
     margin-top: 40px;
     margin-bottom: 10px;
 

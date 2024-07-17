@@ -26,9 +26,11 @@
     }
 
     div#texto-header > p {
+        font-size: 1.2em;
 
         padding-left: 10px;
         text-align: justify;
+        color: white;
     }
 
     main > h2 {
