@@ -70,7 +70,8 @@ header {
 
 div#texto-header > h2 {
     font-family: 'Anton-SC', sans-serif;
-    font-weight: 300;
+    font-weight: 900;
+    font-size: 2em;
 }
 
 
@@ -82,7 +83,6 @@ div#texto-header {
     bottom: 0;
     height: 50%;
     position: absolute;
-    font-size: 0.9em;
     /* color: orange;
     background-image:linear-gradient(rgba(29, 25, 25, 0.962), black);
     width: 100vw;
@@ -90,6 +90,11 @@ div#texto-header {
     height: 53%;
     position: absolute;
     font-size: 0.9em; */
+}
+
+
+div#texto-header > p {
+    color: white;
 }
 
 main {

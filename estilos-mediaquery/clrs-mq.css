@@ -8,7 +8,7 @@
     }
 
     header {
-        height: 300px;
+        height: 400px;
         background-position: right top;
        
     }
@@ -26,11 +26,9 @@
     }
 
     div#texto-header > p {
-        font-size: 1.2em;
 
         padding-left: 10px;
         text-align: justify;
-        color: white;
     }
 
     main > h2 {
