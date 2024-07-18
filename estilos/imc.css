@@ -154,7 +154,7 @@ main {
 section#container-entrada {
     width: 100%;
     height: auto;
-    margin: 48px 0px 0px 0px;
+    margin: 48px auto 0px auto;
   
     
     /* background-color: pink;  */
@@ -171,8 +171,7 @@ div#entrada-dados {
     
     background-image: linear-gradient(to right, #e98a15, #e28502);
        /* width: 85%; */
-       min-width: 70%;
-       max-width: 85%;
+       width: 85%;
        height: auto;
        margin: auto;
       position: relative;

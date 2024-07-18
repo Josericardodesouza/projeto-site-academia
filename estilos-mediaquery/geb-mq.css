@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 400px) {
+@media (min-width: 442px) {
 
     nav > img {
         position: absolute;
@@ -52,6 +52,9 @@
     }
 
 }
+
+
+
 
 
 @media (min-width: 444px ) and (max-width: 776px ) {
