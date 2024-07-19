@@ -293,7 +293,7 @@
 
        
 
-                inputCpf.addEventListener('keypress', function() {
+                inputCpf.addEventListener('input', function() {
                     var cpfLength = inputCpf.value.length
 
                     if (cpfLength === 3 || cpfLength === 7) {
@@ -349,7 +349,7 @@
 
           
         
-            inputTel.addEventListener('keypress', function() {
+            inputTel.addEventListener('input', function() {
                 var numTel = inputTel.value.length
 
 
@@ -601,7 +601,7 @@
         function mascaraCep() {
             var inputCep = document.getElementById("input-cep")
 
-            inputCep.addEventListener('keypress', function() {
+            inputCep.addEventListener('input', function() {
                 var numsCep = inputCep.value.length
 
                 if (numsCep === 5) {
@@ -616,7 +616,7 @@
         function estatura() {
             var inputEst = document.getElementById("input-estatura") 
 
-            inputEst.addEventListener('keypress', function() {
+            inputEst.addEventListener('input', function() {
                 var numEstat = inputEst.value.length
 
                 if (numEstat === 1) {
