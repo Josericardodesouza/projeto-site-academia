@@ -224,7 +224,7 @@
        
              
 
-            inputRg.addEventListener('keypress', function() {
+            inputRg.addEventListener('input', function() {
                 var rgLength = inputRg.value.length
 
                  if (rgLength === 2) {
