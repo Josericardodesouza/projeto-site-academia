@@ -685,15 +685,23 @@
                           document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + "/" + estado + ".";
                     }
 
+                    
+
                     if (rua !== '') {
                         document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro: " + rua;
+                        document.getElementById("btn-cep").style.display = 'block'
+
 
                     } else {
                         document.getElementById("saida-logradouro-rua").innerHTML = "Logradouro não encontrado."
+                        document.getElementById("btn-cep").style.display = 'block'
+
                     }
 
                     if (bairro !== '') {
                         document.getElementById("saida-bairro").innerHTML = "Bairro: " + bairro;
+                        document.getElementById("btn-cep").style.display = 'block'
+
                     } else {
                         document.getElementById("saida-bairro").innerHTML = "Bairro não encontrado.";
                     }
@@ -725,7 +733,11 @@
 
 
 
+//  var teste = document.getElementById("input-cep")
 
+//   if (teste.value.length >= 9) {
+//      buscarLocal()
+//   }
 
 
 
@@ -733,6 +745,10 @@
 
         function mascaraCep() {
             var inputCep = document.getElementById("input-cep")
+            var pCidade = document.getElementById("saida-cidade")
+            var pLogradouro = document.getElementById("saida-logradouro-rua")
+            var pBairro = document.getElementById("saida-bairro")
+            var pErro = document.getElementById("p-erro-local")
 
             inputCep.addEventListener("input", function() {
                 var limpaInputCep = inputCep.value.replace(/\D/g, "").substring(0, 9)
@@ -749,9 +765,20 @@
                     inputFormatadoCep += `-${arrayCep.slice(5, 9).join("")}`
                 }
 
+
+                if (arrayCep.length < 9) {
+                    pCidade.innerHTML = ""
+                    pBairro.innerHTML = ""
+                    pLogradouro.innerHTML= ""
+                    pErro.style.display = "none"
+
+                    
+                }
+
                 inputCep.value = inputFormatadoCep
 
             })
+
 
             // if (inputCep.value.length > inputFormatadoCep.length) {
             //     inputCep.value = inputFormatadoCep
