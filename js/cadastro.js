@@ -14,16 +14,16 @@
     var inputCpf = document.getElementById("input-cpf")
     var inputCpfValue = document.getElementById("input-cpf").value
 
-    var inputTel = document.getElementById("input-telefone")
+   
     var inputNum = document.getElementById("input-telefone").value
     var pErroTel = document.getElementById("pErroNum")
     var pErroQtdNums = document.getElementById("pErroQtdNum")
 
   
 
-    inputTel.onclick = function() {
-        this.value = '('
-    }
+    // inputTel.onclick = function() {
+    //     this.value = '('
+    // }
 
         
 
@@ -210,44 +210,94 @@
         
         
          function mascaraRG() {
+
+            console.log("chamou funcao")
             
             var inputRg = document.getElementById("input-rg")
             var inputRgValue = document.getElementById("input-rg").value
-                
-           // var pErroRg = document.getElementById("rg-erro")
-            
-            //  var pErroRg = document.getElementById("rg-erro")
 
             console.log(inputRgValue)
 
+            inputRg.addEventListener("input", function() {
+
+            var limpaInputRg = inputRg.value.replace(/\D/g, "").substring(0, 12)
+
+            var arrayRg = limpaInputRg.split("")
+
+            var inputFormatado = ""
+
+            if (arrayRg.length > 0) {
+                inputFormatado += arrayRg.slice(0, 2).join("")
+
+                console.log("ok rg")
+            }
+
+            if (arrayRg.length > 2) {
+                inputFormatado += `.${arrayRg.slice(2, 5).join("")}`
+            }
+
+            if (arrayRg.length > 5) {
+                inputFormatado += `.${arrayRg.slice(5, 8).join("")}`
+            }
+
+            if (arrayRg.length > 8) {
+                inputFormatado += `-${arrayRg.slice(8, 9).join("")}`
+            }
+
+
+            inputRg.value = inputFormatado;
+
             
+
+
+    
+
+
+         
        
              
 
-            inputRg.addEventListener('input', function() {
-                var rgLength = inputRg.value.length
+            // inputRg.addEventListener('input', function() {
+            //     var rgLength = inputRg.value.length
 
-                 if (rgLength === 2) {
-                    inputRg.value += '.'
-                    console.log('ponto')
-                    console.log(rgLength)
+            //      if (rgLength === 2) {
+            //         inputRg.value += '.'
+            //         console.log('ponto')
+            //         console.log(rgLength)
 
-                 } else if (rgLength === 6) {
-                   inputRg.value += '.'
-                   console.log('ponto')
-                   console.log(rgLength)
+            //      } else if (rgLength === 6) {
+            //        inputRg.value += '.'
+            //        console.log('ponto')
+            //        console.log(rgLength)
 
-                } else if (rgLength === 10) {
-                    inputRg.value += '-'
-                    console.log('traço')
-                    console.log(rgLength)
+            //     } else if (rgLength === 10) {
+            //         inputRg.value += '-'
+            //         console.log('traço')
+            //         console.log(rgLength)
 
-                }
+            //     }
 
-             })
+            //  })
 
 
-         } 
+        })
+
+
+             
+        if (inputRg.value.length > inputFormatado.length) {
+            inputRg.value = inputFormatado;
+         } else {
+            inputRg.value = inputFormatado;
+         }
+
+        }
+
+
+        
+
+         function limparInputRg() {
+            
+         }
 
 
 
@@ -288,28 +338,68 @@
         function mascaraCpf() {
            
                 // var inputCpf = parseFloat(document.getElementById("input-cpf"));
+                var inputCpf = document.getElementById("input-cpf")
+
+                inputCpf.addEventListener("input", function() {
+                    var limpaInputCpf = inputCpf.value.replace(/\D/g, "").substring(0, 14)
+
+                    var arrayCpf = limpaInputCpf.split("")
+                    var inputFormatadoCpf = ""
+
+                    if (arrayCpf.length > 0) {
+                        inputFormatadoCpf += arrayCpf.slice(0, 3).join("")
+                    }
+
+                    if (arrayCpf.length > 3) {
+                        inputFormatadoCpf += `.${arrayCpf.slice(3, 6).join("")}`
+                    }
+
+                    if (arrayCpf.length > 6) {
+                        inputFormatadoCpf += `.${arrayCpf.slice(6, 9).join("")}`
+                    }
+
+                    if (arrayCpf.length > 9) {
+                        inputFormatadoCpf += `-${arrayCpf.slice(9, 12).join("")}`
+                    }
+
+                    inputCpf.value = inputFormatadoCpf;
+                })
+
+                             
+        if (inputCpf.value.length > inputFormatadoCpf.length) {
+            inputCpf.value = inputFormatadoCpf
+         } else {
+            inputCpf.value = inputFormatadoCpf
+         }
+
+        }
+
+
+
+
+                
 
 
 
        
 
-                inputCpf.addEventListener('input', function() {
-                    var cpfLength = inputCpf.value.length
+            //     inputCpf.addEventListener('input', function() {
+            //         var cpfLength = inputCpf.value.length
 
-                    if (cpfLength === 3 || cpfLength === 7) {
-                        inputCpf.value += '.'
-                        // confere = 12
+            //         if (cpfLength === 3 || cpfLength === 7) {
+            //             inputCpf.value += '.'
+            //             // confere = 12
 
-                    } else if (cpfLength === 11) {
-                        inputCpf.value += '-'
+            //         } else if (cpfLength === 11) {
+            //             inputCpf.value += '-'
 
-                    }
+            //         }
 
 
-                }
-             )
+            //     }
+            //  )
 
-        }
+        
 
 
         function mascaraCpfConfere() {
@@ -344,38 +434,73 @@
 
         function mascaraTelefone() {
 
-
-
+            var inputTel = document.getElementById("input-telefone")
 
           
         
             inputTel.addEventListener('input', function() {
-                var numTel = inputTel.value.length
 
+             var limpaInput = inputTel.value.replace(/\D/g, "").substring(0, 11)
 
-                if (numTel === 1) {
-                    inputTel.value = '(' + inputTel.value.slice(0)
+             var arrayNumeros = limpaInput.split("")
 
-                }
-                
-                if (numTel === 3) {
-                    inputTel.value += ')'
-                 
-                    
-                }
+             var numeroEstruturado = ""
 
-
-             if (numTel === 4){
-                inputTel.value += ' '
+             if (arrayNumeros.length > 0) {
+                numeroEstruturado += `(${arrayNumeros.slice(0,2).join("")})`
              }
 
-                if (numTel === 10) {
-                    inputTel.value  += '-'
-                }
-            }
-            )
+             if (arrayNumeros.length > 2) {
+                numeroEstruturado += ` ${arrayNumeros.slice(2, 7).join("")}` 
+             }
+
+             if (arrayNumeros.length > 7) {
+                numeroEstruturado += `-${arrayNumeros.slice(7, 12).join("")}`
+             }
+
+             inputTel.value = numeroEstruturado;
+
+
+             if (inputTel.value.length > numeroEstruturado.length) {
+                inputTel.value = numeroEstruturado;
+             } else {
+                inputTel.value = numeroEstruturado;
+             }
+
+            })
+
+
+
+
+
+
+            //     if (numTel === 1) {
+            //         inputTel.value = '(' + inputTel.value.slice(0)
+
+            //     }
+                
+            //     if (numTel === 3) {
+            //         inputTel.value += ')'
+                 
+                    
+            //     }
+
+
+            //  if (numTel === 4){
+            //     inputTel.value += ' '
+            //  }
+
+            //     if (numTel === 10) {
+            //         inputTel.value  += '-'
+            //     }
+            // }
+            // )
+
+
+            
         }
 
+    
     
 
         function confereNum() {
@@ -482,12 +607,19 @@
         
 
 
+
         
 
         function buscarLocal() { // vai ser chamada pelo input quando ele estiver completo, usar regex
             var inputCEP = document.getElementById('input-cep').value
             var pErroLocal = document.getElementById("p-erro-local")
             var icon = document.getElementById("icon-local-erro")
+
+
+
+             document.getElementById("btn-cep").style.display = 'none'
+
+
             
 
             if (inputCEP.length < 9)  {
@@ -497,6 +629,7 @@
                 document.getElementById("saida-cidade").innerHTML = ''
                 document.getElementById("saida-logradouro-rua").innerHTML = ''
                 document.getElementById("saida-bairro").innerHTML = ''
+               
 
 
             } else {
@@ -601,13 +734,41 @@
         function mascaraCep() {
             var inputCep = document.getElementById("input-cep")
 
-            inputCep.addEventListener('input', function() {
-                var numsCep = inputCep.value.length
+            inputCep.addEventListener("input", function() {
+                var limpaInputCep = inputCep.value.replace(/\D/g, "").substring(0, 9)
 
-                if (numsCep === 5) {
-                    inputCep.value += '-'
+                var arrayCep = limpaInputCep.split("")
+
+                var inputFormatadoCep = ""
+
+                if (arrayCep.length > 0) {
+                    inputFormatadoCep += arrayCep.slice(0, 5).join("")
                 }
+
+                if (arrayCep.length > 5) {
+                    inputFormatadoCep += `-${arrayCep.slice(5, 9).join("")}`
+                }
+
+                inputCep.value = inputFormatadoCep
+
             })
+
+            // if (inputCep.value.length > inputFormatadoCep.length) {
+            //     inputCep.value = inputFormatadoCep
+            // } else {
+            //     inputCep.value = inputFormatadoCep
+            // }
+
+
+            
+
+            // inputCep.addEventListener('input', function() {
+            //     var numsCep = inputCep.value.length
+
+            //     if (numsCep === 5) {
+            //         inputCep.value += '-'
+            //     }
+            // })
 
         }
 
@@ -722,15 +883,22 @@
 
 
 
+
+        // var error = document.getElementsByClassName('msg-erro')
+
+        // if (document.getElementsByClassName("msg-erro").style.display )
+
+
+
           function confereMsgErro() {
 
             let container = document.getElementById("section-oculta")
 
             let pLocal = document.getElementsByClassName("info-local")
 
-            let  pBmvd = document.getElementById("saida-bmvd")
+            let pBmvd = document.getElementById("saida-bmvd")
 
-            if (document.getElementById("nome-erro").style.display === 'block' ) {
+            if (document.getElementById("nome-erro").style.display === 'block') {
 
                 document.getElementById("btn-login").disabled = true 
 

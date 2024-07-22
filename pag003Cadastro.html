@@ -71,27 +71,27 @@
                     
 
                       <label for="input-rg"><span class="icon-identid material-symbols-outlined">id_card</span>DIGITE SEU <abbr title="registro geral">RG</abbr></label>
-                      <input type="text" name="input-rg" id="input-rg" maxlength="12" required onclick="mascaraRG();  mascaraRgConfere()">
+                      <input type="text" name="input-rg" id="input-rg" maxlength="12" placeholder="xx.xxx.xxx-x" required onclick="mascaraRG(); mascaraRgConfere()">
 
                       <div class="div-msg-erro">
                         <p id="rg-erro" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Formato inváldo</p>
                       </div>
 
                       <label for="input-cpf"><span class="icon-identid material-symbols-outlined">id_card</span>DIGITE SEU <abbr title="numero do Cartão da Pessoa Física">CPF</abbr></label>
-                      <input type="text" name="input-cpf" id="input-cpf" maxlength="14" oninput="mascaraCpf(); mascaraCpfConfere()">
+                      <input type="text" name="input-cpf" id="input-cpf" maxlength="14" placeholder="xxx.xxx.xxx-xx" oninput="mascaraCpf(); mascaraCpfConfere()">
 
                      <div class="div-msg-erro">
                        <p id="cpf-erro" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Formato inválido</p>
                      </div>
 
                       <label for="input-cep"><span class="icon-local material-symbols-outlined">pin_drop</span>DIGITE SEU <abbr title="Código de Endereçamento Postal">CEP</abbr></label>
-                      <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="" onclick="mascaraCep(); buscarLocal()" required>
-                      <!-- <button id="btn-cep" onclick="buscarLocal()">buscar local</button> -->
+                      <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="xxxxx-xxx" onclick="mascaraCep()" required>
+                       <button id="btn-cep" onclick="buscarLocal()">confirmar CEP</button>
                       <br>
 
 
                        
-                        <p id="p-erro-local" class="msg-erro"><span class="icon-erro material-symbols-outlined" id="icon-local-erro">fmd_bad</span>Por favor, insira um <abbr> CEP </abbr> válido</p>
+                        <p id="p-erro-local" class="msg-erro"><span class="icon-erro material-symbols-outlined" id="icon-local-erro">fmd_bad</span>Por favor, insira um <abbr> CEP</abbr> válido</p>
                       
 
                       <!-- <p id="saida-uf" class="info-local"></p> -->
@@ -99,8 +99,10 @@
                       <p id="saida-logradouro-rua" class="info-local"></p>
                       <p id="saida-bairro" class="info-local"></p>
 
+                      
+
                       <label for="input-telefone"><span class="icon-tel material-symbols-outlined">phone</span>DIGITE SEU NÚMERO DE CELULAR:</label>
-                      <input type="tel" name="input-telefone" id="input-telefone"  placeholder="(11) 12345-6789" maxlength="15" required oninput="mascaraTelefone(); confereNum()">
+                      <input type="tel" name="input-telefone" id="input-telefone"  placeholder="(11) 12345-6789" maxlength="15" required onclick="mascaraTelefone(); confereNum()">
 
 
                       <div class="div-msg-erro">
@@ -164,6 +166,7 @@
           <section id="cadastro">
             <div id="cad-efetuado">
                 <h3>CADASTRO EFETUADO COM SUCESSO!</h3>
+                <p id='saida-bmvd'></p>
                 <span class="material-symbols-outlined">
                     task_alt
                     </span>
