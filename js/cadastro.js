@@ -603,9 +603,6 @@
         
 
 // tem 11 numeros
-        
-        
-
 
 
         
@@ -614,13 +611,12 @@
             var inputCEP = document.getElementById('input-cep').value
             var pErroLocal = document.getElementById("p-erro-local")
             var icon = document.getElementById("icon-local-erro")
+            var botaoCep = document.getElementById("btn-cep")
 
 
+            botaoCep.style.display = 'none'
 
-             document.getElementById("btn-cep").style.display = 'none'
 
-
-            
 
             if (inputCEP.length < 9)  {
                 icon.style.display = 'block'
@@ -629,6 +625,7 @@
                 document.getElementById("saida-cidade").innerHTML = ''
                 document.getElementById("saida-logradouro-rua").innerHTML = ''
                 document.getElementById("saida-bairro").innerHTML = ''
+            
                
 
 
@@ -656,33 +653,71 @@
                     var cidade = dadosLocal.localidade;
                     var rua = dadosLocal.logradouro;
                     var bairro = dadosLocal.bairro;
-    
-                    switch (true) { 
-                        case (estado === undefined):
-                        icon.style.display = 'block'
-                         pErroLocal.style.display = 'flex';
-                         break;
-    
-                        case (cidade === undefined): 
-                         icon.style.display = 'block'
-                         pErroLocal.style.display = 'flex';
-                         break;
-    
-                        case (rua === undefined): 
-                         icon.style.display = 'block'
-                         pErroLocal.style.display = 'flex';
-                         break;
 
-                         case (bairro === undefined): 
-                         icon.style.display = 'block'
-                         pErroLocal.style.display = 'flex';
-                         break;
+
+                    if (cidade === undefined) {
+                        icon.style.display = 'block'
+                        pErroLocal.style.display = 'flex';
+                        document.getElementById("saida-cidade").style.display = "none"
+                        
+                    }
+
+                    if (rua === undefined) {
+                        icon.style.display = 'block'
+                        pErroLocal.style.display = 'flex';
+                        document.getElementById("saida-logradouro-rua").style.display = "none"
+                        
+
+                    }
+
+                    if (bairro === undefined) {
+                        icon.style.display = 'block'
+                        pErroLocal.style.display = 'flex';
+                        document.getElementById("saida-bairro").style.display = "none"
+                     
+
+                    }
+
+                    // }
     
-                         default: 
-                         icon.style.display = 'none'
-                          pErroLocal.style.display = 'none';
-                        //   document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
-                          document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + "/" + estado + ".";
+                    // switch (true) { 
+                    //     case (estado === undefined):
+                    //     icon.style.display = 'block'
+                    //      pErroLocal.style.display = 'flex';
+                    //      break;
+    
+                    //     case (cidade === undefined): 
+                    //      icon.style.display = 'block'
+                    //      pErroLocal.style.display = 'flex';
+                    //      break;
+    
+                    //     case (rua === undefined): 
+                    //      icon.style.display = 'block'
+                    //      pErroLocal.style.display = 'flex';
+                    //      break;
+
+                    //      case (bairro === undefined): 
+                    //      icon.style.display = 'block'
+                    //      pErroLocal.style.display = 'flex';
+                    //      break;
+    
+                    //      default: 
+                    //      icon.style.display = 'none'
+                    //       pErroLocal.style.display = 'none';
+                    //     //   document.getElementById("saida-uf").innerHTML = "Estado: " + estado + ".";
+                    //       document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + "/" + estado + ".";
+                    // }
+
+
+
+                    if (cidade != '') {
+                        document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade;
+                        document.getElementById("btn-cep").style.display = "block"
+
+                    } else {
+                        document.getElementById("saida-cidade".innerHTML = "Município não encontrado")
+                        document.getElementById("btn-cep").style.display = 'block'
+
                     }
 
                     
@@ -740,6 +775,28 @@
 //   }
 
 
+    function aparecerBotaoCep() {
+        var input = document.getElementById("input-cep")
+        var botao = document.getElementById("btn-cep")
+        var pErro = document.getElementById("p-erro-local")
+
+
+        input.addEventListener("input", function() {
+            
+        if (input.value.length < 9) {
+            botao.style.display = "none"
+            console.log('é  menor ')
+        } else {
+            botao.style.display = "block"
+            console.log("é igual")
+        }
+
+
+        })
+
+
+    }
+
 
 
 
@@ -749,6 +806,7 @@
             var pLogradouro = document.getElementById("saida-logradouro-rua")
             var pBairro = document.getElementById("saida-bairro")
             var pErro = document.getElementById("p-erro-local")
+            var btn = document.getElementById("btn-cep")
 
             inputCep.addEventListener("input", function() {
                 var limpaInputCep = inputCep.value.replace(/\D/g, "").substring(0, 9)
@@ -756,6 +814,7 @@
                 var arrayCep = limpaInputCep.split("")
 
                 var inputFormatadoCep = ""
+
 
                 if (arrayCep.length > 0) {
                     inputFormatadoCep += arrayCep.slice(0, 5).join("")
