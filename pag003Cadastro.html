@@ -48,7 +48,7 @@
                 </div>
                 
                   <form id="form-cad">
-                    <h3>INFORMAÇÕES PESSOAIS:  </h3>
+                    <h3 class="titulos-formulario">INFORMAÇÕES PESSOAIS:  </h3>
                       <label for="input-nome"><span class="input-nome material-symbols-outlined person">person</span>DIGITE SEU NOME</label>
                       <input type="text" name="input-nome" id="input-nome" autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
 
@@ -101,7 +101,7 @@
 
                       
 
-                      <label for="input-telefone"><span class="icon-tel material-symbols-outlined">phone</span>DIGITE SEU NÚMERO DE CELULAR:</label>
+                      <label for="input-telefone" id="label-tel"><span class="icon-tel material-symbols-outlined">phone</span>DIGITE SEU TELEFONE:</label>
                       <input type="tel" name="input-telefone" id="input-telefone"  placeholder="(11) 12345-6789" maxlength="15" onclick="mascaraTelefone(); confereNum()">
 
 
@@ -110,7 +110,7 @@
                         <p id="pErroQtdNum" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Desculpe, Você se esqueceu de algum número</p> <!--Vai no botão final, caso o usuário tente clicar sem preencher todo o input-->
                       </div>
 
-                      <h3>INFORMAÇÕES FÍSICAS</h3>
+                      <h3 class="titulos-formulario">INFORMAÇÕES FÍSICAS</h3>
 
                      
 

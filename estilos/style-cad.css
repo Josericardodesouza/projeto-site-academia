@@ -195,6 +195,13 @@ form {
    
 }
 
+h3.titulos-formulario {
+    font-size: 0.9em;
+    font-family: 'Anton-SC', sans-serif;
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+}
+
 
 div#container-cadastro > .material-symbols-outlined {
     font-size: 20px;
@@ -230,6 +237,7 @@ span.icon-tel {
 
 
 label {
+   
     font-family: 'Kanit', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      height: auto;
      display: block;
@@ -237,8 +245,16 @@ label {
     /* background-color: yellow; */
     font-weight: 600;
      font-size: 0.9em;
+     
 
 }
+
+label#label-tel {
+    text-wrap: nowrap;
+    width: 90%;
+    font-size: 0.9em;
+}
+
 
 abbr {
     font-weight: 700;
@@ -308,8 +324,9 @@ button#btn-cep {
     background-color: black;
     border: 5px solid black;
     border-radius: 4px 4px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.1em;
+    font-family: 'Anton-SC', sans-serif;
+    font-size: 0.9em;
+    font-weight: normal;
     color: var(--coolGray);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.33);
      margin-bottom: 10px; 
@@ -319,6 +336,9 @@ button#btn-cep {
 button#btn-cep:hover {
     cursor: pointer;
 }
+
+
+
 
 
 

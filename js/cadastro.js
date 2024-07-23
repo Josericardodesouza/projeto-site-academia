@@ -616,6 +616,8 @@
 
             botaoCep.style.display = 'none'
 
+            console.log("chamou função")
+
 
 
             if (inputCEP.length < 9)  {
