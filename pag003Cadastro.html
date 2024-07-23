@@ -47,10 +47,10 @@
                   </picture>
                 </div>
                 
-                  <form action="cadastroLogin.php" method="post">
+                  <form id="form-cad">
                     <h3>INFORMAÇÕES PESSOAIS:  </h3>
                       <label for="input-nome"><span class="input-nome material-symbols-outlined person">person</span>DIGITE SEU NOME</label>
-                      <input type="text" name="input-nome" id="input-nome" required  autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
+                      <input type="text" name="input-nome" id="input-nome" autocomplete="on" oninput="confereNomeSobrenomeNum(); inputNullFocus(); nomeCaractereInvalido()">
 
 
                       <div class="div-msg-erro">
@@ -71,7 +71,7 @@
                     
 
                       <label for="input-rg"><span class="icon-identid material-symbols-outlined">id_card</span>DIGITE SEU <abbr title="registro geral">RG</abbr></label>
-                      <input type="text" name="input-rg" id="input-rg" maxlength="12" placeholder="xx.xxx.xxx-x" required onclick="mascaraRG(); mascaraRgConfere()">
+                      <input type="text" name="input-rg" id="input-rg" maxlength="12" placeholder="xx.xxx.xxx-x" onclick="mascaraRG(); mascaraRgConfere()">
 
                       <div class="div-msg-erro">
                         <p id="rg-erro" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Formato inváldo</p>
@@ -85,8 +85,8 @@
                      </div>
 
                       <label for="input-cep"><span class="icon-local material-symbols-outlined">pin_drop</span>DIGITE SEU <abbr title="Código de Endereçamento Postal">CEP</abbr></label>
-                      <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="xxxxx-xxx" onclick="mascaraCep(); aparecerBotaoCep()" required>
-                       <button id="btn-cep" onclick="buscarLocal()">confirmar CEP</button>
+                      <input type="text" name="input-cep" id="input-cep" maxlength="9" placeholder="xxxxx-xxx" onclick="mascaraCep(); aparecerBotaoCep()">
+                       <button id="btn-cep" type="submit" onclick="buscarLocal()">confirmar CEP</button>
                       <br>
 
 
@@ -102,7 +102,7 @@
                       
 
                       <label for="input-telefone"><span class="icon-tel material-symbols-outlined">phone</span>DIGITE SEU NÚMERO DE CELULAR:</label>
-                      <input type="tel" name="input-telefone" id="input-telefone"  placeholder="(11) 12345-6789" maxlength="15" required onclick="mascaraTelefone(); confereNum()">
+                      <input type="tel" name="input-telefone" id="input-telefone"  placeholder="(11) 12345-6789" maxlength="15" onclick="mascaraTelefone(); confereNum()">
 
 
                       <div class="div-msg-erro">
@@ -115,10 +115,10 @@
                      
 
                       <label for="estatura"> <img src="imagens/icones/height.svg" alt="icone de altura" class="icon">INFORME SUA ALTURA</label>
-                      <input type="text" name="input-estatura" id="input-estatura" placeholder="" maxlength="4" required oninput="estatura()">
+                      <input type="text" name="input-estatura" id="input-estatura" placeholder="" maxlength="4" oninput="estatura()">
 
                       <label for="peso"><img src="imagens/icones/scale_1641269.svg" alt="icone de altura" class="icon">INFORME SEU PESO</label>
-                      <input type="text" name="input-peso" id="input-peso" placeholder="" maxlength="6" required oninput="peso()">
+                      <input type="text" name="input-peso" id="input-peso" placeholder="" maxlength="6" oninput="peso()">
                       
                       <div class="div-msg-erro">
                         <p id="pErroPeso" class="msg-erro"><span class="icon-erro material-symbols-outlined">error</span> Você deve inserir um ponto(.) ou vírgula(,) no campo de PESO</p>

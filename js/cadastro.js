@@ -799,6 +799,15 @@
 
 
 
+    document.getElementById("form-cad").addEventListener("submit", function(evento) {
+        evento.preventDefault()
+
+        // evita que, quando clicado, o botão que executa a função de exibir os dados recebidos da api Via Cep recarregue a página.
+
+    })
+
+
+
 
         function mascaraCep() {
             var inputCep = document.getElementById("input-cep")
