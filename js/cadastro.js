@@ -713,7 +713,7 @@
 
 
                     if (cidade != '') {
-                        document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade;
+                        document.getElementById("saida-cidade").innerHTML = "Cidade: " + cidade + "/" + estado;
                         document.getElementById("btn-cep").style.display = "block"
 
                     } else {
@@ -758,7 +758,7 @@
         if (inputCEP.length < 1) {
             icon.style.display = 'none'
             pErroLocal.style.display = 'none';
-            document.getElementById("saida-uf").innerHTML = ''
+            // document.getElementById("saida-uf").innerHTML = ''
             document.getElementById("saida-cidade").innerHTML = ''
             document.getElementById("saida-logradouro-rua").innerHTML = ''
             document.getElementById("saida-bairro").innerHTML = ''
@@ -834,6 +834,7 @@
                 if (arrayCep.length > 5) {
                     inputFormatadoCep += `-${arrayCep.slice(5, 9).join("")}`
                 }
+
 
 
                 if (arrayCep.length < 9) {
