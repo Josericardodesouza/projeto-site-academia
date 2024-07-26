@@ -143,6 +143,7 @@ function calcularCal() {
 
 
 function resetar() {
+    let header = document.getElementById("header")
     var valorInputCarb = document.getElementById("ent-carboidratos");
     var valorInputProt = document.getElementById("ent-proteinas");
     var valorInputLipi = document.getElementById("ent-lipi");
@@ -156,6 +157,9 @@ function resetar() {
         valorInputLipi.value = '';
         // resultado.style.display = 'none';
         container.style.display = 'none';
+
+
+        header.scrollIntoView({behavior: "smooth"});
        
     }
 

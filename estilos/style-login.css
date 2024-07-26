@@ -37,6 +37,10 @@
     padding: 0px;
 }
 
+html, body {
+    box-sizing: border-box;
+}
+
 
 header {
     background-image: url(../imagens/pexels-andrej-klintsy-6392831.jpg);
@@ -60,7 +64,7 @@ header > div {
 }
 
 header > div > h1 {
-    width: 100%;
+    width: auto;
     color: #EB7F04;
     font-weight: 900;
     font-family: 'Anton-SC', sans-serif;
@@ -176,7 +180,7 @@ div#container-login {
     /* background-color: green; */
     background-color: #EB7F04;
      margin: auto; 
-    width: 93%;
+    width: 80%;
     height: auto;
     display: block;
     justify-content: center;

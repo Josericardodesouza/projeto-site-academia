@@ -42,6 +42,7 @@ function limiteNumIdade() {
 
 function confere() {
   var container = document.getElementById("oculta");
+  var section = document.getElementById("container-entrada")
   var entPeso = document.getElementById("ent-peso").value;
   var entAlt = document.getElementById("ent-altura").value;
   var entIdade = document.getElementById("ent-idade").value;
@@ -123,7 +124,7 @@ function confere() {
 
         console.log('default')
       
-        container.scrollIntoView({behavior: "smooth"});
+        section.scrollIntoView({behavior: "smooth"});
         break;
 
         // confirmaMasc = 2;
@@ -204,6 +205,8 @@ function calcularGebMasc() {
     var valorInputAltura = document.getElementById("ent-altura");
     var valorInputIdade = document.getElementById("ent-idade");
     var container = document.getElementById("oculta");
+    let header = document.getElementById("header");
+
 
     if (container.style.display == 'block') {
       valorInputPeso.value = '';
@@ -212,6 +215,8 @@ function calcularGebMasc() {
       container.style.display = 'none';
 
     }
+
+    header.scrollIntoView({behavior: "smooth"});
 
   }
 
