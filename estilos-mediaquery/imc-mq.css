@@ -83,7 +83,21 @@
     div#texto-header > p {
         width: 95%;
     }
+
+    
     }
+
+
+    @media (min-width: 500px) {
+        div#entrada-dados > input { /*mudança de tamanho padrão dos inputs*/
+            width: 20%; 
+           transition: width 2s, height 1s; 
+       }
+    }
+
+
+
+
 
 
 
@@ -97,6 +111,11 @@
     header {
         height: 420px;
     }
+
+    
+
+
+
 }
 
 
@@ -106,14 +125,14 @@
         width: 75%;
 
     }
-
+/* 
     div#entrada-dados > input {
         text-align: center;
-        width: 60px;
+      
         height: 30px;
         transition: width 2s, height 1s;
 
-    }
+    } */
 
   
 
@@ -139,10 +158,6 @@
 
     }
 
-    div#entrada-dados > input {
-        width: 70px;
-        /* transition: width 2s, height 1s; */
-    }
 
 
 

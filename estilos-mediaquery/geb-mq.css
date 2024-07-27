@@ -48,9 +48,17 @@
     }
 
     div#container-entrada > input {
-        width: 15%;
+        /* width: 15%; */
     }
 
+}
+
+
+@media (min-width: 500px) { /*media query padrão para tamanho dos inputs das três páginas de cálculo*/
+    div#container-entrada > input {
+        width: 20%;
+        transition: width 2s, height 1s;
+    }
 }
 
 
