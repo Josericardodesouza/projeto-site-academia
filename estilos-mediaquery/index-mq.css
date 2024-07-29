@@ -312,6 +312,10 @@ header {
 
 @media screen and (min-width: 766px) {
 
+    body {
+        box-sizing: content-box;
+    }
+
   
 
 

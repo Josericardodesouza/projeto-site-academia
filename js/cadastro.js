@@ -2,12 +2,18 @@
 
 //testando vars globais
 
+
+
+
     var inputNome = document.getElementById("input-nome")
     var inputSobrenome = document.getElementById("input-sobrenome")
+
     var pErroNomeNum = document.getElementById("nome-erro-num")
     var pErroSobrenomeNum = document.getElementById("sobrenome-erro-num")
+
     var pErroNomeNull = document.getElementById("nome-erro")
     var pErroSobrenomeNull = document.getElementById("sobrenome-erro")
+
     var pNomeCaractereInv = document.getElementById("nome-erro-caractereInv")
     var pSobrenomeCaractereInv = document.getElementById("sobrenome-erro-caractereInv")
 
@@ -78,23 +84,15 @@
 
 
         function confereNomeSobrenomeNull() {
-         
-
 
             let inputNomeValue  = inputNome.value;
             let inputSobrenomeValue = inputSobrenome.value;
 
-
-
             if (inputNomeValue === '') {
                 pErroNomeNull.style.display = 'block';
                 inputNome.style.borderColor = 'red';
-
-            }
-
-
-
-            if (inputSobrenomeValue === '') {
+            
+            } else if (inputSobrenomeValue === '') {
                 pErroSobrenomeNull.style.display = 'block';
                 inputSobrenome.style.borderColor = 'red';
 
@@ -943,15 +941,15 @@
     
 
           if (document.getElementById("input-nome").value === '') {
-            pErro.style.display = 'block';
+            
 
           } else if (document.getElementById("input-sobrenome").value === '') {
 
-            pErro.style.display = 'block';
+            
 
           } else if (document.getElementById("input-cpf").value === '') {
 
-            pErro.style.display = 'block';
+            
 
           } else if (document.getElementById("input-cep").value === '') {
 
