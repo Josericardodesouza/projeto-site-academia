@@ -2,9 +2,6 @@
 
 //testando vars globais
 
-
-
-
     var inputNome = document.getElementById("input-nome")
     var inputSobrenome = document.getElementById("input-sobrenome")
 
@@ -941,15 +938,15 @@
     
 
           if (document.getElementById("input-nome").value === '') {
-            
+            pErro.style.display = 'block';
 
           } else if (document.getElementById("input-sobrenome").value === '') {
 
-            
+            pErro.style.display = 'block';
 
           } else if (document.getElementById("input-cpf").value === '') {
 
-            
+            pErro.style.display = 'block';
 
           } else if (document.getElementById("input-cep").value === '') {
 
