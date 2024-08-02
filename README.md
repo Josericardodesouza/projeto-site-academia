@@ -17,25 +17,18 @@
  <li>Calculadora de Calorias;</li>
  <li>Calculadora de GEB (Gasto Energético Basal);</li>
  <li>Responsividade;</li>
+ <li>Na página de cadastro, retorna o nome da cidade, bairro e logradouro do usuário a partir do CEP inserido, por meio da API do Via Cep</li>
  </ul>
 
  ### links externos
 
- Veja e teste meu projeto com seus própios olhos:
+ Veja e teste meu projeto com seus própios olhos: https://loremipsumfitnessjricardodev.netlify.app
  <br>
  Meu Linkedin: 
 
  ## Visão geral da página Home
 
  <img src = "./imagens/site-academia-print-home.jpeg" style = "width: 90%"></img>
-
- ## demonstrações
-
-
-
-
-
-teste readme
 
 
 
