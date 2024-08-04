@@ -17,7 +17,7 @@
  <li>Calculadora de Calorias;</li>
  <li>Calculadora de GEB (Gasto Energético Basal);</li>
  <li>Responsividade;</li>
- <li>Na página de cadastro, retorna o nome da cidade, bairro e logradouro do usuário a partir do CEP inserido, por meio da API do Via Cep</li>
+ <li>Na página de cadastro, retorna o nome da cidade, bairro e logradouro do usuário a partir do CEP inserido, por meio da API do Via Cep;</li>
  </ul>
 
  ### links externos
