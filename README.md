@@ -24,7 +24,7 @@
 
  Veja e teste meu projeto com seus própios olhos: https://loremipsumfitnessjricardodev.netlify.app
  <br>
- Meu Linkedin: 
+ Meu Linkedin: https://www.linkedin.com/in/josé-ricardo-de-souza-034a90317
 
  ## Visão geral da página Home
 
