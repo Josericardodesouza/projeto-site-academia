@@ -1053,7 +1053,7 @@
 
                 container.style.display = 'block';
 
-                pBmvd.innerHTML = 'Olá ' + inputNome.value + ', seja muito bem vindo á LOREM IPSUM FITNESS!'
+                pBmvd.innerHTML = 'Olá ' + inputNome.value + ', seja muito bem vindo à LOREM IPSUM FITNESS!'
 
                 container.scrollIntoView({behavior: "smooth"})
                 // colocar o scrool também com a primeira mensagem de erro
