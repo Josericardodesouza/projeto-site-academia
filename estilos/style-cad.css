@@ -378,9 +378,10 @@ div#acessar > a {
 
 div#acessar > button {
     color: white;
-    font-weight: 200;
+    font-weight: 700;
     background-color: #EB7F04;
     font-family: 'Anton-SC', sans-serif;
+
     font-size: 1.2em;
     margin-top: 10px;
     width: auto;
