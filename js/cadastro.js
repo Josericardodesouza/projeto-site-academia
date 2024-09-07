@@ -993,65 +993,63 @@
 
             if (document.getElementById("nome-erro").style.display === 'block') {
 
-                document.getElementById("btn-login").disabled = true 
+                document.getElementById("btn-cad").disabled = true 
 
             } else if (document.getElementById("nome-erro-num").style.display === 'block') {
 
-                document.getElementById('btn-login').disabled = true 
+                document.getElementById('btn-cad').disabled = true 
 
             } else if (document.getElementById("nome-erro-caractereInv").style.display === 'block'){
 
-                document.getElementById("btn-login").disabled = true
+                document.getElementById("btn-cad").disabled = true
 
             } else if (document.getElementById("sobrenome-erro").style.display === 'block') {
 
-                document.getElementById("btn-login").disabled = true
+                document.getElementById("btn-cad").disabled = true
 
             } else if (document.getElementById("sobrenome-erro-num").style.display === 'block') {
 
-                document.getElementById("btn-login").disabled = true
+                document.getElementById("btn-cad").disabled = true
 
             } else if (document.getElementById("sobrenome-erro-caractereInv").style.display === 'block') {
 
-                document.getElementById('btn-login').disabled = true
+                document.getElementById('btn-cad').disabled = true
 
             } else if (document.getElementById("rg-erro").style.display === 'block') {
 
-                document.getElementById('btn-login').disabled = true
+                document.getElementById('btn-cad').disabled = true
 
             } else if (document.getElementById("cpf-erro").style.display === 'block') {
 
-                document.getElementById('btn-login').disabled = true
+                document.getElementById('btn-cad').disabled = true
 
             } else if (document.getElementById("p-erro-local").style.display === 'block') {
                 var teste = document.getElementById("input-cep")
                 teste.scrollIntoView({behavior: "smooth"});
 
-                document.getElementById('btn-login').disabled = true
+                document.getElementById('btn-cad').disabled = true
 
             } else if (document.getElementById("pErroNum").style.display === 'block') {
 
-                document.getElementById("btn-login").disabled = true
+                document.getElementById("btn-cad").disabled = true
 
             } else if (document.getElementById("pErroQtdNum").style.display === 'block') {
 
-                document.getElementById("btn-login").disabled = true
+                document.getElementById("btn-cad").disabled = true
 
             } else if (document.getElementById("pErroPeso").style.display === 'block') {
 
-                document.getElementById('btn-login').disabled = true
+                document.getElementById('btn-cad').disabled = true
 
             } else if (document.getElementById("pErroPesoNull").style.display === 'block') {
 
-                document.getElementById('btn-login').disabled = true
+                document.getElementById('btn-cad').disabled = true
 
             } else if (document.getElementById("erro-null").style.display === 'block') {
 
-                document.getElementById("btn-login").disable = true 
+                document.getElementById("btn-cad").disable = true 
 
             } else {
-
-                document.getElementById('btn-login').disabled = false
 
                 container.style.display = 'block';
 
