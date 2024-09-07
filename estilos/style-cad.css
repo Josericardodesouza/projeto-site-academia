@@ -380,7 +380,7 @@ div#acessar > button {
     color: white;
     font-weight: 200;
     background-color: #EB7F04;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton-SC', sans-serif;
     font-size: 1.2em;
     margin-top: 10px;
     width: auto;
@@ -458,7 +458,7 @@ div#cad-efetuado {
     text-align: center;
     align-items: center;
 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Anton-SC', sans-serif;
     font-weight: 300;
     color: greenyellow;
 
