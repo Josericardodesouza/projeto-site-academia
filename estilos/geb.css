@@ -36,6 +36,14 @@
     margin: 0px;
     padding: 0px;
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    overflow-x: hidden;
+}
 /* 
 nav#fixa {
     top: 0;
